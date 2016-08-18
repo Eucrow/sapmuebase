@@ -33,7 +33,7 @@ filter_by_month <- function (dataframe){
 #' @param tal file with the lengths samples
 #' @param by_month to select only one month. MONTH must be fill in the constants section. False by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
-#' @return a list with 3 data frames
+#' @return Return a list with 3 data frames
 
 import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE){
   # full paths for every file

@@ -19,7 +19,7 @@ import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
 \item{export}{to export muestreos_up dataframe in csv file. False by default.}
 }
 \value{
-a list with 3 data frames
+Return a list with 3 data frames
 }
 \description{
 Import 'muestreos tallas por up'

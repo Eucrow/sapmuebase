@@ -1,0 +1,79 @@
+# ---- function to remove coma in the category "Chicharros, jureles" -----------
+# return the dataframe corrected
+remove_coma_in_category <- function(dataframe){
+  dataframe$CATEGORIA<- gsub(",", "", dataframe$CATEGORIA)
+  #assign('dataframe',dataframe,.GlobalEnv)#this doesn't work, and I dont know why
+  return(dataframe)
+}
+
+# ---- function to change date format in all dataframes of muestreos_up list ---
+change_date_format <- function (dataframe){
+  dataframe$FECHA <- as.Date(dataframe$FECHA, "%d-%b-%y")
+  dataframe$FECHA <- as.POSIXlt(dataframe$FECHA)
+  dataframe$FECHA <- format(dataframe$FECHA, "%d-%m-%y")
+}
+
+# ---- function to filter by month all the dataframes of muestreos_up list -----
+filter_by_month <- function (dataframe){
+  # format the month:
+  MONTH <- sprintf("%02d", MONTH)
+
+  # filter:
+  dataframe <- dataframe[format.Date(dataframe$FECHA, "%m") == MONTH,]
+
+  #return dataframe:
+  return(dataframe)
+}
+
+# ---- function to import the 'tallas por up' files ----------------------------
+#' Import 'muestreos tallas por up'
+#' This function import the 'muestreos tallas por up' files from SIRENO
+#' @param des_tot file with the total landings
+#' @param des_tal file with the landings of the lengths samples
+#' @param tal file with the lengths samples
+#' @param by_month to select only one month. MONTH must be fill in the constants section. False by default.
+#' @param export to export muestreos_up dataframe in csv file. False by default.
+#' @return a list with 3 data frames
+
+import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE){
+  # full paths for every file
+  fullpath_des_tot <- paste(getwd(), des_tot, sep="/")
+  fullpath_des_tal <- paste(getwd(), des_tal, sep="/")
+  fullpath_tal <- paste(getwd(), tal, sep="/")
+
+  # import files to data.frame
+  catches <- read.table(fullpath_des_tot, sep=";", header = TRUE)
+  catches_in_lengths <- read.table(fullpath_des_tal, sep=";", header = TRUE)
+  lengths <- read.table(fullpath_tal, sep=";", header = TRUE)
+
+  # group in list
+  muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
+
+  # change the column "FECHA" to a date format
+  # to avoid some problems with Spanish_Spain.1252 (or if you are using another locale), change locale to Spanish_United States.1252:
+  lct <- Sys.getlocale("LC_TIME")
+  Sys.setlocale("LC_TIME","Spanish_United States.1252")
+
+  # change the format with lapply
+  # it's necesary the last x inside the function, to return de vale of x modified
+  muestreos_up <- lapply(muestreos_up, function(x){x$FECHA <- change_date_format(x); x})
+
+  # and now the come back to the initial configuration of locale:
+  Sys.setlocale("LC_TIME", lct)
+
+  # filter by month, only in case by_month == TRUE
+  if (by_month == TRUE){
+    muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x); x})
+  }
+
+  # remove coma in the name of the categories
+  # I don't know why this doesn't work:
+  # lapply(muestreos_up, function(x){x <- remove_coma_in_category(x)})
+  # so I've to do this:
+  muestreos_up$catches <- remove_coma_in_category(muestreos_up$catches)
+  muestreos_up$catches_in_lengths <- remove_coma_in_category(muestreos_up$catches_in_lengths)
+  muestreos_up$lengths <- remove_coma_in_category(muestreos_up$lengths)
+
+  #return list
+  return(muestreos_up)
+}

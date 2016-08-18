@@ -2,8 +2,7 @@
 % Please edit documentation in R/import_muestreos_up.R
 \name{import_muestreos_up}
 \alias{import_muestreos_up}
-\title{Import 'muestreos tallas por up'
-This function import the 'muestreos tallas por up' files from SIRENO}
+\title{Import 'muestreos tallas por up'}
 \usage{
 import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
 }
@@ -14,7 +13,7 @@ import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
 
 \item{tal}{file with the lengths samples}
 
-\item{by_month}{to select only one month. MONTH must be fill in the constants section. False by default.}
+\item{by_month}{to filter only by one month. If false nothing is filtered. False by default.}
 
 \item{export}{to export muestreos_up dataframe in csv file. False by default.}
 }
@@ -22,7 +21,6 @@ import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
 Return a list with 3 data frames
 }
 \description{
-Import 'muestreos tallas por up'
 This function import the 'muestreos tallas por up' files from SIRENO
 }
 

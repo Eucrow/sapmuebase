@@ -27,11 +27,12 @@ filter_by_month <- function (dataframe){
 
 # ---- function to import the 'tallas por up' files ----------------------------
 #' Import 'muestreos tallas por up'
+#'
 #' This function import the 'muestreos tallas por up' files from SIRENO
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
 #' @param tal file with the lengths samples
-#' @param by_month to select only one month. MONTH must be fill in the constants section. False by default.
+#' @param by_month to filter only by one month. If false nothing is filtered. False by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
 #' @return Return a list with 3 data frames
 

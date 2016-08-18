@@ -2,7 +2,14 @@
 
 sapmuebase is a package with simple functions usefull in the SAP MUE project
 
-## Functions:
+## Install
+With `devtools` package installed:
+```
+library(devtools)
+install_github("Eucrow/sapmuebase")
+```
+
+## Functions available:
 ### import_muestreos_up()
 Import the 'muestreos tallas por up' files from SIRENO.
 

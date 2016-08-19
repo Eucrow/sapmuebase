@@ -27,26 +27,44 @@ importIPDFile <- function(filename, by_month = FALSE){
                          "P_MUE_DESEM", "COD_ESP_CAT", "SEXO", "peso_muestra", "medida",
                          "TALLA", "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA")
 
-  #select only samples from ICES
+  # select only samples from ICES
   records <- records[records$COD_PROYECTO==1101001,]
 
-  #format fecha_muestreo
+  # format fecha_muestreo
   records$FECHA <- as.POSIXlt(records$FECHA, format="%d/%m/%Y")
 
 
-  #remove dots in numeric columns (dec = ",")
-    #create a function to remove dots in columns
-    #TODO: allow a list of characters to apll in various columns
-    remove_dots <- function (df, col){
+  # format columns as numeric:
+    # create a function to format the numeric columns imported by default as character
+    # TODO: allow a list of characters to apll in various columns
+    format_numeric <- function (df, col){
       df[col] <- lapply(df[col], function(x){(sub("\\.", "", x))})
-      #df[col] <- as.numeric(df[col])
+      df[col] <- lapply(df[col], function(x){(sub(",", "\\.", x))})
+      df[col] <- as.numeric(df[[col]])
       return(df)
     }
-  records <- remove_dots(records, "P_DESEM")
-  records <- remove_dots(records, "P_MUE_DESEM")
 
+    # format columns as numeric:
+    records <- format_numeric(records, "P_DESEM")
+    records <- format_numeric(records, "P_MUE_DESEM")
+    records <- format_numeric(records, "peso_muestra")
 
-  #return data
+  # convert code columns as factors:
+    columns_factor <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE",
+    "COD_ORIGEN", "COD_PROYECTO", "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA",
+    "COD_ESP_CAT", "COD_PUERTO_DESCARGA")
+
+    #function to convert to factor in a row the columns
+    # obj: list of characteres
+    convert_factor <- function (obj){
+      out <- lapply(obj, as.factor)
+      as.data.frame(out)
+    }
+
+    # and convert it:
+    records [, columns_factor] <- convert_factor(records [, columns_factor])
+
+  # return data
   if (by_month == FALSE){
     return(records)
   } else if (by_month >= 1 || by_month <= 12){

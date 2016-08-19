@@ -38,8 +38,8 @@ importIPDFile <- function(filename, by_month = FALSE){
     #create a function to remove dots in columns
     #TODO: allow a list of characters to apll in various columns
     remove_dots <- function (df, col){
-      df[col] <- sapply(df[col], function(x){(sub("\\.", "", x))})
-      df[col] <- as.numeric(df[col])
+      df[col] <- lapply(df[col], function(x){(sub("\\.", "", x))})
+      #df[col] <- as.numeric(df[col])
       return(df)
     }
   records <- remove_dots(records, "P_DESEM")
@@ -55,6 +55,3 @@ importIPDFile <- function(filename, by_month = FALSE){
     return ("error in month selected")
   }
 }
-
-
-

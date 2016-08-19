@@ -39,6 +39,7 @@ importIPDFile <- function(filename, by_month = FALSE){
     #TODO: allow a list of characters to apll in various columns
     remove_dots <- function (df, col){
       df[col] <- sapply(df[col], function(x){(sub("\\.", "", x))})
+      df[col] <- as.numeric(df[col])
       return(df)
     }
   records <- remove_dots(records, "P_DESEM")

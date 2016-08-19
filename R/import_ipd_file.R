@@ -55,6 +55,5 @@ importIPDFile <- function(filename, by_month = FALSE){
   }
 }
 
-records <- importIPDFile("muestreos_especie_4_2016_todos_.txt")
 
 

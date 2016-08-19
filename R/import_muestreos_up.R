@@ -35,6 +35,7 @@ filter_by_month <- function (dataframe){
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
 #' @return Return a list with 3 data frames
+#' @export
 
 import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE){
   # full paths for every file
@@ -78,3 +79,5 @@ import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export 
   #return list
   return(muestreos_up)
 }
+
+

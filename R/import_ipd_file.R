@@ -5,6 +5,7 @@
 #' @param filename name of the IPD file
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
 #' @return Return a data frame.
+#' @export
 
 importIPDFile <- function(filename, by_month = FALSE){
 
@@ -14,7 +15,8 @@ importIPDFile <- function(filename, by_month = FALSE){
   records <- read.fwf(
     file=fullpath,
     widths=c(10, 4, 6, 3, 3, 21, 10, 20, 1, 10, 8,  7, 7, 4, 20, 5, 20, 10, 4, 20, 5, 1, 20, 20, 10, 10, 10),
-    strip.white = TRUE
+    strip.white = TRUE,
+    dec = ","
   )
 
   colnames(records) <- c("FECHA", "COD_PUERTO", "COD_BARCO", "COD_ARTE",
@@ -31,6 +33,19 @@ importIPDFile <- function(filename, by_month = FALSE){
   #format fecha_muestreo
   records$FECHA <- as.POSIXlt(records$FECHA, format="%d/%m/%Y")
 
+
+  #remove dots in numeric columns (dec = ",")
+    #create a function to remove dots in columns
+    #TODO: allow a list of characters to apll in various columns
+    remove_dots <- function (df, col){
+      sapply(df$col, function(x){(sub("\\.", "", x))})
+      df
+    }
+
+  records <- remove_dots(records, "P_MUE_DESEM")
+  records <- remove_dots(records, "P_MUE")
+
+
   #return data
   if (by_month == FALSE){
     return(records)
@@ -40,3 +55,5 @@ importIPDFile <- function(filename, by_month = FALSE){
     return ("error in month selected")
   }
 }
+
+

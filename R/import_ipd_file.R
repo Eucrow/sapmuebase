@@ -64,6 +64,9 @@ importIPDFile <- function(filename, by_month = FALSE){
     # and convert it:
     records [, columns_factor] <- convert_factor(records [, columns_factor])
 
+  # remove unused levels
+  records <- droplevels(records)
+
   # return data
   if (by_month == FALSE){
     return(records)

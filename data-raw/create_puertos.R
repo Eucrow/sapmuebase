@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+puertos <- read.csv("puertos.csv", colClasses = c("factor", NA))
+save(puertos, file = "puertos.RData")
+setwd(original_wd)
+rm(original_wd, puertos)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

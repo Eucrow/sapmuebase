@@ -7,7 +7,7 @@
 #' @return Return a data frame.
 #' @export
 
-importIPDFile <- function(filename, by_month = FALSE){
+import_IPD_file <- function(filename, by_month = FALSE){
 
   fullpath<-paste(getwd(), filename, sep="/")
 

@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+estratos_rim <- read.csv("estratos_rim.csv")
+save(estratos_rim, file = "estratos_rim.RData")
+setwd(original_wd)
+rm(original_wd, estratos_rim)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

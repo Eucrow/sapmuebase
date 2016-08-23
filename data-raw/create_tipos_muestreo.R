@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+tipos_muestreo <- read.csv("tipos_muestreo.csv", colClasses = c("factor", NA))
+save(tipos_muestreo, file = "tipos_muestreo.RData")
+setwd(original_wd)
+rm(original_wd, tipos_muestreo)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

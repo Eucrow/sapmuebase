@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+procedencias <- read.csv("procedencias.csv", colClasses = c("factor", NA))
+save(procedencias, file = "procedencias.RData")
+setwd(original_wd)
+rm(original_wd, procedencias)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

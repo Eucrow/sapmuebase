@@ -16,7 +16,14 @@ import_IPD_file <- function(filename, by_month = FALSE){
     file=fullpath,
     widths=c(10, 4, 6, 3, 3, 21, 10, 20, 1, 10, 8,  7, 7, 4, 20, 5, 20, 10, 4, 20, 5, 1, 20, 20, 10, 10, 10),
     strip.white = TRUE,
-    dec = ","
+    dec = ",",
+    colClasses =  c (NA, "factor", "factor", "factor",
+                  "factor", "factor", "factor", "factor",
+                  NA, NA, "factor",
+                  NA, NA, NA, NA,
+                  "factor", NA, NA, "factor",
+                  NA, "factor", NA, NA, NA,
+                  NA, NA, "factor")
   )
 
   colnames(records) <- c("FECHA", "COD_PUERTO", "COD_BARCO", "COD_ARTE",

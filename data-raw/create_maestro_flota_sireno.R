@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+maestro_flota_sireno <- read.csv("maestro_flota_sireno.csv", sep = ";")
+save(maestro_flota_sireno, file = "maestro_flota_sirenoo.RData")
+setwd(original_wd)
+rm(original_wd, maestro_flota_sireno)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

@@ -4,7 +4,8 @@
 \alias{import_muestreos_up}
 \title{Import 'muestreos tallas por up'}
 \usage{
-import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
+import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE,
+  path = getwd())
 }
 \arguments{
 \item{des_tot}{file with the total landings}

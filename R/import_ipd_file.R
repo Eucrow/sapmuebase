@@ -1,7 +1,7 @@
 # ---- function to import the IPD file -----------------------------------------
 #' Import IPD file
 #'
-#' This function import the data of SAP MUE proyect from IPD file
+#' This function import the data of biological samples keyed by IPD
 #' @param filename name of the IPD file
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
 #' @return Return a data frame.
@@ -31,7 +31,7 @@ import_IPD_file <- function(filename, by_month = FALSE){
                          "N_RECHAZOS", "N_BARCOS", "COD_CUADRICULA",
                          "LATITUD", "LONGITUD", "DIAS_MAR", "P_DESEM",
                          "COD_ESP_MUE", "TIPO_MUE", "PROCEDENCIA", "COD_CATEGORIA",
-                         "P_MUE_DESEM", "COD_ESP_CAT", "SEXO", "peso_muestra", "medida",
+                         "P_MUE_DESEM", "COD_ESP_CAT", "SEXO", "PESO_MUESTRA", "MEDIDA",
                          "TALLA", "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA")
 
   # select only samples from ICES
@@ -54,7 +54,7 @@ import_IPD_file <- function(filename, by_month = FALSE){
     # format columns as numeric:
     records <- format_numeric(records, "P_DESEM")
     records <- format_numeric(records, "P_MUE_DESEM")
-    records <- format_numeric(records, "peso_muestra")
+    records <- format_numeric(records, "PESO_MUESTRA")
 
   # convert code columns as factors:
     columns_factor <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE",

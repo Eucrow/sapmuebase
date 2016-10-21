@@ -38,11 +38,11 @@ filter_by_month <- function (dataframe, month){
 #' @return Return a list with 3 data frames
 #' @export
 
-import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE){
+import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
   # full paths for every file
-  fullpath_des_tot <- paste(getwd(), des_tot, sep="/")
-  fullpath_des_tal <- paste(getwd(), des_tal, sep="/")
-  fullpath_tal <- paste(getwd(), tal, sep="/")
+  fullpath_des_tot <- paste(path, des_tot, sep="/")
+  fullpath_des_tal <- paste(path, des_tal, sep="/")
+  fullpath_tal <- paste(path, tal, sep="/")
 
   # import files to data.frame
   catches <- read.table(fullpath_des_tot, sep=";", header = TRUE)

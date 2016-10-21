@@ -13,6 +13,7 @@ change_date_format <- function (dataframe){
   dataframe$FECHA <- format(dataframe$FECHA, "%d-%m-%y")
 }
 
+
 # ---- function to filter by month all the dataframes of muestreos_up list -----
 filter_by_month <- function (dataframe, month){
   # format the month:
@@ -67,7 +68,7 @@ import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export 
   # filter by month, only in case by_month == TRUE
   # TODO: validate by_month between 1 and 12
   if (by_month != FALSE){
-    muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(by_month); x})
+    muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   }
 
   # remove coma in the name of the categories
@@ -81,5 +82,4 @@ import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export 
   #return list
   return(muestreos_up)
 }
-
 

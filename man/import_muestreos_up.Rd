@@ -21,6 +21,6 @@ import_muestreos_up(des_tot, des_tal, tal, by_month = FALSE, export = FALSE)
 Return a list with 3 data frames
 }
 \description{
-This function import the 'muestreos tallas por up' files from SIRENO
+This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
 }
 

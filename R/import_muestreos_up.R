@@ -28,7 +28,8 @@ filter_by_month <- function (dataframe){
 # ---- function to import the 'tallas por up' files ----------------------------
 #' Import 'muestreos tallas por up'
 #'
-#' This function import the 'muestreos tallas por up' files from SIRENO
+#' This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
+#'
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
 #' @param tal file with the lengths samples

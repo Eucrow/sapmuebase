@@ -15,6 +15,6 @@ import_IPD_file(filename, by_month = FALSE)
 Return a data frame.
 }
 \description{
-This function import the data of SAP MUE proyect from IPD file
+This function import the data of biological samples keyed by IPD
 }
 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/separateDataframeByInfluenceArea.R
 \name{separateDataframeByInfluenceArea}
 \alias{separateDataframeByInfluenceArea}
-\title{Separate one dataframe by influence area}
+\title{Separate a dataframe by influence area}
 \usage{
 separateDataframeByInfluenceArea(df, cod_puerto_column)
 }

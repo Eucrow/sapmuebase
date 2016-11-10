@@ -14,6 +14,6 @@ Save in the working directory a csv file for every dataframe in the
 list of dataframes.
 }
 \description{
-This function export to csv file every dataframe in a list of dataframes.
+This function create a csv file every dataframe in a list of dataframes.
 }
 

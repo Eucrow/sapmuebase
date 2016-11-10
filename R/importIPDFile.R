@@ -1,4 +1,3 @@
-# ---- function to import the IPD file -----------------------------------------
 #' Import IPD file
 #'
 #' This function import the data of biological samples keyed by IPD

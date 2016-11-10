@@ -3,3 +3,4 @@
 export(exportListToCsv)
 export(importIPDFile)
 export(importMuestreosUP)
+export(separateDataframeByInfluenceArea)

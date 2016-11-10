@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+areas_influencia <- read.csv("areas_influencia.csv", colClasses = c("factor", NA))
+save(areas_influencia, file = "areas_influencia.RData")
+setwd(original_wd)
+rm(original_wd, areas_influencia)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

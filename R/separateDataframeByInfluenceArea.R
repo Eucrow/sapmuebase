@@ -1,4 +1,4 @@
-#' Separate one dataframe by influence area
+#' Separate a dataframe by influence area
 #'
 #' This function separate any dataframe by influence area according to a sireno
 #' port variable available in the dataframe.

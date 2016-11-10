@@ -39,7 +39,7 @@ filter_by_month <- function (dataframe, month){
 #' @return Return a list with 3 data frames
 #' @export
 
-import_muestreos_up <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
+importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
   # full paths for every file
   fullpath_des_tot <- paste(path, des_tot, sep="/")
   fullpath_des_tal <- paste(path, des_tal, sep="/")

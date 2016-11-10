@@ -10,10 +10,10 @@ exportListToCsv(list)
 \item{list}{of dataframes}
 }
 \value{
-Save in the working directory a csv file for every dataframe in the
+Save in the working directory a csv file for each dataframe in the
 list of dataframes.
 }
 \description{
-This function create a csv file every dataframe in a list of dataframes.
+This function create a csv file for each dataframe in a list of dataframes.
 }
 

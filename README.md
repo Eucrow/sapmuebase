@@ -1,6 +1,6 @@
 # sapmuebase
 
-sapmuebase is a package with simple functions usefull in the SAP MUE project
+sapmuebase is a package with simple functions useful in the SAP MUE project
 
 ## Install
 With `devtools` package installed:
@@ -10,7 +10,11 @@ install_github("Eucrow/sapmuebase")
 ```
 
 ## Functions available:
-### import_muestreos_up()
+### importMuestreosUp()
 Import the 'muestreos tallas por up' files from SIRENO to R. 
-### import_IPD_file()
+### importIPDFile()
 Import the file with data to dump in SIRENO to R.
+### exportListToCsv()
+Create a csv file for each dataframe in a list of dataframes.
+### separateDataframeByInfluenceArea()
+This function separate a dataframe by influence area.

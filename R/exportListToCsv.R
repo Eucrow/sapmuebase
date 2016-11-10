@@ -1,9 +1,9 @@
 #' Export to csv a list of dataframes
 #'
-#' This function create a csv file every dataframe in a list of dataframes.
+#' This function create a csv file for each dataframe in a list of dataframes.
 #'
 #' @param list of dataframes
-#' @return Save in the working directory a csv file for every dataframe in the
+#' @return Save in the working directory a csv file for each dataframe in the
 #' list of dataframes.
 #' @export
 #'

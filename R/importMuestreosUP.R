@@ -1,16 +1,16 @@
 # ---- function to remove coma in the category "Chicharros, jureles" -----------
 # return the dataframe corrected
 remove_coma_in_category <- function(dataframe){
-  dataframe$CATEGORIA<- gsub(",", "", dataframe$CATEGORIA)
+  dataframe[["CATEGORIA"]]<- gsub(",", "", dataframe[["CATEGORIA"]])
   #assign('dataframe',dataframe,.GlobalEnv)#this doesn't work, and I dont know why
   return(dataframe)
 }
 
 # ---- function to change date format in all dataframes of muestreos_up list ---
 change_date_format <- function (dataframe){
-  dataframe$FECHA <- as.Date(dataframe$FECHA, "%d-%b-%y")
-  dataframe$FECHA <- as.POSIXlt(dataframe$FECHA)
-  dataframe$FECHA <- format(dataframe$FECHA, "%d-%m-%y")
+  dataframe[["FECHA"]] <- as.Date(dataframe[["FECHA"]], "%d-%b-%y")
+  dataframe[["FECHA"]] <- as.POSIXlt(dataframe[["FECHA"]])
+  dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
 }
 
 
@@ -20,7 +20,7 @@ filter_by_month <- function (dataframe, month){
   month <- sprintf("%02d", month)
 
   # filter:
-  dataframe <- dataframe[format.Date(dataframe$FECHA, "%m") == month,]
+  dataframe <- dataframe[format.Date(dataframe[["FECHA"]], "%m") == month,]
 
   #return dataframe:
   return(dataframe)
@@ -60,7 +60,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
 
   # change the format with lapply
   # it's necesary the last x inside the function, to return de vale of x modified
-  muestreos_up <- lapply(muestreos_up, function(x){x$FECHA <- change_date_format(x); x})
+  muestreos_up <- lapply(muestreos_up, function(x){x[["FECHA"]] <- change_date_format(x); x})
 
   # and now the come back to the initial configuration of locale:
   Sys.setlocale("LC_TIME", lct)
@@ -71,13 +71,25 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
     muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   }
 
+  # Change colname LOCCODE to LOCODE
+  muestreos_up <- lapply(muestreos_up, function(x){
+    # I don't know why this doesn't work:
+    # colnames(x)[colnames(x)=="LOCCODE"] <- "LOCODE"
+    # so I have to do this:
+    columnsName <- colnames(x)
+    columnsName <- sub("LOCCODE", "LOCODE", columnsName)
+    colnames(x) <- c(columnsName)
+    return(x)
+  })
+
+
   # remove coma in the name of the categories
   # I don't know why this doesn't work:
   # lapply(muestreos_up, function(x){x <- remove_coma_in_category(x)})
   # so I've to do this:
-  muestreos_up$catches <- remove_coma_in_category(muestreos_up$catches)
-  muestreos_up$catches_in_lengths <- remove_coma_in_category(muestreos_up$catches_in_lengths)
-  muestreos_up$lengths <- remove_coma_in_category(muestreos_up$lengths)
+  muestreos_up[["catches"]] <- remove_coma_in_category(muestreos_up[["catches"]])
+  muestreos_up[["catches_in_lengths"]] <- remove_coma_in_category(muestreos_up[["catches_in_lengths"]])
+  muestreos_up[["lengths"]] <- remove_coma_in_category(muestreos_up[["lengths"]])
 
   #return list
   return(muestreos_up)

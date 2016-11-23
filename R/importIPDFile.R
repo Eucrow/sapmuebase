@@ -22,13 +22,7 @@ importIPDFile <- function(filename, by_month = FALSE){
              10, 10, 10),
     strip.white = TRUE,
     dec = ",",
-    # colClasses =  c (      NA, "factor", "factor", "factor",
-    #                        "factor", "factor", "factor", "factor",
-    #                        NA,       NA, "factor",       NA,
-    #                        NA,       NA, NA, "factor",
-    #                        NA,       NA, "factor",       NA,
-    #                        "factor", NA,       NA,       NA,
-    #                        NA,       NA, "factor")
+
     colClasses =  c (      NA, "factor", "factor", "factor",
                            "factor", "factor", "factor", "factor",
                            NA,       NA, "factor",       NA,

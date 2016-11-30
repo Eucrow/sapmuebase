@@ -1,7 +1,7 @@
 # sapmuebase
-v0.9
+v0.91
 
-sapmuebase is a package with simple functions useful in the SAP MUE project
+sapmuebase is a package with simple functions usefull in the SAP MUE team.
 
 ## Install
 With `devtools` package installed:
@@ -10,7 +10,11 @@ library(devtools)
 install_github("Eucrow/sapmuebase")
 ```
 
-## Functions available:
+## Functions available (use help(*nameofthefunction*) to details):
+### importCsvSAPMUE()
+Import csv files with special format usually used in SAPMUE team.
+### exportCsvSAPMUE()
+Export csv files with special format usually used in SAPMUE team.
 ### importMuestreosUp()
 Import the 'muestreos tallas por up' files from SIRENO to R. 
 ### importIPDFile()

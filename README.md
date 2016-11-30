@@ -1,7 +1,7 @@
 # sapmuebase
-v0.9
+v0.91
 
-sapmuebase is a package with simple functions useful in the SAP MUE project
+sapmuebase is a package with simple functions usefull in the SAP MUE team.
 
 ## Install
 With `devtools` package installed:

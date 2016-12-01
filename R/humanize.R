@@ -22,11 +22,11 @@
 humanize <- function(df){
 
 
-  if("COD_PUERTO" %in% colnames(check_one_category_with_different_landing_weight)){
+  if("COD_PUERTO" %in% colnames(df)){
     df <- merge(df, puerto, by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
   }
 
-  if("COD_BARCO" %in% colnames(check_one_category_with_different_landing_weight)){
+  if("COD_BARCO" %in% colnames(df)){
     df <- merge(df, maestro_flota_sireno[,c("BARCOD", "BARDES")], by.x = "COD_BARCO", by.y = "BARCOD", all.x = TRUE )
   }
 
@@ -34,11 +34,11 @@ humanize <- function(df){
     select_("ESPCOD", "ESPDESTAX") %>%
     unique()
 
-  if("COD_ESP_MUE" %in% colnames(check_one_category_with_different_landing_weight)){
+  if("COD_ESP_MUE" %in% colnames(df)){
     df <- merge(df, especies, by.x = "COD_ESP_MUE", by.y = "ESPCOD", all.x = TRUE )
   }
 
-  df <- df[,c(2,10,3,9,4,5,6,1,11,7,8)]
+  #df <- df[,c(2,10,3,9,4,5,6,1,11,7,8)]
 
   return(df)
 

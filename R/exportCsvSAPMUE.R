@@ -5,6 +5,7 @@
 #' - row header
 #' - without quote characteres
 #' - without row names
+#' - decimal separator with ","
 #'
 #' This function allow the export with that format.
 #'
@@ -14,5 +15,5 @@
 
 
 exportCsvSAPMUEBASE <- function(df, filename){
-  write.csv(df, file=filename, quote = FALSE, row.names = FALSE)
+  write.table(df, file=filename, quote = FALSE, row.names = FALSE, dec = ",", sep = ";")
 }

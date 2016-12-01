@@ -17,6 +17,7 @@ The csv files usually used in SAPMUE have a special format:
 - row header
 - without quote characteres
 - without row names
+- decimal separator with ","
 }
 \details{
 This function allow the export with that format.

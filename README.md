@@ -1,5 +1,5 @@
 # sapmuebase
-v0.91
+v0.94
 
 sapmuebase is a package with simple functions usefull in the SAP MUE team.
 

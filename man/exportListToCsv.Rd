@@ -4,16 +4,24 @@
 \alias{exportListToCsv}
 \title{Export to csv a list of dataframes}
 \usage{
-exportListToCsv(list)
+exportListToCsv(list, prefix = "", suffix = "", separation = "")
 }
 \arguments{
-\item{list}{of dataframes}
+\item{list:}{list of dataframes}
+
+\item{prefix:}{text to add after the name of the dataframe in the file exported. None by default.}
+
+\item{suffix:}{text to add before the name of the dataframe in the file exported. None by default.}
+
+\item{separation:}{characters to separate the prefix and suffix to the name of
+the dataframe. By default is "_".}
 }
 \value{
 Save in the working directory a csv file for each dataframe in the
 list of dataframes.
 }
 \description{
-This function create a csv file for each dataframe in a list of dataframes.
+This function create a csv file for each dataframe in a list of dataframes. The
+name of every created file contains the name of its corresponding dataframe.
 }
 

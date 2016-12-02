@@ -30,7 +30,7 @@ exportListToCsv <- function(list, prefix = "", suffix = "", separation = ""){
 
       filename <- paste0(prefix, list_name, suffix, ".csv")
 
-      write.csv(list[[i]], file = filename, quote = FALSE, row.names = FALSE)
+      write.table(list[[i]], file=filename, quote = FALSE, row.names = FALSE, dec = ",", sep = ";", na = "")
 
     } else {
 

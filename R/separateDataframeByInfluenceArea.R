@@ -17,10 +17,10 @@ separateDataframeByInfluenceArea <- function (df, cod_puerto_column){
   if (is.data.frame(df)){
     data(areas_influencia)
 
-    areas_influencia <- areas_influencia[,c("COD_PUERTO", "AREA")]
+    areas_influencia <- areas_influencia[,c("COD_PUERTO", "AREA_INF")]
 
     by_area <- merge(df, areas_influencia, by.x = cod_puerto_column, by.y = "COD_PUERTO", all.x = TRUE )
-    by_area <- dlply (by_area, "AREA")
+    by_area <- dlply (by_area, "AREA_INF")
 
     return(by_area)
 

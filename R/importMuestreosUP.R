@@ -71,18 +71,6 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
     muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   }
 
-  # Change colname LOCCODE to LOCODE
-  muestreos_up <- lapply(muestreos_up, function(x){
-    # I don't know why this doesn't work:
-    # colnames(x)[colnames(x)=="LOCCODE"] <- "LOCODE"
-    # so I have to do this:
-    columnsName <- colnames(x)
-    columnsName <- sub("LOCCODE", "LOCODE", columnsName)
-    colnames(x) <- c(columnsName)
-    return(x)
-  })
-
-
   # remove coma in the name of the categories
   # I don't know why this doesn't work:
   # lapply(muestreos_up, function(x){x <- remove_coma_in_category(x)})

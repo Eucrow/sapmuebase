@@ -15,5 +15,5 @@
 
 
 exportCsvSAPMUEBASE <- function(df, filename){
-  write.table(df, file=filename, quote = FALSE, row.names = FALSE, dec = ",", sep = ";")
+  write.table(df, file=filename, quote = FALSE, row.names = FALSE, dec = ",", sep = ";", na = "")
 }

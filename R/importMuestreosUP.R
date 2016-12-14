@@ -79,6 +79,12 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   muestreos_up[["catches_in_lengths"]] <- remove_coma_in_category(muestreos_up[["catches_in_lengths"]])
   muestreos_up[["lengths"]] <- remove_coma_in_category(muestreos_up[["lengths"]])
 
+  #convert COD_PUERTO to a character with 4 digits
+  muestreos_up <- lapply(muestreos_up, function(x){
+    x[["COD_PUERTO"]] <- sprintf("%04d", x[["COD_PUERTO"]])
+    x
+  })
+
   #return list
   return(muestreos_up)
 }

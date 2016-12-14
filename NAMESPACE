@@ -3,6 +3,7 @@
 export(ImportCsvSAPMUE)
 export(exportCsvSAPMUEBASE)
 export(exportListToCsv)
+export(exportListToXlsx)
 export(humanize)
 export(importIPDFile)
 export(importMuestreosUP)

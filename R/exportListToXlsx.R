@@ -32,36 +32,36 @@ exportListToXlsx <- function (list, prefix = "", suffix = "", separation = "")
       filename <- paste0(PATH_ERRORS, "/", prefix, list_name, suffix, ".xlsx")
 
       # ---- Create a Workbook
-      wb <- createWorkbook()
+      wb <- openxlsx::createWorkbook()
 
       # ---- Add worksheets
       name_worksheet <- paste("0",MONTH,sep="")
-      addWorksheet(wb, name_worksheet)
+      openxlsx::addWorksheet(wb, name_worksheet)
 
       # ---- Add data to the workbook
-      writeData(wb, name_worksheet, list[[i]])
+      openxlsx::writeData(wb, name_worksheet, list[[i]])
 
       # ---- Useful variables
       num_cols_df <- length(list[[i]])
 
       # ---- Stylize data
       # ---- Create styles
-      head_style <- createStyle(fgFill = "#EEEEEE",
+      head_style <- openxlsx::createStyle(fgFill = "#EEEEEE",
                                 fontName="Calibri",
                                 fontSize = "11",
                                 halign = "center",
                                 valign = "center")
 
       # ---- Apply styles
-      addStyle(wb, sheet = name_worksheet, head_style, rows = 1, cols = 1:num_cols_df)
+      openxlsx::addStyle(wb, sheet = name_worksheet, head_style, rows = 1, cols = 1:num_cols_df)
 
       # ---- Column widths: I don't know why, but it dosn't work in the right way
-      setColWidths(wb, name_worksheet, cols = c(1:num_cols_df), widths = "auto")
+      openxlsx::setColWidths(wb, name_worksheet, cols = c(1:num_cols_df), widths = "auto")
 
       # ---- Export to excel
       # source: https://github.com/awalker89/openxlsx/issues/111
       Sys.setenv("R_ZIPCMD" = "C:/Rtools/bin/zip.exe") ## path to zip.exe
-      saveWorkbook(wb, filename, overwrite = TRUE)
+      openxlsx::saveWorkbook(wb, filename, overwrite = TRUE)
     }
     else {
       return(paste("This isn't a dataframe"))

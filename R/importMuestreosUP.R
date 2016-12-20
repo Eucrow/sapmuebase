@@ -46,9 +46,27 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   fullpath_tal <- paste(path, tal, sep="/")
 
   # import files to data.frame
-  catches <- read.table(fullpath_des_tot, sep=";", header = TRUE)
-  catches_in_lengths <- read.table(fullpath_des_tal, sep=";", header = TRUE)
-  lengths <- read.table(fullpath_tal, sep=";", header = TRUE)
+  catches <- tryCatch(
+                  read.table(fullpath_des_tot, sep=";", header = TRUE),
+                  error = function(e) {
+                    stop(paste("error in file", des_tot))
+                  }
+             )
+
+  catches_in_length <- tryCatch(
+                  read.table(fullpath_des_tal, sep=";", header = TRUE),
+                  error = function(e) {
+                    stop(paste("error in file", des_tal))
+                  }
+             )
+
+  lengths <- tryCatch(
+                  read.table(fullpath_tal, sep=";", header = TRUE),
+                  error = function(e) {
+                    stop(paste("error in file", tal))
+                  }
+             )
+
 
   # group in list
   muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)

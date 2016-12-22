@@ -54,7 +54,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                   }
              )
 
-  catches_in_length <- tryCatch(
+  catches_in_lengths <- tryCatch(
                   read.table(fullpath_des_tal, sep=";", header = TRUE),
                   error = function(err) {
                     error_text <- paste("error in file", des_tal, ": ", err)

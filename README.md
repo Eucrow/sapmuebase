@@ -24,3 +24,5 @@ Create a csv file for each dataframe in a list of dataframes.
 This function separate a dataframe by influence area.
 ### humanize()
 Create new variables with description values from coded variables.
+### addInfluenceAreaVariable()
+Add an influence area variable.

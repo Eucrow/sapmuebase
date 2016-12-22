@@ -1,12 +1,11 @@
 .Rproj.user
 .Rhistory
 .RData
-
 data-raw/cfpo2015.RData
 data-raw/cfpo2015.csv
 data/cfpo2015.RData
-
 data-raw/MAESTRO_FLOTA.xlsx
 data-raw/maestro_flota_sireno.csv
 data-raw/maestro_flota_sireno.RData
 data/maestro_flota_sirenoo.RData
+comprobacion importacion 2009/

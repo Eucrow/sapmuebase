@@ -47,7 +47,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
 
   # import files to data.frame
   catches <- tryCatch(
-                  read.table(fullpath_des_tot, sep=";", header = TRUE),
+                  read.table(fullpath_des_tot, sep=";", header = TRUE, quote = ""),
                   error = function(err) {
                     error_text <- paste("error in file", des_tot, ": ", err)
                     stop(error_text)
@@ -55,7 +55,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
              )
 
   catches_in_lengths <- tryCatch(
-                  read.table(fullpath_des_tal, sep=";", header = TRUE),
+                  read.table(fullpath_des_tal, sep=";", header = TRUE, quote = ""),
                   error = function(err) {
                     error_text <- paste("error in file", des_tal, ": ", err)
                     stop(error_text)
@@ -63,7 +63,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
              )
 
   lengths <- tryCatch(
-                  read.table(fullpath_tal, sep=";", header = TRUE),
+                  read.table(fullpath_tal, sep=";", header = TRUE, quote = ""),
                   error = function(err) {
                     error_text <- paste("error in file", tal, ": ", err)
                     stop(error_text)

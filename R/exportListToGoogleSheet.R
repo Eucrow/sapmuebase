@@ -21,7 +21,7 @@ exportListToGoogleSheet <- function(list, prefix = "", suffix = "", separation =
   #check if package openxlsx is instaled:
   if (!requireNamespace("googlesheets", quietly = TRUE)) {
     stop("Googlesheets package needed for this function to work. Please install it.",
-         call. = FALSE)
+         call = FALSE)
   }
 
   # sep_along(list): generate regular sequences. With a list, generates
@@ -43,7 +43,7 @@ exportListToGoogleSheet <- function(list, prefix = "", suffix = "", separation =
 
       filename <- paste0(prefix, list_name, suffix, ".csv")
 
-      gs_new(filename, ws_title = filename, input = list[[i]],
+      googlesheets::gs_new(filename, ws_title = filename, input = list[[i]],
              trim = TRUE, verbose = FALSE)
 
     } else {

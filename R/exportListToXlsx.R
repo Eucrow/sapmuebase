@@ -18,7 +18,7 @@ exportListToXlsx <- function (list, prefix = "", suffix = "", separation = "")
   #check if package openxlsx is instaled:
   if (!requireNamespace("openxlsx", quietly = TRUE)) {
     stop("Openxlsx package needed for this function to work. Please install it.",
-         call. = FALSE)
+         call = FALSE)
   }
 
   lapply(seq_along(list), function(i) {

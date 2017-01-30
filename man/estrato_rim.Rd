@@ -4,7 +4,7 @@
 \name{estrato_rim}
 \alias{estrato_rim}
 \title{List of ESTRATO_RIM available}
-\format{A data frame with 3 columns:
+\format{A data frame with 2 columns:
 \describe{
   \item{ESTRATO_RIM}{}
   \item{VALID}{Control variable}

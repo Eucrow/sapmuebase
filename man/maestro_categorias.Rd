@@ -20,7 +20,8 @@
 maestro_categorias
 }
 \description{
-A dataset containing the categories available in SIRENO
+A dataset containing the categories available in SIRENO. The original data
+is obtained from SIRENO (report by proyect --> categories)
 }
 \keyword{datasets}
 

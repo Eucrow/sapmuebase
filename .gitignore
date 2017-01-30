@@ -1,6 +1,9 @@
 .Rproj.user
 .Rhistory
 .RData
+*.xlsx
+*.xls
+novale/
 data-raw/cfpo2015.RData
 data-raw/cfpo2015.csv
 data/cfpo2015.RData

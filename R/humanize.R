@@ -16,10 +16,17 @@
 #
 #' @param df: dataframe to humanize
 #' @return Return the original dataframe with description variables.
+#' @import dplyr
 #' @export
 #'
 
 humanize <- function(df){
+
+  #check if package dplyr is instaled:
+  if (!requireNamespace("dplyr", quietly = TRUE)) {
+    stop("Openxlsx package needed for this function to work. Please install it.",
+         call = FALSE)
+  }
 
 
   if("COD_PUERTO" %in% colnames(df)){

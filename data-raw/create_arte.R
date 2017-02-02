@@ -1,7 +1,7 @@
 library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
-arte <- read.csv("arte.csv", colClasses = c("factor", NA))
+arte <- read.csv("arte.csv", colClasses = c("factor", "factor"))
 save(arte, file = "arte.RData")
 setwd(original_wd)
 rm(original_wd, arte)

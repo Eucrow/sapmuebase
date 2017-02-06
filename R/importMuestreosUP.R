@@ -82,6 +82,16 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   # change the format with lapply
   # it's necesary the last x inside the function, to return de vale of x modified
   muestreos_up <- lapply(muestreos_up, function(x){x[["FECHA"]] <- change_date_format(x); x})
+  muestreos_up <- lapply(muestreos_up, function(x){x[["COD_ARTE"]] <- as.factor(x[["COD_ARTE"]]); x})
+  muestreos_up <- lapply(muestreos_up, function(x){x[["COD_TIPO_MUE"]] <- as.factor(x[["COD_TIPO_MUE"]]); x})
+
+
+  muestreos_up <- lapply(muestreos_up, function(x){
+                                          x[["COD_ORIGEN"]] <- sprintf("%03d", x[["COD_ORIGEN"]])
+
+                                          x[["COD_ORIGEN"]] <- as.factor(x[["COD_ORIGEN"]]);
+
+                                          x})
 
   # and now the come back to the initial configuration of locale:
   Sys.setlocale("LC_TIME", lct)

@@ -36,6 +36,8 @@ check_by_month_argument <- function(by_month) {
           #return ("error")
           error_text <- paste0("by_month = ", by_month, "??? How many by_months has your culture?")
           stop(error_text)
+        } else {
+          return(by_month)
         }
       } else if ( is.logical(by_month) & by_month == FALSE) {
         return(by_month)
@@ -60,7 +62,8 @@ check_by_month_argument <- function(by_month) {
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
 #' @param tal file with the lengths samples
-#' @param by_month to filter only by one month. If false nothing is filtered. False by default.
+#' @param by_month to filter only by one month. Numeric between 1 to 12 to select
+#' one month or FALSE for all the year. FALSE by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
 #' @return Return a list with 3 data frames
 #' @export

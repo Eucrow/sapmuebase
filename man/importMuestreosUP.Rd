@@ -14,7 +14,8 @@ importMuestreosUP(des_tot, des_tal, tal, by_month = FALSE, export = FALSE,
 
 \item{tal}{file with the lengths samples}
 
-\item{by_month}{to filter only by one month. If false nothing is filtered. False by default.}
+\item{by_month}{to filter only by one month. Numeric between 1 to 12 to select
+one month or FALSE for all the year. FALSE by default.}
 
 \item{export}{to export muestreos_up dataframe in csv file. False by default.}
 }

@@ -13,7 +13,6 @@ change_date_format <- function (dataframe){
   dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
 }
 
-
 # ---- function to filter by month all the dataframes of muestreos_up list -----
 filter_by_month <- function (dataframe, month){
   # format the month:
@@ -26,6 +25,35 @@ filter_by_month <- function (dataframe, month){
   return(dataframe)
 }
 
+# ---- function to check variable by_month -------------------------------------
+# This function check that the by_by_month variable is a numeric between 1 to 12
+# or FALSE
+check_by_month_argument <- function(by_month) {
+  tryCatch(
+    {
+      if (is.numeric(by_month)){
+        if(by_month < 1 | by_month > 12) {
+          #return ("error")
+          error_text <- paste0("by_month = ", by_month, "??? How many by_months has your culture?")
+          stop(error_text)
+        } else {
+          return(by_month)
+        }
+      } else if ( is.logical(by_month) & by_month == FALSE) {
+        return(by_month)
+      } else {
+        #return ("error")
+        stop(paste0("by_month has to be a numeric between 1 to 12 or FALSE to select all the year"))
+      }
+    },
+    error = function(err) {
+      error_text <- paste0("C'mon boy... ", err)
+      message(error_text)
+    }
+  )
+}
+
+
 # ---- function to import the 'tallas por up' files ----------------------------
 #' Import 'muestreos tallas por up'
 #'
@@ -34,7 +62,8 @@ filter_by_month <- function (dataframe, month){
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
 #' @param tal file with the lengths samples
-#' @param by_month to filter only by one month. If false nothing is filtered. False by default.
+#' @param by_month to filter only by one month. Numeric between 1 to 12 to select
+#' one month or FALSE for all the year. FALSE by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
 #' @return Return a list with 3 data frames
 #' @export
@@ -97,7 +126,8 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   Sys.setlocale("LC_TIME", lct)
 
   # filter by month, only in case by_month == TRUE
-  # TODO: validate by_month between 1 and 12
+  by_month <- check_by_month_argument(by_month)
+
   if (by_month != FALSE){
     muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   }

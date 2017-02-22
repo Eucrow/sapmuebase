@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+cfpo2016 <- read.csv("cfpo2016.csv", sep = ";")
+save(cfpo2016, file = "cfpo2016.RData")
+setwd(original_wd)
+rm(original_wd, cfpo2016)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

@@ -30,7 +30,7 @@ exportListToGoogleSheet <- function(list, prefix = "", suffix = "", separation =
 
     list[[i]][["PUERTO"]] <- iconv(list[[i]][["PUERTO"]], "windows-1252", "UTF-8")
     list[[i]][["BARCO"]] <- iconv(list[[i]][["BARCO"]], "windows-1252", "UTF-8")
-    list[[i]][["CATEGORIA"]] <- iconv(list[[i]][["CATEGORIA"]], "windows-1252", "UTF-8")
+    #list[[i]][["CATEGORIA"]] <- iconv(list[[i]][["CATEGORIA"]], "windows-1252", "UTF-8")
     list[[i]][["TIPO_ERROR"]] <- iconv(list[[i]][["TIPO_ERROR"]], "windows-1252", "UTF-8")
 
     if(is.data.frame(list[[i]])){

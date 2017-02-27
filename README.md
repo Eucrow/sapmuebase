@@ -14,7 +14,7 @@ install_github("Eucrow/sapmuebase")
 Import csv files with special format usually used in SAPMUE team.
 ### exportCsvSAPMUE()
 Export csv files with special format usually used in SAPMUE team.
-### importMuestreosUp()
+### importMuestreosUP()
 Import the 'muestreos tallas por up' files from SIRENO to R. 
 ### importIPDFile()
 Import the file with data to dump in SIRENO to R.

@@ -24,7 +24,7 @@ humanize <- function(df){
 
   #check if package dplyr is instaled:
   if (!requireNamespace("dplyr", quietly = TRUE)) {
-    stop("Openxlsx package needed for this function to work. Please install it.",
+    stop("dplyr package needed for this function to work. Please install it.",
          call = FALSE)
   }
 

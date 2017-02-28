@@ -1,4 +1,4 @@
-#' import csv with SAPMUE format
+#' import csv with usually format used in SAPMUE
 #'
 #' The csv files usually used in SAPMUE have a special format:
 #' - fields separation with ";"
@@ -12,6 +12,6 @@
 #' blank fields in rows with unequal length.
 #' @export
 
-ImportCsvSAPMUE <- function(filename){
+importCsvSAPMUE <- function(filename){
   file <- read.table(file=filename, head=TRUE, sep=";", fill=TRUE)
 }

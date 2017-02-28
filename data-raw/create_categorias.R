@@ -1,4 +1,4 @@
-#file maestro_categorias.csv is obtained by a personal petitios to SIRENO team
+#file maestro_categorias.csv is obtained by a personal petition to SIRENO team
 #with the next columns: ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;TIPPROCOD
 #Usually, the petition is answered with a xls file, than must be exported to csv
 #and coded in ANSI.

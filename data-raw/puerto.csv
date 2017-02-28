@@ -1,26 +1,27 @@
-COD_PUERTO,PUERTO
-0907,A Coruña
-0106,Algeciras
-1418,Avilés
-0109,Ayamonte
-0925,Burela
-0101,Cádiz
-0904,Cedeira
-0926,Cillero
-0913,Finisterre
-1417,Gijón
-0112,Huelva
-0110,Isla Cristina
-1420,Luarca
-0921,Marín
-0914,Muros
-0118,Puerto de Santa María
-0405,San Vicente de la Barquera
-0116,Sanlúcar de Barrameda
-0917,Santa Eugenia de Ribeira
-0402,Santander
-0409,Santoña
-0922,Vigo
-0105,Tarifa
-0103,Barbate
-0114,Punta Umbria
+PUERTO,COD_PUERTO,LOCODE
+Cádiz,0101,ESCAD
+Barbate,0103,ESBDF
+Tarifa,0105,ESTRF
+Ayamonte,0109,ESAYA
+Isla Cristina,0110,ESZGA
+Huelva,0112,ESHUV
+Punta Umbría,0114,ESZJY
+Sanlúcar de Barrameda,0116,ESSBA
+Puerto de Santa María,0118,ESPSM
+Santander,0402,ESSDR
+San Vicente de la Barquera,0405,ESSVB
+Santoña,0409,ESSNN
+Cedeira,0904,ESCED
+A Coruña,0907,ESLCG
+Finisterre,0913,ESFNE
+Muros,0914,ESMRS
+Santa Eugenia de Ribeira,0917,ESSNI
+Marín,0921,ESMPG
+Vigo,0922,ESVGO
+Burela,0925,ESBRL
+Cillero,0926,ESCIO
+Gijón,1417,ESGIJ
+Avilés,1418,ESAVS
+Luarca,1420,ESLUA
+
+

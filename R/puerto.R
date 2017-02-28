@@ -4,8 +4,9 @@
 #'
 #' @format A data frame with 25 rows and 2 columns:
 #' \describe{
+#'   \item{PUERTO}{port name}
 #'   \item{COD_PUERTO}{code use in SIRENO}
-#'   \item{PUERTO}{name of port}
+#'   \item{LOCODE}{LOCODE code}
 #'   ...
 #' }
 "puerto"

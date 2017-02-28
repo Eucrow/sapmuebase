@@ -26,11 +26,15 @@ humanize <- function(df){
   if (!requireNamespace("dplyr", quietly = TRUE)) {
     stop("dplyr package needed for this function to work. Please install it.",
          call = FALSE)
+  } else {
+    library(dplyr)
   }
 
+  # save the colnames to maintain the order
+  column_names <- colnames(df)
 
   if("COD_PUERTO" %in% colnames(df)){
-    df <- merge(df, puerto, by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
+    df <- merge(df, puerto[, c("COD_PUERTO", "PUERTO")], by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
   }
 
   if("COD_BARCO" %in% colnames(df)){
@@ -45,7 +49,9 @@ humanize <- function(df){
     df <- merge(df, especies, by.x = "COD_ESP_MUE", by.y = "ESPCOD", all.x = TRUE )
   }
 
-  #df <- df[,c(2,10,3,9,4,5,6,1,11,7,8)]
+  # put new columns at the end of the dataframe
+  df <- df %>%
+    select(one_of(column_names), everything())
 
   return(df)
 

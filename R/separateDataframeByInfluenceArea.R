@@ -11,10 +11,23 @@
 #' port code (4 digits) or a LOCODE (5 uppercase character) code.
 #' @return a list of dataframes for each influence area in the dataframe to
 #' separate.
+#' @import dplyr
+#' @import plyr
 #' @export
 #'
 #'
 separateDataframeByInfluenceArea <- function (df, cod_port_column){
+
+  #check if package dplyr is instaled:
+  if (!requireNamespace("dplyr", quietly = TRUE)) {
+    stop("dplyr package needed for this function to work. Please install it.",
+         call = FALSE)
+  }
+  #check if package plyr is instaled
+  if (!requireNamespace("plyr", quietly = TRUE)) {
+    stop("plyr package needed for this function to work. Please install it.",
+         call = FALSE)
+  }
 
   #check the correction of the dataframe
   if (!is.data.frame(df)){
@@ -38,7 +51,7 @@ separateDataframeByInfluenceArea <- function (df, cod_port_column){
 
   areas_influencia <- areas_influencia[,c(type_code, "AREA_INF")]
 
-  by_area <- merge(df, areas_influencia, by.x = type_code, by.y = type_code, all.x = TRUE )
+  by_area <- merge(df, areas_influencia, by.x = cod_port_column, by.y = type_code, all.x = TRUE )
   by_area <- dlply (by_area, "AREA_INF")
 
   return(by_area)

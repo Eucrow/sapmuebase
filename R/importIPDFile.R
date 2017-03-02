@@ -28,7 +28,7 @@ importIPDFile <- function(filename, by_month = FALSE){
                            NA,       NA, "factor",       NA,
                            NA,       NA, "factor", "factor",
                            NA,       NA, "factor", "factor",
-                           "factor",       NA, "factor",       NA,
+                           "factor",       NA, "factor", "factor",
                            NA,       NA, "factor")
   )
 

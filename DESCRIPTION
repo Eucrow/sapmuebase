@@ -10,5 +10,6 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1.9000
 Imports: dplyr,
+    plyr,
     googlesheets,
     openxlsx

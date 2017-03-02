@@ -11,8 +11,8 @@
 #' port code (4 digits) or a LOCODE (5 uppercase character) code.
 #' @return a list of dataframes for each influence area in the dataframe to
 #' separate.
-#' @import plyr
 #' @import dplyr
+#' @import plyr
 #' @export
 #'
 #'

@@ -1,10 +1,10 @@
-name_variable;regex_variable;class_variable
-COD_PUERTO;^\d{4}$;character¿habría que cambiarlo a factor?
-LOCODE;^[A-Z]{5}$;factor
-COD_BARCO;^\d{1,6}$;integer¿habría que cambiar a factor?
-COD_ARTE;^\d{3}$;factor
-COD_ORIGEN;^\d{3}$;factor
-COD_TIPO_MUE;^(1|2|3|4)$;factor
-COD_ESP_MUE;^\d{5}$;integer¿habría que cambiar a factor?
-COD_CATEGORIA;^\d{3,4}$;integer¿habría que cambiar a factor?
-COD_ESP_CAT;^\d{5}$;integer¿habría que cambiar a factor?
+name_variable;regex_variable;class_variable;observaciones
+COD_PUERTO;^\d{4}$;character;¿habría que cambiarlo a factor?
+LOCODE;^[A-Z]{5}$;factor:
+COD_BARCO;^\d{1,6}$;integer;¿habría que cambiar a factor?
+COD_ARTE;^\d{3}$;factor;
+COD_ORIGEN;^\d{3}$;factor;
+COD_TIPO_MUE;^(1|2|3|4)$;factor;
+COD_ESP_MUE;^\d{5}$;integer;¿habría que cambiar a factor?
+COD_CATEGORIA;^\d{3,4}$;integer;¿habría que cambiar a factor?
+COD_ESP_CAT;^\d{5}$;integer;¿habría que cambiar a factor?

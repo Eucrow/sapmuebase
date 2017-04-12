@@ -1,9 +1,10 @@
 #' Import IPD file
 #'
-#' This function import the data of biological samples keyed by IPD
+#' This function import the data of biological samples saved by IPD. Only import
+#' record of the samples of ICES proyect.
 #' @param filename name of the IPD file
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
-#' @return Return a data frame.
+#' @return Return data frame.
 #' @export
 
 importIPDFile <- function(filename, by_month = FALSE){

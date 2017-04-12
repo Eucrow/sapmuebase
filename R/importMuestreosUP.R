@@ -76,7 +76,11 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
 
   # import files to data.frame
   catches <- tryCatch(
-                  read.table(fullpath_des_tot, sep=";", header = TRUE, quote = ""),
+                  read.table(fullpath_des_tot, sep=";", header = TRUE, quote = "",
+                             colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,"character",
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", des_tot, ": ", err)
                     stop(error_text)
@@ -84,7 +88,13 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
              )
 
   catches_in_lengths <- tryCatch(
-                  read.table(fullpath_des_tal, sep=";", header = TRUE, quote = ""),
+                  read.table(fullpath_des_tal, sep=";", header = TRUE, quote = "",
+                             colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,"character",
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", des_tal, ": ", err)
                     stop(error_text)
@@ -92,7 +102,13 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
              )
 
   lengths <- tryCatch(
-                  read.table(fullpath_tal, sep=";", header = TRUE, quote = ""),
+                  read.table(fullpath_tal, sep=";", header = TRUE, quote = "",
+                             colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,"character",
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+                                            NA,NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", tal, ": ", err)
                     stop(error_text)
@@ -113,6 +129,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   muestreos_up <- lapply(muestreos_up, function(x){x[["FECHA"]] <- change_date_format(x); x})
   muestreos_up <- lapply(muestreos_up, function(x){x[["COD_ARTE"]] <- as.factor(x[["COD_ARTE"]]); x})
   muestreos_up <- lapply(muestreos_up, function(x){x[["COD_TIPO_MUE"]] <- as.factor(x[["COD_TIPO_MUE"]]); x})
+  muestreos_up <- lapply(muestreos_up, function(x){x[["TALL.PESO"]] <- as.character(x[["TALL.PESO"]]); x})
 
 
   muestreos_up <- lapply(muestreos_up, function(x){

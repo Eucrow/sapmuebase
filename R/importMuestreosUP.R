@@ -94,7 +94,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                                             NA,NA,NA,NA,NA,NA,"character",
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,)),
+                                            NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", des_tal, ": ", err)
                     stop(error_text)
@@ -108,7 +108,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                                             NA,NA,NA,NA,NA,NA,"character",
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA,)),
+                                            NA,NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", tal, ": ", err)
                     stop(error_text)

@@ -12,9 +12,10 @@ importIPDFile(filename, by_month = FALSE)
 \item{by_month}{to filter only by one month. If false nothing is filtered. False by default.}
 }
 \value{
-Return a data frame.
+Return data frame.
 }
 \description{
-This function import the data of biological samples keyed by IPD
+This function import the data of biological samples saved by IPD. Only import
+record of the samples of ICES proyect.
 }
 

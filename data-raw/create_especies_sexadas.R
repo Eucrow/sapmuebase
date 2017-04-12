@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+especies_sexadas <- read.csv("especies_sexadas.csv", colClasses = c("factor", "factor"))
+save(especies_sexadas, file = "especies_sexadas.RData")
+setwd(original_wd)
+rm(original_wd, especies_sexadas)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

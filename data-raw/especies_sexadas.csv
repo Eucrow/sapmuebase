@@ -1,12 +1,26 @@
-COD_ESP,ESP_MUE
-10097,Leucoraja circularis
-10088,Leucoraja fullonica
-10090,Raja clavata
-10092,Leucoraja naevus
-10022,Scyliorhinus canicula
-10091,Raja montagui
-10019,Galeus melastomus
-10080,Dipturus oxyrinchus
-10085,Raja miraletus
-20194,Nephrops norvegicus
-10864,Rajidae
+COD_ESP,ESP_MUE,COD_PUERTO,PUERTO,LOCODE
+10097,Leucoraja circularis,ALL,ALL,ALL
+10088,Leucoraja fullonica,ALL,ALL,ALL
+10090,Raja clavata,ALL,ALL,ALL
+10092,Leucoraja naevus,ALL,ALL,ALL
+10022,Scyliorhinus canicula,ALL,ALL,ALL
+10091,Raja montagui,ALL,ALL,ALL
+10019,Galeus melastomus,ALL,ALL,ALL
+10080,Dipturus oxyrinchus,ALL,ALL,ALL
+10085,Raja miraletus,ALL,ALL,ALL
+20194,Nephrops norvegicus,ALL,ALL,ALL
+10864,Rajidae,ALL,ALL,ALL
+20059,Penaeus kerathurus,0109,Ayamonte,ESAYA
+20059,Penaeus kerathurus,0110,Isla Cristina,ESZGA
+20059,Penaeus kerathurus,0114,Punta Umbría,ESZJY
+20059,Penaeus kerathurus,0116,Sanlúcar de Barrameda,ESSBA
+20059,Penaeus kerathurus,0118,Puerto de Santa María,ESPSM
+20013,Squilla mantis,0109,Ayamonte,ESAYA
+20013,Squilla mantis,0110,Isla Cristina,ESZGA
+20013,Squilla mantis,0114,Punta Umbría,ESZJY
+20013,Squilla mantis,0116,Sanlúcar de Barrameda,ESSBA
+20013,Squilla mantis,0118,Puerto de Santa María,ESPSM
+20066,Parapenaeus longirostris,0109,Ayamonte,ESAYA
+20066,Parapenaeus longirostris,0110,Isla Cristina,ESZGA
+20066,Parapenaeus longirostris,0114,Punta Umbría,ESZJY
+20066,Parapenaeus longirostris,0116,Sanlúcar de Barrameda,ESSBA

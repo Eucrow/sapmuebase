@@ -4,12 +4,14 @@
 \alias{importIPDFile}
 \title{Import IPD file}
 \usage{
-importIPDFile(filename, by_month = FALSE)
+importIPDFile(filename, by_month = FALSE, path = getwd())
 }
 \arguments{
 \item{filename}{name of the IPD file}
 
 \item{by_month}{to filter only by one month. If false nothing is filtered. False by default.}
+
+\item{path}{= destiny path. By default is the actual working directory.}
 }
 \value{
 Return data frame.

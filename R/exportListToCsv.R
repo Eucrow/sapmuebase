@@ -8,13 +8,14 @@
 #' @param suffix: text to add before the name of the dataframe in the file exported. None by default.
 #' @param separation: characters to separate the prefix and suffix to the name of
 #' the dataframe. By default is "_".
+#' @param path = destiny path. By default is the actual working directory.
 #' @return Save in the working directory a csv file for each dataframe in the
 #' list of dataframes.
 #' @export
 #'
 #'
 #'
-exportListToCsv <- function(list, prefix = "", suffix = "", separation = ""){
+exportListToCsv <- function(list, prefix = "", suffix = "", separation = "", path = getwd()){
 
   # sep_along(list): generate regular sequences. With a list, generates
   # the sequence 1, 2, ..., length(from). Return a integer vector.
@@ -28,7 +29,7 @@ exportListToCsv <- function(list, prefix = "", suffix = "", separation = ""){
 
       if (suffix != "") suffix <- paste0(separation, suffix)
 
-      filename <- paste0(prefix, list_name, suffix, ".csv")
+      filename <- paste0(path, "/", prefix, list_name, suffix, ".csv")
 
       write.table(list[[i]], file=filename, quote = FALSE, row.names = FALSE, dec = ",", sep = ";", na = "")
 

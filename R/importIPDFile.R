@@ -4,12 +4,13 @@
 #' record of the samples of ICES proyect.
 #' @param filename name of the IPD file
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
+#' @param path = destiny path. By default is the actual working directory.
 #' @return Return data frame.
 #' @export
 
-importIPDFile <- function(filename, by_month = FALSE){
+importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
 
-  fullpath<-paste(getwd(), filename, sep="/")
+  fullpath<-paste(path, filename, sep="/")
 
   #read the file
   records <- read.fwf(

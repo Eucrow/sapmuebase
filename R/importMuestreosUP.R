@@ -13,6 +13,24 @@ change_date_format <- function (dataframe){
   dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
 }
 
+# ---- function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE'
+add_dates_variables <- function (dataframe){
+  dataframe[["FECHA"]] <- as.POSIXlt(dataframe$FECHA, format="%d-%m-%y")
+  dataframe[["DIA"]] <- dataframe[["FECHA"]]$mday
+  dataframe[["MES"]] <- dataframe[["FECHA"]]$mon+1
+  dataframe[["AÑO"]] <- dataframe[["FECHA"]]$year+1900
+  dataframe[["TRIMESTRE"]] <- quarters(dataframe[["FECHA"]])
+  #remove 'Q' in quarter:
+  dataframe[["TRIMESTRE"]] <- substring(dataframe[["TRIMESTRE"]], 2)
+  dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
+
+
+  dataframe <- dataframe %>%
+    select(COD_ID, FECHA, DIA, MES, AÑO, TRIMESTRE, everything())
+
+  return(dataframe)
+}
+
 # ---- function to filter by month all the dataframes of muestreos_up list -----
 filter_by_month <- function (dataframe, month){
   # format the month:
@@ -58,6 +76,9 @@ check_by_month_argument <- function(by_month) {
 #' Import 'muestreos tallas por up'
 #'
 #' This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
+#'
+#' To allow a better use of this data in R, fields 'DIA', 'MES', 'AÑO' and 'TRIMESTRE'
+#' has been created.
 #'
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
@@ -125,7 +146,7 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
   Sys.setlocale("LC_TIME","Spanish_United States.1252")
 
   # change the format with lapply
-  # it's necesary the last x inside the function, to return de vale of x modified
+  # it's necesary the last x inside the function, to return the value of x modified
   muestreos_up <- lapply(muestreos_up, function(x){x[["FECHA"]] <- change_date_format(x); x})
   muestreos_up <- lapply(muestreos_up, function(x){x[["COD_ARTE"]] <- as.factor(x[["COD_ARTE"]]); x})
   muestreos_up <- lapply(muestreos_up, function(x){x[["COD_TIPO_MUE"]] <- as.factor(x[["COD_TIPO_MUE"]]); x})
@@ -134,10 +155,13 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
 
   muestreos_up <- lapply(muestreos_up, function(x){
                                           x[["COD_ORIGEN"]] <- sprintf("%03d", x[["COD_ORIGEN"]])
-
                                           x[["COD_ORIGEN"]] <- as.factor(x[["COD_ORIGEN"]]);
-
                                           x})
+
+  muestreos_up <- lapply(muestreos_up, function(x){
+    x <- add_dates_variables(x)
+    x
+  })
 
   # and now the come back to the initial configuration of locale:
   Sys.setlocale("LC_TIME", lct)

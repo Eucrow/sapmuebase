@@ -77,6 +77,9 @@ check_by_month_argument <- function(by_month) {
 #'
 #' This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
 #'
+#' To allow a better use of this data in R, fields 'DIA', 'MES', 'AÑO' and 'TRIMESTRE'
+#' has been created.
+#'
 #' @param des_tot file with the total landings
 #' @param des_tal file with the landings of the lengths samples
 #' @param tal file with the lengths samples

@@ -1,7 +1,7 @@
 library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
-especies_sexadas <- read.csv("especies_sexadas.csv", colClasses = c("factor", "factor"))
+especies_sexadas <- read.csv("especies_sexadas.csv", colClasses = c("factor"), encoding = "UTF-8")
 save(especies_sexadas, file = "especies_sexadas.RData")
 setwd(original_wd)
 rm(original_wd, especies_sexadas)

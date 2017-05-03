@@ -26,7 +26,9 @@ add_dates_variables <- function (dataframe){
 
 
   dataframe <- dataframe %>%
-    select(COD_ID, FECHA, DIA, MES, AÑO, TRIMESTRE, everything())
+    # document() doesn't work using AÑO in this way:
+    # select(COD_ID, FECHA, DIA, MES, AÑO, TRIMESTRE)), everything())
+    select(one_of(c("COD_ID", "FECHA", "DIA", "MES", "AÑO", "TRIMESTRE")), everything())
 
   return(dataframe)
 }
@@ -100,8 +102,8 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                   read.table(fullpath_des_tot, sep=";", header = TRUE, quote = "",
                              colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA,NA,NA,NA,"character",
-                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA)),
+                                            NA,NA,NA,NA,NA,NA,NA,"character",NA,NA,
+                                            NA,NA,NA,NA,NA,NA,NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", des_tot, ": ", err)
                     stop(error_text)
@@ -112,10 +114,9 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                   read.table(fullpath_des_tal, sep=";", header = TRUE, quote = "",
                              colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA,NA,NA,NA,"character",
+                                            NA,NA,NA,NA,NA,NA,NA,"character",NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA)),
+                                            NA,NA,NA,NA,NA,NA,NA,NA,NA,NA)),
                   error = function(err) {
                     error_text <- paste("error in file", des_tal, ": ", err)
                     stop(error_text)
@@ -126,10 +127,10 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
                   read.table(fullpath_tal, sep=";", header = TRUE, quote = "",
                              colClasses = c(NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA,NA,NA,NA,"character",
+                                            NA,NA,NA,NA,NA,NA,NA,"character",NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
                                             NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-                                            NA,NA,NA)),
+                                            NA)),
                   error = function(err) {
                     error_text <- paste("error in file", tal, ": ", err)
                     stop(error_text)

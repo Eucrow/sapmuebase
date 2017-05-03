@@ -54,3 +54,10 @@ Sampled source
 Ports
 #### tipo_mue
 Type of sample
+
+##Last changes:
+### v. 1.3
+- Modify importMuestreoUP:
+   * to allow the new file format from SIRENO with COD_DIVISION and DIVISION variables
+   * added "DIA", "MES", "AÑO" and "TRIMESTRE" variables in every returned dataframe
+- Fix bugs in dataset especies_sexadas

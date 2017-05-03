@@ -30,6 +30,8 @@ Add an influence area variable.
 
 ## Datasets available
 (Datasests name and its variables are in spanish)
+
+
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
 * arte: gears
@@ -45,3 +47,11 @@ Use `?nameofthedataset` to details.
 * procedencia: sampled source
 * puerto: ports
 * tipo_mue: type of sample
+
+##Last changes:
+### v. 1.3
+- Modify importMuestreoUP:
+   * to allow the new file format from SIRENO with COD_DIVISION and DIVISION variables
+   * added "DIA", "MES", "AÑO" and "TRIMESTRE" variables in every returned dataframe
+- Fix bugs in dataset especies_sexadas
+

@@ -25,4 +25,8 @@ Return a list with 3 data frames
 \description{
 This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
 }
+\details{
+To allow a better use of this data in R, fields 'DIA', 'MES', 'AÑO' and 'TRIMESTRE'
+has been created.
+}
 

@@ -30,6 +30,7 @@ Add an influence area variable.
 
 ## Datasets available
 (Datasests name and its variables are in spanish)
+<<<<<<< HEAD
 
 
 Use `?nameofthedataset` to details.
@@ -55,4 +56,7 @@ Use `?nameofthedataset` to details.
    * to allow the new file format from SIRENO with COD_DIVISION and DIVISION variables
    * added "DIA", "MES", "AÑO" and "TRIMESTRE" variables in every returned dataframe
 - Fix bugs in dataset especies_sexadas
+<<<<<<< HEAD
 
+=======
+>>>>>>> v.newfieldsdivision

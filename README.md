@@ -31,7 +31,6 @@ Add an influence area variable.
 ## Datasets available
 (Datasests name and its variables are in spanish)
 
-
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
 * arte: gears
@@ -39,8 +38,9 @@ Use `?nameofthedataset` to details.
 * cfpo2016
 * especies_mezcla: mixed species
 * especies_no_mezcla: non mixed species
-* estrato_rim: RIM stratum
-* estratorim_arte: relation between Rim stratum and arte
+* estrato_rim: _estrato rim_
+* estratorim_arte: relation between _estrato rim_ and gear
+* estratorim_origen: relation between _estrato rim_ and origin
 * maestros_categorias: species categories
 * maestro_flota_sireno
 * origen: sampled origin
@@ -48,7 +48,9 @@ Use `?nameofthedataset` to details.
 * puerto: ports
 * tipo_mue: type of sample
 
-##Last changes:
+## Last changes:
+### v. 1.3.5
+- Add estratorim_origen dataset
 ### v. 1.3
 - Modify importMuestreoUP:
    * to allow the new file format from SIRENO with COD_DIVISION and DIVISION variables

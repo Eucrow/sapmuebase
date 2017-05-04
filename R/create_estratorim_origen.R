@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+estratorim_origen <- read.csv("estratorim_origen.csv", colClasses = c("factor"), encoding = "UTF-8")
+save(estratorim_origen, file = "estratorim_origen.RData")
+setwd(original_wd)
+rm(original_wd, estratorim_origen)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

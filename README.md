@@ -49,6 +49,8 @@ Use `?nameofthedataset` to details.
 * tipo_mue: type of sample
 
 ## Last changes:
+### v. 1.3.6
+- Fix estratorim_origen dataset
 ### v. 1.3.5
 - Add estratorim_origen dataset
 ### v. 1.3

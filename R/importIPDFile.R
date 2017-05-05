@@ -21,7 +21,7 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
              7,  4, 20,  5,
              20, 10,  4, 20,
              5,  1, 20, 20,
-             10, 10, 10),
+             10, 10, 10, 10),
     strip.white = TRUE,
     dec = ",",
 
@@ -31,7 +31,7 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                            NA,       NA, "factor", "factor",
                            NA,       NA, "factor", "factor",
                            "factor",       NA, "factor", "factor",
-                           NA,       NA, "factor")
+                           NA,       NA, "factor", NA)
   )
 
   colnames(records) <- c("FECHA",       "COD_PUERTO",   "COD_BARCO",          "COD_ARTE",
@@ -40,13 +40,14 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                          "LONGITUD",    "DIAS_MAR",     "P_DESEM",            "COD_ESP_MUE",
                          "TIPO_MUE",    "PROCEDENCIA",  "COD_CATEGORIA",      "P_MUE_DESEM",
                          "COD_ESP_CAT", "SEXO",         "PESO_MUESTRA",       "MEDIDA",
-                         "TALLA",       "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA")
+                         "TALLA",       "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA", "FECHA_DESEM")
 
   # select only samples from ICES
   records <- records[records$COD_PROYECTO==1101001,]
 
-  # format fecha_muestreo
+  # format FECHA and FECHA_DESEMBARCO
   records$FECHA <- as.POSIXlt(records$FECHA, format="%d/%m/%Y")
+  records$FECHA_DESEM <- as.POSIXlt(records$FECHA_DESEM, format="%d/%m/%Y")
 
 
   # format columns as numeric:
@@ -71,6 +72,7 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
 
   #function to convert to factor in a row the columns
   # obj: list of characteres
+  #TODO: change to factor in the import of the file
   convert_factor <- function (obj){
     out <- lapply(obj, as.factor)
     as.data.frame(out)

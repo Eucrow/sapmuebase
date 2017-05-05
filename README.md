@@ -49,13 +49,15 @@ Use `?nameofthedataset` to details.
 * tipo_mue: type of sample
 
 ## Last changes:
+### v. 1.3.7
+- Update importIPDFile() function according the new file format.
 ### v. 1.3.6
-- Fix estratorim_origen dataset
+- Fix estratorim_origen dataset.
 ### v. 1.3.5
-- Add estratorim_origen dataset
+- Add estratorim_origen dataset.
 ### v. 1.3
 - Modify importMuestreoUP:
    * to allow the new file format from SIRENO with COD_DIVISION and DIVISION variables
    * added "DIA", "MES", "AÑO" and "TRIMESTRE" variables in every returned dataframe
-- Fix bugs in dataset especies_sexadas
+- Fix bugs in dataset especies_sexadas.
 

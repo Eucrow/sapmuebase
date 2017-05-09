@@ -65,31 +65,20 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
   records <- format_numeric(records, "P_MUE_DESEM")
   records <- format_numeric(records, "PESO_MUESTRA")
 
-  # convert code columns as factors:
-  columns_factor <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE",
-                      "COD_ORIGEN", "COD_PROYECTO", "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA",
-                      "COD_ESP_CAT", "COD_PUERTO_DESCARGA")
+  # select by month:
+  if (by_month >= 1 || by_month <= 12){
+    records <- subset(records, FECHA$mon == by_month-1)
+  } else if (by_month == FALSE){
 
-  #function to convert to factor in a row the columns
-  # obj: list of characteres
-  #TODO: change to factor in the import of the file
-  convert_factor <- function (obj){
-    out <- lapply(obj, as.factor)
-    as.data.frame(out)
+  } else {
+    stop("error in month selected")
   }
 
-  # and convert it:
-  records [, columns_factor] <- convert_factor(records [, columns_factor])
+  # convert data format:
+  records[["FECHA"]] <- as.POSIXct(records[["FECHA"]])
+  records[["FECHA_DESEM"]] <- as.POSIXct(records[["FECHA_DESEM"]])
 
-  # remove unused levels
-  records <- droplevels(records)
 
   # return data
-  if (by_month == FALSE){
-    return(records)
-  } else if (by_month >= 1 || by_month <= 12){
-    return(subset(records, FECHA$mon == by_month-1))
-  } else {
-    return ("error in month selected")
-  }
+  return(records)
 }

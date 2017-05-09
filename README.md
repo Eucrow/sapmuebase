@@ -51,6 +51,7 @@ Use `?nameofthedataset` to details.
 ## Last changes:
 ### v. 1.3.8
 - Change date fields as POSIXct in importIPDFile.
+- Add new type sample in tipo_mue dataset.
 ### v. 1.3.7
 - Update importIPDFile() function according the new file format.
 ### v. 1.3.6

@@ -49,6 +49,8 @@ Use `?nameofthedataset` to details.
 * tipo_mue: type of sample
 
 ## Last changes:
+### next:
+- Fix bug in importIPDFile() function in FECHA_DESEM format
 ### v. 1.3.8
 - Change date fields as POSIXct in importIPDFile.
 - Add new type sample in tipo_mue dataset.

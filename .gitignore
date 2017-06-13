@@ -5,5 +5,5 @@
 *.xls
 novale/
 comprobacion importacion 2009/
-pruebas_humanize/*.txt
+pruebas_humanize/
 *.rds

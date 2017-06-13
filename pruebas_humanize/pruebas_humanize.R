@@ -1,81 +1,49 @@
 
-#setwd(paste0(getwd(), "/pruebas_humanize"))
+# setwd(paste0(getwd(), "/pruebas_humanize"))
 
 
+importMuestreosUPRECORTADA <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
+  # full paths for every file
+  fullpath_des_tot <- paste(path, des_tot, sep="/")
+  fullpath_des_tal <- paste(path, des_tal, sep="/")
+  fullpath_tal <- paste(path, tal, sep="/")
 
-# ---- function to check variable format----------------------------------------
-#
-#' Function to check if a variable in a dataframe have correct format
-#' Only available for "COD_PUERTO", "COD_BARCO", "COD_ARTE", "COD_ORIGEN",
-#' "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT".
-#'
-#' The variable format is defined by regular expressions in dataset variables_format.
-#'
-#' @param df: dataframe with the format variable to check
-#' @param var_to_check: variable to check
-#' @return TRUE if the format is correct. Return list of errors if there are any mistake.
-#' @export
-#'
-checkFormatVariable <- function(df, var_to_check){
+  # import files to data.frame
+  catches <- tryCatch(
+    read.table(fullpath_des_tot, sep=";", header = TRUE, quote = ""),
+    error = function(err) {
+      error_text <- paste("error in file", des_tot, ": ", err)
+      stop(error_text)
+    }
+  )
 
-  # check if var_to_check is a variable able to check format
-  available_variables <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE", "COD_ORIGEN",
-                           "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT")
+  catches_in_lengths <- tryCatch(
+    read.table(fullpath_des_tal, sep=";", header = TRUE, quote = ""),
+    error = function(err) {
+      error_text <- paste("error in file", des_tal, ": ", err)
+      stop(error_text)
+    }
+  )
 
-  if(!var_to_check %in% available_variables){
-    stop( paste0(var_to_check, " is not an available variable to check."))
-  }
+  lengths <- tryCatch(
+    read.table(fullpath_tal, sep=";", header = TRUE, quote = ""),
+    error = function(err) {
+      error_text <- paste("error in file", tal, ": ", err)
+      stop(error_text)
+    }
+  )
 
-  #import variables format file
-  variables_format <- read.table(file = "variables_format.txt", row.names = NULL, header = TRUE, sep = ";", fill = TRUE, as.is = T)
 
-  # check format
-  format_regex <- variables_format[variables_format[["name_variable"]] == var_to_check, "regex_variable"]
+  # group in list
+  muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
 
-  errors <- list()
-
-  if (all(grepl(format_regex, df[[var_to_check]]))) {
-    return(TRUE)
-  } else {
-    # stop ( paste0( var_to_check, " doesn't have the correct format") )
-    errors[[var_to_check]] <- grep(format_regex, df[[var_to_check]], invert = TRUE)
-    return(errors)
-  }
+  return(muestreos_up)
 }
 
-# ---- function to check all the variables format--------------------------------
-#
-#' Function to check all the variables format
-#' Search in dataframe the variables contained in variables_format.txt and check
-#' its format
-#'
-checkAllFormatVariables <- function (df){
 
-  to_check <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE", "COD_ORIGEN", "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT")
 
-  errors <- lapply(
-      to_check,
-      function(x){
-        checkFormatVariable(df, x)
-      })
 
-  #remove true elements of the errors (because doesn't contain errors):
-  errors <- errors[!errors %in% TRUE]
 
-  return(errors)
-
-}
-
-l_port <- clean_lengths()
-
-l_port$COD_BARCO <- "dñfajdñ"
-l_port[1, "COD_BARCO"] <- "dfadfas"
-l_port[14, "COD_ESP_CAT"] <- "33333333"
-l_port[18, "COD_ESP_CAT"] <- "33333333"
-l_port$COD_ESP_CAT <-"DFADF"
-ppp <- checkAllFormatVariables(l_port)
-
-checkFormatVariable(l_port, "COD_BARCO")
 
 
 humanizePort <- function(df){
@@ -86,7 +54,6 @@ humanizePort <- function(df){
     stop("Must be a variable called COD_PUERTO")
   }
 }
-
 
 
 humanize <- function(df){
@@ -131,28 +98,51 @@ humanize <- function(df){
 
 }
 
+
+clean_lengths <- function(){
+  x <- lengths[1:500, c("FECHA", "COD_BARCO", "COD_PUERTO", "ESTRATEGIA", "METIER_DCF", "COD_ARTE", "COD_ORIGEN",
+                        "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT")]
+  return(x)
+}
+
+library(sapmuebase)
+
 destal <- "IEOUPMUEDESTALSIRENO_2016_NEW5.TXT"
 
 destot <- "IEOUPMUEDESTOTSIRENO_2016_NEW5.TXT"
 
 tal <- "IEOUPMUETALSIRENO_2016_NEW5.TXT"
-
-library(sapmuebase)
-
-
-
-muestreos_up <- importMuestreosUP(destot, destal, tal)
-
+muestreos_up <- importMuestreosUPRECORTADA(destot, destal, tal)
 catches <- muestreos_up$catches
+#
+# muestreos_up <- importMuestreosUP(destot, destal, tal)
+# catches <- muestreos_up$catches
+# lengths <- muestreos_up$lengths
+
+#muestreos_up <- readRDS("muestreosUP_2016_2014_20170509.rds")
 lengths <- muestreos_up$lengths
 
-clean_lengths <- function(){
-  x <- lengths[1:500, c("FECHA", "COD_BARCO", "COD_PUERTO", "ESTRATEGIA", "METIER_DCF", "COD_ARTE", "COD_ORIGEN",
-                   "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT")]
-  return(x)
-}
+#l_port <- clean_lengths()
+l_port <- lengths
 
-l_port <- clean_lengths()
+l_port[20:30,"COD_BARCO"] <- "dñfajdñ"
+l_port[1, "COD_BARCO"] <- "dfadfas"
+l_port[14, "COD_ESP_CAT"] <- "33333333"
+l_port[18, "COD_ESP_CAT"] <- "33333333"
 
-l_port <- humanize(l_port)
+l_port[30:40, "PROCEDENCIA"] <- "IIM"
+
+l_port_part <- l_port[1:500,]
+
+ppp <- checkAllFormatVariables(l_port_part)
+ppp
+
+exportListToCsv(ppp)
+
+l_port[48492,"COD_ID"]
+
+checkFormatVariable(l_port, "COD_BARCO")
+
+exportCsvSAPMUEBASE(lengths, "prueba_lengths.csv")
+
 

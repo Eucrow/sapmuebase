@@ -1,6 +1,7 @@
 
+# old_wd <- getwd()
 # setwd(paste0(getwd(), "/pruebas_humanize"))
-
+setwd(old_wd)
 
 importMuestreosUPRECORTADA <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
   # full paths for every file
@@ -33,17 +34,11 @@ importMuestreosUPRECORTADA <- function(des_tot, des_tal, tal, by_month = FALSE, 
     }
   )
 
-
   # group in list
   muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
 
   return(muestreos_up)
 }
-
-
-
-
-
 
 
 humanizePort <- function(df){
@@ -55,11 +50,22 @@ humanizePort <- function(df){
   }
 }
 
+humanizeVariable <- function(df, variable){
+
+}
+
 
 humanize <- function(df){
 
   # list of the variables to humanize
-  to_humanize <- c("COD_PUERTO", "COD_BARCO", "COD_ARTE", "COD_ORIGEN", "COD_TIPO_MUE", "COD_ESP_MUE", "COD_CATEGORIA", "COD_ESP_CAT")
+  to_humanize <- c("COD_PUERTO",
+                   "COD_BARCO",
+                   "COD_ARTE",
+                   "COD_ORIGEN",
+                   "COD_TIPO_MUE",
+                   "COD_ESP_MUE",
+                   "COD_CATEGORIA",
+                   "COD_ESP_CAT")
 
   # check if package dplyr is instaled:
   if (!requireNamespace("dplyr", quietly = TRUE)) {
@@ -142,6 +148,7 @@ exportListToCsv(ppp)
 l_port[48492,"COD_ID"]
 
 checkFormatVariable(l_port, "COD_BARCO")
+prueba <-  checkFormatVariable(lengths, "EJEM_MEDIDOS")
 
 exportCsvSAPMUEBASE(lengths, "prueba_lengths.csv")
 

@@ -13,10 +13,11 @@
 checkFormatVariable <- function(df, var_to_check){
 
   #import variables format file
-  variables_format <- read.table(file = "formato_variables.csv", row.names = NULL, header = TRUE, sep = ";", fill = TRUE, as.is = T)
+  # variables_format <- read.table(file = "formato_variables.csv", row.names = NULL, header = TRUE, sep = ";", fill = TRUE, as.is = T)
 
   # check format
-  format_regex <- variables_format[variables_format[["name_variable"]] == var_to_check, "regex_variable_import"]
+  # format_regex <- variables_format[variables_format[["name_variable"]] == var_to_check, "regex_variable_import"]
+  format_regex <- formato_variables[formato_variables[["name_variable"]] == var_to_check, "regex_variable_import"]
 
   errors <- list()
 

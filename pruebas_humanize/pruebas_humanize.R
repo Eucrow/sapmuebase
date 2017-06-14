@@ -1,7 +1,7 @@
 
 # old_wd <- getwd()
 # setwd(paste0(getwd(), "/pruebas_humanize"))
-setwd(old_wd)
+# setwd(old_wd)
 
 importMuestreosUPRECORTADA <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
   # full paths for every file
@@ -50,10 +50,51 @@ humanizePort <- function(df){
   }
 }
 
-humanizeVariable <- function(df, variable){
+# humanizeVariable <- function(df, variable){
+# }
+  df <- catches
+  variable <- "COD_ESP_MUE"
 
-}
+  #check if variable exists in the dataframe
+  if(variable %in% colnames(df)){
 
+
+    # variable_in_master <- variables_to_humanize %>%
+    #   filter(ORIGINAL_VAR == variable) %>%
+    #   select(MASTER_VAR)
+
+    variable_data <- variables_to_humanize[variables_to_humanize[["ORIGINAL_VAR"]] %in% variable,]
+
+    # check that there are just one record for the variable to humanize in variables_to_humanize dataset
+    if (nrow(variable_data) != 1) {
+      stop (paste("There is an error with the", variable, "variable in", df, "dataframe.
+                  Check if the variable exists in variables_to_humanize dataset or if
+                  there are various records for", variable, "."))
+    }
+
+    #
+    # original_var = variable argument in the function, but is extracted here
+    # from variable_data for a better understanding
+    original_var <- as.character(variable_data[["ORIGINAL_VAR"]])
+    master_var <- as.character(variable_data[["MASTER_VAR"]])
+    humanized_var <- as.character(variable_data[["HUMANIZED_VAR"]])
+    master <- as.character(variable_data[["MASTER"]])
+
+    df <- merge(df, master[, c(master_var, humanized_var)], by.x = original_var, by.y = master_var, all.x = TRUE )
+
+    return (df)
+    # df <- merge(df, puerto[, c("COD_PUERTO", "PUERTO")], by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
+    # return(df)
+
+
+  } else {
+    stop("Does not exist this variable in dataframe")
+  }
+
+
+
+prueba <- humanizeVariable(catches, "COD_ESP_MUE")
+as.character(prueba)
 
 humanize <- function(df){
 

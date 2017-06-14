@@ -12,7 +12,7 @@ save(variables_to_humanize, file = "variables_to_humanize.RData")
 
 setwd(original_wd)
 
-rm(original_wd, species)
+rm(original_wd, variables_to_humanize)
 
 devtools::use_data_raw()
 # IMPORTANT: COPY FILE TO /data

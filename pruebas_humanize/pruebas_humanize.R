@@ -50,10 +50,10 @@ humanizePort <- function(df){
   }
 }
 
-# humanizeVariable <- function(df, variable){
-# }
-  df <- catches
-  variable <- "COD_ESP_MUE"
+humanizeVariable <- function(df, variable){
+
+  # df <- catches
+  # variable <- "COD_ESP_MUE"
 
   #check if variable exists in the dataframe
   if(variable %in% colnames(df)){
@@ -77,10 +77,15 @@ humanizePort <- function(df){
     # from variable_data for a better understanding
     original_var <- as.character(variable_data[["ORIGINAL_VAR"]])
     master_var <- as.character(variable_data[["MASTER_VAR"]])
+    humanized_master_var <- as.character(variable_data[["HUMANIZED_MASTER_VAR"]])
     humanized_var <- as.character(variable_data[["HUMANIZED_VAR"]])
     master <- as.character(variable_data[["MASTER"]])
 
-    df <- merge(df, master[, c(master_var, humanized_var)], by.x = original_var, by.y = master_var, all.x = TRUE )
+    df <- merge(df, get(master)[, c(master_var, humanized_master_var)], by.x = original_var, by.y = master_var, all.x = TRUE )
+
+    # change the name of the new column, because in some cases, the final column
+    # name is different of the humanized variable in master
+    colnames(df)[which(names(df)==humanized_master_var)] <- "PPP"
 
     return (df)
     # df <- merge(df, puerto[, c("COD_PUERTO", "PUERTO")], by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
@@ -90,11 +95,23 @@ humanizePort <- function(df){
   } else {
     stop("Does not exist this variable in dataframe")
   }
+}
 
 
+probando_humanize <- lengths %>%
+  select(COD_PUERTO,  COD_BARCO,  CODSGPM,		COD_ARTE,    COD_ORIGEN,  COD_TIPO_MUE,COD_ESP_MUE, COD_ESP_CAT)
 
-prueba <- humanizeVariable(catches, "COD_ESP_MUE")
-as.character(prueba)
+prueba <- humanizeVariable(probando_humanize, "COD_PUERTO")
+prueba2 <- humanizeVariable(probando_humanize, "COD_BARCO")
+prueba3 <- humanizeVariable(probando_humanize, "CODSGPM")
+prueba4 <- humanizeVariable(probando_humanize, "COD_ARTE")
+prueba5 <- humanizeVariable(probando_humanize, "COD_ORIGEN")
+prueba6 <- humanizeVariable(probando_humanize, "COD_TIPO_MUE")
+prueba7 <- humanizeVariable(probando_humanize, "COD_ESP_MUE")
+prueba8 <- humanizeVariable(probando_humanize, "COD_ESP_CAT")
+
+# TO DO: some variables, when are humanized, use the same name in the humanized_var.
+# Maybe add a suffix in the variable humanized name? or replace it?
 
 humanize <- function(df){
 

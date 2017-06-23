@@ -25,4 +25,3 @@ Return a list with 3 data frames
 \description{
 This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
 }
-

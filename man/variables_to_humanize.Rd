@@ -23,4 +23,3 @@ A dataset with the variables suitable to humanize.
 Contains to the data necessary to allow the humanize process.
 }
 \keyword{datasets}
-

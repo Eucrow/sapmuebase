@@ -21,4 +21,3 @@ separate.
 This function separate any dataframe by influence area according to a sireno
 port variable available in the dataframe.
 }
-

@@ -3,6 +3,7 @@
 \docType{data}
 \name{puerto}
 \alias{puerto}
+\alias{puerto}
 \title{Variables format}
 \format{A data frame with 51 rows and 9 columns:
 \describe{
@@ -28,4 +29,3 @@ A dataset containing the format of the variables in the tallas_x_up files
 A dataset containing ports used.
 }
 \keyword{datasets}
-

@@ -2,7 +2,8 @@
 % Please edit documentation in R/checkFormatVariable.R
 \name{checkFormatVariable}
 \alias{checkFormatVariable}
-\title{Function to check if a variable in a dataframe have correct format}
+\title{Function to check the correct format of any of the variables of a dataframe
+obtained by importMuestreosUP() function.}
 \usage{
 checkFormatVariable(df, var_to_check)
 }
@@ -16,6 +17,5 @@ TRUE if the format is correct. Return a named list of vectors if there are any m
 The name of the vector is the variable with errors. Every vector contains list of index with errors.
 }
 \description{
-The variable format is defined by regular expressions in dataset variables_format.
+The format of the variables is in dataset variables_format.
 }
-

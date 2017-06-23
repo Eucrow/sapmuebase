@@ -17,4 +17,3 @@ Return a data frame.
 \description{
 This function import the data of biological samples keyed by IPD
 }
-

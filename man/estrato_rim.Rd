@@ -17,4 +17,3 @@ estrato_rim
 A dataset containing the list of ESTRATO_RIM available
 }
 \keyword{datasets}
-

@@ -1,28 +1,17 @@
 # ---- function to humanize dataframe ----------------------------------------
 #
-#' function to create new variables with description values from coded variables.
+#' function to create new description columns from encoded variables of any dataframe
+#' which have any of the encoded variables that is in dataset variables_format.
 #'
-#' Check if any of this variables exists in the dataframe:
-#' - COD_PUERTO
-#' - COD_BARCO
-#' - COD_ARTE --> not available yet
-#' - COD_ORIGEN --> not available yet
-#' - COD_TIPO_MUE --> not available yet
-#' - COD_ESP_MUE
-#' - COD_CATEGORIA --> not available yet
-#' - COD_ESP_CAT --> not available yet
-#'
-#' If it exists, create a new variable with its corresponding description values
-#
 #' @param df: dataframe to humanize
-#' @return Return the original dataframe with description variables.
+#' @return Return the original dataframe with the description columns added.
 #' @import dplyr
 #' @export
 #'
 
 humanize <- function(df){
 
-  #check if package dplyr is instaled:
+  # check if package dplyr is instaled:
   if (!requireNamespace("dplyr", quietly = TRUE)) {
     stop("dplyr package needed for this function to work. Please install it.",
          call = FALSE)
@@ -30,29 +19,23 @@ humanize <- function(df){
     library(dplyr)
   }
 
-  # save the colnames to maintain the order
-  column_names <- colnames(df)
+  column_names_df <- colnames(df)
 
-  if("COD_PUERTO" %in% colnames(df)){
-    df <- merge(df, puerto[, c("COD_PUERTO", "PUERTO")], by.x = "COD_PUERTO", by.y = "COD_PUERTO", all.x = TRUE )
+  to_humanize <-variables_to_humanize[ variables_to_humanize[["ORIGINAL_VAR"]] %in% column_names_df, "ORIGINAL_VAR"]
+
+  # apply humanizeVariable to the df
+  # and return format errors if necessary
+  for(i in to_humanize) {
+    tryCatch({
+      df <- humanizeVariable(df, i)
+    }, error = function(err){
+      paste(err, i, "variable hasn't been humnized.")
+      print(err)
+    })
   }
 
-  if("COD_BARCO" %in% colnames(df)){
-    df <- merge(df, maestro_flota_sireno[,c("BARCOD", "BARDES")], by.x = "COD_BARCO", by.y = "BARCOD", all.x = TRUE )
-  }
-
-  especies <- maestro_categorias %>%
-    select_("ESPCOD", "ESPDESTAX") %>%
-    unique()
-
-  if("COD_ESP_MUE" %in% colnames(df)){
-    df <- merge(df, especies, by.x = "COD_ESP_MUE", by.y = "ESPCOD", all.x = TRUE )
-  }
-
-  # put new columns at the end of the dataframe
-  df <- df %>%
-    select(one_of(column_names), everything())
-
+  # return humanized dataframe
   return(df)
 
 }
+

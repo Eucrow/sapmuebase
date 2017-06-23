@@ -1,8 +1,9 @@
 # ---- function to check variable format----------------------------------------
 #
-#' Function to check if a variable in a dataframe have correct format
+#' Function to check the correct format of any of the variables of a dataframe
+#' obtained by importMuestreosUP() function.
 #'
-#' The variable format is defined by regular expressions in dataset variables_format.
+#' The format of the variables is in dataset variables_format.
 #'
 #' @param df: dataframe with the format variable to check
 #' @param var_to_check: variable to check
@@ -29,6 +30,10 @@ checkFormatVariable <- function(df, var_to_check){
 
     errors[[var_to_check]] <- grep(format_regex, df[[var_to_check]], invert = TRUE)
 
-    return(errors)
+    errors <- paste(errors[[var_to_check]], collapse = ",")
+
+    errors <- paste("Error in the", var_to_check, "format. Check this rows:", errors)
+
+    stop(errors)
   }
 }

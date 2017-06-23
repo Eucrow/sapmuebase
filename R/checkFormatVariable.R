@@ -1,6 +1,6 @@
 # ---- function to check variable format----------------------------------------
 #
-#' Function to check the correct format of any of the variables of a dataframe
+#' Function to check the correct format of a variable of a dataframe
 #' obtained by importMuestreosUP() function.
 #'
 #' The format of the variables is in dataset variables_format.

@@ -20,4 +20,3 @@ A dataset containing the mixed species to be saved in 'Category Species' and
 it's corresponding specie in 'Sampled Species'.
 }
 \keyword{datasets}
-

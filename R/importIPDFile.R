@@ -77,6 +77,8 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
   # convert data format:
   records[["FECHA"]] <- as.POSIXct(records[["FECHA"]])
   records[["FECHA_DESEM"]] <- as.POSIXct(records[["FECHA_DESEM"]])
+  records[["FECHA"]] <- format(records[["FECHA"]], "%d/%m/%Y")
+  records[["FECHA_DESEM"]] <- format(records[["FECHA_DESEM"]], "%d/%m/%Y")
 
 
   # return data

@@ -15,4 +15,3 @@ Return the original dataframe with AREA_INF variable.
 \description{
 Check if COD_PUERTO variable exists and create the AREA_INF variable.
 }
-

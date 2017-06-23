@@ -24,4 +24,3 @@ list of dataframes.
 This function create a xlsx file for each dataframe in a list of dataframes. The
 name of every created file contains the name of its corresponding dataframe.
 }
-

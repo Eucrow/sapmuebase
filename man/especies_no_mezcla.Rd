@@ -17,4 +17,3 @@ especies_no_mezcla
 A dataset containing the non mixed species.
 }
 \keyword{datasets}
-

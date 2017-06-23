@@ -29,4 +29,3 @@ This function import the three files obtained from 'muestreos tallas por up' rep
 To allow a better use of this data in R, fields 'DIA', 'MES', 'AÑO' and 'TRIMESTRE'
 has been created.
 }
-

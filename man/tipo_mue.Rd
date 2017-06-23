@@ -17,4 +17,3 @@ tipo_mue
 A dataset containing type of samples used.
 }
 \keyword{datasets}
-

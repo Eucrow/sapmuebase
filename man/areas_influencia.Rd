@@ -19,4 +19,3 @@ areas_influencia
 A dataset containing the list of influece areas.
 }
 \keyword{datasets}
-

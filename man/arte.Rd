@@ -17,4 +17,3 @@ arte
 A dataset containing the gears used.
 }
 \keyword{datasets}
-

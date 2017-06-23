@@ -26,4 +26,3 @@ where a username, password and permissions are asked.
 This function create a google sheet file for each dataframe in a list of dataframes and upload it. The
 name of every created file contains the name of its corresponding dataframe.
 }
-

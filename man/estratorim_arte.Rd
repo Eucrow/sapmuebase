@@ -18,4 +18,3 @@ estratorim_arte
 A dataset containing the gear of every ESTRATO_RIM used in SAPMUE
 }
 \keyword{datasets}
-

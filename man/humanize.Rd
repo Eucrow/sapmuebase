@@ -2,7 +2,8 @@
 % Please edit documentation in R/humanize.R
 \name{humanize}
 \alias{humanize}
-\title{function to create new variables with description values from coded variables.}
+\title{function to create new description columns from encoded variables of any dataframe
+which have any of the encoded variables that is in dataset variables_format.}
 \usage{
 humanize(df)
 }
@@ -10,20 +11,9 @@ humanize(df)
 \item{df:}{dataframe to humanize}
 }
 \value{
-Return the original dataframe with description variables.
+Return the original dataframe with the description columns added.
 }
 \description{
-Check if any of this variables exists in the dataframe:
-- COD_PUERTO
-- COD_BARCO
-- COD_ARTE --> not available yet
-- COD_ORIGEN --> not available yet
-- COD_TIPO_MUE --> not available yet
-- COD_ESP_MUE
-- COD_CATEGORIA --> not available yet
-- COD_ESP_CAT --> not available yet
+function to create new description columns from encoded variables of any dataframe
+which have any of the encoded variables that is in dataset variables_format.
 }
-\details{
-If it exists, create a new variable with its corresponding description values
-}
-

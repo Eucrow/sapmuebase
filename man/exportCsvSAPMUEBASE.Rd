@@ -22,4 +22,3 @@ The csv files usually used in SAPMUE have a special format:
 \details{
 This function allow the export with that format.
 }
-

@@ -19,4 +19,3 @@ especies_sexadas
 A dataset containing the species which are sexed in the sampling.
 }
 \keyword{datasets}
-

@@ -17,4 +17,3 @@ estratorim_origen
 A dataset containing the origins allowed of every ESTRATO_RIM used in SAPMUE
 }
 \keyword{datasets}
-

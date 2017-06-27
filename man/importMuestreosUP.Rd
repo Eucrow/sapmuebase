@@ -18,6 +18,8 @@ importMuestreosUP(des_tot, des_tal, tal, by_month = FALSE, export = FALSE,
 one month or FALSE for all the year. FALSE by default.}
 
 \item{export}{to export muestreos_up dataframe in csv file. False by default.}
+
+\item{path}{path of the files. The working directory by default.}
 }
 \value{
 Return a list with 3 data frames

@@ -87,6 +87,7 @@ check_by_month_argument <- function(by_month) {
 #' @param tal file with the lengths samples
 #' @param by_month to filter only by one month. Numeric between 1 to 12 to select
 #' one month or FALSE for all the year. FALSE by default.
+#' @param path path of the files. The working directory by default.
 #' @param export to export muestreos_up dataframe in csv file. False by default.
 #' @return Return a list with 3 data frames
 #' @export

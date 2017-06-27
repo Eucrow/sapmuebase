@@ -2,7 +2,7 @@
 % Please edit documentation in R/checkFormatVariable.R
 \name{checkFormatVariable}
 \alias{checkFormatVariable}
-\title{Function to check the correct format of any of the variables of a dataframe
+\title{Function to check the correct format of a variable of a dataframe
 obtained by importMuestreosUP() function.}
 \usage{
 checkFormatVariable(df, var_to_check)

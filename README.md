@@ -67,6 +67,7 @@ Use `?nameofthedataset` to details.
 
 ## Last changes:
 ### 1.5:
+- Change variable "AÑO" to "YEAR" in dataframes returned by 'tallas por up' import functions.
 - Improve importMuestreosUP() function:
   * Can import various 'tallas por up' files at the same time.
   * The variables now are well formatted in the import 'tallas por up' functions.

@@ -2,6 +2,9 @@
 
 sapmuebase is a package with simple functions useful in the SAP MUE team.
 
+**Note**: Various functions of sapmuebase package require the 'tallas por UP' 
+reports obtained in IEO's SIRENO database.
+
 ## Install
 With `devtools` package installed:
 ```
@@ -17,6 +20,12 @@ Import csv files with special format usually used in SAPMUE team.
 Export csv files with special format usually used in SAPMUE team.
 #### importMuestreosUP()
 Import the 'muestreos tallas por up' files from SIRENO to R.
+#### importCatches()
+Import the 'Catches' file from 'tallas por up' report to R.
+#### importCatchesInLengths()
+Import the 'Catches in Lengths' file from 'tallas por up' report to R.
+#### importLengths()
+Import the 'Lengths' file from 'tallas por up' report to R.
 #### importIPDFile()
 Import the file with data to dump in SIRENO to R.
 #### exportListToCsv()

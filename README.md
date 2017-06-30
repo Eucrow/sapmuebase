@@ -66,6 +66,11 @@ Use `?nameofthedataset` to details.
 * variables_to_humanize: used in humanize() and humanizeVariable() functions
 
 ## Last changes:
+### 1.5:
+- Improve importMuestreosUP() function:
+  * Can import various 'tallas por up' files at the same time.
+  * The variables now are well formatted in the import 'tallas por up' functions.
+- Create importCatches(), importCatchesInLengths() and importLengths() functions.
 ### 1.4:
 - Create formato_variables dataset.
 - Create checkAllFormatVariables() function.

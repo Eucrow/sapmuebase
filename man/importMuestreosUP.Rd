@@ -8,11 +8,11 @@ importMuestreosUP(des_tot, des_tal, tal, by_month = FALSE, export = FALSE,
   path = getwd())
 }
 \arguments{
-\item{des_tot}{file with the total landings}
+\item{des_tot}{vector with the total landings filenames}
 
-\item{des_tal}{file with the landings of the lengths samples}
+\item{des_tal}{vector with the landings of the lengths samples filenames}
 
-\item{tal}{file with the lengths samples}
+\item{tal}{vector with the lengths samples filenames}
 
 \item{by_month}{to filter only by one month. Numeric between 1 to 12 to select
 one month or FALSE for all the year. FALSE by default.}
@@ -25,9 +25,13 @@ one month or FALSE for all the year. FALSE by default.}
 Return a list with 3 data frames
 }
 \description{
-This function import the three files obtained from 'muestreos tallas por up' reports in SIRENO.
+This function import the three files obtained from 'muestreos tallas por up'
+reports in SIRENO. The files are:
+- des_tot: information with total landings
+- des_tal: landings of the length samples
+- tal: lengths
 }
 \details{
-To allow a better use of this data in R, fields 'DIA', 'MES', 'AÑO' and 'TRIMESTRE'
+To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
 has been created.
 }

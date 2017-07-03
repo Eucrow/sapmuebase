@@ -13,6 +13,8 @@ data <- c("IEOUPMUETALMARCO_2009.TXT",
 
 rango_tallas_historico <- sizeRangeUP(data, path = "data_source_private")
 
+colnames(rango_tallas_historico) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX")
+
 save(rango_tallas_historico, file = "rango_tallas_historico.RData")
 setwd(original_wd)
 rm(original_wd, rango_tallas_historico)

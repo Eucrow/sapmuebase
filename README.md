@@ -64,8 +64,12 @@ Use `?nameofthedataset` to details.
 * tipo_mue: type of sample
 * formato_variables: used in checkAllFormatVariables() and checkFormatVariable() functions
 * variables_to_humanize: used in humanize() and humanizeVariable() functions
+* rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.6:
+- Create sizeRangeUP() function.
+- Crete rango_tallas_historico dataset.
 ### 1.5:
 - Change variable "AÑO" to "YEAR" in dataframes returned by 'tallas por up' import functions.
 - Improve importMuestreosUP() function:

@@ -29,9 +29,13 @@ humanizeVariable <- function(df, variable){
 
     # check the correct format of the variable
     result <- tryCatch({
+
       checkFormatVariable(df, variable)
+
     }, error = function(err){
+
       stop(err)
+
     }
     )
 
@@ -49,30 +53,38 @@ humanizeVariable <- function(df, variable){
     # vector of with original column names (usefull to reorder columns after merge)
     column_names_df <- colnames(df)
 
-    df <- merge(df, dataframe_to_join_with, by.x = original_var, by.y = master_var, all.x = TRUE )
-    # this does not work:
-    # df <- left_join(df, dataframe_to_join_with, by = c(original_var, master_var))
-    # so we have to change the column order:
-    # put new column at the end of the dataframe
-    df <- df %>%
-      select(one_of(column_names_df), everything())
-    # and reorder (remember, the new humanized column is the last one, and the
-    # variable to humanize is the first one):
+    if (humanized_var %in% column_names_df){
 
-    # index of the variable to humanize (usefull to reorder columns after merge)
-    index_variable_to_humanize <- which(column_names_df == original_var)
+      warning(paste(humanized_var, "already exists"))
 
-    df <- df[,c(1:index_variable_to_humanize, ncol(df), (index_variable_to_humanize+2):ncol(df)-1)]
+    } else {
 
-    # change the name of the new column, because in some cases, the final column
-    # name is different of the humanized variable in master
-    colnames(df)[which(names(df)==humanized_master_var)] <- humanized_var
+      df <- merge(df, dataframe_to_join_with, by.x = original_var, by.y = master_var, all.x = TRUE )
+      # this does not work:
+      # df <- left_join(df, dataframe_to_join_with, by = c(original_var, master_var))
+      # so we have to change the column order:
+      # put new column at the end of the dataframe
+      df <- df %>%
+        select(one_of(column_names_df), everything())
+      # and reorder (remember, the new humanized column is the last one, and the
+      # variable to humanize is the first one):
 
-    return (df)
+      # index of the variable to humanize (usefull to reorder columns after merge)
+      index_variable_to_humanize <- which(column_names_df == original_var)
 
-  } else {
+      df <- df[,c(1:index_variable_to_humanize, ncol(df), (index_variable_to_humanize+2):ncol(df)-1)]
 
-    stop(paste("Variable", variable, "does not exists in", df, "dataframe"))
+      # change the name of the new column, because in some cases, the final column
+      # name is different of the humanized variable in master
+      colnames(df)[which(names(df)==humanized_master_var)] <- humanized_var
 
+      return (df)
+    }
+
+    } else {
+
+      stop(paste("Variable", variable, "does not exists dataframe"))
+
+    }
   }
-}
+

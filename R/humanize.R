@@ -26,12 +26,17 @@ humanize <- function(df){
   # apply humanizeVariable to the df
   # and return format errors if necessary
   for(i in to_humanize) {
+    # humanizeVariable(df, i)
     tryCatch({
       df <- humanizeVariable(df, i)
-    }, error = function(err){
-      paste(err, i, "variable hasn't been humnized.")
+    }
+    , error = function(err){
+      err <- paste(err, i, ". Variable hasn't been humnized.")
       print(err)
-    })
+    }, warning = function(war){
+      print(war)
+    }
+    )
   }
 
   # return humanized dataframe

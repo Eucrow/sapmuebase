@@ -6,6 +6,7 @@
 #' \describe{
 #'   \item{COD_TIPO_MUE}{code use in SIRENO}
 #'   \item{TIPO_MUE}{description}
+#'   \item{ESTRATEGIA}{sample strategy}
 #'   ...
 #' }
 "tipo_mue"

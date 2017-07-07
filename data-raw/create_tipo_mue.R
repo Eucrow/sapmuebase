@@ -1,7 +1,7 @@
 library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
-tipo_mue <- read.csv("tipo_mue.csv", colClasses = c("factor", "factor"))
+tipo_mue <- read.csv("tipo_mue.csv", colClasses = c("factor", "factor", "factor"))
 save(tipo_mue, file = "tipo_mue.RData")
 setwd(original_wd)
 rm(original_wd, tipo_mue)

@@ -1,5 +1,5 @@
-COD_TIPO_MUE, TIPO_MUE
-1,MT1A (Encuestas IEO)
-2,MT2A (Biometrico puerto)
-3,MT1B (Inspecciones SGP)
-4,MT2B (Biometrico a bordo)
+COD_TIPO_MUE, TIPO_MUE, ESTRATEGIA
+1,MT1A (Encuestas IEO), Concurrente en lonja
+2,MT2A (Biometrico puerto), Concurrente en lonja
+3,MT1B (Inspecciones SGP), Concurrente en lonja
+4,MT2B (Biometrico a bordo), Concurrente a bordo

@@ -7,7 +7,7 @@
 #' Multiple files can be imported at the same time.
 #'
 #' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-#' has been created.
+#' are created in the returned dataframe.
 #'
 #' @param file vector with the total landings filenames
 #' @param path path of the files. The working directory by default.

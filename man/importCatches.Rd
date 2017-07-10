@@ -22,5 +22,5 @@ reports in SIRENO.
 Multiple files can be imported at the same time.
 
 To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-has been created.
+are created in the returned dataframe.
 }

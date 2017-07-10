@@ -99,13 +99,11 @@ formatImportedFile <- function(df){
 #' Import 'muestreos tallas por up'
 #'
 #' This function import the three files obtained from 'muestreos tallas por up'
-#' reports in SIRENO. The files are:
-#' - des_tot: information with total landings
-#' - des_tal: landings of the length samples
-#' - tal: lengths
+#' reports in SIRENO: total catches file, catches of length samples file and lengths
+#' file.
 #'
 #' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-#' has been created.
+#' are created in the returned dataframe.
 #'
 #' @param des_tot vector with the total landings filenames
 #' @param des_tal vector with the landings of the lengths samples filenames

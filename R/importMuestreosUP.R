@@ -124,17 +124,12 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
     stop(paste0("the variables", des_tot, ", ", des_tal, ", ", tal, "does not have the same length."))
   }
 
-  # full paths for every file
-  fullpath_des_tot <- paste(path, des_tot, sep="/")
-  fullpath_des_tal <- paste(path, des_tal, sep="/")
-  fullpath_tal <- paste(path, tal, sep="/")
-
   # import files
-  catches <- importCatches(des_tot, PATH_FILES)
+  catches <- importCatches(des_tot, path)
 
-  catches_in_lengths <- importCatchesInLengths(des_tal, PATH_FILES)
+  catches_in_lengths <- importCatchesInLengths(des_tal, path)
 
-  lengths <- importLengths(tal, PATH_FILES)
+  lengths <- importLengths(tal, path)
 
   # group in a list
   muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
@@ -149,6 +144,10 @@ importMuestreosUP <- function(des_tot, des_tal, tal, by_month = FALSE, export = 
 
   if (by_month != FALSE){
     muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
+  }
+
+  if (isTRUE(export)){
+    exportListToCsv(muestreos_up)
   }
 
   #return list

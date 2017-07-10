@@ -12,9 +12,9 @@ Before the humanization, checks the correct format of the variable.}
 humanizeVariable(df, variable)
 }
 \arguments{
-\item{df:}{df wich contains the variable to humanize}
+\item{df}{df wich contains the variable to humanize}
 
-\item{variable:}{one of this values: COD_PUERTO, COD_BARCO,
+\item{variable}{one of this values: COD_PUERTO, COD_BARCO,
 COD_ARTE, COD_ORIGEN, COD_TIPO_MUE, COD_ESP_MUE, COD_ESP_CAT}
 }
 \value{

@@ -33,5 +33,7 @@ importLengths <- function(file, path = getwd()){
   )
   lengths <- Reduce(rbind, lengths)
 
+  checkStructureFile(lengths, "LENGTHS")
+
   lengths <- formatImportedFile(lengths)
 }

@@ -33,5 +33,7 @@ importCatches <- function(file, path = getwd()){
   )
   catches <- Reduce(rbind, catches)
 
+  checkStructureFile(catches, "CATCHES")
+
   catches <- formatImportedFile(catches)
 }

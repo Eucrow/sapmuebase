@@ -33,5 +33,7 @@ importCatchesInLengths <- function(file, path = getwd()){
   )
   catches_in_lengths <- Reduce(rbind, catches_in_lengths)
 
+  checkStructureFile(catches_in_lengths, "CATCHES_IN_LENGTHS")
+
   catches_in_lengths <- formatImportedFile(catches_in_lengths)
 }

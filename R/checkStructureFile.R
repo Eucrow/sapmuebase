@@ -26,25 +26,33 @@ checkStructureFileNumberOfFields <- function (df, typeOfFile){
 
 #' Check the correct structure file of tallas_x_up SIRENO reports.
 #'
-#' Compare the correct number and name of the variables of a file with the structure
-#' in 'formato_variables' dataset in order to check the appropiate format.#'
+#' Compare the correct number and name of the variables of a df with the structure
+#' in 'formato_variables' dataset in order to check the appropiate format.
+#'
+#' WARNING: the dataframe must be obtained from a read.table, read.csv or similar
+#' {base} function. I'ts not available to use after the import with
+#' importCatches(), importLengths(), importCatchesInLengths() or
+#' importMuestreosUP().
+#'
+#' This function is called inside importCatches(), importLengths() or importCatchesInLengths()
+#' functions.
 #'
 #'
-#' @param file file to check.
-#' @param typeOfFile Type of file: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".
+#' @param df df to check.
+#' @param typeOfFile Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".
 #' @return Two possible errors: 'The dataframe doesn't have the appropriate column names'
 #' or 'The dataframe doesn't have the appropriate number of columns'. In case the
 #' structure is correct, doesn't return nothing.
 #' @export
 
-checkStructureFile <- function (file, typeOfFile){
+checkStructureFile <- function (df, typeOfFile){
 
   tryCatch(
-    checkStructureFileNumberOfFields(file, typeOfFile)
+    checkStructureFileNumberOfFields(df, typeOfFile)
   )
 
   tryCatch(
-    checkStructureFileNameOfFields(file, typeOfFile)
+    checkStructureFileNameOfFields(df, typeOfFile)
   )
 
 }

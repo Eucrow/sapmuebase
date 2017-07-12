@@ -3,6 +3,7 @@
 export(addInfluenceAreaVariable)
 export(checkAllFormatVariables)
 export(checkFormatVariable)
+export(checkStructureFile)
 export(exportCsvSAPMUEBASE)
 export(exportListToCsv)
 export(exportListToGoogleSheet)

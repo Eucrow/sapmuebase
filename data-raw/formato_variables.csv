@@ -18,7 +18,7 @@ CODSGPM;^\d{1,6}$;integer;T;^\d{6}$;factor;T;T;T
 BARCO;^.+$;factor;T;;factor;T;T;T
 N_BARCOS;^\d{1}$;integer;T;;integer;T;T;T
 N_RECHAZOS;^\d{1,2}$;integer;T;;integer;T;T;T
-COD_ORIGEN;^\d{1,2}$;integer;T;^\d{3}$;factor;T;T;T
+COD_ORIGEN;^\d{1,3}$;integer;T;^\d{3}$;factor;T;T;T
 ORIGEN;^.+$;factor;T;;factor;T;T;T
 COD_DIVISION;^\d{1,2}$;integer;F;^\d{3}$;factor;T;T;T
 DIVISION;^.+$;factor;F;;factor;T;T;T

@@ -41,7 +41,9 @@ Check the correct format of a variable of a dataframe.
 #### addInfluenceAreaVariable()
 Add an influence area variable.
 #### separateDataframeByInfluenceArea()
-This function separate a dataframe by influence area.
+Separate a dataframe by influence area.
+#### checkStructureFile()
+READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO reports. 
 
 ## Datasets available
 (Datasests name and its variables are in spanish)

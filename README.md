@@ -69,7 +69,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
-### 1.????
+### 1.7
+- Add checkStructureFile() function.
 - Add 'ESTRATEGIA' variable to 'tipo_mue' dataset.
 ### 1.6:
 - Create sizeRangeUP() function.

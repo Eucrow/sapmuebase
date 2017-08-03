@@ -1,9 +1,11 @@
 # sapmuebase
 
-sapmuebase is a package with simple functions useful in the SAP MUE team.
+sapmuebase is a package with functions useful in the SAP MUE team. Most of them
+are related to the import of reports from IEO's SIRENO database in R, with a
+common format.
 
 **Note**: Various functions of sapmuebase package require the 'tallas por UP' 
-reports obtained in IEO's SIRENO database.
+reports or OAB reports from IEO's SIRENO database
 
 ## Install
 With `devtools` package installed:
@@ -19,13 +21,31 @@ Import csv files with special format usually used in SAPMUE team.
 #### exportCsvSAPMUE()
 Export csv files with special format usually used in SAPMUE team.
 #### importMuestreosUP()
+Deprecated: use importRIMFiles() instead.
+#### importRIMFiles()
 Import the 'muestreos tallas por up' files from SIRENO to R.
 #### importCatches()
+Deprecated: use imporRIMtCatches() instead.
+#### imporRIMtCatches()
 Import the 'Catches' file from 'tallas por up' report to R.
 #### importCatchesInLengths()
+Deprecated: use importRIMCatchesInLengths() instead.
+#### importRIMCatchesInLengths()
 Import the 'Catches in Lengths' file from 'tallas por up' report to R.
 #### importLengths()
+Deprecated: use importRIMLengths() instead.
+#### importRIMLengths()
 Import the 'Lengths' file from 'tallas por up' report to R.
+#### importOABFiles()
+Import the four OAB reports from SIRENO.
+#### importOABHauls()
+Import the Hauls file from OAB report.
+#### importOABTrips()
+Import the Trips file from OAB report.
+#### importOABCatches()
+Import the Catches file from OAB report.
+#### importOABLengths()
+Import the Lengths file from OAB report.
 #### importIPDFile()
 Import the file with data to dump in SIRENO to R.
 #### exportListToCsv()
@@ -69,6 +89,10 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8
+- Add functions to import OAB reports: importOABFiles(), importOABHauls(),
+importOABTrips(), importOABCatches() and importOABLengths().
+- Rename functions to import RIM reports.
 ### 1.7
 - Add checkStructureFile() function.
 - Add 'ESTRATEGIA' variable to 'tipo_mue' dataset.

@@ -50,7 +50,7 @@ EJEM_MEDIDOS;EJEM_MEDIDOS;^\d+$;integer;T;;integer;;47;48;;;;
 EJEM_PONDERADOS;EJEM_PONDERADOS;^\d+(\.\d+)?$;integer;T;;integer;;48;49;;;;
 SOP;SOP;^\d+(\.\d+)?$;numeric;T;;numeric;;49;50;;;;
 VALIDADO;VALIDADO;^(S|N)$;factor;T;;factor;;50;51;;;;
-Año;AÑO;^\d{4}$;integer;;;integer;;;;1;1;1;1
+Año;YEAR;^\d{4}$;integer;;;integer;;;;1;1;1;1
 T;TRIMESTRE;^(1|2|3|4)$;integer;;;integer;;;;;2;2;2
 Marea;ID_MAREA;^.+$;factor;;;factor;;;;2;3;3;4
 Lance;COD_LANCE;^\d{1,4}$;integer;;;integer;;;;;4;4;5

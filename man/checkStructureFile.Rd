@@ -4,12 +4,12 @@
 \alias{checkStructureFile}
 \title{Check the correct structure file of tallas_x_up SIRENO reports.}
 \usage{
-checkStructureFile(df, typeOfFile)
+checkStructureFile(df, file_type)
 }
 \arguments{
 \item{df}{df to check.}
 
-\item{typeOfFile}{Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".}
+\item{file_type}{Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".}
 }
 \value{
 Two possible errors: 'The dataframe doesn't have the appropriate column names'

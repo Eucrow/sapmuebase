@@ -19,13 +19,31 @@ Import csv files with special format usually used in SAPMUE team.
 #### exportCsvSAPMUE()
 Export csv files with special format usually used in SAPMUE team.
 #### importMuestreosUP()
+Deprecated: use importRIMFiles() instead.
+#### importRIMFiles()
 Import the 'muestreos tallas por up' files from SIRENO to R.
 #### importCatches()
+Deprecated: use imporRIMtCatches() instead.
+#### imporRIMtCatches()
 Import the 'Catches' file from 'tallas por up' report to R.
 #### importCatchesInLengths()
+Deprecated: use importRIMCatchesInLengths() instead.
+#### importRIMCatchesInLengths()
 Import the 'Catches in Lengths' file from 'tallas por up' report to R.
 #### importLengths()
+Deprecated: use importRIMLengths() instead.
+#### importRIMLengths()
 Import the 'Lengths' file from 'tallas por up' report to R.
+#### importOABFiles()
+Import the four OAB reports from SIRENO.
+#### importOABHauls()
+Import the Hauls file from OAB report.
+#### importOABTrips()
+Import the Trips file from OAB report.
+#### importOABCatches()
+Import the Catches file from OAB report.
+#### importOABLengths()
+Import the Lengths file from OAB report.
 #### importIPDFile()
 Import the file with data to dump in SIRENO to R.
 #### exportListToCsv()

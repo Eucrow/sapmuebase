@@ -1,8 +1,14 @@
-checkStructureFileNameOfFields <- function (df, typeOfFile){
+checkStructureFileNameOfFields <- function (df, file_type){
 
   df_colnames <- colnames(df)
 
-  correct_colnames <- formato_variables[formato_variables[[typeOfFile]]==TRUE, "name_variable"]
+  correct_colnames <- formato_variables %>%
+    select(one_of(c("original_name_variable", file_type))) %>%
+    na.omit() %>%
+    arrange_(file_type) %>%
+    select("original_name_variable")
+
+  correct_colnames <- as.character(correct_colnames[["original_name_variable"]])
 
   if(!identical(df_colnames, correct_colnames)){
     stop("The dataframe doesn't have the appropriate column names. Check the column names with 'formato_variables' dataset.")
@@ -10,13 +16,23 @@ checkStructureFileNameOfFields <- function (df, typeOfFile){
 
 }
 
-checkStructureFileNumberOfFields <- function (df, typeOfFile){
+checkStructureFileNumberOfFields <- function (df, file_type){
 
-  if (typeOfFile != "CATCHES" & typeOfFile != "CATCHES_IN_LENGTHS" & typeOfFile != "LENGTHS"){
-    stop("typeOfFile incorrect: Only CATCHES, CATCHES_IN_LENGTHS or LENGTHS are available")
+  available_variables <- c("RIM_CATCHES",
+                           "RIM_CATCHES_IN_LENGTHS",
+                           "RIM_LENGTHS",
+                           "OAB_TRIPS",
+                           "OAB_HAULS",
+                           "OAB_CATCHES",
+                           "OAB_LENGTHS"
+                           )
+
+  if ( !(file_type %in% available_variables) ){
+    available_variables <- paste(available_variables, collapse = " ")
+    stop(paste("file_type incorrect:", file_type, "Only ", available_variables, "are available"))
   }
 
-  number_of_variables <- length(which(formato_variables[[typeOfFile]]==TRUE))
+  number_of_variables <- length(which(!is.na(formato_variables[[file_type]])))
 
   if (ncol(df) != number_of_variables) {
     stop("The dataframe doesn't have the appropriate number of columns.")
@@ -39,20 +55,20 @@ checkStructureFileNumberOfFields <- function (df, typeOfFile){
 #'
 #'
 #' @param df df to check.
-#' @param typeOfFile Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".
+#' @param file_type Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".
 #' @return Two possible errors: 'The dataframe doesn't have the appropriate column names'
 #' or 'The dataframe doesn't have the appropriate number of columns'. In case the
 #' structure is correct, doesn't return nothing.
 #' @export
 
-checkStructureFile <- function (df, typeOfFile){
+checkStructureFile <- function (df, file_type){
 
   tryCatch(
-    checkStructureFileNumberOfFields(df, typeOfFile)
+    checkStructureFileNumberOfFields(df, file_type)
   )
 
   tryCatch(
-    checkStructureFileNameOfFields(df, typeOfFile)
+    checkStructureFileNameOfFields(df, file_type)
   )
 
 }

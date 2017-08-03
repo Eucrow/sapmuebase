@@ -71,27 +71,27 @@ remove_coma_in_category <- function(dataframe){
 
 # ---- function to change date format in a dataframes --------------------------
 change_date_format <- function (dataframe){
-  dataframe[["FECHA"]] <- as.Date(dataframe[["FECHA"]], "%d-%b-%y")
-  dataframe[["FECHA"]] <- as.POSIXlt(dataframe[["FECHA"]])
-  dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
+  dataframe[["FECHA_MUE"]] <- as.Date(dataframe[["FECHA_MUE"]], "%d-%b-%y")
+  dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe[["FECHA_MUE"]])
+  dataframe[["FECHA_MUE"]] <- format(dataframe[["FECHA_MUE"]], "%d-%m-%y")
 }
 
 # ---- function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE' ---------------------
-# only usefull in RIM files (because contain de column FECHA)
+# only usefull in RIM files (because contain de column FECHA_MUE)
 add_dates_variables <- function (dataframe){
-  dataframe[["FECHA"]] <- as.POSIXlt(dataframe$FECHA, format="%d-%m-%y")
-  dataframe[["DIA"]] <- dataframe[["FECHA"]]$mday
-  dataframe[["MES"]] <- dataframe[["FECHA"]]$mon+1
-  dataframe[["YEAR"]] <- dataframe[["FECHA"]]$year+1900
-  dataframe[["TRIMESTRE"]] <- quarters(dataframe[["FECHA"]])
+  dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d-%m-%y")
+  dataframe[["DIA"]] <- dataframe[["FECHA_MUE"]]$mday
+  dataframe[["MES"]] <- dataframe[["FECHA_MUE"]]$mon+1
+  dataframe[["YEAR"]] <- dataframe[["FECHA_MUE"]]$year+1900
+  dataframe[["TRIMESTRE"]] <- quarters(dataframe[["FECHA_MUE"]])
 
   #remove 'Q' in quarter:
   dataframe[["TRIMESTRE"]] <- substring(dataframe[["TRIMESTRE"]], 2)
-  dataframe[["FECHA"]] <- format(dataframe[["FECHA"]], "%d-%m-%y")
+  dataframe[["FECHA_MUE"]] <- format(dataframe[["FECHA_MUE"]], "%d-%m-%y")
 
   #order columns
   dataframe <- dataframe %>%
-    select(one_of(c("COD_ID", "FECHA", "DIA", "MES", "YEAR", "TRIMESTRE")), everything())
+    select(one_of(c("COD_ID", "FECHA_MUE", "DIA", "MES", "YEAR", "TRIMESTRE")), everything())
 
   return(dataframe)
 }
@@ -102,7 +102,7 @@ filter_by_month <- function (dataframe, month){
   month <- sprintf("%02d", month)
 
   # filter:
-  dataframe <- dataframe[format.Date(dataframe[["FECHA"]], "%m") == month,]
+  dataframe <- dataframe[format.Date(dataframe[["FECHA_MUE"]], "%m") == month,]
 
   #return dataframe:
   return(dataframe)
@@ -138,15 +138,15 @@ check_by_month_argument <- function(by_month) {
 
 # ---- function to format the imported dataframe from muestreos up -------------
 # Is called in the import functions of the tallas_x_up files.
-# Change the format of the FECHA variable and remove the coma in the category
+# Change the format of the FECHA_MUE variable and remove the coma in the category
 formatImportedFile <- function(df){
-  # change the column "FECHA" to a date format
+  # change the column "FECHA_MUE" to a date format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another
   # locale), change locale to Spanish_United States.1252:
   lct <- Sys.getlocale("LC_TIME")
   Sys.setlocale("LC_TIME","Spanish_United States.1252")
 
-  df[["FECHA"]] <- change_date_format(df)
+  df[["FECHA_MUE"]] <- change_date_format(df)
 
   df <- add_dates_variables(df)
 

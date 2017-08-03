@@ -25,8 +25,8 @@ Deprecated: use importRIMFiles() instead.
 #### importRIMFiles()
 Import the 'muestreos tallas por up' files from SIRENO to R.
 #### importCatches()
-Deprecated: use imporRIMtCatches() instead.
-#### imporRIMtCatches()
+Deprecated: use importRIMCatches() instead.
+#### importRIMCatches()
 Import the 'Catches' file from 'tallas por up' report to R.
 #### importCatchesInLengths()
 Deprecated: use importRIMCatchesInLengths() instead.

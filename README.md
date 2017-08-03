@@ -89,9 +89,10 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
-### 1.8.1
+### 1.8.2
 - Change the name of the variable 'AÑO' to 'YEAR'
 - Fix minor changes in documentation.
+- Adapt import RIM functions to the new variables "FECHA_MUE" and "FECHA_DESEM"
 ### 1.8
 - Add functions to import OAB reports: importOABFiles(), importOABHauls(),
 importOABTrips(), importOABCatches() and importOABLengths().

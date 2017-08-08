@@ -8,6 +8,7 @@
 #'
 #' Multiple files can be imported at the same time.
 #'
+#' @note The catches SIRENO report must be generated with the option 'by category'
 #' @param file vector with the catches filenames
 #' @param path path of the files. The working directory by default.
 #' @return Return dataframe.

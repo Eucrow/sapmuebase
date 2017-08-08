@@ -33,15 +33,19 @@ readHeaderFiles <- function(file){
 # Gets the name_variable and class_variable_final variables
 getStructureFiles <- function(file, file_type){
 
-  header_file <- readHeaderFiles(file)
+  header_file <- sapmuebase:::readHeaderFiles(file)
+
+  name_variables <- merge(x = header_file, y = relacion_variables, by.x = c("original_name_variable"), by.y = c("original_name_variable"))
+
+  #get only the variables for the file_type
   struct <-
     formato_variables[
       !is.na(formato_variables[[file_type]]),
-      c("original_name_variable", "name_variable", "class_variable_final", file_type)]
-  struct[["original_name_variable"]] <- as.factor(struct[["original_name_variable"]])
+      c("name_variable", "class_variable_final", file_type)]
+
   # Must use left_join instead of merge because it's imperative mantain the order of the columns:
   # struct_file <- left_join(header_file, struct, by = "original_name_variable")
-  struct_file <- merge(x = header_file, y = struct, by = c("original_name_variable"))
+  struct_file <- merge(x = name_variables, y = struct, by = c("name_variable"), all.x = T)
   struct_file <- struct_file[order(struct_file[file_type]),]
   return(struct_file)
 

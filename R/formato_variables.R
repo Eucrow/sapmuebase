@@ -1,6 +1,7 @@
 #' Variables format
 #'
-#' A dataset containing the format of the variables in the tallas_x_up report files from SIRENO
+#' A dataset containing the format of the variables in the tallas_x_up reports
+#' and oab reports from SIRENO
 #' with another information structure.
 #'
 #' @format A data frame with 9 columns:
@@ -11,9 +12,13 @@
 #'   \item{mandatory}{TRUE if the variable is mandatory for the import process}
 #'   \item{regex_variable_final}{regular expression that should be the variable after import process}
 #'   \item{class_variable_final}{class that should be the variable after import process}
-#'   \item{CATCHES}{TRUE if the variable is in catches file}
-#'   \item{CATCHES_IN_LENGTHS}{TRUE if the variable is in catches_in_lengths file}
-#'   \item{LENGTHS}{TRUE if the variable is in lengths file}
+#'   \item{RIM_CATCHES}{order of the field in RIM catches file. NA if the field doesn't exist in the file}
+#'   \item{RIM_CATCHES_IN_LENGTHS}{order of the field in RIM in catches_in_lengths file. NA if the field doesn't exist in the file}
+#'   \item{RIM_LENGTHS}{order of the field in RIM lengths file. NA if the field doesn't exist in the file}
+#'   \item{AOB_TRIPS}{order of the field in OAB trips file. NA if the field doesn't exist in the file}
+#'   \item{AOB_HAULS}{order of the field in OAB hauls file. NA if the field doesn't exist in the file}
+#'   \item{AOB_CATCHES}{order of the field in OAB catches file. NA if the field doesn't exist in the file}
+#'   \item{AOB_LENGTHS}{order of the field in OAB lengths file. NA if the field doesn't exist in the file}
 #'   ...
 #' }
 "formato_variables"

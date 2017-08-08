@@ -79,7 +79,9 @@ humanizeVariable <- function(df, variable){
         # index of the variable to humanize (usefull to reorder columns after merge)
         index_variable_to_humanize <- which(column_names_df == original_var)
 
-        df <- df[,c(1:index_variable_to_humanize, ncol(df), (index_variable_to_humanize+2):ncol(df)-1)]
+        # reorder columns
+        df <- df %>%
+          select(1:index_variable_to_humanize, ncol(df), everything())
 
         # change the name of the new column, because in some cases, the final column
         # name is different of the humanized variable in master
@@ -95,6 +97,7 @@ humanizeVariable <- function(df, variable){
 
   }
 }
+
 
 
 

@@ -84,11 +84,16 @@ Use `?nameofthedataset` to details.
 * procedencia: sampled source
 * puerto: ports
 * tipo_mue: type of sample
-* formato_variables: used in checkAllFormatVariables() and checkFormatVariable() functions
+* formato_variables
+* relacion_volcado
 * variables_to_humanize: used in humanize() and humanizeVariable() functions
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.3
+- Fix function humanize() and humanizeVariable()
+- Create dataset relacion_volcado
+- Improve dataset formato_variables
 ### 1.8.2
 - Change the name of the variable 'AÑO' to 'YEAR'
 - Fix minor changes in documentation.

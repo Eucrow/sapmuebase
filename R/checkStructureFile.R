@@ -1,19 +1,18 @@
-checkStructureFileNameOfFields <- function (df, file_type){
-
+checkStructureFileNameOfFields <- function (df, file_type)
+{
   df_colnames <- colnames(df)
+  df_colnames <- data.frame(original_name_variable = df_colnames)
+  df_colnames <- merge(df_colnames, relacion_variables, all.x = T, sort = F)
+
 
   correct_colnames <- formato_variables %>%
-    select(one_of(c("original_name_variable", file_type))) %>%
+    select(one_of(c("name_variable", file_type))) %>%
     na.omit() %>%
-    arrange_(file_type) %>%
-    select("original_name_variable")
+    arrange_(file_type)
 
-  correct_colnames <- as.character(correct_colnames[["original_name_variable"]])
-
-  if(!identical(df_colnames, correct_colnames)){
+  if (!identical(df_colnames[["name_variable"]], correct_colnames[["name_variable"]])) {
     stop("The dataframe doesn't have the appropriate column names. Check the column names with 'formato_variables' dataset.")
   }
-
 }
 
 checkStructureFileNumberOfFields <- function (df, file_type){

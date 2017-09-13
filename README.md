@@ -90,9 +90,10 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
-###
+### 1.8.4
 - Add new species to sexed species datasets
 - Fix description fields in origen dataset
+- Minor changes in documentation.
 ### 1.8.3
 - Fix function humanize() and humanizeVariable()
 - Create dataset relacion_volcado

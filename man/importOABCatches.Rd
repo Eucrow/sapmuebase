@@ -22,5 +22,5 @@ reports in SIRENO.
 Multiple files can be imported at the same time.
 }
 \note{
-The catches SIRENO report must be generated with the option 'by category'
+The SIRENO catches report must be generated with the option 'by category'
 }

@@ -27,3 +27,6 @@ Return a list with 3 data frames
 This function import the four OAB report files from SIRENO: hauls file,
 trips file, catches files and lengths file.
 }
+\note{
+The SIRENO catches report must be generated with the option 'by category'
+}

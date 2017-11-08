@@ -73,6 +73,7 @@ Use `?nameofthedataset` to details.
 * arte: gears
 * cfpo2015
 * cfpo2016
+* especies
 * especies_mezcla: mixed species
 * especies_no_mezcla: non mixed species
 * estrato_rim: _estrato rim_
@@ -90,7 +91,11 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.5
+- Add A3 FAO code and Aphia_Id Worms code to especies dataset
 ### 1.8.4
+- Add new species to sexed species datasets
+- Fix description fields in origen dataset
 - Minor changes in documentation.
 ### 1.8.3
 - Fix function humanize() and humanizeVariable()

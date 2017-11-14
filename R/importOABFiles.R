@@ -26,8 +26,8 @@ importOABFiles <- function(mareas, lances, capturas, tallas, export = FALSE, pat
   }
 
   # import files
-  hauls <- importOABHauls(mareas, path)
-  trips <- importOABTrips(lances, path)
+  trips <- importOABTrips(mareas, path)
+  hauls <- importOABHauls(lances, path)
   catches <- importOABCatches(capturas, path)
   lengths <- importOABLengths(tallas, path)
 

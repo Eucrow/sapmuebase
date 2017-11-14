@@ -22,8 +22,8 @@ importOABTrips <- function(file, path = getwd()){
     # with comma as a decimal character
     function(x){
       tryCatch({
-        fullpath <- paste(path, x, sep="/")
-        struct <- getStructureFiles(file, file_type)
+        fullpath <- file.path(path, x)
+        struct <- getStructureFiles(fullpath, file_type)
         type <- struct[["class_variable_final"]]
 
         read.table(fullpath, sep=";", header = TRUE, quote = "", dec = ",", colClasses = type)

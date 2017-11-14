@@ -7,7 +7,7 @@
 importOABHauls(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the hauls filenames}
+\item{file}{vector with the hauls filenames.}
 
 \item{path}{path of the files. The working directory by default.}
 }
@@ -16,8 +16,12 @@ Return dataframe.
 }
 \description{
 This function import the hauls file obtained from OAB
-reports in SIRENO.
+reports in SIRENO. The SIRENO hauls report must be generated with the option
+'only hauls'.
 }
 \details{
 Multiple files can be imported at the same time.
+}
+\note{
+The SIRENO hauls report must be generated with the option 'only hauls'.
 }

@@ -4,11 +4,13 @@
 #' Import the Hauls file from OAB report
 #'
 #' This function import the hauls file obtained from OAB
-#' reports in SIRENO.
+#' reports in SIRENO. The SIRENO hauls report must be generated with the option
+#' 'only hauls'.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' @param file vector with the hauls filenames
+#' @note The SIRENO hauls report must be generated with the option 'only hauls'.
+#' @param file vector with the hauls filenames.
 #' @param path path of the files. The working directory by default.
 #' @return Return dataframe.
 #' @export

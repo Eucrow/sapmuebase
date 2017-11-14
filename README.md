@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.7
+Fixed bug in importOABfiles() function.
 ### 1.8.6
 Fixed this bugs:
     - add new variables to formato_variables dataset

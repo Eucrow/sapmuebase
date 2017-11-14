@@ -4,7 +4,8 @@
 #' Import the Catches file from OAB report
 #'
 #' This function import the catches file obtained from OAB
-#' reports in SIRENO.
+#' reports in SIRENO. The SIRENO catches report must be generated with the
+#' option 'by category'
 #'
 #' Multiple files can be imported at the same time.
 #'

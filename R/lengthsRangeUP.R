@@ -12,11 +12,11 @@
 #' @return dataframe with species, sex, minumum and maximun lengths
 #' @export
 
-sizeRangeUP <- function(dfs, path = getwd()){
+lengthsRangeUP <- function(dfs, path = getwd()){
 
   library(dplyr)
 
-  data <- sapmuebase::importLengths(dfs, path)
+  data <- sapmuebase::importRIMLengths(dfs, path)
 
   maxmin <- data %>%
     select(COD_ESP_CAT, SEXO, TALLA) %>%

@@ -3,7 +3,7 @@
 \docType{data}
 \name{rango_tallas_historico}
 \alias{rango_tallas_historico}
-\title{Historical species size range by sex.}
+\title{Historical species size range by species and sex.}
 \format{A data frame with 4 columns:
 \describe{
   \item{COD_ESP}{SIRENO code species}
@@ -16,8 +16,8 @@
 rango_tallas_historico
 }
 \description{
-A dataset containing the historical size range by sex. The dataset is created
-in create_sizeRangeHistorical.R, using lengths recorded in SIRENO between 2009
+A dataset containing the historical size range by species and sex. The dataset is created
+in create_rango_tallas_historico.R, using lengths recorded in SIRENO between 2009
 to 2016.
 }
 \keyword{datasets}

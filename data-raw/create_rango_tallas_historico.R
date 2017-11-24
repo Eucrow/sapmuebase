@@ -11,7 +11,7 @@ data <- c("IEOUPMUETALMARCO_2009.TXT",
             "IEOUPMUETALMARCO_2015.TXT",
             "IEOUPMUETALMARCO_2016.TXT")
 
-rango_tallas_historico <- sizeRangeUP(data, path = "data_source_private")
+rango_tallas_historico <- sapmuebase::lengthsRangeUP(data, path = "data_source_private")
 
 colnames(rango_tallas_historico) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX")
 

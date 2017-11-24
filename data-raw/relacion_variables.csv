@@ -111,7 +111,7 @@ Lat.Vir;LAT_VIR;
 Lon.Lar;LON_LAR;
 Lon.Vir;LON_VIR;
 Lat.Lar.1;LAT_LAR_CGS;
-Lat.Vir.1;LAT_VIT_CGS;
+Lat.Vir.1;LAT_VIR_CGS;
 Lon.Lar.1;LON_LAR_CGS;
 Lon.Vir.1;LON_VIR_CGS;
 Profundidad.Largada;PROF_LAR;

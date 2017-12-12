@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.10
+Fix error in areas_influencia dataset.
 ### 1.8.9
 Add p90_capturas_historico dataset.
 ### 1.8.8

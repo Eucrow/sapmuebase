@@ -149,3 +149,6 @@ Ejemplares.muestra.Descarte.;EJEM_MUESTREADOS;
 Ejemplares.ponderados;EJEM_PONDERADOS;
 Peso.muestra.retenida;PESO_MUE_RET;
 SubMuestraTot;PESO_SUB_MUE_TOT;
+Fecha.Largada;FECHA_LAR;
+Fecha.virada;FECHA_VIR;
+

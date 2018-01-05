@@ -1,7 +1,7 @@
 library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
-estratorim_arte <- read.csv("estratorim_arte.csv")
+estratorim_arte <- read.csv("estratorim_arte.csv", colClasses=c("factor", "factor", "factor"))
 save(estratorim_arte, file = "estratorim_arte.RData")
 setwd(original_wd)
 rm(original_wd, estratorim_arte)

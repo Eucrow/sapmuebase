@@ -62,7 +62,7 @@ Puerto.Base;PUERTO_BASE;
 cod.Puerto.Llegada;COD_PUERTO_LLEGADA;
 Puerto.Llegada;PUERTO_LLEGADA;
 Cod.Puerto.Descarga;COD_PUERTO_DESCARGA;
-Puerto.Descarga;LOCODE_DESCARGA;
+Puerto.Descarga;PUERTO_DESCARGA;
 C.ICES;CUADRICULA_ICES;
 Cod.Origen;COD_ORIGEN;
 Origen;ORIGEN;

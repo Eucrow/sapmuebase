@@ -31,6 +31,14 @@ importOABHauls <- function(file, path = getwd()){
 
   hauls <- renameFileVariables(hauls, file_type)
 
+  # This file has variables with comma as a decimal character: TAMAÑO_MALLA,
+  # ABERTURA_VER and ABERTURA_HOR
+  variables <- c("TAMAÑO_MALLA", "ABERTURA_VER", "ABERTURA_HOR")
+  lapply(variables, function(x){
+    hauls <- replace_coma_with_dot(hauls, x)
+    hauls[[x]] <- as.numeric(hauls[[x]])
+  })
+
   hauls <- fixCuadriculaICES(hauls)
 
 }

@@ -73,6 +73,13 @@ remove_coma_in_category <- function(dataframe){
   return(dataframe)
 }
 
+# ---- function to change coma with a dot in a variable form a dataframe -------
+# return the dataframe corrected
+replace_coma_with_dot <- function(dataframe, variable){
+  dataframe[[variable]]<- gsub(",", ".", dataframe[[variable]])
+  return(dataframe)
+}
+
 # ---- function to change date format in a dataframes --------------------------
 change_date_format <- function (dataframe){
   dataframe[["FECHA_MUE"]] <- as.Date(dataframe[["FECHA_MUE"]], "%d-%b-%y")

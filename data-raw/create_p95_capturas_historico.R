@@ -9,13 +9,13 @@ catches <- c(
 load("relacion_variables.RData")
 load("formato_variables.RData")
 
-p90_capturas_historico <- sapmuebase::catchesPercentileUP(catches, path = paste0(getwd(),"/data_source_private"), per = 0.9)
+p95_capturas_historico <- sapmuebase::catchesPercentileUP(catches, path = paste0(getwd(),"/data_source_private"), per = 0.95)
 
-colnames(p90_capturas_historico) <- c("COD_ESP", "ESTRATO_RIM", "P90")
+colnames(p95_capturas_historico) <- c("COD_ESP", "ESTRATO_RIM", "P95")
 
-save(p90_capturas_historico, file = "p90_capturas_historico.RData")
+save(p95_capturas_historico, file = "p95_capturas_historico.RData")
 setwd(original_wd)
-rm(original_wd, p90_capturas_historico)
+rm(original_wd, p95_capturas_historico)
 devtools::use_data_raw()
 # IMPORTANT: COPY FILE TO /data
 # AND THEN: devtools::use_data()

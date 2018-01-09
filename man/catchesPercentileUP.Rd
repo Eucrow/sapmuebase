@@ -4,13 +4,15 @@
 \alias{catchesPercentileUP}
 \title{Create dataset with catches percentile for every species.}
 \usage{
-catchesPercentileUP(dfs, path = getwd())
+catchesPercentileUP(dfs, path = getwd(), per)
 }
 \arguments{
 \item{dfs}{vector of filenames with lengths. The file mus be obtained from
 'tallas x up' SIRENO reports.}
 
 \item{path}{path where the files are located. Working directory by default.}
+
+\item{per}{percentile to create (between 0 - 1)}
 }
 \value{
 dataframe with species, sex, minumum and maximun lengths

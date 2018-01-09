@@ -9,10 +9,11 @@
 #' @param dfs vector of filenames with lengths. The file mus be obtained from
 #' 'tallas x up' SIRENO reports.
 #' @param path path where the files are located. Working directory by default.
+#' @param per percentile to create (between 0 - 1)
 #' @return dataframe with species, sex, minumum and maximun lengths
 #' @export
 
-catchesPercentileUP <- function(dfs, path = getwd()){
+catchesPercentileUP <- function(dfs, path = getwd(), per){
 
   library(dplyr)
 
@@ -21,12 +22,11 @@ catchesPercentileUP <- function(dfs, path = getwd()){
   percentile <- data %>%
     select(COD_ESP_MUE, ESTRATO_RIM, P_DESEM) %>%
     group_by(COD_ESP_MUE, ESTRATO_RIM) %>%
-    summarise('90%' = quantile(P_DESEM, probs=0.9))
+    summarise('90%' = quantile(P_DESEM, probs=per, na.rm = TRUE))
 
   return(percentile)
 
 }
-
 
 
 

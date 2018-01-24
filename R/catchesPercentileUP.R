@@ -11,7 +11,6 @@
 #' @param path path where the files are located. Working directory by default.
 #' @param per percentile to create (between 0 - 1)
 #' @return dataframe with species, sex, minumum and maximun lengths
-#' @export
 
 catchesPercentileUP <- function(dfs, path = getwd(), per){
 

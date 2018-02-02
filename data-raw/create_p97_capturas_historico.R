@@ -18,9 +18,13 @@ catchesPercentileUP <- function(dfs, path = getwd(), per){
   data <- sapmuebase::importRIMCatches(dfs, path)
 
   percentile <- data %>%
-    select(COD_ESP_MUE, ESTRATO_RIM, P_DESEM) %>%
+    select(COD_ID, COD_ESP_MUE, ESTRATO_RIM, P_DESEM) %>%
+    group_by(COD_ID, COD_ESP_MUE, ESTRATO_RIM) %>%
+    summarise('p_desem_total' = sum(P_DESEM)) %>%
+    ungroup()%>%
+    select(COD_ESP_MUE, ESTRATO_RIM, p_desem_total) %>%
     group_by(COD_ESP_MUE, ESTRATO_RIM) %>%
-    summarise('97%' = quantile(P_DESEM, probs=per, na.rm = TRUE))
+    summarise('97%' = quantile(p_desem_total, probs=per, na.rm = TRUE))
 
   return(percentile)
 

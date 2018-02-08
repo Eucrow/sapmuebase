@@ -4,7 +4,7 @@
 \name{cfpo2015}
 \alias{cfpo2015}
 \title{CFPO2015}
-\format{A data frame with 32 columns:
+\format{A data frame with 32 variables:
 \describe{
   \item{DISTINTIVO}{}
   \item{LISTA}{}

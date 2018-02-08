@@ -2,7 +2,7 @@
 #'
 #' A dataset containing the CFPO2015.
 #'
-#' @format A data frame with 32 columns:
+#' @format A data frame with 32 variables:
 #' \describe{
 #'   \item{DISTINTIVO}{}
 #'   \item{LISTA}{}

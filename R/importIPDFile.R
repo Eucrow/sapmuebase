@@ -69,11 +69,12 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
   records <- format_numeric(records, "PESO_MUESTRA")
 
   # select by month:
-  if (by_month >= 1 || by_month <= 12){
-    records <- subset(records, FECHA$mon == by_month-1)
-  } else if (by_month == FALSE){
-
-  } else {
+  if (is.numeric(by_month) && (by_month >= 1 || by_month <= 12)) {
+    records <- subset(records, FECHA$mon == by_month - 1)
+  }
+  else if (by_month == FALSE) {
+  }
+  else {
     stop("error in month selected")
   }
 

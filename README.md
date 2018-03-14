@@ -1,4 +1,4 @@
-﻿# sapmuebase
+# sapmuebase
 
 sapmuebase is a package with functions useful in the SAP MUE team. Most of them
 are related to the import of reports from IEO's SIRENO database in R, with a
@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.14
+Fix bugs in importIPDFiles() and exportCsvSAPMUEBASE().
 ### 1.8.13
 Add columns COD_MUESTREADOR and OBSERVACIONES to importIPDFiles().
 ### 1.8.12

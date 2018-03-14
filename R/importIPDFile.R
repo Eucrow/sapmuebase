@@ -21,7 +21,8 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
              7,  4, 20,  5,
              20, 10,  4, 20,
              5,  1, 20, 20,
-             10, 10, 10, 10),
+             10, 10, 10, 10,
+             200, 8),
     strip.white = TRUE,
     dec = ",",
 
@@ -31,7 +32,8 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                            NA,       NA, "factor", "factor",
                            NA,       NA, "factor", "factor",
                            "factor",       NA, "factor", "factor",
-                           NA,       NA, "factor", NA)
+                           NA,       NA, "factor", NA,
+                           "character", "factor")
   )
 
   colnames(records) <- c("FECHA",       "COD_PUERTO",   "COD_BARCO",          "COD_ARTE",
@@ -40,7 +42,8 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                          "LONGITUD",    "DIAS_MAR",     "P_DESEM",            "COD_ESP_MUE",
                          "TIPO_MUE",    "PROCEDENCIA",  "COD_CATEGORIA",      "P_MUE_DESEM",
                          "COD_ESP_CAT", "SEXO",         "PESO_MUESTRA",       "MEDIDA",
-                         "TALLA",       "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA", "FECHA_DESEM")
+                         "TALLA",       "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA", "FECHA_DESEM",
+                         "OBSERVACIONES", "COD_MUESTREADOR")
 
   # select only samples from ICES
   records <- records[records$COD_PROYECTO==1101001,]

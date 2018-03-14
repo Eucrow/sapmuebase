@@ -9,7 +9,7 @@ exportCsvSAPMUEBASE(df, filename)
 \arguments{
 \item{df:}{dataframe to export}
 
-\item{filename:}{name of the file to export without filename extension.}
+\item{filename:}{name of the file to export (with filename extension).}
 }
 \description{
 The csv files usually used in SAPMUE have a special format:

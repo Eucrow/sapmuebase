@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.15
+Add columns COD_MUESTREADOR and OBSERVACIONES to importRIMfiles().
 ### 1.8.14
 Fix bugs in importIPDFiles() and exportCsvSAPMUEBASE().
 ### 1.8.13

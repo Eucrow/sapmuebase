@@ -53,6 +53,7 @@ SOP;^\d+(\.\d+)?$;numeric;T;;numeric;;51;52;;;;;;
 VALIDADO;^(S|N)$;factor;T;;factor;;52;53;;;;;;
 RESPONSABLE_MUESTREO;^.+$;character;F;;character;1;1;1;;;;;;
 OBSERVACIONES;^.+$;character;F;;character;41;53;54;;;;;;
+METIER_IEO;^.+$;factor;F;;factor;42;54;55;;;;;;
 YEAR;^\d{4}$;integer;;;integer;;;;1;1;1;1;;
 ID_MAREA;^.+$;factor;;;factor;;;;2;3;3;4;;
 FECHA_INI;^\d{2}-[A-Z]{3}-\d{2}$;factor;;^\d{2}-\d{2}-\d{4}$;character;;;;3;;;;;

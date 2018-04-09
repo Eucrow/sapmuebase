@@ -79,7 +79,7 @@ Use `?nameofthedataset` to details.
 * estrato_rim: _estrato rim_
 * estratorim_arte: relation between _estrato rim_ and gear
 * estratorim_origen: relation between _estrato rim_ and origin
-* maestros_categorias: species categories
+* maestro_categorias: species categories
 * maestro_flota_sireno
 * origen: sampled origin
 * procedencia: sampled source
@@ -91,6 +91,9 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.16
+Add columns METIER_IEO importRIMfiles().
+Update maestro_categorias dataset.
 ### 1.8.15
 Add columns COD_MUESTREADOR and OBSERVACIONES to importRIMfiles().
 ### 1.8.14

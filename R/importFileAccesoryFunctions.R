@@ -127,16 +127,14 @@ check_by_month_argument <- function(by_month) {
     {
       if (is.numeric(by_month)){
         if(by_month < 1 | by_month > 12) {
-          #return ("error")
           error_text <- paste0("by_month = ", by_month, "??? How many by_months has your culture?")
           stop(error_text)
         } else {
-          return(by_month)
+          return(TRUE)
         }
       } else if ( is.logical(by_month) & by_month == FALSE) {
-        return(by_month)
+        return(TRUE)
       } else {
-        #return ("error")
         stop(paste0("by_month has to be a numeric between 1 to 12 or FALSE to select all the year"))
       }
     },

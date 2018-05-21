@@ -92,7 +92,9 @@ Use `?nameofthedataset` to details.
 
 ## Last changes:
 ### 1.8.17
-Update p97_capturas_historico dataset with years 2014 to 2017
+Update p97_capturas_historico dataset with years 2014 to 2017.
+Update rango_tallas_historico dataset with years 2014 to 2017.
+Remove rangeLengthsUP() function.
 ### 1.8.16
 Add columns METIER_IEO importRIMfiles().
 Update maestro_categorias dataset.

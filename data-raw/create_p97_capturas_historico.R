@@ -2,9 +2,7 @@ library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
 
-catches <- c(
-  "IEOUPMUEDESTOTSIRENO_2009_2015.TXT",
-  "IEOUPMUEDESTOTMARCO_2016.TXT")
+catches <- "IEOUPMUEDESTOTSIRENO_2014_2017.TXT"
 
 load("relacion_variables.RData")
 load("formato_variables.RData")

@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.8.17
+Update p97_capturas_historico dataset with years 2014 to 2017
 ### 1.8.16
 Add columns METIER_IEO importRIMfiles().
 Update maestro_categorias dataset.

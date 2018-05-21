@@ -1,23 +1,24 @@
 library(devtools)
+library(dplyr)
 original_wd <- getwd()
-setwd("data-raw")
+setwd("data-raw/data_source_private")
 
-data <- c("IEOUPMUETALMARCO_2009.TXT",
-            "IEOUPMUETALMARCO_2010.TXT",
-            "IEOUPMUETALMARCO_2011.TXT",
-            "IEOUPMUETALMARCO_2012.TXT",
-            "IEOUPMUETALMARCO_2013.TXT",
-            "IEOUPMUETALMARCO_2014.TXT",
-            "IEOUPMUETALMARCO_2015.TXT",
-            "IEOUPMUETALMARCO_2016.TXT")
+file_data <- "IEOUPMUETALSIRENO_2014_2017.TXT"
 
-rango_tallas_historico <- sapmuebase::lengthsRangeUP(data, path = "data_source_private")
+data <- sapmuebase::importRIMLengths(file_data, getwd())
 
-colnames(rango_tallas_historico) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX")
+rg <- data %>%
+  select(COD_ESP_CAT, SEXO, TALLA) %>%
+  filter(!is.na(TALLA)) %>% # in some cases, there are lengths with NA
+  group_by(COD_ESP_CAT, SEXO) %>%
+  summarise(min_length = min(TALLA), max_length = max(TALLA))
 
-save(rango_tallas_historico, file = "rango_tallas_historico.RData")
+
+colnames(rg) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX")
+
+save(rg, file = "rango_tallas_historico.RData")
 setwd(original_wd)
-rm(original_wd, rango_tallas_historico)
+rm(original_wd, rg)
 devtools::use_data_raw()
 # IMPORTANT: COPY FILE TO /data
 # AND THEN: devtools::use_data()

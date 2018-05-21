@@ -17,7 +17,7 @@ p97_capturas_historico
 }
 \description{
 A dataset containing the historical percentile 90 range by species. The dataset is created
-in create_p97_capturas_historico.R, using catches recorded in SIRENO between 2009
-to 2016.
+in create_p97_capturas_historico.R, using catches recorded in SIRENO between 2014
+to 207.
 }
 \keyword{datasets}

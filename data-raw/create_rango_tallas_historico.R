@@ -23,6 +23,11 @@ colnames(rango_tallas_historico) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX
 devtools::use_data(rango_tallas_historico, overwrite = TRUE)
 devtools::use_data_raw()
 
-# save(rg, file = "rango_tallas_historico.RData")
-# setwd(original_wd)
-# rm(original_wd, rg)
+save(rg, file = "rango_tallas_historico.RData") # ???
+setwd(original_wd)
+rm(original_wd, rg)
+
+# IMPORTANT: COPY FILE TO /data???
+# and then: devtools::use_data()
+# and: document()
+

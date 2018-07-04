@@ -7,4 +7,5 @@ setwd(original_wd)
 rm(original_wd, estratorim_origen_OAB)
 devtools::use_data_raw()
 # IMPORTANT: COPY FILE TO /data
-# AND THEN: devtools::use_data()
+# and then: devtools::use_data()
+# and: document()

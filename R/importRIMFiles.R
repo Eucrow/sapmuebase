@@ -36,10 +36,10 @@ importRIMFiles <- function(des_tot, des_tal, tal, by_month = FALSE, export = FAL
   # group in a list
   muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
 
-  muestreos_up <- lapply(muestreos_up, function(x){
-    x <- add_dates_variables(x)
-    x
-  })
+  # muestreos_up <- lapply(muestreos_up, function(x){
+  #   x <- add_dates_variables(x)
+  #   x
+  # })
 
   # filter by month, only in case by_month == TRUE
   # by_month <- check_by_month_argument(by_month)
@@ -48,7 +48,7 @@ importRIMFiles <- function(des_tot, des_tal, tal, by_month = FALSE, export = FAL
   #   muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   # }
 
-  if ( check_by_month_argument(by_month) & by_month != FALSE){
+  if ( check_by_month_argument(by_month) ){
     muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
   }
 

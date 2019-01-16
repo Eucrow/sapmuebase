@@ -9,7 +9,7 @@
 #' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
 #' are created in the returned dataframe.
 #'
-#' @param file vector with the total landings filenames
+#' @param file vector with the catches report filenames
 #' @param path path of the files. The working directory by default.
 #' @return Return dataframe.
 #' @aliases importCatches
@@ -23,7 +23,6 @@ importRIMCatches <- function(file, path = getwd()){
     importFileFromSireno,
     file_type,
     path
-
   )
 
   catches <- Reduce(rbind, catches)
@@ -31,6 +30,7 @@ importRIMCatches <- function(file, path = getwd()){
   checkStructureFile(catches, file_type)
 
   catches <- formatImportedFile(catches)
+
 }
 
 

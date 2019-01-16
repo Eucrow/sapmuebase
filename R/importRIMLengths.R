@@ -30,4 +30,5 @@ importRIMLengths <- function(file, path = getwd()){
   checkStructureFile(lengths, file_type)
 
   lengths <- formatImportedFile(lengths)
+
 }

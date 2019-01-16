@@ -1,6 +1,7 @@
 # Function to import a file from SIRENO's reports. Valid with tallas_x_up files and
 # discards files (exceptio with discard catches file, because it have a different
-# separation character in some numeric fields)
+# separation character in some numeric fields). Apply format saved in
+# formato_variables dataset.
 importFileFromSireno <- function (x, file_type, path){
 
   tryCatch({
@@ -148,7 +149,7 @@ check_by_month_argument <- function(by_month) {
 # ---- function to format the imported dataframe from muestreos up -------------
 # Is called in the import functions of the tallas_x_up files.
 # Change the format of the FECHA_MUE variable and remove the coma in certain
-# category names.
+# category names. In adition create date variables (DAY, MONTH, QUARTER...).
 formatImportedFile <- function(df){
   # change the column "FECHA_MUE" to a date format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another

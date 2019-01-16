@@ -11,7 +11,8 @@ checkStructureFileNameOfFields <- function (df, file_type)
     arrange_(file_type)
 
   if (!identical(df_colnames[["name_variable"]], correct_colnames[["name_variable"]])) {
-    stop("The dataframe doesn't have the appropriate column names. Check the column names with 'formato_variables' dataset.")
+    stop("The dataframe doesn't have the appropriate column names. Check the
+         column names with 'formato_variables' dataset.")
   }
 }
 
@@ -49,16 +50,18 @@ checkStructureFileNumberOfFields <- function (df, file_type){
 #' importCatches(), importLengths(), importCatchesInLengths() or
 #' importMuestreosUP().
 #'
-#' This function is called inside importCatches(), importLengths() or importCatchesInLengths()
-#' functions.
+#' This function is called inside import SIRENO files functions like
+#' importRIMCatches(), importRIMLengths()...
 #'
 #'
 #' @param df df to check.
-#' @param file_type Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".
+#' @param file_type Type of df: "CATCHES", "CATCHES_IN_LENGTHS", "LENGTHS",
+#' "OAB_TRIPS", "OAB_HAULS", "OAB_CATCHES" or "OAB_LENGTHS".
 #' @return Two possible errors: 'The dataframe doesn't have the appropriate column names'
 #' or 'The dataframe doesn't have the appropriate number of columns'. In case the
-#' structure is correct, doesn't return nothing.
+#' structure is correct, doesn't return anything.
 #' @export
+# TO DO: the function should return TRUE if the structure is correct
 
 checkStructureFile <- function (df, file_type){
 

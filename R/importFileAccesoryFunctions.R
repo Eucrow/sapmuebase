@@ -88,7 +88,7 @@ change_date_format <- function (dataframe){
 }
 
 # ---- function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE' ---------------------
-# only usefull in RIM files (because contain de column FECHA_MUE)
+# only usefull in RIM files (because contain the column FECHA_MUE)
 add_dates_variables <- function (dataframe){
   dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d-%m-%y")
   dataframe[["DIA"]] <- dataframe[["FECHA_MUE"]]$mday
@@ -147,7 +147,8 @@ check_by_month_argument <- function(by_month) {
 
 # ---- function to format the imported dataframe from muestreos up -------------
 # Is called in the import functions of the tallas_x_up files.
-# Change the format of the FECHA_MUE variable and remove the coma in the category
+# Change the format of the FECHA_MUE variable and remove the coma in certain
+# category names.
 formatImportedFile <- function(df){
   # change the column "FECHA_MUE" to a date format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another

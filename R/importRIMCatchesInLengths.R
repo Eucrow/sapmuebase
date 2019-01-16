@@ -30,4 +30,5 @@ importRIMCatchesInLengths <- function(file, path = getwd()){
   checkStructureFile(catches_in_lengths, file_type)
 
   catches_in_lengths <- formatImportedFile(catches_in_lengths)
+
 }

@@ -30,6 +30,11 @@ importOABLengths <- function(file, path = getwd()){
 
   lengths <- renameFileVariables(lengths, file_type)
 
+  # This file has variable with comma as a decimal character: TAMAÑO_MALLA
+  catches <- replace_coma_with_dot(catches, "TAMAÑO_MALLA")
+
   lengths <- fixCuadriculaICES(lengths)
+
+  lengths <- formatVariableTypes(lengths, file_type)
 
 }

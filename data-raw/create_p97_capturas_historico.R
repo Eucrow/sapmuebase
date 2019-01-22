@@ -22,7 +22,7 @@ catchesPercentileUP <- function(dfs, path = getwd(), per){
     ungroup()%>%
     select(COD_ESP_MUE, ESTRATO_RIM, p_desem_total) %>%
     group_by(COD_ESP_MUE, ESTRATO_RIM) %>%
-    summarise('97%' = quantile(p_desem_total, probs=per, na.rm = TRUE))
+    summarise('97' = quantile(p_desem_total, probs=per, na.rm = TRUE))
 
   return(percentile)
 
@@ -32,10 +32,16 @@ p97_capturas_historico <- catchesPercentileUP(catches, path = paste0(getwd(),"/d
 
 colnames(p97_capturas_historico) <- c("COD_ESP", "ESTRATO_RIM", "P97")
 
-save(p97_capturas_historico, file = "p97_capturas_historico.RData")
+devtools::use_data(p97_capturas_historico, overwrite = TRUE)
+devtools::document()
+
+# save(p97_capturas_historico, file = "p97_capturas_historico.RData")
 setwd(original_wd)
 rm(original_wd, p97_capturas_historico)
-devtools::use_data_raw()
+
+# devtools::use_data_raw()
+
+
 # IMPORTANT: COPY FILE TO /data
 # and then: devtools::use_data()
 # and: document()

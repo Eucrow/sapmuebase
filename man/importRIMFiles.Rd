@@ -30,7 +30,3 @@ This function import the three files obtained from 'muestreos tallas por up'
 reports in SIRENO: total catches file, catches of length samples file and lengths
 file.
 }
-\details{
-To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-are created in the returned dataframe.
-}

@@ -1,4 +1,7 @@
 library(devtools)
+
+usethis::use_data_raw()
+
 original_wd <- getwd()
 setwd("data-raw")
 formato_variables <- read.table(file = "formato_variables.csv",
@@ -7,9 +10,15 @@ formato_variables <- read.table(file = "formato_variables.csv",
                                 sep = ";",
                                 fill = TRUE,
                                 as.is = T)
-save(formato_variables, file = "formato_variables.RData")
+
+# use_data() create the file in /data (before, we have to copy manually, but not
+# rigth now). The file created has extension .rda, instead of .Rdata.
+usethis::use_data(formato_variables, overwrite = TRUE)
+
+# we have to make sure there aren't a .Rdata file with the same name than the
+# .rda file just created, because R read firts the .Rdata and ignore the .rda
+
+devtools::document()
+
 setwd(original_wd)
 rm(original_wd, formato_variables)
-devtools::use_data_raw()
-# IMPORTANT: COPY FILE TO /data
-# AND THEN: devtools::use_data()

@@ -4,7 +4,8 @@
 \alias{exportListToGoogleSheet}
 \title{Export a list of dataframes to a google sheet}
 \usage{
-exportListToGoogleSheet(list, prefix = "", suffix = "", separation = "")
+exportListToGoogleSheet(list, prefix = "", suffix = "",
+  separation = "")
 }
 \arguments{
 \item{list:}{list of dataframes}

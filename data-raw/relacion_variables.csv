@@ -87,7 +87,7 @@ L.con.incidencias;NUM_LANCES_INCIDENCIAS
 Observaciones;OBSERVACIONES
 Cod.Arte;COD_ARTE
 Arte;ARTE
-Tamaño.Malla;TAMAÑO_MALLA
+Tamaño.Malla;TAMANO_MALLA
 SobreCopo;SOBRECOPO
 Abert.Ver;ABERTURA_VER
 Abert.Hor;ABERTURA_HOR

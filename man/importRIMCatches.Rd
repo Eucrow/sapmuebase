@@ -8,7 +8,7 @@
 importRIMCatches(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the total landings filenames}
+\item{file}{vector with the catches report filenames}
 
 \item{path}{path of the files. The working directory by default.}
 }

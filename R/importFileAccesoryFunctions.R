@@ -1,17 +1,24 @@
-# Function to import a file from SIRENO's reports. Valid with tallas_x_up files and
-# discards files (exceptio with discard catches file, because it have a different
+# Function to import a file from SIRENO's reports. Valid with RIM and oab
+# files (exception with discard catches file, because it have a different
 # separation character in some numeric fields). Apply format saved in
 # formato_variables dataset.
 importFileFromSireno <- function (x, file_type, path){
 
   tryCatch({
+
     fullpath <- file.path(path, x)
-    struct <- getStructureFiles(fullpath, file_type)
-    type <- struct[["class_variable_final"]]
+
+    struct <- getStructureFiles(fullpath, file_type, "class_variable_import")
+
+    type <- struct[["class_variable_import"]]
+
     read.table(fullpath, sep = ";", header = TRUE, quote = "", colClasses = type)
+
   }, error = function(err) {
+
     error_text <- paste("error in file", x, ": ", err)
     stop(error_text)
+
   })
 
 }
@@ -30,9 +37,25 @@ readHeaderFiles <- function(file){
 }
 
 
-# ---- Function to get the structure of the files stored in formato_variables dataset
-# Gets the name_variable and class_variable_final variables
-getStructureFiles <- function(file, file_type){
+#' ---- Function to get the structure of the files stored in formato_variables dataset
+#' There are two fields related to the type of variables: class_variable_import
+#' and class_variable_final.
+#' The import of the files require the use of the class variables contained in
+#' class_variable_import. Then, some adjustments to certaing variables are made
+#' (replace commas with dots in numeric fiedls...). And finally, the format of the
+#' variables is changed with the class contained in class_variable_final.
+#' @param file
+#' @param file_type type of the file to import: "RIM_CATCHES",
+#' "RIM_CATCHES_IN_LENGTHS", "RIM_LENGTHS", "OAB_TRIPS", "OAB_HAULS",
+#' "OAB_CATCHES" or "OAB_LENGTHS"
+#' @param status "class_variable_import" to get the classes of the variables in
+#' the import proccess of a file; or "class_variable_final" to get final classes
+#' which the variables must have.
+getStructureFiles <- function(file, file_type, status_class){
+
+  if(status_class != "class_variable_import" & status_class != "class_variable_final"){
+    stop("'status_class' variable must be 'class_variable_import' or 'class_variable_final'")
+  }
 
   header_file <- sapmuebase:::readHeaderFiles(file)
 
@@ -42,13 +65,88 @@ getStructureFiles <- function(file, file_type){
   struct <-
     formato_variables[
       !is.na(formato_variables[[file_type]]),
-      c("name_variable", "class_variable_final", file_type)]
+      c("name_variable", status_class, file_type)]
 
   # Must use left_join instead of merge because it's imperative mantain the order of the columns:
   # struct_file <- left_join(header_file, struct, by = "original_name_variable")
   struct_file <- merge(x = name_variables, y = struct, by = c("name_variable"), all.x = T)
   struct_file <- struct_file[order(struct_file[file_type]),]
   return(struct_file)
+
+}
+
+#' Get the variable types of the RIM and OAB files downloaded from SIRENO.
+#' This function use the formato_variables dataset.
+#' Used in the import and format of the files.
+#' @param file_type type of the file: "RIM_CATCHES",
+#' "RIM_CATCHES_IN_LENGTHS", "RIM_LENGTHS", "OAB_TRIPS", "OAB_HAULS",
+#' "OAB_CATCHES" or "OAB_LENGTHS"
+#' @param status_class "class_variable_import" to get the classes of the variables in
+#' the import proccess of a file; or "class_variable_final" to get final classes
+#' which the variables must have.
+#' @return dataframe with the name of the variable, status class and file type.
+getVariableTypes <- function(file_type, status_class){
+
+  if(status_class != "class_variable_import" & status_class != "class_variable_final"){
+    stop("'status_class' variable must be 'class_variable_import' or 'class_variable_final'")
+  }
+
+  #get only the variables for the file_type
+  struct <-
+    formato_variables[
+      !is.na(formato_variables[[file_type]]),
+      c("name_variable", status_class, file_type)]
+
+  struct <- struct[order(struct[[file_type]]),]
+
+  return(struct)
+
+}
+
+#' Format the variables of a dataframe obtained by the RIM and OAB import
+#' funcionts from this package.
+#' The variable types are stored in formato_variables dataset.
+#' @param df dataframe to format.
+#' @param file_type type of the file: "RIM_CATCHES",
+#' "RIM_CATCHES_IN_LENGTHS", "RIM_LENGTHS", "OAB_TRIPS", "OAB_HAULS",
+#' "OAB_CATCHES" or "OAB_LENGTHS"
+formatVariableTypes <- function(df, file_type){
+
+  name_of_columns <- names(df)
+
+  struct <- getVariableTypes(file_type, "class_variable_final")
+
+  df <- lapply(seq_along(df), function(x, variables_name, type_variables){
+
+    var_name <- variables_name
+
+    new_var_type <- type_variables[type_variables[["name_variable"]] == var_name[x], "class_variable_final"]
+
+    # Attention: df[x] is a list... but I don't know why...
+    df[[x]] <- get(paste0("as.",new_var_type))(df[[x]])
+
+    # tryCatch(
+    #
+    #   # Attention: df[x] is a list... but I don't know why...
+    #   df[[x]] <- get(paste0("as.",new_var_type))(df[[x]]),
+    #
+    #   warning = function(w) {
+    #     simpleWarning(paste0("Warning in variable ", var_name[x], " trying
+    #                          convert to ", new_var_type, ". "))
+    #   },
+    #
+    #   error = function(e){
+    #     simpleError(paste0("Can't convert variable ", var_name[x], " in ",
+    #                        new_var_type, ". "))
+    #   }
+    #
+    # )
+
+  }, names(df), struct)
+
+  df <- as.data.frame(df, col.names = name_of_columns)
+
+  return(df)
 
 }
 
@@ -150,6 +248,8 @@ check_by_month_argument <- function(by_month) {
 # Is called in the import functions of the tallas_x_up files.
 # Change the format of the FECHA_MUE variable and remove the coma in certain
 # category names. In adition create date variables (DAY, MONTH, QUARTER...).
+#' To allow an easiest use of this data in R, variables 'DIA', 'MES', 'YEAR' and
+#' 'TRIMESTRE' are added.
 formatImportedFile <- function(df){
   # change the column "FECHA_MUE" to a date format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another

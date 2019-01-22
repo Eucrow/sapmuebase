@@ -9,12 +9,13 @@ checkStructureFile(df, file_type)
 \arguments{
 \item{df}{df to check.}
 
-\item{file_type}{Type of df: "CATCHES", "CATCHES_IN_LENGTHS" or "LENGTHS".}
+\item{file_type}{Type of df: "CATCHES", "CATCHES_IN_LENGTHS", "LENGTHS",
+"OAB_TRIPS", "OAB_HAULS", "OAB_CATCHES" or "OAB_LENGTHS".}
 }
 \value{
 Two possible errors: 'The dataframe doesn't have the appropriate column names'
 or 'The dataframe doesn't have the appropriate number of columns'. In case the
-structure is correct, doesn't return nothing.
+structure is correct, doesn't return anything.
 }
 \description{
 Compare the correct number and name of the variables of a df with the structure
@@ -26,6 +27,6 @@ WARNING: the dataframe must be obtained from a read.table, read.csv or similar
 importCatches(), importLengths(), importCatchesInLengths() or
 importMuestreosUP().
 
-This function is called inside importCatches(), importLengths() or importCatchesInLengths()
-functions.
+This function is called inside import SIRENO files functions like
+importRIMCatches(), importRIMLengths()...
 }

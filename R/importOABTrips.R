@@ -16,25 +16,32 @@ importOABTrips <- function(file, path = getwd()){
 
   file_type <- "OAB_TRIPS"
 
+  # trips <- lapply(
+  #   file,
+  #   # cannot use importFileFromSireno() function because the OAB_TRIPS have columns
+  #   # with comma as a decimal character
+  #   function(x){
+  #     tryCatch({
+  #       fullpath <- file.path(path, x)
+  #       struct <- getStructureFiles(fullpath, file_type)
+  #       type <- struct[["class_variable_final"]]
+  #
+  #       read.table(fullpath, sep=";", header = TRUE, quote = "", dec = ",", colClasses = type)
+  #
+  #     },
+  #     error = function(err) {
+  #       error_text <- paste("error in file", x, ": ", err)
+  #       stop(error_text)
+  #     }
+  #     )
+  #   }
+  # )
+
   trips <- lapply(
     file,
-    # cannot use importFileFromSireno() function because the OAB_TRIPS have columns
-    # with comma as a decimal character
-    function(x){
-      tryCatch({
-        fullpath <- file.path(path, x)
-        struct <- getStructureFiles(fullpath, file_type)
-        type <- struct[["class_variable_final"]]
-
-        read.table(fullpath, sep=";", header = TRUE, quote = "", dec = ",", colClasses = type)
-
-      },
-      error = function(err) {
-        error_text <- paste("error in file", x, ": ", err)
-        stop(error_text)
-      }
-      )
-    }
+    importFileFromSireno,
+    file_type,
+    path
   )
 
   trips <- Reduce(rbind, trips)
@@ -42,5 +49,13 @@ importOABTrips <- function(file, path = getwd()){
   checkStructureFile(trips, file_type)
 
   trips <- renameFileVariables(trips, file_type)
+
+  # This file has variables with comma as a decimal character: TRB, ESLORA
+  variables <- c("TRB", "ESLORA")
+  lapply(variables, function(x){
+    trips <- replace_coma_with_dot(trips, x)
+  })
+
+  trips <- formatVariableTypes(trips, file_type)
 
 }

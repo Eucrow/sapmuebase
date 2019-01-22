@@ -31,6 +31,11 @@ importOABCatches <- function(file, path = getwd()){
 
   catches <- renameFileVariables(catches, file_type)
 
+  # This file has variable with comma as a decimal character: TAMAÑO_MALLA
+  catches <- replace_coma_with_dot(catches, "TAMANO_MALLA")
+
   catches <- fixCuadriculaICES(catches)
+
+  catches <- formatVariableTypes(catches, file_type)
 
 }

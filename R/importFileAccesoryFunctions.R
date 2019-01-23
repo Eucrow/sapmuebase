@@ -8,8 +8,6 @@ importFileFromSireno <- function (x, file_type, path){
 
     fullpath <- file.path(path, x)
 
-    # struct <- getStructureFiles(fullpath, file_type, "class_variable_import")
-
     struct <- getVariableTypes(file_type, "class_variable_import")
 
     type <- struct[["class_variable_import"]]
@@ -38,47 +36,14 @@ readHeaderFiles <- function(file){
 
 }
 
-
-#' ---- Function to get the structure of the files stored in formato_variables dataset
-#' There are two fields related to the type of variables: class_variable_import
+#' Get the variable types of the RIM and OAB files downloaded from SIRENO.
+#' This function use the formato_variables dataset.
+#' In that dataset there are two fields related to the type of variables: class_variable_import
 #' and class_variable_final.
 #' The import of the files require the use of the class variables contained in
 #' class_variable_import. Then, some adjustments to certaing variables are made
 #' (replace commas with dots in numeric fiedls...). And finally, the format of the
 #' variables is changed with the class contained in class_variable_final.
-#' @param file
-#' @param file_type type of the file to import: "RIM_CATCHES",
-#' "RIM_CATCHES_IN_LENGTHS", "RIM_LENGTHS", "OAB_TRIPS", "OAB_HAULS",
-#' "OAB_CATCHES" or "OAB_LENGTHS"
-#' @param status "class_variable_import" to get the classes of the variables in
-#' the import proccess of a file; or "class_variable_final" to get final classes
-#' which the variables must have.
-getStructureFiles <- function(file, file_type, status_class){
-
-  if(status_class != "class_variable_import" & status_class != "class_variable_final"){
-    stop("'status_class' variable must be 'class_variable_import' or 'class_variable_final'")
-  }
-
-  header_file <- sapmuebase:::readHeaderFiles(file)
-
-  name_variables <- merge(x = header_file, y = relacion_variables, by.x = c("original_name_variable"), by.y = c("original_name_variable"))
-
-  #get only the variables for the file_type
-  struct <-
-    formato_variables[
-      !is.na(formato_variables[[file_type]]),
-      c("name_variable", status_class, file_type)]
-
-  # Must use left_join instead of merge because it's imperative mantain the order of the columns:
-  # struct_file <- left_join(header_file, struct, by = "original_name_variable")
-  struct_file <- merge(x = name_variables, y = struct, by = c("name_variable"), all.x = T)
-  struct_file <- struct_file[order(struct_file[file_type]),]
-  return(struct_file)
-
-}
-
-#' Get the variable types of the RIM and OAB files downloaded from SIRENO.
-#' This function use the formato_variables dataset.
 #' Used in the import and format of the files.
 #' @param file_type type of the file: "RIM_CATCHES",
 #' "RIM_CATCHES_IN_LENGTHS", "RIM_LENGTHS", "OAB_TRIPS", "OAB_HAULS",

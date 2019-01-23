@@ -4,6 +4,12 @@
 \alias{getVariableTypes}
 \title{Get the variable types of the RIM and OAB files downloaded from SIRENO.
 This function use the formato_variables dataset.
+In that dataset there are two fields related to the type of variables: class_variable_import
+and class_variable_final.
+The import of the files require the use of the class variables contained in
+class_variable_import. Then, some adjustments to certaing variables are made
+(replace commas with dots in numeric fiedls...). And finally, the format of the
+variables is changed with the class contained in class_variable_final.
 Used in the import and format of the files.}
 \usage{
 getVariableTypes(file_type, status_class)
@@ -23,5 +29,11 @@ dataframe with the name of the variable, status class and file type.
 \description{
 Get the variable types of the RIM and OAB files downloaded from SIRENO.
 This function use the formato_variables dataset.
+In that dataset there are two fields related to the type of variables: class_variable_import
+and class_variable_final.
+The import of the files require the use of the class variables contained in
+class_variable_import. Then, some adjustments to certaing variables are made
+(replace commas with dots in numeric fiedls...). And finally, the format of the
+variables is changed with the class contained in class_variable_final.
 Used in the import and format of the files.
 }

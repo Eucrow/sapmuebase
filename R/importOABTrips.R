@@ -30,10 +30,8 @@ importOABTrips <- function(file, path = getwd()){
   trips <- renameFileVariables(trips, file_type)
 
   # This file has variables with comma as a decimal character: TRB, ESLORA
-  variables <- c("TRB", "ESLORA")
-  lapply(variables, function(x){
-    trips <- replace_coma_with_dot(trips, x)
-  })
+  trips <- replace_coma_with_dot(trips, "TRB")
+  trips <- replace_coma_with_dot(trips, "ESLORA")
 
   trips <- formatVariableTypes(trips, file_type)
 

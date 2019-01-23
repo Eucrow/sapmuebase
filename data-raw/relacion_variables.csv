@@ -88,6 +88,7 @@ Observaciones;OBSERVACIONES
 Cod.Arte;COD_ARTE
 Arte;ARTE
 Tamaño.Malla;TAMANO_MALLA
+TamañoMalla;TAMANO_MALLA
 SobreCopo;SOBRECOPO
 Abert.Ver;ABERTURA_VER
 Abert.Hor;ABERTURA_HOR
@@ -154,3 +155,5 @@ Peso.muestra.retenida;PESO_MUE_RET
 SubMuestraTot;PESO_SUB_MUE_TOT
 Fecha.Largada;FECHA_LAR
 Fecha.virada;FECHA_VIR
+Peso.muestra;PESO_MUE_RET
+Alafa3;A3_ESP

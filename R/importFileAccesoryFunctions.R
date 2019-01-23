@@ -8,7 +8,9 @@ importFileFromSireno <- function (x, file_type, path){
 
     fullpath <- file.path(path, x)
 
-    struct <- getStructureFiles(fullpath, file_type, "class_variable_import")
+    # struct <- getStructureFiles(fullpath, file_type, "class_variable_import")
+
+    struct <- getVariableTypes(file_type, "class_variable_import")
 
     type <- struct[["class_variable_import"]]
 

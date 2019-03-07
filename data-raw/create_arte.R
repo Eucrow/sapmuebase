@@ -1,0 +1,10 @@
+library(devtools)
+original_wd <- getwd()
+setwd("data-raw")
+arte <- read.csv("arte.csv", colClasses = c("factor", "factor"))
+save(arte, file = "arte.RData")
+setwd(original_wd)
+rm(original_wd, arte)
+devtools::use_data_raw()
+# IMPORTANT: COPY FILE TO /data
+# AND THEN: devtools::use_data()

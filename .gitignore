@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+*.xlsx
+*.xls
+novale/
+comprobacion importacion 2009/
+pruebas_humanize/
+*.rds
+data-raw/data_source_private/

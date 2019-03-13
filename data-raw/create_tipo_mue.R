@@ -5,7 +5,9 @@ usethis::use_data_raw()
 original_wd <- getwd()
 setwd("data-raw")
 
-tipo_mue <- read.csv("tipo_mue.csv", colClasses = c("factor", "factor", "factor"))
+tipo_mue <- read.csv("tipo_mue.csv", colClasses = c("factor", "factor",
+                                                    "factor", "logical",
+                                                    "logical"))
 
 # use_data() create the file in /data (before, we have to copy manually, but not
 # rigth now). The file created has extension .rda, instead of .Rdata.

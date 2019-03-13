@@ -9,6 +9,6 @@
 cfpo2017
 }
 \description{
-A dataset containing the CFPO2016.
+A dataset containing the CFPO2017.
 }
 \keyword{datasets}

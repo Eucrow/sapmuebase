@@ -1,10 +1,16 @@
 library(devtools)
+
+usethis::use_data_raw()
+
 original_wd <- getwd()
 setwd("data-raw")
-origen <- read.csv("origen.csv", colClasses = c("factor", "factor"))
-save(origen, file = "origen.RData")
+
+origen <- read.csv("origen.csv", colClasses = c("factor", "factor", "logical", "logical"))
+
+# use_data() create the file in /data
+usethis::use_data(origen, overwrite = TRUE)
+
+devtools::document()
+
 setwd(original_wd)
 rm(original_wd, origen)
-devtools::use_data_raw()
-# IMPORTANT: COPY FILE TO /data
-# AND THEN: devtools::use_data()

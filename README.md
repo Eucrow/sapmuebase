@@ -61,7 +61,7 @@ Check the correct format of a variable of a dataframe.
 #### addInfluenceAreaVariable()
 Add an influence area variable.
 #### separateDataframeByInfluenceArea()
-Separate a dataframe by influence area.
+Separate a dataframe by influence area (only RIM influence area).
 #### checkStructureFile()
 READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO reports. 
 
@@ -73,6 +73,8 @@ Use `?nameofthedataset` to details.
 * arte: gears
 * cfpo2015
 * cfpo2016
+* cfpo2017
+* cfpo2018
 * especies
 * especies_mezcla: mixed species
 * especies_no_mezcla: non mixed species
@@ -91,6 +93,11 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.9
+Update some datasets with variables RIM and OAB to specify wich data is used in
+RIM or OAB.
+Delete older specified OAB datasets.
+Add CFPO2018 dataset.
 ### 1.8.17
 Update p97_capturas_historico dataset with years 2014 to 2017.
 Update rango_tallas_historico dataset with years 2014 to 2017.

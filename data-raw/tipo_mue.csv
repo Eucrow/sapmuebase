@@ -3,4 +3,4 @@ COD_TIPO_MUE,TIPO_MUE,ESTRATEGIA,RIM,OAB
 2,MT2A (Biometrico puerto),Concurrente en lonja,T,F
 3,MT1B (Inspecciones SGP),Concurrente en lonja,F,F
 4,MT2B (Biometrico a bordo),Concurrente a bordo,F,T
-6,MT3 (Muestreo dirigido),Concurrente a bordo,F,F
+6,MT3 (Muestreo dirigido),Concurrente a bordo,T,F

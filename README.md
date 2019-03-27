@@ -93,6 +93,8 @@ Use `?nameofthedataset` to details.
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 
 ## Last changes:
+### 1.9.1
+Update and fix estratorim_arte, estratorim_origen and estrato_rim datasets.
 ### 1.9
 Update some datasets with variables RIM and OAB to specify wich data is used in
 RIM or OAB.

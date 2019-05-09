@@ -1,4 +1,3 @@
-
 # This dataset is obtained from the file maestro_especies (wich is obtained
 # from sireno as is) with this structure:
 # * first 6 rows with useless information
@@ -39,11 +38,10 @@ especies <- merge(x=especies, y=species_codes_clean, by.x = "ESP", by.y = "scien
 colnames(especies) <- c("ESP", "COD_ESP", "A3", "APHIA_ID")
 especies <- especies[,c("COD_ESP", "ESP", "A3", "APHIA_ID")]
 
-save(especies, file = "especies.RData")
+# use_data() create the file in /data
+usethis::use_data(especies, overwrite = TRUE)
+
+devtools::document()
+
 setwd(original_wd)
-rm(original_wd, especies, species_to_search, species_codes, species_codes_clean)
-devtools::use_data_raw()
-
-
-# IMPORTANT: COPY FILE TO /data
-# AND THEN: devtools::use_data()
+rm(original_wd, especies)

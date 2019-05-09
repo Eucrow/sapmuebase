@@ -8,12 +8,10 @@ setwd("data-raw")
 
 variables_to_humanize <- read.csv("variables_to_humanize.csv")
 
-save(variables_to_humanize, file = "variables_to_humanize.RData")
+# use_data() create the file in /data
+usethis::use_data(variables_to_humanize, overwrite = TRUE)
+
+devtools::document()
 
 setwd(original_wd)
-
 rm(original_wd, variables_to_humanize)
-
-devtools::use_data_raw()
-# IMPORTANT: COPY FILE TO /data
-# AND THEN: devtools::use_data()

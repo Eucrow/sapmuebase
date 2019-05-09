@@ -71,9 +71,6 @@ READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO rep
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
 * arte: gears
-* cfpo2015
-* cfpo2016
-* cfpo2017
 * cfpo2018
 * especies
 * especies_mezcla: mixed species
@@ -91,8 +88,12 @@ Use `?nameofthedataset` to details.
 * relacion_volcado
 * variables_to_humanize: used in humanize() and humanizeVariable() functions
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
+* metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.2
+Add metier_caladero_dcf dataset and update estratorim_arte and
+maestro_flota_sireno datasets. Remove old cfpo datasets.
 ### 1.9.1
 Update and fix estratorim_arte, estratorim_origen and estrato_rim datasets.
 ### 1.9

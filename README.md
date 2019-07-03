@@ -91,6 +91,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.3
+Fix bug in importIPDFile() function.
 ### 1.9.2
 Add metier_caladero_dcf dataset and update estratorim_arte and
 maestro_flota_sireno datasets. Remove old cfpo datasets.

@@ -3423,7 +3423,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10277;Micromesistius poutassou;1399;País Vasco sin asignar puerto;1301;Lirio;Histórico ICES;ENTERO
 10822;Lophius piscatorius;1399;País Vasco sin asignar puerto;1301;Rape;Histórico ICES;ENTERO
 10321;Zenopsis conchifer;0112;Huelva;0101;Gallo plateado;IEO;ENTERO
-10282;Merluccius spp;0922;Vigo;0903;Merluza negra;CECAF;ENTERO
+10282;Merluccius spp;0922;Vigo;0903;Merluza negra (M.senegalensis+M.polli);CECAF;ENTERO
 10000;Pisces;0112;Huelva;0101;Varios;IEO.Tenerife;ENTERO
 10821;Lophius spp;0402;Santander;0415;Rapes mezcla 15;Rosa Gancedo;EVISCERADO
 10259;Molva dypterygia;1417;Gijón;1412;Pez palo 02;SIRENO;ENTERO
@@ -13688,7 +13688,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10822;Lophius piscatorius;1418;Avilés;1419;Rape blanco 09;Rosa;EVISCERADO
 10726;Triglidae;0907;A Coruña;0907;Arete;R.Morlán;ENTERO
 10726;Triglidae;0918;A Coruña (Camiones);0907;Arete;R.Morlán;ENTERO
-10048;Squaliformes;0101;Cádiz;0101;Tiburón;IEO;TROZOS
+10048;Squaliformes;0101;Cádiz;0101;Tiburón;IEO;ENTERO
 50311;Nereis (Hediste) diversicolor;0909;Malpica de Bergantiños;0902;Miñoca de mar;R.Morlán;ENTERO
 30137;Solen marginatus;0911;Camariñas;0901;Longueirón vello;R.Morlán;ENTERO
 40048;Paracentrotus lividus;0911;Camariñas;0901;Erizo de mar;R.Morlán;ENTERO
@@ -13777,7 +13777,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10474;Argyrosomus regius;0918;A Coruña (Camiones);0901;Corvina;R.Morlán;ENTERO
 10492;Diplodus spp;0907;A Coruña;0902;Otros Sargos;SIreno;ENTERO
 10492;Diplodus spp;0918;A Coruña (Camiones);0902;Otros Sargos;Sireno;ENTERO
-11383;Brama spp;0907;A Coruña;0901;Otras Castañetas;SIRENO;ENTRO
+11383;Brama spp;0907;A Coruña;0901;Otras Castañetas;SIRENO;ENTERO
 11383;Brama spp;0918;A Coruña (Camiones);0901;Otras Castañetas;SIRENO;ENTRO
 30128;Tapes philippinarum;0906;Sada;0901;Almeja japonesa;RAFA;ENTERO
 30125;Venus verrucosa;0903;Cariño;0901;Bolo;RAFA;ENTERO
@@ -20499,7 +20499,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10413;Trachurus spp;1318;Ondarroa;1331;Txitxarro B de 5 a 9 granos kg;AZTI;ENTERO
 10413;Trachurus spp;1318;Ondarroa;1325;Txitxarro N mas de 10 granos kg 02;AZTI;ENTERO
 10413;Trachurus spp;1318;Ondarroa;1321;Txitxarro blanco hasta 4;AZTI;ENTERO
-10413;Trachurus spp;1318;Ondarroa;1332;Txitxarro N de 5 a 9 granos kg 02;AZTI;ENTERO
+10413;Trachurus spp;1318;Ondarroa;1332;Txitxarro N de 5 a 9 granos kg 04;AZTI;ENTERO
 10413;Trachurus spp;1318;Ondarroa;1322;Txitxarro blanco hasta 4 (2);AZTI;ENTERO
 10441;Brama brama;1318;Ondarroa;1302;Palometa negra (2);AZTI;ENTERO
 10313;Beryx spp;1418;Avilés;1421;Virrey 01;Marco;ENTERO
@@ -21050,6 +21050,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10269;Pollachius virens;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10270;Pollachius pollachius;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10274;Trisopterus esmarkii;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10474;Argyrosomus regius;1326;Santurce;1301;Lantesa;AZTI;ENTERO
 10277;Micromesistius poutassou;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10279;Merlangius merlangus;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10283;Merluccius merluccius;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
@@ -21057,22 +21058,35 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10302;Malacocephalus laevis;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10320;Zeus faber;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10323;Capros aper;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10519;Sparus aurata;1326;Santurce;1301;Dorada;Histórico;ENTERO
 10617;Callionymus lyra;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10723;Helicolenus dactylopterus;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10716;Scorpaena porcus;1326;Santurce;1301;Rascacio;AZTI;ENTERO
+10731;Chelidonichthys lucerna;1326;Santurce;1301;Arraingorri;AZTI;ENTERO
+10156;Engraulis encrasicolus;1320;Lequeitio;1303;Anchoa de 31 a 50 granos kg;IEO;ENTERO
 10754;Arnoglossus laterna;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10762;Pleuronectes platessa;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10763;Reinhardtius hippoglossoides;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10764;Glyptocephalus cynoglossus;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10765;Hippoglossoides platessoides;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 10768;Microstomus kitt;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10156;Engraulis encrasicolus;1320;Lequeitio;1304;Anchoa de 38 granos kg;IEO;ENTERO
+10156;Engraulis encrasicolus;1320;Lequeitio;1305;Anchoa de 40 granos kg;IEO;ENTERO
+10821;Lophius spp;1320;Lequeitio;1304;Sapito N;Antonio Punzón;EVISCERADO
 10802;Scophthalmus maximus;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10821;Lophius spp;1318;Ondarroa;1351;Rape blanco ab 01;AZTI;EVISCERADO
+10821;Lophius spp;1318;Ondarroa;1352;Rape blanco ab 02;AZTI;EVISCERADO
 10864;Rajidae;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 11168;Solea solea;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10821;Lophius spp;1318;Ondarroa;1353;Rape blanco ab 03;AZTI;EVISCERADO
 20132;Pagurus prideaux;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 20152;Cancer pagurus;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 20169;Liocarcinus depurator;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 20182;Munida spp;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 30158;Sepiola spp;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
+10821;Lophius spp;1318;Ondarroa;1354;Rape blanco ab 04;AZTI;EVISCERADO
+10731;Chelidonichthys lucerna;1318;Ondarroa;1339;Arraingorri 09;AZTI;ENTERO
+10726;Triglidae;1318;Ondarroa;1313;Perlones 03;IEO;ENTERO
 40014;Phormosoma placenta;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 40035;Stichopus spp;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
 40040;Echinus spp;0982;CEE;0999;Sin Categoría;DESCARTES;ENTERO
@@ -21086,6 +21100,7 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10022;Scyliorhinus canicula;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10025;Prionace glauca;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10056;Squalus acanthias;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
+11168;Solea solea;1318;Ondarroa;1313;Lenguado 05;AZTI;ENTERO
 10171;Argentina spp;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10173;Argentina sphyraena;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10220;Conger conger;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
@@ -21093,16 +21108,23 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10258;Molva molva;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10270;Pollachius pollachius;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10273;Trisopterus spp;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1312;Fuenterrabía;1322;Txitxarro blanco 02;AZTI;ENTERO
+10413;Trachurus spp;1312;Fuenterrabía;1323;Txitxarro blanco 03;AZTI;ENTERO
 10277;Micromesistius poutassou;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10279;Merlangius merlangus;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10283;Merluccius merluccius;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10320;Zeus faber;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10398;Dicentrarchus labrax;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10413;Trachurus spp;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1312;Fuenterrabía;1301;Sargo;AZTI;ENTERO
+10492;Diplodus spp;1312;Fuenterrabía;1311;Sargo 01;AZTI;ENTERO
 10556;Labrus mixtus;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10641;Scomber colias;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10642;Scomber scombrus;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10726;Triglidae;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1312;Fuenterrabía;1312;Sargo 02;AZTI;ENTERO
+10492;Diplodus spp;1312;Fuenterrabía;1313;Sargo 03;AZTI;ENTERO
+10492;Diplodus spp;1312;Fuenterrabía;1314;Sargo 04;AZTI;ENTERO
 30171;Ommastrephidae;1318;Ondarroa;1399;Sin Categoría;DESCARTES;ENTERO
 10000;Pisces;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10021;Scyliorhinus stellaris;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
@@ -21113,12 +21135,17 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10061;Etmopterus pusillus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10062;Etmopterus spinax;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10089;Raja spp;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+11165;Auxis spp;1318;Ondarroa;1301;Melva;AZTI;ENTERO
+10788;Microchirus spp;1313;Pasajes;1301;Ratas;AZTI;ENTERO
+10726;Triglidae;1322;Bermeo;1313;Rubio 03;SIRENO;ENTERO
+10579;Trachinus draco;1320;Lequeitio;1301;Salvario;AZTI;ENTERO
 10114;Chimaera monstrosa;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10137;Alosa alosa;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10152;Sardina pilchardus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10172;Argentina silus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10180;Argyropelecus olfersi;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10182;Lampanyctus crocodilus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10498;Dentex spp;1320;Lequeitio;1301;Dentones;AZTI;ENTERO
 30166;Loligo spp;1423;Llanes;1499;Sin categoría;DESCARTES;ENTERO
 30171;Ommastrephidae;1423;Llanes;1499;Sin categoría;DESCARTES;ENTERO
 30191;Eledone spp;1423;Llanes;1499;Sin categoría;DESCARTES;ENTERO
@@ -21226,6 +21253,36 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10273;Trisopterus spp;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10273;Trisopterus spp;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10273;Trisopterus spp;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10864;Rajidae;0921;Marín;0908;Raya undulata;B.Patiño;ENTERO
+10331;Chelon labrosus;1313;Pasajes;1301;Desconocido cd;AZTI;ENTERO
+10273;Trisopterus spp;1317;Motrico;1301;Fanecas;SIRENO;ENTERO
+10726;Triglidae;1317;Motrico;1301;Rubios;SIRENO;ENTERO
+10762;Pleuronectes platessa;1313;Pasajes;1301;Solla;SIRENO;ENTERO
+11165;Auxis spp;1324;Arminza;1301;Melva;AZTI;ENTERO
+10821;Lophius spp;1324;Arminza;1311;Rapes blanco ab;SGPM;EVISCERADO
+10821;Lophius spp;1324;Arminza;1321;Rapes negro ab;SGPM;EVISCERADO
+10540;Mullus spp;1317;Motrico;1301;Salmonetes;SIRENO;ENTERO
+10488;Pagellus erythrinus;1316;Guetaria;1301;Breca;AZTI;ENTERO
+10279;Merlangius merlangus;1320;Lequeitio;1301;Liba;Histórico;ENTERO
+10042;Mustelus spp;1320;Lequeitio;1301;Musolas;SIRENO;ENTERO
+10532;Sarpa salpa;1322;Bermeo;1301;Salema;AZTI;ENTERO
+10798;Lepidorhombus spp;1324;Arminza;1301;Gallos;Punzón;ENTERO
+10639;Sarda sarda;1324;Arminza;1301;Agingorrotz;AZTI;ENTERO
+10056;Squalus acanthias;1320;Lequeitio;1301;Mielga;IEORAFA;ENTERO
+10273;Trisopterus spp;1324;Arminza;1301;Fanecas;SIRENO;ENTERO
+10654;Auxis rochei rochei;1324;Arminza;1301;Melva;AZTI;ENTERO
+10660;Thunnus alalunga;1324;Arminza;1301;Atun blanco;A.Pesca.Mar.;ENTERO
+10802;Scophthalmus maximus;1322;Bermeo;1301;Rodaballo;IEO;ENTERO
+11167;Pegusa lascaris;1324;Arminza;1301;Lenguado rubio;AZTI;ENTERO
+10490;Pagellus bellottii;0922;Vigo;0901;Garapello, Besugo africano;CECAF;ENTERO
+20076;Aristeus varidens;0922;Vigo;0901;Gamba roja;CECAF;ENTERO
+10821;Lophius spp;0922;Vigo;0926;Rape africano abierto;CECAF;EVISCERADO, DESCABEZADO Y SIN COLA
+10821;Lophius spp;1417;Gijón;1440;Rape negro picado;SIRENO;EVISCERADO
+11231;Symphodus ocellatus;0106;Algeciras;0101;Tordo de roca;SIRENO;ENTERO
+10723;Helicolenus dactylopterus;1420;Luarca;1411;Cabra 01;A.Punzón;ENTERO
+10723;Helicolenus dactylopterus;1420;Luarca;1412;Cabra 02;A.Punzón;ENTERO
+10270;Pollachius pollachius;1420;Luarca;1402;Abadejo abierto;IEO;EVISCERADO
+11231;Symphodus ocellatus;0115;Sevilla;0101;Tordo de roca;SIRENO;ENTERO
 20556;Macropodia spp;0914;Muros;0999;Sin Categoría;DESCARTES;ENTERO
 30000;Sacoglossa;0914;Muros;0999;Sin Categoría;DESCARTES;ENTERO
 30066;Gastropoda;0914;Muros;0999;Sin Categoría;DESCARTES;ENTERO
@@ -21312,18 +21369,26 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10222;Notacanthus bonaparte;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10247;Halargyreus johnsonii;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10259;Molva dypterygia;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10726;Triglidae;1313;Pasajes;1311;Perlones 01;Histórico;ENTERO
+10726;Triglidae;1313;Pasajes;1312;Perlones 02;Histórico;ENTERO
 10298;Trachyrincus scabrus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10301;Coelorinchus caelorhincus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10302;Malacocephalus laevis;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10305;Coryphaenoides rupestris;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+11165;Auxis spp;1322;Bermeo;1301;Melva;AZTI;ENTERO
 10318;Hoplostethus mediterraneus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10320;Zeus faber;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10389;Polyprion americanus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10391;Serranus cabrilla;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1318;Ondarroa;1309;Sargo (5);AZTI;ENTERO
+10801;Scophthalmus rhombus;1320;Lequeitio;1301;Reno;AZTI;ENTERO
+10474;Argyrosomus regius;1320;Lequeitio;1301;Lantesa;AZTI;ENTERO
 10441;Brama brama;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10487;Pagellus bogaraveo;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10489;Pagellus acarne;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10522;Boops boops;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10498;Dentex spp;1313;Pasajes;1301;Dentones;AZTI;ENTERO
+10726;Triglidae;1318;Ondarroa;1339;Arraingorri 09;AZTI;ENTERO
 10579;Trachinus draco;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10617;Callionymus lyra;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10618;Callionymus maculatus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
@@ -21331,13 +21396,25 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10634;Lepidopus caudatus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10635;Aphanopus carbo;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10641;Scomber colias;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10498;Dentex spp;1322;Bermeo;1301;Dentones;AZTI;ENTERO
+10019;Galeus melastomus;1322;Bermeo;1301;Bocanegra;J.Crespo;ENTERO
+10042;Mustelus spp;1313;Pasajes;1311;Musolas 01;SIRENO;ENTERO
+10042;Mustelus spp;1313;Pasajes;1312;Musolas 02;SIRENO;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1311;Rascacios 01;IEO;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1312;Rascacios 02;IEO;ENTERO
 10754;Arnoglossus laterna;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10758;Arnoglossus imperialis;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1313;Rascacios 03;IEO;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1314;Rascacios 04;IEO;ENTERO
+11165;Auxis spp;1313;Pasajes;1301;Melva;AZTI;ENTERO
 10802;Scophthalmus maximus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+11165;Auxis spp;1320;Lequeitio;1301;Melva;AZTI;ENTERO
+10171;Argentina spp;1318;Ondarroa;1301;Argentina spp;DESCARTES;ENTERO
 10826;Cepola macrophthalma;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10920;Deania profundorum;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 10950;Lepidion eques;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 11053;Gaidropsarus macrophthalmus;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
+10559;Labrus bergylta;1320;Lequeitio;1301;Maragota;AZTI;ENTERO
 11501;Lappanella fasciata;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 20034;Dendrobranchiata;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
 20047;Pasiphaea sivado;1417;Gijón;1499;Sin Categoría;DESCARTES;ENTERO
@@ -21489,6 +21566,88 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10314;Beryx decadactylus;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
 10042;Mustelus spp;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
 10492;Diplodus spp;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10474;Argyrosomus regius;1313;Pasajes;1311;Lantesa 01;AZTI;ENTERO
+10474;Argyrosomus regius;1313;Pasajes;1312;Lantesa 02;AZTI;ENTERO
+10492;Diplodus spp;1313;Pasajes;1311;Sargos 01;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1312;Sargos 02;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1313;Sargos 03;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1314;Sargos 04;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1315;Sargos 05;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1316;Sargos 06;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1317;Sargos 07;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1321;Sargos vulgaris 01;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1322;Sargos vulgaris 02;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1331;Sargos breado 01;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1332;Sargos breado 02;SIRENO;ENTERO
+10540;Mullus spp;1313;Pasajes;1311;Salmonetes 01;J.Crespo;ENTERO
+10540;Mullus spp;1313;Pasajes;1312;Salmonetes 02;J.Crespo;ENTERO
+10540;Mullus spp;1313;Pasajes;1313;Salmonetes 03;J.Crespo;ENTERO
+10540;Mullus spp;1313;Pasajes;1314;Salmonetes 04;J.Crespo;ENTERO
+10579;Trachinus draco;1313;Pasajes;1311;Salvario 01;AZTI;ENTERO
+10579;Trachinus draco;1313;Pasajes;1312;Salvario 02;AZTI;ENTERO
+10641;Scomber colias;1313;Pasajes;1311;Verdel 01;J.Crespo;ENTERO
+10641;Scomber colias;1313;Pasajes;1312;Verdel 02;J.Crespo;ENTERO
+10798;Lepidorhombus spp;1313;Pasajes;1317;Gallos ab 2;IEO;EVISCERADO
+10798;Lepidorhombus spp;1313;Pasajes;1318;Gallos ab 3;IEO;EVISCERADO
+10798;Lepidorhombus spp;1313;Pasajes;1319;Gallos ab 4;IEO;EVISCERADO
+10821;Lophius spp;1313;Pasajes;1341;Rape blanco 01;Rosa;EVISCERADO
+10821;Lophius spp;1313;Pasajes;1342;Rape blanco 02;Rosa;EVISCERADO
+10821;Lophius spp;1313;Pasajes;1343;Rape blanco 03;Rosa;EVISCERADO
+10821;Lophius spp;1313;Pasajes;1344;Rape blanco 04;Rosa;EVISCERADO
+11173;Chelidonichthys cuculus;1313;Pasajes;1311;Putxano 01;J.Crespo;ENTERO
+11173;Chelidonichthys cuculus;1313;Pasajes;1312;Putxano 02;J.Crespo;ENTERO
+10492;Diplodus spp;1326;Santurce;1311;Sargos 01;SIRENO;ENTERO
+10492;Diplodus spp;1326;Santurce;1312;Sargos 02;SIRENO;ENTERO
+10492;Diplodus spp;1326;Santurce;1313;Sargos 03;SIRENO;ENTERO
+10492;Diplodus spp;1326;Santurce;1321;Sargos puntazo 01;SIRENO;ENTERO
+10492;Diplodus spp;1326;Santurce;1322;Sargos puntazo 02;SIRENO;ENTERO
+10492;Diplodus spp;1326;Santurce;1323;Sargos puntazo 03;SIRENO;ENTERO
+10864;Rajidae;1318;Ondarroa;1311;Raya clavata 01;AZTI;ENTERO
+10864;Rajidae;1318;Ondarroa;1312;Raya clavata 02;AZTI;ENTERO
+10864;Rajidae;1318;Ondarroa;1313;Raya clavata 03;AZTI;ENTERO
+10864;Rajidae;1318;Ondarroa;1314;Raya clavata 04;AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1311;Sardina hasta 10 en Kg (1);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1312;Sardina hasta 10 en Kg (2);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1313;Sardina hasta 10 en Kg (3);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1321;Sardina hasta 33-67 en kg (1);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1322;Sardina hasta 33-67 en kg (2);AZTI;ENTERO
+10279;Merlangius merlangus;1318;Ondarroa;1311;Liba 04;AZTI;EVISCERADO
+10320;Zeus faber;1318;Ondarroa;1314;Martin 06;AZTI;ENTERO
+10320;Zeus faber;1318;Ondarroa;1315;Martin 07;AZTI;ENTERO
+10320;Zeus faber;1318;Ondarroa;1316;Martin 08;AZTI;ENTERO
+10488;Pagellus erythrinus;1318;Ondarroa;1314;Breca 04;AZTI;ENTERO
+10540;Mullus spp;1318;Ondarroa;1314;Salmonetes 04;SGPM;ENTERO
+10540;Mullus spp;1318;Ondarroa;1315;Salmonetes 05;SGPM;ENTERO
+10660;Thunnus alalunga;1320;Lequeitio;1302;Bonito < 4 Kg.;SGPM;ENTERO
+10660;Thunnus alalunga;1320;Lequeitio;1303;Bonito de 4 a 7 kg;SGPM;ENTERO
+10660;Thunnus alalunga;1320;Lequeitio;1304;Bonito de 7 a 15 kg;SGPM;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1311;Monja 01;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1312;Monja 02;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1313;Monja 03;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1314;Monja 04;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1315;Monja 05;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1316;Monja 06;AZTI;ENTERO
+10663;Thunnus obesus;1312;Fuenterrabía;1317;Monja 07;AZTI;ENTERO
+10663;Thunnus obesus;1316;Guetaria;1314;Monja 04;AZTI;ENTERO
+10663;Thunnus obesus;1316;Guetaria;1315;Monja 05;AZTI;ENTERO
+10663;Thunnus obesus;1316;Guetaria;1316;Monja 06;AZTI;ENTERO
+10663;Thunnus obesus;1318;Ondarroa;1311;Monja 01;AZTI;ENTERO
+10663;Thunnus obesus;1318;Ondarroa;1312;Monja 02;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1321;Atún 35-50  01;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1322;Atún 35-50  02;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1323;Atún 35-50  03;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1324;Atún 35-50  04;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1325;Atún 35-50  05;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1326;Atún 35-50  06;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1327;Atún 35-50  07;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1328;Atún 35-50  08;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1331;Atún 50-100 01;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1332;Atún 50-100 02;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1333;Atún 50-100 03;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1334;Atún 50-100 04;AZTI;ENTERO
+10658;Thunnus thynnus;1312;Fuenterrabía;1320;Atún >100;AZTI;ENTERO
+10658;Thunnus thynnus;1316;Guetaria;1308;Cimarron 15-30 kg.;IEO;ENTERO
+30128;Tapes philippinarum;0110;Isla Cristina;0101;Almeja japonesa;IEO;ENTERO
 10191;Chlorophthalmus agassizi;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
 10204;Nemichthys scolopaceus;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
 10206;Anguilla anguilla;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
@@ -21625,6 +21784,9 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10060;Centrophorus squamosus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10063;Dalatias licha;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10089;Raja spp;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10737;Eutrigla gurnardus;1313;Pasajes;1311;Perlón 01;IEO;ENTERO
+10737;Eutrigla gurnardus;1313;Pasajes;1312;Perlón 02;IEO;ENTERO
+10047;Galeorhinus galeus;1318;Ondarroa;1311;Cazón 01;IEORAFA;ENTERO
 10113;Torpedo marmorata;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10138;Alosa fallax;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10152;Sardina pilchardus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
@@ -21648,17 +21810,27 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10267;Gaidropsarus vulgaris;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10270;Pollachius pollachius;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10271;Gaidropsarus spp;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10047;Galeorhinus galeus;1318;Ondarroa;1312;Cazón 02;IEORAFA;ENTERO
+10413;Trachurus spp;1313;Pasajes;1311;Chicharro 01;IEO;ENTERO
 10279;Merlangius merlangus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10299;Nezumia aequalis;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10300;Nezumia sclerorhynchus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10305;Coryphaenoides rupestris;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1313;Pasajes;1312;Chicharro 02;IEO;ENTERO
+10042;Mustelus spp;1318;Ondarroa;1309;Tollas 03;SIRENO;ENTERO
 10317;Hoplostethus atlanticus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10389;Polyprion americanus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10391;Serranus cabrilla;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10403;Epigonus telescopus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10726;Triglidae;1313;Pasajes;1313;Perlones 03;Histórico;ENTERO
+10045;Mustelus asterias;1313;Pasajes;1313;Tolla 03;AZTI;ENTERO
+10413;Trachurus spp;1313;Pasajes;1313;Chicharro 03;IEO;ENTERO
 10488;Pagellus erythrinus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1313;Pasajes;1314;Chicharro 04;IEO;ENTERO
 10507;Spondyliosoma cantharus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10512;Pagrus pagrus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10726;Triglidae;1318;Ondarroa;1321;Cuco 01;IEO;ENTERO
+10726;Triglidae;1318;Ondarroa;1322;Cuco 02;IEO;ENTERO
 10554;Acantholabrus palloni;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10556;Labrus mixtus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10557;Coris julis;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
@@ -21669,11 +21841,22 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10633;Trichiurus lepturus;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10641;Scomber colias;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10673;Xiphias gladius;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10726;Triglidae;1318;Ondarroa;1323;Cuco 03;IEO;ENTERO
 10715;Scorpaena spp;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+30156;Sepia spp;1318;Ondarroa;1313;Txoko 03;AZTI;ENTERO
+10471;Umbrina canariensis;1322;Bermeo;1311;Kloska 01;AZTI;ENTERO
+10471;Umbrina canariensis;1322;Bermeo;1312;Kloska 02;AZTI;ENTERO
+10492;Diplodus spp;1322;Bermeo;1321;Sargos 01;SIRENO;ENTERO
 10728;Trigla spp;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1322;Bermeo;1322;Sargos 02;SIRENO;ENTERO
+10492;Diplodus spp;1322;Bermeo;1323;Sargos 03;SIRENO;ENTERO
 10735;Lepidotrigla cavillone;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1322;Bermeo;1324;Sargos 04;SIRENO;ENTERO
+10492;Diplodus spp;1322;Bermeo;1331;D.vulgaris 01;SIRENO;ENTERO
 10754;Arnoglossus laterna;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10757;Arnoglossus thori;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1322;Bermeo;1332;D.vulgaris 02;SIRENO;ENTERO
+10492;Diplodus spp;1322;Bermeo;1333;D.vulgaris 03;SIRENO;ENTERO
 10498;Dentex spp;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
 10788;Microchirus spp;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
 11165;Auxis spp;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
@@ -21780,6 +21963,106 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 40129;Ophiuridae;0907;A Coruña;0999;Sin categoría;DESCARTES;ENTERO
 10090;Raja clavata;1417;Gijón;1499;Sin categoría;DESCARTES;ENTERO
 11706;Tetrapturus pfluegeri;1418;Avilés;1401;Aguja picuda;SIRENO;ENTERO
+30156;Sepia spp;1418;Avilés;1413;Sepias 03;M. Amez;ENTERO
+10487;Pagellus bogaraveo;1418;Avilés;1416;Besugo 06;IEO;ENTERO
+10798;Lepidorhombus spp;1417;Gijón;1404;Gallo picado;IEO;ENTERO
+10423;Caranx rhonchus;0118;Puerto de Santa María;0199;Jurel;I.Sobrino;ENTERO
+10540;Mullus spp;1418;Avilés;1402;Salmonete picado;Marco Amez;ENTERO
+10569;Symphodus melops;0914;Muros;0901;Vello;R.Morlán;ENTERO
+20059;Penaeus kerathurus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+20013;Squilla mantis;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10156;Engraulis encrasicolus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10469;Umbrina cirrosa;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10776;Solea senegalensis;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10731;Chelidonichthys lucerna;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10579;Trachinus draco;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+13390;Microchirus azevia;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+30000;Sacoglossa;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10220;Conger conger;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10486;Pagellus spp;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10152;Sardina pilchardus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+11168;Solea solea;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20123;Solenocera membranacea;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10696;Aphia minuta;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+50042;Sipunculidae;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+30305;Pinna nobilis;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10642;Scomber scombrus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10826;Cepola macrophthalma;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10796;Phrynorhombus regius;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+20157;Polybius henslowi;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10474;Argyrosomus regius;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+10276;Trisopterus luscus;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+10520;Pagrus auriga;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10519;Sparus aurata;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10654;Auxis rochei rochei;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10090;Raja clavata;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+10486;Pagellus spp;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+2;Cnidaria;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+10519;Sparus aurata;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10532;Sarpa salpa;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+12822;Spicara flexuosa;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10276;Trisopterus luscus;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10486;Pagellus spp;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20077;Plesionika heterocarpus;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+40041;Asteroidea;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20123;Solenocera membranacea;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20066;Parapenaeus longirostris;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+60143;Ascidia spp;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+11194;Callionymus spp;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20537;Paguridae;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+40083;Crinoidea;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+2;Cnidaria;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10323;Capros aper;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10822;Lophius piscatorius;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20182;Munida spp;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+30216;Bivalvia;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10173;Argentina sphyraena;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10735;Lepidotrigla cavillone;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10753;Arnoglossus spp;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10394;Serranus hepatus;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+30066;Gastropoda;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+11173;Chelidonichthys cuculus;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10780;Synapturichthys kleinii;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10496;Diplodus cervinus cervinus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10062;Etmopterus spinax;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+30144;Rondeletiola minor;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+60517;Pteroeides spinosum;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+10489;Pagellus acarne;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+10583;Uranoscopus scaber;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+30097;Atrina fragilis;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+10276;Trisopterus luscus;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+20157;Polybius henslowi;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+30159;Sepia officinalis;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+10499;Dentex gibbosus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10486;Pagellus spp;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+20000;Crustacea;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+10490;Pagellus bellottii;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+20077;Plesionika heterocarpus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10696;Aphia minuta;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10692;Lesueurigobius friesii;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+30510;Cymbuliidae;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+40100;Holothuriidae;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10753;Arnoglossus spp;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+60143;Ascidia spp;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+26;Bryozoa;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+40129;Ophiuridae;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10753;Arnoglossus spp;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30285;Cymatiidae;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10989;Sphoeroides pachygaster;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+20123;Solenocera membranacea;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+2;Cnidaria;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10056;Squalus acanthias;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10323;Capros aper;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+30177;Illex coindetii;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+30216;Bivalvia;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+40066;Holothuria spp;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
 20154;Macropipus tuberculatus;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
 20155;Bathynectes maravigna;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
 20169;Liocarcinus depurator;0917;Santa Eugenia de Ribeira;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22048,6 +22331,63 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10283;Merluccius merluccius;1324;Arminza;1315;Merluza 06;IEO;EVISCERADO
 10283;Merluccius merluccius;1324;Arminza;1316;Merluza 07;IEO;EVISCERADO
 10283;Merluccius merluccius;1324;Arminza;1317;Merluza 08;IEO;EVISCERADO
+10394;Serranus hepatus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10729;Trigla lyra;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+20534;Brachyura;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10502;Dentex dentex;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10753;Arnoglossus spp;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10693;Deltentosteus quadrimaculatus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+23;Annelida;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10455;Plectorhinchus mediterraneus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+20149;Atelecyclus undecimdentatus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10499;Dentex gibbosus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10496;Diplodus cervinus cervinus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+20196;Homarus gammarus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10321;Zenopsis conchifer;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+30154;Sepiidae;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10262;Phycis blennoides;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+13399;Neoraja iberica;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30066;Gastropoda;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10723;Helicolenus dactylopterus;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30081;Bolinus brandaris;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10806;Balistes capriscus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+60143;Ascidia spp;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10044;Mustelus mustelus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+50042;Sipunculidae;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+26;Bryozoa;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10715;Scorpaena spp;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+20143;Palinurus spp;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+10583;Uranoscopus scaber;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+30160;Sepia elegans;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0114;Punta Umbría;0199;Sin categoría;DESCARTES;ENTERO
+20231;Munida intermedia;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+2;Cnidaria;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+11593;Microchirus boscanion;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+20123;Solenocera membranacea;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30097;Atrina fragilis;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30143;Rossia macrosoma;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10806;Balistes capriscus;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+10802;Scophthalmus maximus;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+10085;Raja miraletus;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+11167;Pegusa lascaris;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+26;Bryozoa;0103;Barbate;0199;Sin categoría;DESCARTES;ENTERO
+10225;Belone belone;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30144;Rondeletiola minor;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+10507;Spondyliosoma cantharus;0101;Cádiz;0199;Sin categoría;DESCARTES;ENTERO
+20534;Brachyura;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+30124;Chamelea gallina;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10502;Dentex dentex;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+20225;Medorippe lanata;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10693;Deltentosteus quadrimaculatus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+23;Annelida;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10407;Pomatomus saltatrix;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10542;Mullus barbatus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10801;Scophthalmus rhombus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10512;Pagrus pagrus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10338;Liza aurata;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10520;Pagrus auriga;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10091;Raja montagui;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10391;Serranus cabrilla;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
 10191;Chlorophthalmus agassizi;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 10204;Nemichthys scolopaceus;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 10225;Belone belone;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22167,11 +22507,23 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10019;Galeus melastomus;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
 10152;Sardina pilchardus;1312;Fuenterrabía;1310;Sardina de 11 a 18 granos kg 02;AZTI;ENTERO
 40053;Holothuroidea;0925;Burela;0901;Cohombros de mar;SIRENO;ENTERO
+10492;Diplodus spp;1322;Bermeo;1341;D. cervinus 01;SIRENO;ENTERO
 10323;Capros aper;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;1322;Bermeo;1342;D. cervinus 02;SIRENO;ENTERO
+10492;Diplodus spp;1322;Bermeo;1343;D. cervinus 03;SIRENO;ENTERO
+10705;Scorpaenidae;1322;Bermeo;1321;S. notata 01;AZTI;ENTERO
 10507;Spondyliosoma cantharus;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
+10705;Scorpaenidae;1322;Bermeo;1322;S. notata 02;AZTI;ENTERO
 10559;Labrus bergylta;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1316;Guetaria;1314;Txitxarro negro hasta 4 (2);AZTI;ENTERO
 10662;Thunnus albacares;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
+10540;Mullus spp;1317;Motrico;1311;Salmonetes 01;SIRENO;ENTERO
+10540;Mullus spp;1317;Motrico;1312;Salmonetes 02;SIRENO;ENTERO
+10540;Mullus spp;1317;Motrico;1313;Salmonetes 03;SIRENO;ENTERO
+10042;Mustelus spp;1313;Pasajes;1313;Musolas 03;SIRENO;ENTERO
+10273;Trisopterus spp;1313;Pasajes;1313;Fanecas 03;Histórico;ENTERO
 30188;Octopus vulgaris;1420;Luarca;1499;Sin Categoría;DESCARTES;ENTERO
+10726;Triglidae;1418;Avilés;1415;Escachos 05;Marta Sánz;ENTERO
 0;VIDA;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 1;Porifera;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 30;Echinodermata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22185,6 +22537,8 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10051;Scymnodon ringens;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10060;Centrophorus squamosus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10087;Dipturus batis;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10263;Phycis phycis;0922;Vigo;0904;Brótola abierta;J.L. Cebrián;EVISCERADO
+10152;Sardina pilchardus;1313;Pasajes;1399;Sardina Descartes;AZTI;ENTERO
 10095;Raja undulata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10113;Torpedo marmorata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10114;Chimaera monstrosa;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22199,17 +22553,25 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10277;Micromesistius poutassou;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10283;Merluccius merluccius;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10298;Trachyrincus scabrus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10802;Scophthalmus maximus;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
 10318;Hoplostethus mediterraneus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10320;Zeus faber;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10323;Capros aper;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10337;Liza ramada;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10398;Dicentrarchus labrax;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10094;Raja brachyura;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10090;Raja clavata;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
 10487;Pagellus bogaraveo;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10488;Pagellus erythrinus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10489;Pagellus acarne;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10091;Raja montagui;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10799;Lepidorhombus whiffiagonis;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
+10092;Leucoraja naevus;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
 10507;Spondyliosoma cantharus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10519;Sparus aurata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10522;Boops boops;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10729;Trigla lyra;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
 10556;Labrus mixtus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10559;Labrus bergylta;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10579;Trachinus draco;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22217,8 +22579,16 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10617;Callionymus lyra;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10641;Scomber colias;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10642;Scomber scombrus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10138;Alosa fallax;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+30170;Todaropsis eblanae;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+10414;Trachurus trachurus;0902;Viveiro;0999;Sin categoría;DESCARTES;ENTERO
+10641;Scomber colias;0902;Viveiro;0999;Sin categoría;DESCARTES;ENTERO
 10723;Helicolenus dactylopterus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+40092;Molpadiidae;0403;Suances;0499;Sin categoría;DESCARTES;ENTERO
+10633;Trichiurus lepturus;0403;Suances;0499;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0403;Suances;0499;Sin categoría;DESCARTES;ENTERO
 10783;Dicologlossa cuneata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10094;Raja brachyura;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
 10802;Scophthalmus maximus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10816;Mola mola;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 10398;Dicentrarchus labrax;1312;Fuenterrabía;1301;Lubina;SIRENO;ENTERO
@@ -22274,6 +22644,58 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 30122;Callista chione;0106;Algeciras;0101;Concha fina;Lista.J.And.Paula;ENTERO
 30125;Venus verrucosa;0106;Algeciras;0101;Almejón;IEO;ENTERO
 30133;Donax spp;0106;Algeciras;0101;Tallarinas;Lonja;ENTERO
+11168;Solea solea;1417;Gijón;1418;Lenguados 08;SIRENO;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1367;Anchoa de 73 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1368;Anchoa de 75 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1369;Anchoa de 76 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1370;Anchoa de 77 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1371;Anchoa de 79 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1372;Anchoa de 80 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1373;Anchoa de 81 granos kg;AZTI;ENTERO
+10156;Engraulis encrasicolus;1316;Guetaria;1374;Anchoa de 85 granos kg;AZTI;ENTERO
+10413;Trachurus spp;1316;Guetaria;1312;Txitxarro B mas de 10 granos kg;AZTI;ENTERO
+10413;Trachurus spp;1316;Guetaria;1313;Txitxarro N mas de 10 granos kg;AZTI;ENTERO
+10579;Trachinus draco;1316;Guetaria;1301;Salvario;AZTI;ENTERO
+10801;Scophthalmus rhombus;1313;Pasajes;1311;Reno 01;AZTI;ENTERO
+10801;Scophthalmus rhombus;1313;Pasajes;1312;Reno 02;AZTI;ENTERO
+10045;Mustelus asterias;1318;Ondarroa;1308;Tolla 3;AZTI;ENTERO
+10152;Sardina pilchardus;1316;Guetaria;1331;Sardina de 33 a 67 granos kg 01;AZTI;ENTERO
+10152;Sardina pilchardus;1316;Guetaria;1332;Sardina de 33 a 67 granos kg 02;AZTI;ENTERO
+10283;Merluccius merluccius;1317;Motrico;1302;Merluza cd;IEO;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1314;Sardina hasta 10 en Kg (4);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1315;Sardina hasta 10 en Kg (5);AZTI;ENTERO
+10152;Sardina pilchardus;1318;Ondarroa;1316;Sardina hasta 10 en Kg (6);AZTI;ENTERO
+10441;Brama brama;1318;Ondarroa;1311;Palometa negra 01;AZTI;ENTERO
+10441;Brama brama;1318;Ondarroa;1312;Palometa negra 02;AZTI;ENTERO
+10441;Brama brama;1318;Ondarroa;1313;Palometa negra 03;AZTI;ENTERO
+10634;Lepidopus caudatus;0925;Burela;0901;Sable;B.Patiño;ENTERO
+40059;Parastichopus regalis;0921;Marín;0901;Espardeña;SIRENO;ENTERO
+10487;Pagellus bogaraveo;0117;Rota;0101;Besugo;A.Pesca.Mar.;ENTERO
+10232;Scomberesox saurus saurus;0105;Tarifa;0101;Saltarín;R.Roda;ENTERO
+11116;Symphodus spp;0104;Conil de la Frontera;0101;Bodiones;SIRENO;ENTERO
+10657;Katsuwonus pelamis;0120;Chipiona;0101;Listado;Caleli;ENTERO
+10313;Beryx spp;0101;Cádiz;0101;Palometa roja;Caleli;ENTERO
+10718;Scorpaena elongata;0101;Cádiz;0101;Gallineta alargada;IEO;ENTERO
+10433;Lichia amia;0109;Ayamonte;0101;Palometón;Caleli;ENTERO
+10063;Dalatias licha;0101;Cádiz;0101;Lija;Mar Soriano;ENTERO
+10059;Centrophorus granulosus;0101;Cádiz;0101;Aullate;R.Roda;ENTERO
+40043;Asterias rubens;0921;Marín;0901;Cohombros de mar;IPD;ENTERO
+10583;Uranoscopus scaber;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+20229;Calappa granulata;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10456;Pomadasys incisus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10472;Umbrina ronchus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10113;Torpedo marmorata;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10488;Pagellus erythrinus;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+30162;Alloteuthis media;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10519;Sparus aurata;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
+11173;Chelidonichthys cuculus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+11498;Benthodesmus elongatus;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+30144;Rondeletiola minor;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10727;Peristedion cataphractum;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+30154;Sepiidae;0116;Sanlúcar de Barrameda;0199;Sin categoría;DESCARTES;ENTERO
+10864;Rajidae;0925;Burela;0908;Raya boca de rosa;R.Morlán;ENTERO
 20018;Pasiphaea multidentata;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 20034;Dendrobranchiata;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 20035;Processa spp;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22368,7 +22790,9 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 40001;Centrostephanus longispinus;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 40008;Luidia spp;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 40009;Asteronyx loveni;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
+10091;Raja montagui;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
 10965;Oxynotus paradoxus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10314;Beryx decadactylus;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
 20000;Crustacea;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 20145;Palinurus elephas;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 20152;Cancer pagurus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22378,6 +22802,8 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 20196;Homarus gammarus;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 20198;Geryon longipes;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 30000;Sacoglossa;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+11000;Actinopterigios;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
 30188;Octopus vulgaris;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 30198;Charonia lampas;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 40000;Paracentrotus spp;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22390,14 +22816,27 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 60010;Actinauge richardi;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 60458;Alcyonium spp;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
 60829;Madrepora oculata;1422;Bustio;1499;Sin Categoría;DESCARTES;ENTERO
+10414;Trachurus trachurus;0917;Santa Eugenia de Ribeira;0999;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+10090;Raja clavata;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10092;Leucoraja naevus;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10717;Scorpaena scrofa;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10725;Trigloporus lastoviza;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
+30160;Sepia elegans;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
 0;VIDA;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10019;Galeus melastomus;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10022;Scyliorhinus canicula;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10220;Conger conger;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10262;Phycis blennoides;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
+10269;Pollachius virens;0914;Muros;0999;Sin categoría;DESCARTES;ENTERO
+10720;Scorpaena notata;0925;Burela;0999;Sin categoría;DESCARTES;ENTERO
 10277;Micromesistius poutassou;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
 10283;Merluccius merluccius;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
+30160;Sepia elegans;0925;Burela;0999;Sin categoría;DESCARTES;ENTERO
 10642;Scomber scombrus;1424;Ribadesella;1499;Sin Categoría;DESCARTES;ENTERO
+10737;Eutrigla gurnardus;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10277;Micromesistius poutassou;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 0;VIDA;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 30;Echinodermata;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10000;Pisces;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22414,20 +22853,27 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10262;Phycis blennoides;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10269;Pollachius virens;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10270;Pollachius pollachius;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10414;Trachurus trachurus;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10800;Lepidorhombus boscii;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10277;Micromesistius poutassou;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10283;Merluccius merluccius;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10298;Trachyrincus scabrus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10283;Merluccius merluccius;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10320;Zeus faber;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10323;Capros aper;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10389;Polyprion americanus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10391;Serranus cabrilla;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10398;Dicentrarchus labrax;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10042;Mustelus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10273;Trisopterus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10441;Brama brama;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10487;Pagellus bogaraveo;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10488;Pagellus erythrinus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10489;Pagellus acarne;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10313;Beryx spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10507;Spondyliosoma cantharus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10522;Boops boops;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10557;Coris julis;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10559;Labrus bergylta;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10576;Echiichthys vipera;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22436,8 +22882,83 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10635;Aphanopus carbo;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10641;Scomber colias;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 10642;Scomber scombrus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10492;Diplodus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10498;Dentex spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10540;Mullus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10723;Helicolenus dactylopterus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10705;Scorpaenidae;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10726;Triglidae;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10788;Microchirus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10798;Lepidorhombus spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10821;Lophius spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 10816;Mola mola;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10864;Rajidae;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+11165;Auxis spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10282;Merluccius spp;0921;Marín;0903;Merluza negra (M.senegalensis+M.polli);CECAF;ENTERO
+10282;Merluccius spp;0921;Marín;0904;Merluza negra (M.senegalensis+M.polli) abierta;CECAF;EVISCERADO, DESCABEZADO Y SIN COLA
+10821;Lophius spp;0921;Marín;0937;Rape africano abierto;CECAF;EVISCERADO, DESCABEZADO Y SIN COLA
+10283;Merluccius merluccius;0922;Vigo;0927;Fina 01;B.Patiño;EVISCERADO
+10283;Merluccius merluccius;0922;Vigo;0928;Fina 02;B.Patiño;EVISCERADO
+10474;Argyrosomus regius;0914;Muros;0901;Corbina;R.Morlán;ENTERO
+10284;Merluccius senegalensis;0101;Cádiz;0108;Merluccius senegalensis Abierto Gordo;CECAF;EVISCERADO
+10284;Merluccius senegalensis;0101;Cádiz;0109;Merluccius senegalensis Abierta;CECAF;EVISCERADO
+10284;Merluccius senegalensis;0101;Cádiz;0110;Merluccius senegalensis Abierto Corto;CECAF;EVISCERADO
+10284;Merluccius senegalensis;0101;Cádiz;0111;Merluccius senegalensis Pijotón;CECAF;ENTERO
+10284;Merluccius senegalensis;0101;Cádiz;0112;Merluccius senegalensis Carioca;CECAF;ENTERO
+10290;Merluccius polli;0101;Cádiz;0108;Merluccius polli Abierto Gordo;CECAF;EVISCERADO
+10290;Merluccius polli;0101;Cádiz;0109;Merluccius polli Abierta;CECAF;EVISCERADO
+10290;Merluccius polli;0101;Cádiz;0110;Merluccius polli Abierto Corto;CECAF;EVISCERADO
+10290;Merluccius polli;0101;Cádiz;0111;Merluccius polli Pijotón;CECAF;ENTERO
+10290;Merluccius polli;0101;Cádiz;0112;Merluccius polli Carioca;CECAF;ENTERO
+10282;Merluccius spp;0101;Cádiz;0110;Merluccius spp. (Abierto Gordo);CECAF;EVISCERADO
+10152;Sardina pilchardus;1420;Luarca;1704;Sardina mediana;Lonja;ENTERO
+10152;Sardina pilchardus;1420;Luarca;1703;Sardina grande;RAFA;ENTERO
+10152;Sardina pilchardus;1420;Luarca;1702;Sardina pequeña;Lonja;ENTERO
+10152;Sardina pilchardus;1420;Luarca;1701;Sardina;Javier Delgado;ENTERO
+10277;Micromesistius poutassou;1420;Luarca;1701;Bacaladilla;SIRENO;ENTERO
+10220;Conger conger;1420;Luarca;1701;Congrio;Javier Delgado;ENTERO
+10262;Phycis blennoides;1420;Luarca;1701;Brótola;MAPA.J.C.;ENTERO
+10494;Diplodus sargus sargus;1420;Luarca;1701;Sargo;RAFA;ENTERO
+10512;Pagrus pagrus;1420;Luarca;1701;Pargo;J.Crespo;ENTERO
+30170;Todaropsis eblanae;1420;Luarca;1701;Pota blanca;MAPA.J.Crespo;ENTERO
+10507;Spondyliosoma cantharus;1420;Luarca;1701;Chopa;Ester Herrera;ENTERO
+10275;Trisopterus minutus;1420;Luarca;1701;Móllera;SIRENO;ENTERO
+10025;Prionace glauca;1420;Luarca;1701;Tintorera;J.Crespo;ENTERO
+10538;Spicara smaris;1420;Luarca;1701;Caramel;SIRENO;ENTERO
+30188;Octopus vulgaris;1420;Luarca;1701;Pulpo;Javier Delgado;ENTERO
+30167;Loligo vulgaris;1420;Luarca;1701;Calamar;Javier Delgado;ENTERO
+10673;Xiphias gladius;1420;Luarca;1701;Emperador;Javier Delgado;ENTERO
+10502;Dentex dentex;1420;Luarca;1701;Dentol;SIRENO;ENTERO
+10660;Thunnus alalunga;1420;Luarca;1701;Atún blanco;IEO.Lonja;ENTERO
+10658;Thunnus thynnus;1420;Luarca;1701;Atún;Javier Delgado;ENTERO
+10542;Mullus barbatus;1420;Luarca;1701;Moll de roca;Javier Delgado;ENTERO
+10141;Sardinella aurita;1420;Luarca;1704;Alacha pequeña;Javier Delgado;ENTERO
+10141;Sardinella aurita;1420;Luarca;1703;Alacha mediana;Javier Delgado;ENTERO
+10141;Sardinella aurita;1420;Luarca;1702;Alacha grande;Javier Delgado;ENTERO
+10141;Sardinella aurita;1420;Luarca;1701;Alacha;Javier Delgado;ENTERO
+10495;Diplodus vulgaris;1420;Luarca;1701;Vidriada;Lonja;ENTERO
+10456;Pomadasys incisus;1420;Luarca;1701;Roncador;Lonja;ENTERO
+10389;Polyprion americanus;1420;Luarca;1701;Cherna;RAFA;ENTERO
+10443;Coryphaena hippurus;1420;Luarca;1701;Llampuga;A.Esteban;ENTERO
+10332;Mugilidae;1420;Luarca;1701;Mujol;Javier Delgado;ENTERO
+10335;Mugil cephalus;1420;Luarca;1701;Pardete;Lonja;ENTERO
+10806;Balistes capriscus;1420;Luarca;1701;Pez ballesta;SIRENO;ENTERO
+10821;Lophius spp;1420;Luarca;1701;Rapes;SIRENO;ENTERO
+10486;Pagellus spp;1420;Luarca;1701;Besugos;SIRENO;ENTERO
+10492;Diplodus spp;1420;Luarca;1701;Sargos;SIRENO;ENTERO
+10498;Dentex spp;1420;Luarca;1701;Dentones;SIRENO;ENTERO
+10508;Oblada melanura;1420;Luarca;1701;Doblada;A.Esteban;ENTERO
+10537;Spicara maena;1420;Luarca;1701;Sucla;J.Crespo;ENTERO
+10540;Mullus spp;1420;Luarca;1701;Molls;SIRENO;ENTERO
+10540;Mullus spp;1420;Luarca;1702;Salmonetes;Javier Delgado;ENTERO
+30171;Ommastrephidae;1420;Luarca;1701;Potas;Paula.SGPM.;ENTERO
+20180;Scyllarus arctus;1420;Luarca;1701;Santiaguiño;SIRENO;ENTERO
+20059;Penaeus kerathurus;1420;Luarca;1701;Langostino;SIRENO;ENTERO
+20075;Aristeus antennatus;1420;Luarca;1701;Gamba roja;SIRENO;ENTERO
+10379;Epinephelus marginatus;1420;Luarca;1701;Mero;SIRENO;ENTERO
+10258;Molva molva;0922;Vigo;0923;Maruca evis 03;J.L.Cebrián;EVISCERADO
+20180;Scyllarus arctus;0106;Algeciras;0101;Santiaguiño;SIRENO;ENTERO
+20180;Scyllarus arctus;0115;Sevilla;0101;Santiaguiño;SIRENO;ENTERO
 40010;Astropecten irregularis;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 40013;Leptometra celtica;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
 40014;Phormosoma placenta;0921;Marín;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22533,7 +23054,13 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 20169;Liocarcinus depurator;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 20194;Nephrops norvegicus;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 20198;Geryon longipes;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+30156;Sepia spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+30165;Alloteuthis spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+30166;Loligo spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+30171;Ommastrephidae;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+30191;Eledone spp;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
 30188;Octopus vulgaris;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10092;Leucoraja naevus;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
 30193;Opisthoteuthis agassizii;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 40044;Echinoidea;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 40063;Marthasterias glacialis;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
@@ -22541,8 +23068,90 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 40149;Ophiura spp;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 50000;Tharyx spp;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
 50001;Animalia;1425;Lastres;1499;Sin Categoría;DESCARTES;ENTERO
+10823;Lophius budegassa;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10091;Raja montagui;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10090;Raja clavata;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10275;Trisopterus minutus;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+10091;Raja montagui;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+10044;Mustelus mustelus;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+10654;Auxis rochei rochei;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10138;Alosa fallax;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10094;Raja brachyura;0907;A Coruña;0999;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0907;A Coruña;0999;Sin categoría;DESCARTES;ENTERO
+10484;Sparidae;0907;A Coruña;0999;Sin categoría;DESCARTES;ENTERO
+10156;Engraulis encrasicolus;0907;A Coruña;0999;Sin categoría;DESCARTES;ENTERO
+10314;Beryx decadactylus;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10657;Katsuwonus pelamis;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+10507;Spondyliosoma cantharus;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+30;Echinodermata;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+10641;Scomber colias;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+10522;Boops boops;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10095;Raja undulata;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+30159;Sepia officinalis;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+10717;Scorpaena scrofa;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10260;Molva macrophthalma;1417;Gijón;1499;Sin categoría;DESCARTES;ENTERO
+10317;Hoplostethus atlanticus;1417;Gijón;1499;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;1417;Gijón;1499;Sin categoría;DESCARTES;ENTERO
+10092;Leucoraja naevus;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+20157;Polybius henslowi;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+30177;Illex coindetii;0917;Santa Eugenia de Ribeira;0999;Sin categoría;DESCARTES;ENTERO
+10488;Pagellus erythrinus;0910;Lage;0999;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0917;Santa Eugenia de Ribeira;0999;Sin categoría;DESCARTES;ENTERO
+10494;Diplodus sargus sargus;0925;Burela;0999;Sin categoría;DESCARTES;ENTERO
+10484;Sparidae;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
 2;Cnidaria;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 10769;Platichthys flesus;0921;Marín;0901;Platija;Sireno;ENTERO
+30175;Illex spp;1420;Luarca;1701;Potas;SIRENO;ENTERO
+10000;Pisces;1420;Luarca;1701;Varios;SIRENO;ENTERO
+10715;Scorpaena spp;1420;Luarca;1701;Escorpas;SIRENO;ENTERO
+10723;Helicolenus dactylopterus;1420;Luarca;1701;Serrà penagal;PCLV;ENTERO
+10726;Triglidae;1420;Luarca;1701;Rubios;SIRENO;ENTERO
+10775;Solea spp;1420;Luarca;1701;Lenguados;SIRENO;ENTERO
+10784;Dicologlossa hexophthalma;1420;Luarca;1701;Lenguado de manchas;SIRENO;ENTERO
+10836;Elasmobranchii;1420;Luarca;1701;Mestina;Sireno;ENTERO
+11000;Actinopterigios;1420;Luarca;1701;Varios;Javier Delgado;ENTERO
+11168;Solea solea;1420;Luarca;1701;Lenguado;J.Crespo;ENTERO
+10330;Sphyraena sphyraena;1420;Luarca;1701;Espetón;Javier Delgado;ENTERO
+10414;Trachurus trachurus;1420;Luarca;1701;Jurel negro;Ester Herrera;ENTERO
+10433;Lichia amia;1420;Luarca;1701;Palometa;Javier Delgado;ENTERO
+10463;Sciaena umbra;1420;Luarca;1701;Cova;RAFA;ENTERO
+10488;Pagellus erythrinus;1420;Luarca;1701;Pagel;Javier Delgado;ENTERO
+10493;Diplodus annularis;1420;Luarca;1701;Esparrallón;J.Crespo;ENTERO
+10532;Sarpa salpa;1420;Luarca;1701;Salpa;SIRENO;ENTERO
+10532;Sarpa salpa;1420;Luarca;1702;Salpa;Javier Delgado;ENTERO
+10535;Spicara spp;1420;Luarca;1701;Sucla;SIRENO;ENTERO
+10640;Scomber spp;1420;Luarca;1705;Estonino grande;Javier Desgado;ENTERO
+10640;Scomber spp;1420;Luarca;1704;Estonino pequeño;Javier Desgado;ENTERO
+10640;Scomber spp;1420;Luarca;1703;Caballas grandes;Javier Desgado;ENTERO
+10640;Scomber spp;1420;Luarca;1702;Caballas pequeñas;Javier Desgado;ENTERO
+10640;Scomber spp;1420;Luarca;1701;Caballas;Javier Desgado;ENTERO
+10641;Scomber colias;1420;Luarca;1702;Estornino pequeño;J.Crespo;ENTERO
+10641;Scomber colias;1420;Luarca;1703;Estornino grande;J.Crespo;ENTERO
+10641;Scomber colias;1420;Luarca;1701;Estornino;Javier Delgado;ENTERO
+10642;Scomber scombrus;1420;Luarca;1701;Caballa;Javier Delgado;ENTERO
+10655;Euthynnus alletteratus;1420;Luarca;1701;Albacora;A.Esteban;ENTERO
+11229;Symphodus doderleini;1420;Luarca;1701;Zorzal;SIRENO;ENTERO
+11231;Symphodus ocellatus;1420;Luarca;1701;Tordo de roca;SIRENO;ENTERO
+30317;Muricidae;1420;Luarca;1701;Caracoles;Lonja;ENTERO
+30825;Murex spp;1420;Luarca;1701;Busano;Lonja;ENTERO
+30164;Loliginidae;0112;Huelva;0101;Calamares;CECAF;ENTERO
+20085;Pandalidae;0112;Huelva;0101;Camaroncillos;CECAF;ENTERO
+10774;Soleidae;0112;Huelva;0101;Lenguados;CECAF;ENTERO
+10283;Merluccius merluccius;0926;Cillero;0950;Cocochas;IEO;HUEVAS
+10090;Raja clavata;1417;Gijón;1401;Raya de clavos;IEO;ENTERO
+10090;Raja clavata;1417;Gijón;1411;Raya de clavos 01;IEO;ENTERO
+10090;Raja clavata;1417;Gijón;1412;Raya de clavos 02;IEO;ENTERO
+10090;Raja clavata;1417;Gijón;1413;Raya de clavos 03;IEO;ENTERO
+10091;Raja montagui;1417;Gijón;1401;Raya pintada;IEO;ENTERO
+10091;Raja montagui;1417;Gijón;1411;Raya pintada 01;IEO;ENTERO
+10091;Raja montagui;1417;Gijón;1412;Raya pintada 02;IEO;ENTERO
+10092;Leucoraja naevus;1417;Gijón;1401;Raya santiaguesa;IEO;ENTERO
+10092;Leucoraja naevus;1417;Gijón;1411;Raya santiaguesa 01;IEO;ENTERO
+10092;Leucoraja naevus;1417;Gijón;1412;Raya santiaguesa 02;IEO;ENTERO
 10335;Mugil cephalus;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 10342;Atherina presbyter;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 10389;Polyprion americanus;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22646,7 +23255,14 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 20170;Liocarcinus corrugatus;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 20171;Liocarcinus marmoreus;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 10000;Pisces;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1312;Fuenterrabía;1321;Txitxarro blanco hasta 4;AZTI;ENTERO
 10056;Squalus acanthias;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10441;Brama brama;1312;Fuenterrabía;1301;Palometa negra;AZTI;ENTERO
+10507;Spondyliosoma cantharus;1312;Fuenterrabía;1301;Chopa;AZTI;ENTERO
+10508;Oblada melanura;1312;Fuenterrabía;1301;Cola negra;AZTI;ENTERO
+10522;Boops boops;1312;Fuenterrabía;1301;Boga;Histórico;ENTERO
+10641;Scomber colias;1312;Fuenterrabía;1304;Macarel hasta 2kg;IEO;ENTERO
+10723;Helicolenus dactylopterus;1312;Fuenterrabía;1301;Gallineta;SIRENO;ENTERO
 10134;Clupea harengus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 10171;Argentina spp;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 10232;Scomberesox saurus saurus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
@@ -22654,20 +23270,86 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10268;Gaidropsarus guttatus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 10270;Pollachius pollachius;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 10274;Trisopterus esmarkii;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10413;Trachurus spp;1313;Pasajes;1303;Txitxarro B mas de 10 granos kg;J.Crespo;ENTERO
+10469;Umbrina cirrosa;1313;Pasajes;1301;Corvina;SIRENO;ENTERO
+10502;Dentex dentex;1313;Pasajes;1301;Dentón;SIRENO;ENTERO
 10389;Polyprion americanus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10508;Oblada melanura;1313;Pasajes;1301;Cola negra;AZTI;ENTERO
+10765;Hippoglossoides platessoides;1313;Pasajes;1301;Platija americana;SIRENO;ENTERO
+10783;Dicologlossa cuneata;1313;Pasajes;1301;Soldadito;AZTI;ENTERO
 10635;Aphanopus carbo;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10798;Lepidorhombus spp;1313;Pasajes;1316;Gallos ab 1;J.Crespo;EVISCERADO
+10806;Balistes capriscus;1313;Pasajes;1301;Pez ballesta;Rosa;ENTERO
+10283;Merluccius merluccius;1312;Fuenterrabía;1312;Merluza 02;Llista-lonja;EVISCERADO
+10156;Engraulis encrasicolus;1312;Fuenterrabía;1348;Anchoa de 51 a 83 granos kg (1);AZTI;ENTERO
+10156;Engraulis encrasicolus;1312;Fuenterrabía;1349;Anchoa de 51 a 83 granos kg (2);AZTI;ENTERO
+10283;Merluccius merluccius;1312;Fuenterrabía;1311;Merluza 01;Llista-lonja;EVISCERADO
+10283;Merluccius merluccius;1312;Fuenterrabía;1313;Merluza 03;Llista-lonja;EVISCERADO
+10494;Diplodus sargus sargus;1312;Fuenterrabía;1311;Sargo (1);AZTI;ENTERO
+10494;Diplodus sargus sargus;1312;Fuenterrabía;1312;Sargo (2);AZTI;ENTERO
+10494;Diplodus sargus sargus;1312;Fuenterrabía;1313;Sargo (3);AZTI;ENTERO
 12994;Dipturus nidarosiensis;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 20196;Homarus gammarus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 20222;Macropodia longipes;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 30082;Buccinum spp;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 30098;Pectinidae;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 30151;Sepietta oweniana;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10494;Diplodus sargus sargus;1312;Fuenterrabía;1314;Sargo (4);AZTI;ENTERO
+10273;Trisopterus spp;1313;Pasajes;1311;Fanecas 01;Histórico;ENTERO
+10273;Trisopterus spp;1313;Pasajes;1312;Fanecas 02;Histórico;ENTERO
+10441;Brama brama;1313;Pasajes;1311;Palometa negra 01;AZTI;ENTERO
+10441;Brama brama;1313;Pasajes;1312;Palometa negra 02;AZTI;ENTERO
+10471;Umbrina canariensis;1313;Pasajes;1311;Kloska 01;AZTI;ENTERO
+10471;Umbrina canariensis;1313;Pasajes;1312;Kloska 02;AZTI;ENTERO
+10282;Merluccius spp;0101;Cádiz;0108;Higado;Lourdes Fernández;HIGADOS
 40058;Parastichopus tremulus;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 40066;Holothuria spp;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 40092;Molpadiidae;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 50001;Animalia;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 50017;Polychaeta;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
 60001;Petrosia dura;9998;Castletown Bere;9999;Sin Categoría;DESCARTES;ENTERO
+10282;Merluccius spp;0101;Cádiz;0109;Abierta Corto(M.senegalensis+M.polli) ;;Lourdes Fernández
+10282;Merluccius spp;0922;Vigo;0907;Merluza negra (M.senegalensis+M.polli) abierta;CECAF;EVISCERADO, DESCABEZADO Y SIN COLA
+10821;Lophius spp;0922;Vigo;0929;Rapes colas;CECAF;COLAS
+10822;Lophius piscatorius;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10275;Trisopterus minutus;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+30177;Illex coindetii;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10262;Phycis blennoides;1312;Fuenterrabía;1301;Locha;J.Crespo;ENTERO
+10725;Trigloporus lastoviza;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10799;Lepidorhombus whiffiagonis;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10729;Trigla lyra;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10540;Mullus spp;1417;Gijón;1402;Trozos de salmonete;IEO;TROZOS
+10768;Microstomus kitt;0922;Vigo;0921;Mendo limón cd mediano;JLCebrián;ENTERO
+10768;Microstomus kitt;0922;Vigo;0922;Mendo limón cd grande;JLCebrián;ENTERO
+10317;Hoplostethus atlanticus;0922;Vigo;0901;Pez rojo;R.Morlán;ENTERO
+20199;Chaceon spp;0922;Vigo;0901;Bocas;IEO;ENTERO
+10717;Scorpaena scrofa;0922;Vigo;0901;Cabracho;J.L. Cebrián;ENTERO
+20072;Aristaeomorpha foliacea;0922;Vigo;0901;Gambón;IEO;ENTERO
+20093;Pandalus spp;0922;Vigo;0901;Sin categoria;IEO;ENTERO
+20531;Aristeus spp;0922;Vigo;0901;Alistados;SIRENO;ENTERO
+10822;Lophius piscatorius;0966;Cangas;0901;Rape blanco;IEO;EVISCERADO
+30175;Illex spp;0966;Cangas;0901;Volador;B.Patiño;ENTERO
+30181;Todarodes sagittatus;0966;Cangas;0901;Pota;IEO.Mikel Casas;ENTERO
+10072;Rhinobatidae;0966;Cangas;0901;Guitarras;SIRENO;ENTERO
+10101;Dasyatis spp;0966;Cangas;0901;Chuchos;IEO;ENTERO
+10263;Phycis phycis;0966;Cangas;0901;Bertorellas;IEO;ENTERO
+10310;Macroramphosus scolopax;0966;Cangas;0901;Sin Categoría;CECAF;ENTERO
+10315;Beryx splendens;0966;Cangas;0901;Macho;IEO.Mikel Casas;ENTERO
+10330;Sphyraena sphyraena;0966;Cangas;0901;Espetón;SIRENO;ENTERO
+10349;Galeoides decadactylus;0966;Cangas;0901;Barbudo;SIRENO;ENTERO
+10382;Epinephelus aeneus;0966;Cangas;0901;Cherna de ley;SIRENO;ENTERO
+10426;Trachinotus ovatus;0966;Cangas;0901;Palometa blanca;SIRENO;ENTERO
+10457;Pomadasys jubelini;0966;Cangas;0901;Ronco sompat;SIRENO;ENTERO
+10461;Sciaenidae;0966;Cangas;0901;Sin categoria;SIRENO;ENTERO
+10468;Umbrina spp;0966;Cangas;0901;Verrugatos;IEO;ENTERO
+10490;Pagellus bellottii;0966;Cangas;0901;Garapello, Besugo africano;CECAF;ENTERO
+10498;Dentex spp;0966;Cangas;0901;Dentex Mec;R. Morlán;ENTERO
+10499;Dentex gibbosus;0966;Cangas;0901;Pargo;CECAF;ENTERO
+10503;Dentex angolensis;0966;Cangas;0901;Dentón angoleño;CECAF;ENTERO
+10520;Pagrus auriga;0966;Cangas;0901;Urta;SIRENO;ENTERO
+10723;Helicolenus dactylopterus;0966;Cangas;0901;Cabra;R.Morlán;ENTERO
+11538;Cynoglossus spp;0966;Cangas;0901;Lenguas;SIRENO;ENTERO
 40009;Asteronyx loveni;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40010;Astropecten irregularis;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40013;Leptometra celtica;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22762,6 +23444,76 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 40008;Luidia spp;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40083;Crinoidea;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40092;Molpadiidae;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
+10412;Naucrates ductor;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10800;Lepidorhombus boscii;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10799;Lepidorhombus whiffiagonis;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+30170;Todaropsis eblanae;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+10019;Galeus melastomus;0904;Cedeira;0999;Sin categoría;DESCARTES;ENTERO
+40060;Astropecten spinolosus;0925;Burela;0999;Sin categoría;DESCARTES;ENTERO
+10315;Beryx splendens;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+10051;Scymnodon ringens;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10822;Lophius piscatorius;0917;Santa Eugenia de Ribeira;0999;Sin categoría;DESCARTES;ENTERO
+10484;Sparidae;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10091;Raja montagui;0926;Cillero;0999;Sin categoría;DESCARTES;ENTERO
+10541;Mullus surmuletus;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+30181;Todarodes sagittatus;0919;Cambados;0999;Sin categoría;DESCARTES;ENTERO
+10315;Beryx splendens;0922;Vigo;0999;Sin categoría;DESCARTES;ENTERO
+10792;Microchirus variegatus;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+10720;Scorpaena notata;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+10827;Cyttopsis rosea;0922;Vigo;0999;Sin categoría;DESCARTES;ENTERO
+10731;Chelidonichthys lucerna;0409;Santoña;0499;Sin categoría;DESCARTES;ENTERO
+10050;Deania calcea;0405;San Vicente de la Barquera;0499;Sin categoría;DESCARTES;ENTERO
+10657;Katsuwonus pelamis;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10415;Trachurus picturatus;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10731;Chelidonichthys lucerna;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10494;Diplodus sargus sargus;1418;Avilés;1499;Sin categoría;DESCARTES;ENTERO
+10415;Trachurus picturatus;0921;Marín;0999;Sin categoría;DESCARTES;ENTERO
+10801;Scophthalmus rhombus;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10091;Raja montagui;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+11000;Actinopterigios;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10890;Alopias spp;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+30177;Illex coindetii;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10013;Isurus oxyrinchus;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10261;Phycis spp;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10093;Raja microocellata;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10097;Leucoraja circularis;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10731;Chelidonichthys lucerna;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10579;Trachinus draco;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10276;Trisopterus luscus;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10729;Trigla lyra;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10305;Coryphaenoides rupestris;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10088;Leucoraja fullonica;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+40044;Echinoidea;0142;Punta del Moral;0199;Sin categoría;DESCARTES;ENTERO
+40044;Echinoidea;0118;Puerto de Santa María;0199;Sin categoría;DESCARTES;ENTERO
+10726;Triglidae;0921;Marín;0941;Escachos 01;IEO;ENTERO
+10726;Triglidae;0921;Marín;0942;Escachos 02;IEO;ENTERO
+10431;Seriola dumerili;1420;Luarca;1701;Lecha;Javier Delgado;ENTERO
+10044;Mustelus mustelus;1420;Luarca;1701;Mussola;SIRENO;ENTERO
+10639;Sarda sarda;1420;Luarca;1701;Bonito;Javier Delgado;ENTERO
+10654;Auxis rochei rochei;1420;Luarca;1701;Melva;J.L.Pérez;ENTERO
+10423;Caranx rhonchus;1420;Luarca;1701;Jurela;Miguel Vivas;ENTERO
+10426;Trachinotus ovatus;1420;Luarca;1701;Palometa;SIRENO;ENTERO
+20122;Crangon crangon;1420;Luarca;1701;Quisquilla;IEO;ENTERO
+10413;Trachurus spp;1420;Luarca;1701;Jurel;Javier Delgado;ENTERO
+20013;Squilla mantis;1420;Luarca;1701;Galera;SIRENO;ENTERO
+10634;Lepidopus caudatus;1420;Luarca;1701;Sable;Javier Delgado;ENTERO
+10526;Lithognathus mormyrus;1420;Luarca;1701;Mabre;Javier Delgado;ENTERO
+10407;Pomatomus saltatrix;1420;Luarca;1701;Choa;J.Delgado;ENTERO
+10089;Raja spp;1420;Luarca;1701;Rayas;SIRENO;ENTERO
+10013;Isurus oxyrinchus;1420;Luarca;1701;Marrajo;Lonja;ENTERO
+10320;Zeus faber;1420;Luarca;1701;Gall;SIRENO;ENTERO
+10441;Brama brama;1420;Luarca;1701;Japuta;Lonja;ENTERO
+10519;Sparus aurata;1420;Luarca;1701;Dorada;Javier Delgado;ENTERO
+10522;Boops boops;1420;Luarca;1701;Boga;Javier Delgado;ENTERO
+10489;Pagellus acarne;1420;Luarca;1701;Besugo;Javier Delgado;ENTERO
+10398;Dicentrarchus labrax;1420;Luarca;1701;Lubina;Javier Delgado;ENTERO
+30166;Loligo spp;1420;Luarca;1701;Calamares;SIRENO;ENTERO
+30159;Sepia officinalis;1420;Luarca;1701;Jibia;Javier Delgado;ENTERO
+10283;Merluccius merluccius;1420;Luarca;1702;Pescadilla;Javier Delgado;ENTERO
+10283;Merluccius merluccius;1420;Luarca;1701;Merluza;Javier Delgado;ENTERO
+10156;Engraulis encrasicolus;1420;Luarca;1701;Boquerón;Javier Delgado;ENTERO
+10416;Trachurus mediterraneus;1420;Luarca;1701;Jurel blanco;Ester herrera;ENTERO
+20194;Nephrops norvegicus;1420;Luarca;1701;Cigala;SIRENO;ENTERO
 10152;Sardina pilchardus;1312;Fuenterrabía;1309;Sardina hasta 10 granos kg 2;AZTI;ENTERO
 10156;Engraulis encrasicolus;1312;Fuenterrabía;1347;Anchoa de 31 a 50 granos kg 2;AZTI;ENTERO
 10283;Merluccius merluccius;1313;Pasajes;1327;Kariokilla P ab;J.Crespo;EVISCERADO
@@ -22800,7 +23552,61 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10273;Trisopterus spp;1318;Ondarroa;1324;Fogon Ab 04;AZTI;ENTERO
 10764;Glyptocephalus cynoglossus;1318;Ondarroa;1314;Gallo Inglés 04;AZTI;EVISCERADO
 10273;Trisopterus spp;1320;Lequeitio;1302;Faneca ab;SGPM;EVISCERADO
+10156;Engraulis encrasicolus;1316;Guetaria;1361;Anchoa de 31 a 50 granos kg;AZTI;ENTERO
+10047;Galeorhinus galeus;1417;Gijón;1402;Cazón abierto;Rosa;EVISCERADO
+10270;Pollachius pollachius;1420;Luarca;1403;Abadejo abierto 2;IEO;EVISCERADO
 10826;Cepola macrophthalma;0925;Burela;0901;Cinta;R.Morlán;ENTERO
+10283;Merluccius merluccius;1318;Ondarroa;1351;Gorda cd;AZTI;ENTERO
+10488;Pagellus erythrinus;1313;Pasajes;1314;Breca 04;AZTI;ENTERO
+10492;Diplodus spp;1313;Pasajes;1323;Sargos vulgaris 03;SIRENO;ENTERO
+10492;Diplodus spp;1313;Pasajes;1324;Sargos vulgaris 04;SIRENO;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1315;Rascacios 05;IEO;ENTERO
+10705;Scorpaenidae;1313;Pasajes;1316;Rascacios 06;IEO;ENTERO
+10726;Triglidae;1313;Pasajes;1314;Perlones 04;Histórico;ENTERO
+40053;Holothuroidea;1418;Avilés;1401;Holoturias;SIRENO;ENTERO
+30188;Octopus vulgaris;9901;Desconocido Español;9901;Pulpo;IEO;ENTERO
+10263;Phycis phycis;9901;Desconocido Español;9901;Brótola;IEO;ENTERO
+10338;Liza aurata;9901;Desconocido Español;9901;Lisa;IEO;ENTERO
+10572;Sparisoma cretense;9901;Desconocido Español;9901;Vieja;CECAF;ENTERO
+10489;Pagellus acarne;9901;Desconocido Español;9901;Aligote;SIRENO;ENTERO
+20091;Plesionika narval;9901;Desconocido Español;9901;Camarón narval;CECAF;ENTERO
+10213;Muraena helena;9901;Desconocido Español;9901;Morena;CECAF;ENTERO
+10391;Serranus cabrilla;9901;Desconocido Español;9901;Cabrilla;CECAF;ENTERO
+10641;Scomber colias;9901;Desconocido Español;9901;Caballa;CECAF;ENTERO
+10499;Dentex gibbosus;9901;Desconocido Español;9901;Pargo. Talla grande;CECAF;ENTERO
+13273;Scomber japonicus;9901;Desconocido Español;9901;Sin categoria;SIRENO;ENTERO
+10717;Scorpaena scrofa;9901;Desconocido Español;9901;Cabracho;SIRENO;ENTERO
+12333;Enchelycore anatina;9901;Desconocido Español;9901;Morena isleña;CECAF;ENTERO
+10207;Muraenidae;9901;Desconocido Español;9901;Morenas;SIRENO;ENTERO
+10502;Dentex dentex;9901;Desconocido Español;9901;Dentón;CECAF;ENTERO
+10379;Epinephelus marginatus;9901;Desconocido Español;9901;Mero;CECAF;ENTERO
+10421;Pseudocaranx dentex;9901;Desconocido Español;9901;Jurel;CECAF;ENTERO
+11486;Stromateus spp;0103;Barbate;0101;Sin categoría;IEO;ENTERO
+10245;Gadiformes;0103;Barbate;0101;Gádidos;A.Pesca.Mar.;ENTERO
+11486;Stromateus spp;0105;Tarifa;0101;Sin categoría;IEO;ENTERO
+10674;Stromateidae;0103;Barbate;0101;Sin categoria;SIRENO;ENTERO
+10207;Muraenidae;0104;Conil de la Frontera;0101;Morenas;SIRENO;ENTERO
+10674;Stromateidae;0105;Tarifa;0101;Sin categoria;SIRENO;ENTERO
+12717;Pseudophycis bachus;0103;Barbate;0101;Falsa brótola;Inspecciones SGM;ENTERO
+10674;Stromateidae;0106;Algeciras;0101;Sin categoria;SIRENO;ENTERO
+12717;Pseudophycis bachus;0106;Algeciras;0101;Falsa brótola;Inspecciones SGM;ENTERO
+10415;Trachurus picturatus;0104;Conil de la Frontera;0101;Jurel negro;SIRENO;ENTERO
+12717;Pseudophycis bachus;0105;Tarifa;0101;Falsa brótola;Inspecciones SGM;ENTERO
+10005;Heptranchias perlo;0104;Conil de la Frontera;0101;Boquidulce;ListasSireno;ENTERO
+10219;Conger spp;0103;Barbate;0101;Congrios;NOMBRE PATRON;ENTERO
+10711;Sebastes spp;0103;Barbate;0101;Gallinetas nórdicas;SIRENO;ENTERO
+10864;Rajidae;1417;Gijón;1431;Raya de clavos 01;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1432;Raya de clavos 02;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1433;Raya de clavos 03;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1441;Raya pintada 01;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1442;Raya pintada 02;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1451;Raya santiaguesa 01;IEO;ENTERO
+10864;Rajidae;1417;Gijón;1452;Raya santiaguesa 02;IEO;ENTERO
+11742;Etmopterus polli;0966;Cangas;0901;Tollo lucero africano;SIRENO;ENTERO
+13485;Aphanopus intermedius;0966;Cangas;0901;Sin categoría;CECAF;ENTERO
+20059;Penaeus kerathurus;0966;Cangas;0901;Langostino;R. Morlán;ENTERO
+10088;Leucoraja fullonica;0922;Vigo;0902;Raya cardadora grande;SIRENO;ENTERO
+10088;Leucoraja fullonica;0922;Vigo;0903;Raya cardadora pequeña;SIRENO;ENTERO
 40129;Ophiuridae;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40224;Henricia sanguinolenta;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
 40321;Gracilechinus acutus;0922;Vigo;0999;Sin Categoría;DESCARTES;ENTERO
@@ -22993,6 +23799,11 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10090;Raja clavata;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
 10823;Lophius budegassa;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
 30189;Eledone cirrhosa;0912;Muxía;0999;Sin categoría;DESCARTES;ENTERO
+40053;Holothuroidea;1417;Gijón;1401;Holoturias;SIRENO;ENTERO
+10141;Sardinella aurita;0103;Barbate;0101;Alacha;Lista.J.And.Paula;ENTERO
+10872;Gephyroberyx darwinii;0103;Barbate;0101;Loro;P.Salmerón;ENTERO
+10439;Bramidae;0103;Barbate;0101;Palometas;NOMBRE PATRON;ENTERO
+10245;Gadiformes;0106;Algeciras;0101;Gádidos;A.Pesca.Mar.;ENTERO
 10542;Mullus barbatus;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
 10673;Xiphias gladius;0925;Burela;0999;Sin Categoría;DESCARTES;ENTERO
 10691;Gobiidae;0925;Burela;0999;Sin Categoría;DESCARTES;ENTERO
@@ -23200,6 +24011,10 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10823;Lophius budegassa;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
 30189;Eledone cirrhosa;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
 10092;Leucoraja naevus;9998;Castletown Bere;9999;Sin categoría;DESCARTES;ENTERO
+10823;Lophius budegassa;0101;Cádiz;0102;Cabeza Rape;Lourdes Fernández;CABEZAS
+11422;Lophius vaillanti;0101;Cádiz;0103;Cola Goma;Lourdes Fernández;COLAS
+10864;Rajidae;0101;Cádiz;0102;Ala Raya;Lourdes Fernández;ALAS
+10673;Xiphias gladius;0921;Marín;0901;Pez espada;IEO;ENTERO
 30209;Scaphander lignarius;0925;Burela;0999;Sin Categoría;DESCARTES;ENTERO
 30216;Bivalvia;0925;Burela;0999;Sin Categoría;DESCARTES;ENTERO
 30241;Sepiolidae;0925;Burela;0999;Sin Categoría;DESCARTES;ENTERO
@@ -23373,6 +24188,36 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 30165;Alloteuthis spp;0925;Burela;0999;Sin categoría;DESCARTES;ENTERO
 10484;Sparidae;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
 10415;Trachurus picturatus;0109;Ayamonte;0199;Sin categoría;DESCARTES;ENTERO
+10639;Sarda sarda;1316;Guetaria;1311;Agingorrotz 01;AZTI;ENTERO
+10639;Sarda sarda;1316;Guetaria;1312;Agingorrotz 02;AZTI;ENTERO
+10273;Trisopterus spp;0921;Marín;0906;Faneca mediana eviscerada;IEO.Mikel Casas;EVISCERADO
+10503;Dentex angolensis;0101;Cádiz;0101;Dentón angoleño;SIRENO;ENTERO
+10078;Pristis pectinata;0101;Cádiz;0101;Pez sierra común;SIRENO;ENTERO
+10092;Leucoraja naevus;1417;Gijón;1402;Alas de raya;IEO;ALAS
+10090;Raja clavata;1417;Gijón;1402;Alas de raya;IEO;ALAS
+10093;Raja microocellata;0907;A Coruña;0901;Raya boca de rosa;IEO;ENTERO
+10093;Raja microocellata;0904;Cedeira;0901;Raya boca de rosa;IEO;ENTERO
+10093;Raja microocellata;0925;Burela;0901;Raya boca de rosa;IEO;ENTERO
+10093;Raja microocellata;0926;Cillero;0901;Raya boca de rosa;IEO;ENTERO
+10090;Raja clavata;0904;Cedeira;0901;Raya de clavos;SIRENO;ENTERO
+10090;Raja clavata;0925;Burela;0901;Raya de clavos;SIRENO;ENTERO
+10090;Raja clavata;0926;Cillero;0901;Raya de clavos;SIRENO;ENTERO
+10091;Raja montagui;0904;Cedeira;0901;Raya pintada;R. Morlán;ENTERO
+10091;Raja montagui;0925;Burela;0901;Raya pintada;R. Morlán;ENTERO
+10091;Raja montagui;0926;Cillero;0901;Raya pintada;R. Morlán;ENTERO
+10092;Leucoraja naevus;0904;Cedeira;0901;Raya santiaguesa;R. Morlán;ENTERO
+10092;Leucoraja naevus;0925;Burela;0901;Raya santiaguesa;R. Morlán;ENTERO
+10092;Leucoraja naevus;0926;Cillero;0901;Raya santiaguesa;R. Morlán;ENTERO
+10317;Hoplostethus atlanticus;0101;Cádiz;0101;Reloj anaranjado;SIRENO;ENTERO
+10094;Raja brachyura;0925;Burela;0901;Raja brachyura;SIRENO;ENTERO
+10094;Raja brachyura;0926;Cillero;0901;Raja brachyura;SIRENO;ENTERO
+13568;Spaniblennius riodourensis;0104;Conil de la Frontera;0101;Sin categoría;IEO;ENTERO
+13566;Epinephelus fasciatomaculosus;0103;Barbate;0101;Sin categoría;IEO;ENTERO
+13567;Pampus spp;0103;Barbate;0101;Sin categoría;IEO;ENTERO
+20569;Palinurus delagoae;0104;Conil de la Frontera;0101;Sin categoría;IEO;ENTERO
+10413;Trachurus spp;0904;Cedeira;0911;Categoría 1;IEO;ENTERO
+10413;Trachurus spp;0904;Cedeira;0912;Categoría 2;IEO;ENTERO
+10413;Trachurus spp;0904;Cedeira;0913;Categoría 3;IEO;ENTERO
 10310;Macroramphosus scolopax;0926;Cillero;0999;Sin Categoría;DESCARTES;ENTERO
 10317;Hoplostethus atlanticus;0926;Cillero;0999;Sin Categoría;DESCARTES;ENTERO
 10318;Hoplostethus mediterraneus;0926;Cillero;0999;Sin Categoría;DESCARTES;ENTERO
@@ -23597,6 +24442,13 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10726;Triglidae;1324;Arminza;1303;Cuco;SIRENO;ENTERO
 10726;Triglidae;1324;Arminza;1304;Golondrino;SIRENO;ENTERO
 10726;Triglidae;1324;Arminza;1301;Rubios;SIRENO;ENTERO
+10642;Scomber scombrus;1318;Ondarroa;1312;Caballa hasta 2 en kg.(2);AZTI;ENTERO
+11165;Auxis spp;0921;Marín;0901;Melva;SIRENO;ENTERO
+10313;Beryx spp;0922;Vigo;0911;Palometa roja 01;SIRENO;ENTERO
+10313;Beryx spp;0922;Vigo;0912;Palometa roja 02;SIRENO;ENTERO
+10313;Beryx spp;0921;Marín;0911;Palometa roja 01;SIRENO;ENTERO
+10313;Beryx spp;0921;Marín;0912;Palometa roja 02;SIRENO;ENTERO
+10318;Hoplostethus mediterraneus;0925;Burela;0901;Reloj;IEO;ENTERO
 10493;Diplodus annularis;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
 30163;Alloteuthis subulata;0926;Cillero;0999;Sin Categoría;DESCARTES;ENTERO
 11173;Chelidonichthys cuculus;0110;Isla Cristina;0199;Sin categoría;DESCARTES;ENTERO
@@ -23805,6 +24657,18 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10767;Limanda limanda;0907;A Coruña;0999;Sin Categoría;DESCARTES;ENTERO
 10768;Microstomus kitt;0907;A Coruña;0999;Sin Categoría;DESCARTES;ENTERO
 40053;Holothuroidea;0907;A Coruña;0901;Cohombros de mar;SIRENO;ENTERO
+40053;Holothuroidea;0921;Marín;0901;Cohombros de mar;SIRENO;ENTERO
+30156;Sepia spp;1418;Avilés;1414;Sepias 04;M. Amez;ENTERO
+10283;Merluccius merluccius;1420;Luarca;1421;Merluza 11;Marco Amez;EVISCERADO
+10258;Molva molva;1417;Gijón;1425;Maruca ab 05;IEO;EVISCERADO
+10283;Merluccius merluccius;1420;Luarca;1405;Merluza picada;IPD;EVISCERADO
+10674;Stromateidae;0922;Vigo;0901;Sin categoria;CECAF;ENTERO
+10262;Phycis blennoides;1417;Gijón;1437;Locha ab. 07;IEO;EVISCERADO
+10047;Galeorhinus galeus;1417;Gijón;1403;Cazón abierto 02;Rosa;EVISCERADO
+10463;Sciaena umbra;0106;Algeciras;0101;Corvina;A.Esteban;ENTERO
+10275;Trisopterus minutus;0106;Algeciras;0101;Faneca;SIRENO;ENTERO
+30825;Murex spp;0106;Algeciras;0101;Cañailla;J.J.Acosta;ENTERO
+20085;Pandalidae;0106;Algeciras;0101;Camaroncillos;IEO.Lonja;ENTERO
 10047;Galeorhinus galeus;0911;Camariñas;0999;Sin Categoría;DESCARTES;ENTERO
 10050;Deania calcea;0911;Camariñas;0999;Sin Categoría;DESCARTES;ENTERO
 10062;Etmopterus spinax;0911;Camariñas;0999;Sin Categoría;DESCARTES;ENTERO
@@ -27975,4 +28839,3 @@ ESPCOD;ESPDESTAX;PUECOD;PUEDES;ESPCAT;ESPCATDES;ESPCATFUE;TIPPROCOD
 10821;Lophius spp;1418;Avilés;1499;Sin Categoría;DESCARTES;ENTERO
 10821;Lophius spp;1423;Llanes;1499;Sin Categoría;DESCARTES;ENTERO
 10821;Lophius spp;9937;Douarnenez;9999;Sin Categoría;DESCARTES;ENTERO
-10798;Lepidorhombus spp;1417;Gijón;1404;Gallo picado;IEO;ENTERO

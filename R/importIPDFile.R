@@ -40,7 +40,7 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                          "COD_ORIGEN",  "ESTRATO_RIM",  "COD_PROYECTO",       "COD_TIPO_MUE",
                          "N_RECHAZOS",  "N_BARCOS",     "COD_CUADRICULA",     "LATITUD",
                          "LONGITUD",    "DIAS_MAR",     "P_DESEM",            "COD_ESP_MUE",
-                         "TIPO_MUE",    "PROCEDENCIA",  "COD_CATEGORIA",      "P_MUE_DESEM",
+                         "ESTRATEGIA",    "PROCEDENCIA",  "COD_CATEGORIA",      "P_MUE_DESEM",
                          "COD_ESP_CAT", "SEXO",         "PESO_MUESTRA",       "MEDIDA",
                          "TALLA",       "EJEM_MEDIDOS", "COD_PUERTO_DESCARGA", "FECHA_DESEM",
                          "OBSERVACIONES", "COD_MUESTREADOR")

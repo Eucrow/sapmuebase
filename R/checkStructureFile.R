@@ -1,5 +1,20 @@
 checkStructureFileNameOfFields <- function (df, file_type)
 {
+  available_variables <- c("RIM_CATCHES",
+                           "RIM_CATCHES_IN_LENGTHS",
+                           "RIM_LENGTHS",
+                           "OAB_TRIPS",
+                           "OAB_HAULS",
+                           "OAB_CATCHES",
+                           "OAB_LENGTHS",
+                           "OAB_LITTER"
+  )
+
+  if ( !(file_type %in% available_variables) ){
+    available_variables <- paste(available_variables, collapse = " ")
+    stop(paste("file_type incorrect:", file_type, "Only ", available_variables, "are available"))
+  }
+
   df_colnames <- colnames(df)
   df_colnames <- data.frame(original_name_variable = df_colnames)
   df_colnames <- merge(df_colnames, relacion_variables, all.x = T, sort = F)
@@ -24,7 +39,8 @@ checkStructureFileNumberOfFields <- function (df, file_type){
                            "OAB_TRIPS",
                            "OAB_HAULS",
                            "OAB_CATCHES",
-                           "OAB_LENGTHS"
+                           "OAB_LENGTHS",
+                           "OAB_LITTER"
                            )
 
   if ( !(file_type %in% available_variables) ){
@@ -47,8 +63,7 @@ checkStructureFileNumberOfFields <- function (df, file_type){
 #'
 #' WARNING: the dataframe must be obtained from a read.table, read.csv or similar
 #' {base} function. I'ts not available to use after the import with
-#' importCatches(), importLengths(), importCatchesInLengths() or
-#' importMuestreosUP().
+#' importRIMCatches(), importRIMLengths(), importRIMCatchesInLengths()...
 #'
 #' This function is called inside import SIRENO files functions like
 #' importRIMCatches(), importRIMLengths()...

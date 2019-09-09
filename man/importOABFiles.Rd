@@ -8,24 +8,28 @@ importOABFiles(mareas, lances, capturas, tallas, export = FALSE,
   path = getwd())
 }
 \arguments{
-\item{mareas}{vector with hauls filenames}
+\item{mareas}{vector with the names of the haul files}
 
-\item{lances}{vector with the trips filenames}
+\item{lances}{vector with the names of the trip files}
 
-\item{capturas}{vector with the catches filenames}
+\item{capturas}{vector with the names of the catch filenames}
 
-\item{tallas}{vectir with the lengths filenames}
+\item{tallas}{vector with the names of the length filenames}
 
 \item{export}{to export muestreos_up dataframe in csv file. False by default.}
 
 \item{path}{path of the files. The working directory by default.}
+
+\item{basuras}{vector with the names of the litter filenames}
+
+\item{accidentales}{vector the names of the accidental filenames}
 }
 \value{
-Return a list with 3 data frames
+Return a list with 6 data frames
 }
 \description{
-This function import the four OAB report files from SIRENO: hauls file,
-trips file, catches files and lengths file.
+This function import the OAB report files from SIRENO: hauls, trips, catches,
+lengths, litter and accidental files.
 }
 \note{
 The SIRENO catches report must be generated with the option 'by

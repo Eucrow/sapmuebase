@@ -4,8 +4,8 @@
 \alias{importOABFiles}
 \title{Import OAB reports from SIRENO.}
 \usage{
-importOABFiles(mareas, lances, capturas, tallas, export = FALSE,
-  path = getwd())
+importOABFiles(mareas, lances, capturas, tallas, basuras, accidentales,
+  export = FALSE, path = getwd())
 }
 \arguments{
 \item{mareas}{vector with the names of the haul files}
@@ -16,13 +16,13 @@ importOABFiles(mareas, lances, capturas, tallas, export = FALSE,
 
 \item{tallas}{vector with the names of the length filenames}
 
-\item{export}{to export muestreos_up dataframe in csv file. False by default.}
-
-\item{path}{path of the files. The working directory by default.}
-
 \item{basuras}{vector with the names of the litter filenames}
 
 \item{accidentales}{vector the names of the accidental filenames}
+
+\item{export}{to export muestreos_up dataframe in csv file. False by default.}
+
+\item{path}{path of the files. The working directory by default.}
 }
 \value{
 Return a list with 6 data frames

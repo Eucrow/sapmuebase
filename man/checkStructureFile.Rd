@@ -24,8 +24,7 @@ in 'formato_variables' dataset in order to check the appropiate format.
 \details{
 WARNING: the dataframe must be obtained from a read.table, read.csv or similar
 {base} function. I'ts not available to use after the import with
-importCatches(), importLengths(), importCatchesInLengths() or
-importMuestreosUP().
+importRIMCatches(), importRIMLengths(), importRIMCatchesInLengths()...
 
 This function is called inside import SIRENO files functions like
 importRIMCatches(), importRIMLengths()...

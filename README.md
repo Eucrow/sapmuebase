@@ -46,6 +46,10 @@ Import the Trips file from OAB report.
 Import the Catches file from OAB report.
 #### importOABLengths()
 Import the Lengths file from OAB report.
+#### importOABLitter()
+Import the Litter file from OAB report.
+#### importOABAccidentals()
+Import the Accidentals file from OAB report.
 #### importIPDFile()
 Import the file with data to dump in SIRENO to R.
 #### exportListToCsv()
@@ -91,6 +95,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.4
+Create importOABLitter() and importOABAccidentals().
 ### 1.9.3
 Fix bug in importIPDFile() function.
 ### 1.9.2

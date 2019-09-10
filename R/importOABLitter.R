@@ -1,15 +1,10 @@
-# ##############################################################################
-# ---- function to import the Litter file from OAB report ----------------
-# ##############################################################################
 #' Import the Litter file from OAB report
 #'
-#' This function import the litter file obtained from OAB
-#' reports in SIRENO.
+#' This function import the Litter file obtained from SIRENO OAB reports.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' @note The SIRENO catches report must be generated with the option 'by category'
-#' @param file vector with the catches filenames
+#' @param file vector with the Litter filenames
 #' @param path path of the files. The working directory by default.
 #' @return Return dataframe.
 #' @export

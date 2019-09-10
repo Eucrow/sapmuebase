@@ -7,7 +7,8 @@ checkStructureFileNameOfFields <- function (df, file_type)
                            "OAB_HAULS",
                            "OAB_CATCHES",
                            "OAB_LENGTHS",
-                           "OAB_LITTER"
+                           "OAB_LITTER",
+                           "OAB_ACCIDENTALS"
   )
 
   if ( !(file_type %in% available_variables) ){
@@ -40,7 +41,8 @@ checkStructureFileNumberOfFields <- function (df, file_type){
                            "OAB_HAULS",
                            "OAB_CATCHES",
                            "OAB_LENGTHS",
-                           "OAB_LITTER"
+                           "OAB_LITTER",
+                           "OAB_ACCIDENTALS"
                            )
 
   if ( !(file_type %in% available_variables) ){

@@ -18,24 +18,28 @@
 #' @return Return a list with 6 data frames
 #' @export
 
-importOABFiles <- function(mareas, lances, capturas, tallas, export = FALSE, path = getwd()){
+importOABFiles <- function(mareas, lances, capturas, tallas, basuras,
+                           accidentales, export = FALSE, path = getwd()){
 
+  # I DON'T KNOW WHAT IS IT: DELETE???
   # check mareas, lances, capturas and tallas has the same number of rows
-  elements <- list(mareas, lances, capturas, tallas)
-  number_of_elements <- lapply(elements, nrow)
-  if(length(unique(number_of_elements)) != 1){
-    stop(paste0("the variables", mareas, ", ", lances, ", ", capturas, ",", tallas, "does not have the same length."))
-  }
+  # elements <- list(mareas, lances, capturas, tallas, basuras, accidentales)
+  # number_of_elements <- lapply(elements, nrow)
+  # if(length(unique(number_of_elements)) != 1){
+  #   stop(paste0("the variables", mareas, ", ", lances, ", ", capturas, ",", tallas, ",", basuras, ",", accidentales, "does not have the same length."))
+  # }
 
   # import files
   trips <- importOABTrips(mareas, path)
   hauls <- importOABHauls(lances, path)
   catches <- importOABCatches(capturas, path)
   lengths <- importOABLengths(tallas, path)
-  litter <- importOABLitter()
+  litter <- importOABLitter(basuras, path)
+  accidentals <- importOABAccidentals(accidentales, path)
 
   # group in a list
-  samples_oab<-list(hauls=hauls, trips=trips, catches=catches, lengths=lengths)
+  samples_oab<-list(hauls=hauls, trips=trips, catches=catches, lengths=lengths,
+                    litter=litter, accidentals=accidentals)
 
   # filter by month, only in case by_month == TRUE
   # by_month <- check_by_month_argument(by_month)

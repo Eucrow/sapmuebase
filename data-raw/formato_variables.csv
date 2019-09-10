@@ -1,4 +1,4 @@
-name_variable;regex_variable_import;class_variable_import;RIM_MANDATORY;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTAL;OAB_ACCIDENTAL_MANDATORY;COMMENTS
+name_variable;regex_variable_import;class_variable_import;RIM_MANDATORY;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTALS;OAB_ACCIDENTALS_MANDATORY;COMMENTS
 RESPONSABLE_MUESTREO;^.+$;character;F;;character;1;1;1;;;;;;;;;;;;;
 COD_ID;^\d{4}[A-Z]{3}\d{1}[A-Z]{1}\d{4}$;factor;F;;factor;2;2;2;;;;;;;;;;;;;
 YEAR;^\d{4}$;integer;;;integer;;;;1;T;1;T;1;T;1;T;;;;;
@@ -141,6 +141,6 @@ VIRADO_VACIADO;^S|N|$;factor;;;factor;;;;;;;;;;;;8;F;;;
 SOLO_MUESTRA;^S|N|$;factor;;;factor;;;;;;;;;;;;9;F;;;
 PORCENTAJE_OBSERVADO;^\d+$;integer;;;integer;;;;;;;;;;;;10;F;;;
 OBSERVACIONES;^.+$;character;F;;character;42;54;;28;F;61;F;;;;;11;F;;;
-PESO;^\d+(\,\d+)$;numeric;;;numeric;;;;;;;;;;;;;;6;F;
+PESO;^\d+(\,\d+)$;character;;;numeric;;;;;;;;;;;;;;6;F;
 N_EJEM;^\d+$;integer;;;integer;;;;;;;;;;;;;;7;F;
 ;;;;;;;;;;;;;;;;;;;;;

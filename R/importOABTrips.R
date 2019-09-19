@@ -16,11 +16,22 @@ importOABTrips <- function(file, path = getwd()){
 
   file_type <- "OAB_TRIPS"
 
+  # fix files (view fixImportFiles help) and save the fixed temporal files in
+  # a temporal directory with the original name of the file
+  trips <- lapply(
+    file,
+    fixReportSirenoFiles,
+    file_type,
+    path,
+    TRUE
+    )
+
+  # the fixed files are imported from the temporal directory
   trips <- lapply(
     file,
     importFileFromSireno,
     file_type,
-    path
+    tempdir()
   )
 
   trips <- Reduce(rbind, trips)

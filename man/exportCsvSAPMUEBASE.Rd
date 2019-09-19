@@ -4,12 +4,15 @@
 \alias{exportCsvSAPMUEBASE}
 \title{export csv with SAPMUE format}
 \usage{
-exportCsvSAPMUEBASE(df, filename)
+exportCsvSAPMUEBASE(df, filename, path = getwd())
 }
 \arguments{
 \item{df:}{dataframe to export}
 
 \item{filename:}{name of the file to export (with filename extension).}
+
+\item{path:}{path where the file must be exported. Current working directory
+by default.}
 }
 \description{
 The csv files usually used in SAPMUE have a special format:

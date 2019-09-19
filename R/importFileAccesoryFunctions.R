@@ -6,6 +6,8 @@ importFileFromSireno <- function (x, file_type, path){
 
   tryCatch({
 
+    path <- gsub("\\\\", "/", path)
+
     fullpath <- file.path(path, x)
 
     struct <- getVariableTypes(file_type, "class_variable_import")

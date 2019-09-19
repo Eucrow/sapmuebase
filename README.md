@@ -68,6 +68,8 @@ Add an influence area variable.
 Separate a dataframe by influence area (only RIM influence area).
 #### checkStructureFile()
 READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO reports. 
+#### fixReportSirenoFiles()
+use `?fixReportSirenoFiles` for details in R.
 
 ## Datasets available
 (Datasests name and its variables are in spanish)
@@ -95,6 +97,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.5
+Create function fixReportSirenoFiles() function and use it in the importation functions of Sireno reports.
 ### 1.9.4
 Create importOABLitter() and importOABAccidentals().
 ### 1.9.3

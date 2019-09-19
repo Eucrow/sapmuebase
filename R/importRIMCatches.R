@@ -18,11 +18,22 @@ importRIMCatches <- function(file, path = getwd()){
 
   file_type <- "RIM_CATCHES"
 
+  # fix files (view fixImportFiles help) and save the fixed temporal files in
+  # a temporal directory with the original name of the file
+  catches <- lapply(
+    file,
+    fixReportSirenoFiles,
+    file_type,
+    path,
+    TRUE
+  )
+
+  # the fixed files are imported from the temporal directory
   catches <- lapply(
     file,
     importFileFromSireno,
     file_type,
-    path
+    tempdir()
   )
 
   catches <- Reduce(rbind, catches)

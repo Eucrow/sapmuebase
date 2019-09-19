@@ -18,11 +18,22 @@ importOABHauls <- function(file, path = getwd()){
 
   file_type <- "OAB_HAULS"
 
+  # fix files (view fixImportFiles help) and save the fixed temporal files in
+  # a temporal directory with the original name of the file
+  hauls <- lapply(
+    file,
+    fixReportSirenoFiles,
+    file_type,
+    path,
+    TRUE
+  )
+
+  # the fixed files are imported from the temporal directory
   hauls <- lapply(
     file,
     importFileFromSireno,
     file_type,
-    path
+    tempdir()
   )
 
   hauls <- Reduce(rbind, hauls)

@@ -18,11 +18,22 @@ importRIMCatchesInLengths <- function(file, path = getwd()){
 
   file_type <- "RIM_CATCHES_IN_LENGTHS"
 
+  # fix files (view fixImportFiles help) and save the fixed temporal files in
+  # a temporal directory with the original name of the file
+  catches_in_lengths <- lapply(
+    file,
+    fixReportSirenoFiles,
+    file_type,
+    path,
+    TRUE
+  )
+
+  # the fixed files are imported from the temporal directory
   catches_in_lengths <- lapply(
     file,
     importFileFromSireno,
     file_type,
-    path
+    tempdir()
   )
 
   catches_in_lengths <- Reduce(rbind, catches_in_lengths)

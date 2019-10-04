@@ -8,12 +8,13 @@
 #' @param suffix: text to add before the name of the dataframe in the file exported. None by default.
 #' @param separation: characters to separate the prefix and suffix to the name of
 #' the dataframe. By default is "_".
+#' @param path_export: path where the files will be saved.
 #' @return Save in the working directory a xlsx file for each dataframe in the
 #' list of dataframes.
 #' @export
 #'
 
-exportListToXlsx <- function (list, prefix = "", suffix = "", separation = "")
+exportListToXlsx <- function (list, prefix = "", suffix = "", separation = "", path_export = getwd())
 {
   #check if package openxlsx is instaled:
   if (!requireNamespace("openxlsx", quietly = TRUE)) {
@@ -29,7 +30,7 @@ exportListToXlsx <- function (list, prefix = "", suffix = "", separation = "")
         prefix <- paste0(prefix, separation)
       if (suffix != "")
         suffix <- paste0(separation, suffix)
-      filename <- paste0(PATH_ERRORS, "/", prefix, list_name, suffix, ".xlsx")
+      filename <- paste0(path_export, "/", prefix, list_name, suffix, ".xlsx")
 
       # ---- Create a Workbook
       wb <- openxlsx::createWorkbook()

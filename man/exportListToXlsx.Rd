@@ -4,7 +4,8 @@
 \alias{exportListToXlsx}
 \title{Export to xlsx a list of dataframes}
 \usage{
-exportListToXlsx(list, prefix = "", suffix = "", separation = "")
+exportListToXlsx(list, prefix = "", suffix = "", separation = "",
+  path_export = getwd())
 }
 \arguments{
 \item{list:}{list of dataframes}
@@ -15,6 +16,8 @@ exportListToXlsx(list, prefix = "", suffix = "", separation = "")
 
 \item{separation:}{characters to separate the prefix and suffix to the name of
 the dataframe. By default is "_".}
+
+\item{path_export:}{path where the files will be saved.}
 }
 \value{
 Save in the working directory a xlsx file for each dataframe in the

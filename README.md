@@ -97,6 +97,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.6
+Add path argument to exportListToXlsx() function.
 ### 1.9.5
 Create function fixReportSirenoFiles() function and use it in the importation functions of Sireno reports.
 ### 1.9.4

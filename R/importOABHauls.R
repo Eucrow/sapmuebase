@@ -61,8 +61,15 @@ importOABHauls <- function(file, path = getwd()){
   hauls$FECHA_LAR <- format(as.Date(hauls$FECHA_LAR, "%d-%b-%y"), "%d/%m/%Y")
   hauls$FECHA_VIR <- format(as.Date(hauls$FECHA_VIR, "%d-%b-%y"), "%d/%m/%Y")
 
-  # and now the come back to the initial configuration of locale:
+  # and come back to the initial configuration of locale:
   Sys.setlocale("LC_TIME", lct)
+
+  # create field with data and time format
+  hauls[["FECHA_HORA_LAR"]] <- paste(hauls[["FECHA_LAR"]], hauls[["HORA_LAR"]])
+  hauls[["FECHA_HORA_LAR"]] <- as.POSIXlt(hauls[["FECHA_HORA_LAR"]], format="%d/%m/%Y %H:%M")
+
+  hauls[["FECHA_HORA_VIR"]] <- paste(hauls[["FECHA_VIR"]], hauls[["HORA_VIR"]])
+  hauls[["FECHA_HORA_VIR"]] <- as.POSIXlt(hauls[["FECHA_HORA_VIR"]], format="%d/%m/%Y %H:%M")
 
   return(hauls)
 

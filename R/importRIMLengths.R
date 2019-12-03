@@ -31,4 +31,17 @@ importRIMLengths <- function(file, path = getwd()){
 
   lengths <- formatImportedFile(lengths)
 
+  # Change FECHA_DESEM from 16-JUN-19 to 16/06/2019 format
+  # to avoid some problems with Spanish_Spain.1252 (or if you are using another
+  # locale), change locale to Spanish_United States.1252:
+  lct <- Sys.getlocale("LC_TIME")
+  Sys.setlocale("LC_TIME","Spanish_United States.1252")
+
+  lengths$FECHA_DESEM <- format(as.Date(lengths$FECHA_DESEM, "%d-%b-%y"), "%d/%m/%Y")
+
+  # and come back to the initial configuration of locale:
+  Sys.setlocale("LC_TIME", lct)
+
+  return(lengths)
+
 }

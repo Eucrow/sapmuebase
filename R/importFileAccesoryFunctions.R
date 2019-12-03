@@ -92,28 +92,11 @@ formatVariableTypes <- function(df, file_type){
     new_var_type <- type_variables[type_variables[["name_variable"]] == var_name[x], "class_variable_final"]
 
     # Attention: df[x] is a list... but I don't know why...
-    # df[[x]] <- get(paste0("as.",new_var_type))(df[[x]])
-
-    tryCatch(
-
-      # Attention: df[x] is a list... but I don't know why...
-      df[[x]] <- get(paste0("as.",new_var_type))(df[[x]]),
-
-      warning = function(w) {
-        simpleWarning(paste0("Warning in variable ", var_name[x], " trying
-                             convert to ", new_var_type, ". "))
-      },
-
-      error = function(e){
-        simpleError(paste0("Can't convert variable ", var_name[x], " in ",
-                           new_var_type, ". "))
-      }
-
-    )
+    df[[x]] <- get(paste0("as.",new_var_type))(df[[x]])
 
   }, names(df), struct)
 
-  df <- as.data.frame(df, col.names = name_of_columns)
+  df <- as.data.frame(df, col.names = name_of_columns, stringsAsFactors = F)
 
   return(df)
 

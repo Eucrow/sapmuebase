@@ -66,10 +66,10 @@ importOABHauls <- function(file, path = getwd()){
 
   # create field with data and time format
   hauls[["FECHA_HORA_LAR"]] <- paste(hauls[["FECHA_LAR"]], hauls[["HORA_LAR"]])
-  hauls[["FECHA_HORA_LAR"]] <- as.POSIXlt(hauls[["FECHA_HORA_LAR"]], format="%d/%m/%Y %H:%M")
+  hauls[["FECHA_HORA_LAR"]] <- as.POSIXct(hauls[["FECHA_HORA_LAR"]], format="%d/%m/%Y %H:%M")
 
   hauls[["FECHA_HORA_VIR"]] <- paste(hauls[["FECHA_VIR"]], hauls[["HORA_VIR"]])
-  hauls[["FECHA_HORA_VIR"]] <- as.POSIXlt(hauls[["FECHA_HORA_VIR"]], format="%d/%m/%Y %H:%M")
+  hauls[["FECHA_HORA_VIR"]] <- as.POSIXct(hauls[["FECHA_HORA_VIR"]], format="%d/%m/%Y %H:%M")
 
   return(hauls)
 

@@ -8,10 +8,10 @@ setwd("data-raw")
 metier_caladero_dcf <- read.csv("metier_caladero_dcf.csv",
                                 header = T,
                                 colClasses = c("factor", "factor", "factor",
-                                               "factor","logical", "logical"),
+                                               "factor"),
                                 sep = ";")
-colnames(metier_caladero_dcf) <- c("ESTRATO_RIM", "METIER_DCF", "CALADERO_DCF",
-                                   "COD_ORIGEN", "RIM", "OAB")
+colnames(metier_caladero_dcf) <- c("METIER_DCF", "CALADERO_DCF", "ESTRATO_RIM",
+                                   "COD_ORIGEN")
 # use_data() create the file in /data
 usethis::use_data(metier_caladero_dcf, overwrite = TRUE)
 

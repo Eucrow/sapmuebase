@@ -23,15 +23,20 @@ separateDataframeByInfluenceArea <- function (df, cod_port_column){
     stop("dplyr package needed for this function to work. Please install it.",
          call = FALSE)
   }
-  #check if package plyr is instaled
-  if (!requireNamespace("plyr", quietly = TRUE)) {
-    stop("plyr package needed for this function to work. Please install it.",
-         call = FALSE)
-  }
 
   #check the correction of the dataframe
   if (!is.data.frame(df)){
     stop ("This doesn't like a dataframe")
+  }
+
+  #check if the variable exists in datafram
+  if(!cod_port_column %in% colnames(df)){
+    stop( paste0(deparse(substitute(cod_port_column))), " does not exists in ", deparse(substitute(df)), " dataframe.")
+  }
+
+  #check if the variable contains any NA
+  if( anyNA(df[cod_port_column])){
+    stop( "Variable", paste0(deparse(substitute(cod_port_column))), " in ", deparse(substitute(df)), " contains NA values.")
   }
 
   type_code <- ""
@@ -52,7 +57,8 @@ separateDataframeByInfluenceArea <- function (df, cod_port_column){
   areas_influencia <- areas_influencia[,c(type_code, "AREA_INF")]
 
   by_area <- merge(df, areas_influencia, by.x = cod_port_column, by.y = type_code, all.x = TRUE )
-  by_area <- dlply (by_area, "AREA_INF")
+
+  by_area <- split(by_area, by_area$AREA_INF)
 
   return(by_area)
 

@@ -71,6 +71,10 @@ importOABHauls <- function(file, path = getwd()){
   hauls[["FECHA_HORA_VIR"]] <- paste(hauls[["FECHA_VIR"]], hauls[["HORA_VIR"]])
   hauls[["FECHA_HORA_VIR"]] <- as.POSIXct(hauls[["FECHA_HORA_VIR"]], format="%d/%m/%Y %H:%M")
 
+  # create variable FECHA_LANCE from variables DIA, MES and YEAR
+  hauls[["FECHA_LANCE"]] <- paste(hauls[["DIA"]], hauls[["MES"]], hauls[["YEAR"]], sep = "/")
+  hauls[["FECHA_LANCE"]] <- as.POSIXct(hauls[["FECHA_LANCE"]], format="%d/%m/%Y")
+
   return(hauls)
 
 

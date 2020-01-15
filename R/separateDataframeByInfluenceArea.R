@@ -31,12 +31,12 @@ separateDataframeByInfluenceArea <- function (df, cod_port_column){
 
   #check if the variable exists in datafram
   if(!cod_port_column %in% colnames(df)){
-    stop( paste0(deparse(substitute(cod_port_column))), " does not exists in ", deparse(substitute(df)), " dataframe.")
+    stop( paste0(deparse(substitute(cod_port_column))), " does not exists.")
   }
 
   #check if the variable contains any NA
   if( anyNA(df[cod_port_column])){
-    stop( "Variable", paste0(deparse(substitute(cod_port_column))), " in ", deparse(substitute(df)), " contains NA values.")
+    stop( "Variable", paste0(deparse(substitute(cod_port_column))), " contains NA values.")
   }
 
   type_code <- ""

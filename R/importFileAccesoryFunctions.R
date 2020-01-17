@@ -102,7 +102,7 @@ formatVariableTypes <- function(df, file_type){
 
 }
 
-# ---- Function to change the variables name of the imported file to the new names
+# Function to change the variables name of the imported file to the new names
 # stored in formato_variables dataset
 renameFileVariables <- function(df, file_type) {
 
@@ -117,28 +117,28 @@ renameFileVariables <- function(df, file_type) {
 
 }
 
-# ---- function to remove coma in the category "Chicharros, jureles" -----------
+# function to remove coma in the category "Chicharros, jureles"
 # return the dataframe corrected
 remove_coma_in_category <- function(dataframe){
   dataframe[["CATEGORIA"]]<- gsub(",", "", dataframe[["CATEGORIA"]])
   return(dataframe)
 }
 
-# ---- function to change coma with a dot in a variable of a dataframe -------
+# function to change coma with a dot in a variable of a dataframe
 # return the dataframe corrected
 replace_coma_with_dot <- function(dataframe, variable){
   dataframe[[variable]]<- gsub(",", ".", dataframe[[variable]])
   return(dataframe)
 }
 
-# ---- function to change date format in a dataframes --------------------------
+# function to change date format in a dataframes
 change_date_format <- function (dataframe){
   dataframe[["FECHA_MUE"]] <- as.Date(dataframe[["FECHA_MUE"]], "%d-%b-%y")
   dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe[["FECHA_MUE"]])
   dataframe[["FECHA_MUE"]] <- format(dataframe[["FECHA_MUE"]], "%d-%m-%y")
 }
 
-# ---- function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE' ---------------------
+# function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE'
 # only usefull in RIM files (because contain the column FECHA_MUE)
 add_dates_variables <- function (dataframe){
   dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d-%m-%y")
@@ -158,7 +158,7 @@ add_dates_variables <- function (dataframe){
   return(dataframe)
 }
 
-# ---- function to filter by month all the dataframes of muestreos_up list -----
+# function to filter by month all the dataframes of muestreos_up list
 filter_by_month <- function (dataframe, month){
   # format the month:
   month <- sprintf("%02d", month)
@@ -170,7 +170,7 @@ filter_by_month <- function (dataframe, month){
   return(dataframe)
 }
 
-# ---- function to check variable by_month -------------------------------------
+# function to check variable by_month
 # This function check that the by_month variable is a numeric between 1 to 12
 # or FALSE
 check_by_month_argument <- function(by_month) {
@@ -196,7 +196,7 @@ check_by_month_argument <- function(by_month) {
   )
 }
 
-# ---- function to format the imported dataframe from muestreos up -------------
+# function to format the imported dataframe from muestreos up
 # Is called in the import functions of the tallas_x_up files.
 # Change the format of the FECHA_MUE variable and remove the coma in certain
 # category names. In adition create date variables (DAY, MONTH, QUARTER...).
@@ -236,5 +236,28 @@ fixCuadriculaICES <- function(df){
   df[["CUADRICULA_ICES"]] <- as.factor(df[["CUADRICULA_ICES"]])
 
   return(df)
+
+}
+
+#' Detect if a file contain only the header without any data or contain any
+#' data.
+#' @param file filename.
+#' @param path path of the files. The working directory by default.
+#' @return Return an error and stop execution if the file doesn't contain data
+#' besides the header.
+sirenoReportEmpty <- function (file, file_type, path = getwd()){
+
+  report <- lapply(
+    file,
+    importFileFromSireno,
+    file_type,
+    path
+  )
+
+  report <- Reduce(rbind, report)
+
+  if(nrow(report) == 0){
+    stop(paste0("the file ", deparse(substitute(file)), " doesn't contain data, only the header"))
+  }
 
 }

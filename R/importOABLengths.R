@@ -17,6 +17,13 @@ importOABLengths <- function(file, path = getwd()){
 
   file_type <- "OAB_LENGTHS"
 
+  tryCatch(
+    sirenoReportEmpty(file, file_type, path),
+    error = function(e){
+      stop(e)
+    }
+  )
+
   lengths <- lapply(
     file,
     importFileFromSireno,

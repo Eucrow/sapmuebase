@@ -97,6 +97,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 1.9.9
+Fix minor bugs.
 ### 1.9.8
 Add variable FECHA_LANCE when the hauls report is imported.
 ### 1.9.7

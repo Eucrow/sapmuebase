@@ -42,7 +42,7 @@ split_line <- function(line){
 #'
 #' @param filename Filename of the file to check.
 #' @param filetype Tipe of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
-#' RIM_LENGTHS,OAB_TRIPS, ,OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
+#' RIM_LENGTHS, OAB_TRIPS, OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
 #' OAB_ACCIDENTAL
 #' @param path Path of the file.
 #' @param temporal If is True, the file is exported in a temporal directory. This is
@@ -123,6 +123,10 @@ fixReportSirenoFiles <- function(filename, filetype, path = getwd(), temporal = 
 
   # add column names
   new_data_frame <- do.call(rbind.data.frame, new_list)
+  if (ncol(new_data_frame)==0) {
+    new_data_frame <- data.frame(matrix(ncol = nrow(type_variables), nrow = 0))
+  }
+
   names(new_data_frame) <- column_names
 
   # export file:

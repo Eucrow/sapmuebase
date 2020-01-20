@@ -16,13 +16,6 @@ importOABTrips <- function(file, path = getwd()){
 
   file_type <- "OAB_TRIPS"
 
-  tryCatch(
-    sirenoReportEmpty(file, file_type, path),
-    error = function(e){
-      stop(e)
-    }
-  )
-
   # fix files (view fixImportFiles help) and save the fixed temporal files in
   # a temporal directory with the original name of the file
   trips <- lapply(
@@ -31,7 +24,7 @@ importOABTrips <- function(file, path = getwd()){
     file_type,
     path,
     TRUE
-    )
+  )
 
   # the fixed files are imported from the temporal directory
   trips <- lapply(

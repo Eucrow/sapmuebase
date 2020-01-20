@@ -18,13 +18,6 @@ importOABCatches <- function(file, path = getwd()){
 
   file_type <- "OAB_CATCHES"
 
-  tryCatch(
-    sirenoReportEmpty(file, file_type, path),
-    error = function(e){
-      stop(e)
-    }
-  )
-
   catches <- lapply(
     file,
     importFileFromSireno,

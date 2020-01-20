@@ -5,15 +5,15 @@
 \alias{importMuestreosUP}
 \title{Import 'muestreos tallas por up'}
 \usage{
-importRIMFiles(des_tot, des_tal, tal, by_month = FALSE, export = FALSE,
-  path = getwd())
+importRIMFiles(catches, catches_in_lengths, lengths, by_month = FALSE,
+  export = FALSE, path = getwd())
 }
 \arguments{
-\item{des_tot}{vector with the total landings filenames}
+\item{catches}{vector with the total landings filenames}
 
-\item{des_tal}{vector with the landings of the lengths samples filenames}
+\item{catches_in_lengths}{vector with the landings of the lengths samples filenames}
 
-\item{tal}{vector with the lengths samples filenames}
+\item{lengths}{vector with the lengths samples filenames}
 
 \item{by_month}{to filter only by one month. Numeric between 1 to 12 to select
 one month or FALSE for all the year. FALSE by default.}

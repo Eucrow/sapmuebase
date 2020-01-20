@@ -12,13 +12,6 @@ importOABLitter <- function(file, path = getwd()){
 
   file_type <- "OAB_LITTER"
 
-  tryCatch(
-    sirenoReportEmpty(file, file_type, path),
-    error = function(e){
-      stop(e)
-    }
-  )
-
   # fix files (view fixImportFiles help) and save the fixed temporal files in
   # a temporal directory with the original name of the file
   litter <- lapply(

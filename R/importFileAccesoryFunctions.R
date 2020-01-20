@@ -1,6 +1,5 @@
 # Function to import a file from SIRENO's reports. Valid with RIM and oab
-# files (exception with discard catches file, because it have a different
-# separation character in some numeric fields). Apply format saved in
+# files. Apply format saved in
 # formato_variables dataset.
 importFileFromSireno <- function (x, file_type, path){
 
@@ -14,7 +13,13 @@ importFileFromSireno <- function (x, file_type, path){
 
     type <- struct[["class_variable_import"]]
 
-    read.table(fullpath, sep = ";", header = TRUE, quote = "", colClasses = type)
+    file_read <- read.table(fullpath, sep = ";", header = TRUE, quote = "", colClasses = type)
+
+    if (nrow(file_read) == 0) {
+      warning(paste("File", x, "doesn't contain data."), call. = FALSE)
+    }
+
+    return(file_read)
 
   }, error = function(err) {
 
@@ -236,28 +241,5 @@ fixCuadriculaICES <- function(df){
   df[["CUADRICULA_ICES"]] <- as.factor(df[["CUADRICULA_ICES"]])
 
   return(df)
-
-}
-
-#' Detect if a file contain only the header without any data or contain any
-#' data.
-#' @param file filename.
-#' @param path path of the files. The working directory by default.
-#' @return Return an error and stop execution if the file doesn't contain data
-#' besides the header.
-sirenoReportEmpty <- function (file, file_type, path = getwd()){
-
-  report <- lapply(
-    file,
-    importFileFromSireno,
-    file_type,
-    path
-  )
-
-  report <- Reduce(rbind, report)
-
-  if(nrow(report) == 0){
-    stop(paste0("the file ", deparse(substitute(file)), " doesn't contain data, only the header"))
-  }
 
 }

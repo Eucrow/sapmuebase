@@ -16,7 +16,7 @@ fixReportSirenoFiles(filename, filetype, path = getwd(), temporal = F)
 \item{filename}{Filename of the file to check.}
 
 \item{filetype}{Tipe of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
-RIM_LENGTHS,OAB_TRIPS, ,OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
+RIM_LENGTHS, OAB_TRIPS, OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
 OAB_ACCIDENTAL}
 
 \item{path}{Path of the file.}

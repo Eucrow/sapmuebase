@@ -24,7 +24,7 @@ importOABTrips <- function(file, path = getwd()){
     file_type,
     path,
     TRUE
-    )
+  )
 
   # the fixed files are imported from the temporal directory
   trips <- lapply(

@@ -5,9 +5,9 @@
 #' reports in SIRENO: total catches file, catches of length samples file and lengths
 #' file.
 #'
-#' @param des_tot vector with the total landings filenames
-#' @param des_tal vector with the landings of the lengths samples filenames
-#' @param tal vector with the lengths samples filenames
+#' @param catches vector with the total landings filenames
+#' @param catches_in_lengths vector with the landings of the lengths samples filenames
+#' @param lengths vector with the lengths samples filenames
 #' @param by_month to filter only by one month. Numeric between 1 to 12 to select
 #' one month or FALSE for all the year. FALSE by default.
 #' @param path path of the files. The working directory by default.
@@ -16,34 +16,57 @@
 #' @return Return a list with 3 data frames
 #' @export
 
-importRIMFiles <- function(des_tot, des_tal, tal, by_month = FALSE, export = FALSE, path = getwd()){
+importRIMFiles <- function(catches, catches_in_lengths, lengths, by_month = FALSE, export = FALSE, path = getwd()){
 
-  # check des_tot, des_tal and tal has the same length
-  if(length(des_tot) != length(des_tal) | length(des_tot) != length(tal)){
-    stop(paste0("the variables", des_tot, ", ", des_tal, ", ", tal, "does not have the same length."))
+  # check vector of des_tot, des_tal and tal has the same length
+  if(length(catches) != length(catches_in_lengths) | length(catches) != length(lengths)){
+    stop(paste0("the variables", catches, ", ", catches_in_lengths, ", ", lengths, "does not have the same length."))
   }
 
-  # import files
-  catches <- importRIMCatches(des_tot, path)
+  # create a list of functions
+  df_functions <- list("catches" = importRIMCatches,
+                       "catches_in_lengths" = importRIMCatchesInLengths,
+                       "lengths" = importRIMLengths)
 
-  catches_in_lengths <- importRIMCatchesInLengths(des_tal, path)
+  # whit this apply, for every import function of df_functions, execute it
+  # inside a tryCatch returning the result of the function or the error thrown.
+  samples_rim <- lapply(seq(1:length(df_functions)), function(x, y){
 
-  lengths <- importRIMLengths(tal, path)
+    name_of_df <- names(y)[x]
 
-  # group in a list
-  muestreos_up<-list(catches_in_lengths=catches_in_lengths, lengths=lengths, catches=catches)
+    df_data <- tryCatch(
+      y[[x]](get(name_of_df), path),
+      # get(y[x])(name_of_df, path),
+      error = function(e){
+        return(e)
+      }
+    )
 
+  }, df_functions)
+
+  names(samples_rim) <- names(df_functions)
+
+  # fix format in case of the import function return an error.
+  samples_rim <- lapply(samples_rim, function(x){
+    if(exists("message", where = x)){
+      return(x[["message"]])
+    } else {
+      return(x)
+    }
+  })
+
+  # filter by month
   if ( check_by_month_argument(by_month) ){
     if(by_month != FALSE){
-      muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
+      samples_rim <- lapply(samples_rim, function(x){x <- filter_by_month(x, by_month); x})
     }
   }
 
 
   if (isTRUE(export)){
-    exportListToCsv(muestreos_up)
+    exportListToCsv(samples_rim)
   }
 
   #return list
-  return(muestreos_up)
+  return(samples_rim)
 }

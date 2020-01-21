@@ -20,20 +20,12 @@ Use `?nameofthefunction` to details.
 Import csv files with special format usually used in SAPMUE team.
 #### exportCsvSAPMUE()
 Export csv files with special format usually used in SAPMUE team.
-#### importMuestreosUP()
-Deprecated: use importRIMFiles() instead.
 #### importRIMFiles()
 Import the 'muestreos tallas por up' files from SIRENO to R.
-#### importCatches()
-Deprecated: use importRIMCatches() instead.
 #### importRIMCatches()
 Import the 'Catches' file from 'tallas por up' report to R.
-#### importCatchesInLengths()
-Deprecated: use importRIMCatchesInLengths() instead.
 #### importRIMCatchesInLengths()
 Import the 'Catches in Lengths' file from 'tallas por up' report to R.
-#### importLengths()
-Deprecated: use importRIMLengths() instead.
 #### importRIMLengths()
 Import the 'Lengths' file from 'tallas por up' report to R.
 #### importOABFiles()
@@ -97,6 +89,9 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 2.0
+Improve import of logical variables in SIRENO reports.
+Fix minor bugs in some date fields.
 ### 1.9.9
 Fix minor bugs.
 ### 1.9.8

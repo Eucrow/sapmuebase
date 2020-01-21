@@ -48,7 +48,12 @@ importOABHauls <- function(file, path = getwd()){
   hauls <- replace_coma_with_dot(hauls, "ABERTURA_VER")
   hauls <- replace_coma_with_dot(hauls, "ABERTURA_HOR")
 
+  # Fix statistical rectangle variable
   hauls <- fixCuadriculaICES(hauls)
+
+  # convert logical variables from spanish (S/N) to TRUE/FALSE
+  hauls[["VALIDO"]] <- convertSNtoLogical(hauls[["VALIDO"]])
+  hauls[["MUESTREADO"]] <- convertSNtoLogical(hauls[["MUESTREADO"]])
 
   hauls <- formatVariableTypes(hauls, file_type)
 

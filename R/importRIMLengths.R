@@ -29,7 +29,9 @@ importRIMLengths <- function(file, path = getwd()){
 
   checkStructureFile(lengths, file_type)
 
-  lengths <- formatImportedFile(lengths)
+  # convert logical variables from spanish (S/N) to TRUE/FALSE
+  lengths[["CHEQUEADO"]] <- convertSNtoLogical(lengths[["CHEQUEADO"]])
+  lengths[["VALIDADO"]] <- convertSNtoLogical(lengths[["VALIDADO"]])
 
   # Change FECHA_DESEM from 16-JUN-19 to 16/06/2019 format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another
@@ -38,9 +40,18 @@ importRIMLengths <- function(file, path = getwd()){
   Sys.setlocale("LC_TIME","Spanish_United States.1252")
 
   lengths$FECHA_DESEM <- format(as.Date(lengths$FECHA_DESEM, "%d-%b-%y"), "%d/%m/%Y")
+  lengths$FECHA_MUE <- format(as.Date(lengths$FECHA_MUE, "%d-%b-%y"), "%d/%m/%Y")
 
   # and come back to the initial configuration of locale:
   Sys.setlocale("LC_TIME", lct)
+
+  # format variables
+  lengths <- formatVariableTypes(lengths, file_type)
+
+  # Other corrections (imperative do it at the end, because new variables are
+  # added)
+  lengths <- add_dates_variables(lengths)
+  lengths <- remove_coma_in_category(lengths)
 
   return(lengths)
 

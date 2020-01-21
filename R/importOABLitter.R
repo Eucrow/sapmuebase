@@ -36,6 +36,11 @@ importOABLitter <- function(file, path = getwd()){
 
   litter <- renameFileVariables(litter, file_type)
 
+  # convert logical variables from spanish (S/N) to TRUE/FALSE
+  litter[["SOLO_MUESTRA"]] <- convertSNtoLogical(litter[["SOLO_MUESTRA"]])
+  litter[["VIRADO_VACIADO"]] <- convertSNtoLogical(litter[["VIRADO_VACIADO"]])
+
+  # format variables
   litter <- formatVariableTypes(litter, file_type)
 
 }

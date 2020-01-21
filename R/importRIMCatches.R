@@ -40,18 +40,20 @@ importRIMCatches <- function(file, path = getwd()){
 
   checkStructureFile(catches, file_type)
 
-  catches <- formatImportedFile(catches)
+  # convert logical variables from spanish (S/N) to TRUE/FALSE
+  catches[["CHEQUEADO"]] <- convertSNtoLogical(catches[["CHEQUEADO"]])
 
-  # Change FECHA_DESEM from 16-JUN-19 to 16/06/2019 format
-  # to avoid some problems with Spanish_Spain.1252 (or if you are using another
-  # locale), change locale to Spanish_United States.1252:
-  lct <- Sys.getlocale("LC_TIME")
-  Sys.setlocale("LC_TIME","Spanish_United States.1252")
+  # Change variable from 16-JUN-19 to 16/06/2019 format
+  catches$FECHA_DESEM <- dbyToDmy(catches$FECHA_DESEM)
+  catches$FECHA_MUE <- dbyToDmy(catches$FECHA_MUE)
 
-  catches$FECHA_DESEM <- format(as.Date(catches$FECHA_DESEM, "%d-%b-%y"), "%d/%m/%Y")
+  # format variables
+  catches <- formatVariableTypes(catches, file_type)
 
-  # and come back to the initial configuration of locale:
-  Sys.setlocale("LC_TIME", lct)
+  # Other corrections (imperative do it at the end, because new variables are
+  # added)
+  catches <- add_dates_variables(catches)
+  catches <- remove_coma_in_category(catches)
 
   return(catches)
 

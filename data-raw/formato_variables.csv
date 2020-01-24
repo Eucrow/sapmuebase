@@ -1,7 +1,7 @@
 name_variable;regex_variable_import;class_variable_import;RIM_MANDATORY;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTALS;OAB_ACCIDENTALS_MANDATORY;COMMENTS
 RESPONSABLE_MUESTREO;^.+$;character;F;;character;1;1;1;;;;;;;;;;;;;
 COD_ID;^\d{4}[A-Z]{3}\d{1}[A-Z]{1}\d{4}$;factor;F;;factor;2;2;2;;;;;;;;;;;;;
-YEAR;^\d{4}$;integer;;;integer;;;;1;T;1;T;1;T;1;T;;;;;
+YEAR;^\d{4}$;integer;;;integer;;;;1;T;1;T;1;T;1;T;;;;;"In OAB_HAULS, this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 FECHA_DESEM;^\d{2}-[A-Z]{3}-\d{2}$;character;T;^\d{2}-\d{2}-\d{4}$;character;4;4;4;;;;;;;;;;;;;
 ESTRATEGIA;^.+$;factor;T;;factor;5;5;5;;;;;;;;;;;;;
 PROCEDENCIA;^[A-Z]{3}$;factor;T;;factor;6;6;6;;;;;;;;;;;;;
@@ -87,10 +87,10 @@ VELOCIDAD;^\d+(\,\d+)$;numeric;;;numeric;;;;;;25;F;;;;;;;;;
 LUZ;^D|N$;factor;;;factor;;;;;;26;T;;;;;;;;;
 VALIDO;^S|N$;factor;;;logical;;;;;;27;T;;;;;;;;;
 MUESTREADO;^S|N$;factor;;;logical;;;;;;28;T;;;;;;;;;
-DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;;integer;;;;;;29;T;;;;;;;;;
-MES;^([1-9]|1[0-2])$;integer;;;integer;;;;;;30;T;;;;;;;;;
+DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;;integer;;;;;;29;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
+MES;^([1-9]|1[0-2])$;integer;;;integer;;;;;;30;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 OBSERVADOR;^.+$;factor;;;factor;;;;;;31;T;;;;;;;;;
-RUMBO;^\d+$;integer;;;integer;;;;;;32;F;;;;;;;;;
+RUMBO;^.+$;character;;;character;;;;;;32;F;;;;;;;;;This variable can contain number, digits, dots…
 CABLE;^\d+(\,\d+)$;numeric;;;numeric;;;;;;33;F;;;;;;;;;
 VEL_VIENTO;^([0-9]|1[0-2])$;integer;;;integer;;;;;;34;F;;;;;;;;;
 ESTADO_MAR;^\d$;integer;;;integer;;;;;;35;F;;;;;;;;;
@@ -143,3 +143,7 @@ PORCENTAJE_OBSERVADO;^\d+$;integer;;;integer;;;;;;;;;;;;10;F;;;
 OBSERVACIONES;^.+$;character;F;;character;42;54;;28;F;61;F;;;;;11;F;;;
 PESO;^\d+(\,\d+)$;character;;;numeric;;;;;;;;;;;;;;6;F;
 N_EJEM;^\d+$;integer;;;integer;;;;;;;;;;;;;;7;F;
+FECHA_LANCE (OAB_HAULS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;Haul date field (FECHA_LANCE) is generated in the import proccess or the hauls file in base of variables DIA, MES and YEAR.
+FECHA_HORA_LAR (OAB_HAULS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;
+FECHA_HORA_VIR (OAB_HAULS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;
+YEAR', 'MES', 'DIA' and 'TRIMESTRE'  (RIM_CATCHES, RIM_LENGTHS, and RIM_CATCHES_IN_LENGTHS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;

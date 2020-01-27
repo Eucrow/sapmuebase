@@ -139,7 +139,7 @@ replace_coma_with_dot <- function(dataframe, variable){
 # function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE'
 # only usefull in RIM files (because contain the column FECHA_MUE)
 add_dates_variables <- function (dataframe){
-  dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d/%m/%y")
+  dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d/%m/%Y")
   dataframe[["DIA"]] <- dataframe[["FECHA_MUE"]]$mday
   dataframe[["MES"]] <- dataframe[["FECHA_MUE"]]$mon+1
   dataframe[["YEAR"]] <- dataframe[["FECHA_MUE"]]$year+1900
@@ -147,7 +147,7 @@ add_dates_variables <- function (dataframe){
 
   #remove 'Q' in quarter:
   dataframe[["TRIMESTRE"]] <- substring(dataframe[["TRIMESTRE"]], 2)
-  dataframe[["FECHA_MUE"]] <- format(dataframe[["FECHA_MUE"]], "%d/%m/%y")
+  dataframe[["FECHA_MUE"]] <- format(dataframe[["FECHA_MUE"]], "%d/%m/%Y")
 
   #order columns
   dataframe <- dataframe %>%

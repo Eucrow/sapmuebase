@@ -89,6 +89,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 2.0.1
+Fix and add new data to 'estratorim_arte', 'estratorim_origen' and 'origen' datasets.
 ### 2.0
 Improve import of logical variables in SIRENO reports.
 Fix minor bugs in some date fields.

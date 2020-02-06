@@ -1,12 +1,17 @@
 COD_ORIGEN,ORIGEN,RIM,OAB
 001,Subárea VI (ICES),T,F
 002,Subárea VII (ICES),T,F
-038,Divisiones 8abde,T,F
 008,Subdivisión 8c-Este,T,T
 009,Subdivisión 8c-Oeste,T,T
-058,Subdivisión IXa-Centro Norte,T,F
 010,Subdivisión IXa-Norte,T,T
 011,Subdivisión IXa-Sur,T,T
-036,División VIIj,F,T
+016,Division IXb,F,T
+030,División VIIb,F,T
+031,División VIIc,F,T
+033,División VIIg,F,T
+034,División VIIh,F,T
 035,División VIIk,F,T
-034,División VIIh,F,T            
+036,División VIIj,F,T
+038,Divisiones 8abde,T,F
+058,Subdivisión IXa-Centro Norte,T,F
+

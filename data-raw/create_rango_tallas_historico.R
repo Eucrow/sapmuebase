@@ -5,8 +5,8 @@ setwd("data-raw")
 
 file_data <- "data_source_private/IEOUPMUETALSIRENO_2014_2017.TXT"
 
-load("relacion_variables.RData")
-load("formato_variables.RData")
+load("../data/relacion_variables.rda")
+load("../data/formato_variables.rda")
 
 lengths_data <- sapmuebase::importRIMLengths(file_data, getwd())
 

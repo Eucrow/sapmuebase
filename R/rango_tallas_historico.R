@@ -1,8 +1,8 @@
-#' Historical percentile 97 range by species.
+#' Historical size range by species.
 #'
 #' A dataset containing the historical size range by species and sex. The dataset is created
 #' in create_rango_tallas_historico.R, using lengths recorded in SIRENO between 2014
-#' to 2017.
+#' and 2018.
 #'
 #' @format A data frame with 4 columns:
 #' \describe{

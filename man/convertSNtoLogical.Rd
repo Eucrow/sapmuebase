@@ -7,7 +7,8 @@
 convertSNtoLogical(x)
 }
 \arguments{
-\item{x}{vector to convert. Only admit "S" or "N" values.}
+\item{x}{vector to convert. Only admit "S", "N" or empty values. Empty values
+are assumed as FALSE.}
 }
 \value{
 vector var converted as logical. In case a value is distinct of "S"

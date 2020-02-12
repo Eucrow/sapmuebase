@@ -3,12 +3,19 @@ library(dplyr)
 original_wd <- getwd()
 setwd("data-raw")
 
-file_data <- "data_source_private/IEOUPMUETALSIRENO_2014_2017.TXT"
 
-load("relacion_variables.RData")
-load("formato_variables.RData")
+load("../data/relacion_variables.rda")
+load("../data/formato_variables.rda")
 
-lengths_data <- sapmuebase::importRIMLengths(file_data, getwd())
+
+file_data_2014_2017 <- "data_source_private/IEOUPMUETALSIRENO_2014_2017.TXT"
+file_data_2018 <- "data_source_private/IEOUPMUETALSIRENO_2018.TXT"
+
+
+lengths_data_2014_2017 <- sapmuebase::importRIMLengths(file_data_2014_2017, getwd())
+lengths_data_2018 <- sapmuebase::importRIMLengths(file_data_2018, getwd())
+
+lengths_data <- rbind(lengths_data_2014_2017, lengths_data_2018)
 
 rango_tallas_historico <- lengths_data %>%
   filter(PROCEDENCIA == "IEO") %>%

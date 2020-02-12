@@ -89,6 +89,9 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 2.0.1
+Update rango_tallas_historico dataset with year 2018.
+Update convertSNtoLogical() assuming empty values as FALSE values.
 ### 2.0
 Improve import of logical variables in SIRENO reports.
 Fix minor bugs in some date fields.

@@ -89,6 +89,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 2.0.3
+Update especies_mezcla and especies_no_mezcla datasets.
 ### 2.0.2
 Change Inf and -Inf to NA in rango_tallas_historico dataset.
 ### 2.0.1

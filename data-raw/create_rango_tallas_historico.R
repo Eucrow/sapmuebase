@@ -21,7 +21,9 @@ rango_tallas_historico <- lengths_data %>%
   filter(PROCEDENCIA == "IEO") %>%
   select(COD_ESP_CAT, SEXO, TALLA) %>%
   group_by(COD_ESP_CAT, SEXO) %>%
-  summarise(min_length = min(TALLA, na.rm = T), max_length = max(TALLA, na.rm = T))
+  summarise(min_length = min(TALLA, na.rm = T), max_length = max(TALLA, na.rm = T)) %>%
+  mutate(min_length = ifelse(is.infinite(min_length), NA, min_length)) %>%
+  mutate(max_length = ifelse(is.infinite(max_length), NA, max_length))
 
 colnames(rango_tallas_historico) <- c("COD_ESP", "SEXO", "TALLA_MIN", "TALLA_MAX")
 
@@ -31,4 +33,5 @@ usethis::use_data(rango_tallas_historico, overwrite = TRUE)
 devtools::document()
 
 setwd(original_wd)
-rm(original_wd, rango_tallas_historico)
+rm(original_wd, rango_tallas_historico, file_data_2014_2017, file_data_2018,
+   lengths_data_2014_2017, lengths_data_2018, lengths_data)

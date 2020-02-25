@@ -89,6 +89,8 @@ Use `?nameofthedataset` to details.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 
 ## Last changes:
+### 2.0.5
+Create rango_tallas_historico_RIM and rango_tallas_historico_OAB. Remove rango_tallas_historico.
 ### 2.0.4
 Update especies_no_mezcla and formato_variables datasets.
 ### 2.0.3

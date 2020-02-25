@@ -5,8 +5,14 @@
 \alias{importMuestreosUP}
 \title{Import 'muestreos tallas por up'}
 \usage{
-importRIMFiles(catches, catches_in_lengths, lengths, by_month = FALSE,
-  export = FALSE, path = getwd())
+importRIMFiles(
+  catches,
+  catches_in_lengths,
+  lengths,
+  by_month = FALSE,
+  export = FALSE,
+  path = getwd()
+)
 }
 \arguments{
 \item{catches}{vector with the total landings filenames}

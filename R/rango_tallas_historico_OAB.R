@@ -1,8 +1,9 @@
-#' Historical size range by species in OAB samples.
+#' Historical size range by species in OAB
 #'
-#' A dataset containing the historical size range by species and sex in OAB
-#' samples. The dataset is created in create_rango_tallas_historico.R, using
-#' lengths recorded in SIRENO between 2014 and 2018 from OAB samples.
+#' A dataset containing the historical size range by species and sex of OAB samples.
+#' The dataset is created
+#' in create_rango_tallas_historico.R, using lengths recorded in SIRENO between 2014
+#' and 2018.
 #'
 #' @format A data frame with 4 columns:
 #' \describe{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{rango_tallas_historico_OAB}
 \alias{rango_tallas_historico_OAB}
-\title{Historical size range by species in OAB samples.}
+\title{Historical size range by species in OAB}
 \format{A data frame with 4 columns:
 \describe{
   \item{COD_ESP}{SIRENO code species}
@@ -16,8 +16,9 @@
 rango_tallas_historico_OAB
 }
 \description{
-A dataset containing the historical size range by species and sex in OAB
-samples. The dataset is created in create_rango_tallas_historico.R, using
-lengths recorded in SIRENO between 2014 and 2018 from OAB samples.
+A dataset containing the historical size range by species and sex of OAB samples.
+The dataset is created
+in create_rango_tallas_historico.R, using lengths recorded in SIRENO between 2014
+and 2018.
 }
 \keyword{datasets}

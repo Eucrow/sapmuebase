@@ -7,11 +7,9 @@ setwd("data-raw")
 load("../data/relacion_variables.rda")
 load("../data/formato_variables.rda")
 
-file_data <- "data_source_private/IEODESTALLASSIRENO_2014_2018.TXT"
+file_data <- "data_source_private/IEODESTALLASSIRENO_2014_2018_fixed.TXT"
 
 lengths_data <- sapmuebase::importOABLengths(file_data, getwd())
-
-lengths_data <- lengths_data
 
 rango_tallas_historico_OAB <- lengths_data %>%
   select(COD_ESP, SEXO, TALLA) %>%

@@ -12,7 +12,6 @@
 #' @return a list of dataframes for each influence area in the dataframe to
 #' separate.
 #' @import dplyr
-#' @import plyr
 #' @export
 #'
 #'

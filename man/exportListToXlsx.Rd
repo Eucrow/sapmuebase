@@ -4,8 +4,13 @@
 \alias{exportListToXlsx}
 \title{Export to xlsx a list of dataframes}
 \usage{
-exportListToXlsx(list, prefix = "", suffix = "", separation = "",
-  path_export = getwd())
+exportListToXlsx(
+  list,
+  prefix = "",
+  suffix = "",
+  separation = "",
+  path_export = getwd()
+)
 }
 \arguments{
 \item{list:}{list of dataframes}

@@ -4,8 +4,13 @@
 \alias{exportListToCsv}
 \title{Export to csv a list of dataframes}
 \usage{
-exportListToCsv(list, prefix = "", suffix = "", separation = "",
-  path = getwd())
+exportListToCsv(
+  list,
+  prefix = "",
+  suffix = "",
+  separation = "",
+  path = getwd()
+)
 }
 \arguments{
 \item{path}{= destiny path. By default is the actual working directory.}

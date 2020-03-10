@@ -22,7 +22,7 @@ catchesPercentileUP <- function(dfs, path = getwd(), per){
     ungroup()%>%
     select(COD_ESP_MUE, ESTRATO_RIM, p_desem_total) %>%
     group_by(COD_ESP_MUE, ESTRATO_RIM) %>%
-    summarise('97' = quantile(p_desem_total, probs=per, na.rm = TRUE))
+    summarise('99' = quantile(p_desem_total, probs=per, na.rm = TRUE))
 
   # convert tibble to dataframe
   percentile <- as.data.frame(percentile)
@@ -31,17 +31,17 @@ catchesPercentileUP <- function(dfs, path = getwd(), per){
 
 }
 
-p97_capturas_historico <- catchesPercentileUP(catches, path = paste0(getwd(),"/data_source_private"), per = 0.97)
+p99_capturas_historico <- catchesPercentileUP(catches, path = paste0(getwd(),"/data_source_private"), per = 0.99)
 
-colnames(p97_capturas_historico) <- c("COD_ESP", "ESTRATO_RIM", "P97")
+colnames(p99_capturas_historico) <- c("COD_ESP", "ESTRATO_RIM", "P99")
 
 # use_data() create the file in /data. The file created has extension .rda,
 # instead of .Rdata.
-usethis::use_data(p97_capturas_historico, overwrite = TRUE)
+usethis::use_data(p99_capturas_historico, overwrite = TRUE)
 
 devtools::document()
 
 setwd(original_wd)
-rm(original_wd, p97_capturas_historico)
+rm(original_wd, p99_capturas_historico)
 
 

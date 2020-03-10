@@ -7,17 +7,9 @@ setwd("data-raw")
 load("../data/relacion_variables.rda")
 load("../data/formato_variables.rda")
 
+file_data <- "data_source_private/IEODESTALLASSIRENO_2014_2018_fixed.TXT"
 
-# file_data_2014_2017 <- "data_source_private/IEOUPMUETALSIRENO_2014_2017.TXT"
-# file_data_2018 <- "data_source_private/IEOUPMUETALSIRENO_2018.TXT"
-file_data_2019 <- "data_source_private/TALLAS_OAB_ICES_2019_V3.TXT"
-
-# lengths_data_2014_2017 <- sapmuebase::importRIMLengths(file_data_2014_2017, getwd())
-# lengths_data_2018 <- sapmuebase::importRIMLengths(file_data_2018, getwd())
-lengths_data_2019 <- sapmuebase::importOABLengths(file_data_2019, getwd())
-
-# lengths_data <- rbind(lengths_data_2014_2017, lengths_data_2018)
-lengths_data <- lengths_data_2019
+lengths_data <- sapmuebase::importOABLengths(file_data, getwd())
 
 rango_tallas_historico_OAB <- lengths_data %>%
   select(COD_ESP, SEXO, TALLA) %>%
@@ -34,5 +26,5 @@ usethis::use_data(rango_tallas_historico_OAB, overwrite = TRUE)
 devtools::document()
 
 setwd(original_wd)
-rm(original_wd, rango_tallas_historico_OAB, file_data_2014_2017, file_data_2018,
-   lengths_data_2014_2017, lengths_data_2018, lengths_data)
+rm(original_wd, rango_tallas_historico_OAB, file_data, lengths_data,
+   formato_variables, relacion_variables)

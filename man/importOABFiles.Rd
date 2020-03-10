@@ -4,8 +4,16 @@
 \alias{importOABFiles}
 \title{Import OAB reports from SIRENO.}
 \usage{
-importOABFiles(trips, hauls, catches, lengths, litter, accidentals,
-  export = FALSE, path = getwd())
+importOABFiles(
+  trips,
+  hauls,
+  catches,
+  lengths,
+  litter,
+  accidentals,
+  export = FALSE,
+  path = getwd()
+)
 }
 \arguments{
 \item{trips}{vector with the names of the haul files}

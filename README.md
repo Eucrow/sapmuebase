@@ -87,8 +87,11 @@ Use `?nameofthedataset` to details.
 * variables_to_humanize: used in humanize() and humanizeVariable() functions
 * rango_tallas_historico: dataset with minimun and maximun historical lengths by species and sex
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
+* p99_capturas_historico: list of species and its 99 percentile from 2014 to 2018 catches.
 
 ## Last changes:
+### 2.0.6
+Add p99_capturas_historico dataset.
 ### 2.0.5
 Create rango_tallas_historico_RIM and rango_tallas_historico_OAB. Remove rango_tallas_historico.
 ### 2.0.4

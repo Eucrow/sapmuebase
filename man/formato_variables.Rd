@@ -4,7 +4,8 @@
 \name{formato_variables}
 \alias{formato_variables}
 \title{Variables format}
-\format{A data frame with 9 columns:
+\format{
+A data frame with 9 columns:
 \describe{
   \item{name_variable}{name of the variable}
   \item{regex_variable_import}{regular expression of the variable in the import process}
@@ -20,7 +21,8 @@
   \item{AOB_CATCHES}{order of the field in OAB catches file. NA if the field doesn't exist in the file}
   \item{AOB_LENGTHS}{order of the field in OAB lengths file. NA if the field doesn't exist in the file}
   ...
-}}
+}
+}
 \usage{
 formato_variables
 }

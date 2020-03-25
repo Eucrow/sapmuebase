@@ -4,13 +4,15 @@
 \name{p99_capturas_historico}
 \alias{p99_capturas_historico}
 \title{Historical percentile 99 range by species.}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{COD_ESP}{SIRENO code species}
   \item{ESTRATO_RIM}{RIM stratum}
   \item{P99}{percentile 99}
   ...
-}}
+}
+}
 \usage{
 p99_capturas_historico
 }

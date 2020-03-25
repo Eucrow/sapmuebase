@@ -4,7 +4,9 @@
 \name{cfpo2018}
 \alias{cfpo2018}
 \title{CFPO2017}
-\format{A data frame with 34 variables.}
+\format{
+A data frame with 34 variables.
+}
 \usage{
 cfpo2018
 }

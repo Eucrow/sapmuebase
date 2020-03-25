@@ -4,14 +4,16 @@
 \name{especies_mezcla}
 \alias{especies_mezcla}
 \title{Mixed species}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{ESP_MUE}{Sampled specie}
   \item{COD_ESP_MUE}{Sampled specie code}
   \item{ESP_CAT}{Category specie}
   \item{COD_ESP_CAT}{Category specie code}
   ...
-}}
+}
+}
 \usage{
 especies_mezcla
 }

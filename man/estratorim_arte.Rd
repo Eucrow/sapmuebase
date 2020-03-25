@@ -4,13 +4,15 @@
 \name{estratorim_arte}
 \alias{estratorim_arte}
 \title{ESTRATO_RIM - Gear}
-\format{A data frame with 3 columns:
+\format{
+A data frame with 3 columns:
 \describe{
   \item{ESTRATO_RIM}{}
   \item{ARTE}{Gear of the ESTRATO_RIM}
   \item{COD_ARTE}{Gear code}
   ...
-}}
+}
+}
 \usage{
 estratorim_arte
 }

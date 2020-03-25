@@ -4,14 +4,16 @@
 \name{rango_tallas_historico_OAB}
 \alias{rango_tallas_historico_OAB}
 \title{Historical size range by species in OAB}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{COD_ESP}{SIRENO code species}
   \item{SEXO}{sex}
   \item{TALLA_MIN}{minimun length}
   \item{TALLA_MAX}{maximun length}
   ...
-}}
+}
+}
 \usage{
 rango_tallas_historico_OAB
 }

@@ -4,7 +4,8 @@
 \name{metier_caladero_dcf}
 \alias{metier_caladero_dcf}
 \title{Relation between METIER_DCF and CALADERO_DCF}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{METIER_DCF}{}
   \item{CALADERO_DCF}{}
@@ -13,7 +14,8 @@
   \item{RIM}{TRUE if is used in RIM samples}
   \item{OAB}{TRUE if is used in OAB samples}
   ...
-}}
+}
+}
 \usage{
 metier_caladero_dcf
 }

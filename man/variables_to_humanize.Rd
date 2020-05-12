@@ -4,7 +4,8 @@
 \name{variables_to_humanize}
 \alias{variables_to_humanize}
 \title{Variables to humanize}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{ORIGINAL_VAR}{Variable suitable to humanize.}
   \item{MASTER_VAR}{Name of the ORIGINAL_VAR in the master. This column is
@@ -14,7 +15,8 @@
   is the value returned by humanized functions.}
   \item{MASTER}{Master in wich the variable is coded.}
   ...
-}}
+}
+}
 \usage{
 variables_to_humanize
 }

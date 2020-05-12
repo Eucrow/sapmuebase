@@ -4,14 +4,16 @@
 \name{areas_influencia}
 \alias{areas_influencia}
 \title{List of influence areas}
-\format{A data frame with 4 columns:
+\format{
+A data frame with 4 columns:
 \describe{
   \item{PUERTO}{}
   \item{LOCODE}{Control variable}
   \item{COD_PUERTO}{Port code}
   \item{AREA_INF}{Influence area}
   ...
-}}
+}
+}
 \usage{
 areas_influencia
 }

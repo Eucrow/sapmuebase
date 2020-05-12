@@ -4,7 +4,8 @@
 \name{maestro_categorias}
 \alias{maestro_categorias}
 \title{Categories in SIRENO}
-\format{A data frame with 24016 rows and 8 columns:
+\format{
+A data frame with 24016 rows and 8 columns:
 \describe{
   \item{ESPCOD}{SIRENO specie code}
   \item{ESPDESTAX}{Specie name}
@@ -15,7 +16,8 @@
   \item{ESPCATFUE}{}
   \item{TIPPROCOD}{Gutted/whole}
   ...
-}}
+}
+}
 \usage{
 maestro_categorias
 }

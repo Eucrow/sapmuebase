@@ -4,12 +4,14 @@
 \name{estratorim_origen}
 \alias{estratorim_origen}
 \title{ESTRATO_RIM - Origin}
-\format{A data frame with 3 columns:
+\format{
+A data frame with 3 columns:
 \describe{
   \item{ESTRATO_RIM}{}
   \item{COD_ORIGEN}{SIRENO origin code}
   ...
-}}
+}
+}
 \usage{
 estratorim_origen
 }

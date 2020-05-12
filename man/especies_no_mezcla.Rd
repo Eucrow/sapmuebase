@@ -4,12 +4,14 @@
 \name{especies_no_mezcla}
 \alias{especies_no_mezcla}
 \title{Non mixed species}
-\format{A data frame with 2 columns:
+\format{
+A data frame with 2 columns:
 \describe{
   \item{ESP}{Specie}
   \item{COD_ESP}{Specie code}
   ...
-}}
+}
+}
 \usage{
 especies_no_mezcla
 }

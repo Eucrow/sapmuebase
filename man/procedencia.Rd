@@ -4,12 +4,14 @@
 \name{procedencia}
 \alias{procedencia}
 \title{Sampling institution}
-\format{A data frame with 1 rows and 2 columns:
+\format{
+A data frame with 1 rows and 2 columns:
 \describe{
   \item{PROCEDENCIA}{sampling institution}
   \item{VALID}{control variable}
   ...
-}}
+}
+}
 \usage{
 procedencia
 }

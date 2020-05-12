@@ -4,7 +4,8 @@
 \name{maestro_flota_sireno}
 \alias{maestro_flota_sireno}
 \title{Fleet in SIRENO}
-\format{A data frame with 35,942 rows and 10 columns:
+\format{
+A data frame with 35,942 rows and 10 columns:
 \describe{
   \item{BARCOD}{SIRENO code}
   \item{BARCODSECR}{Secretaría General de Pesca code}
@@ -17,7 +18,8 @@
   \item{PAICOD}{Country code}
   \item{PUECOD}{Port base}
   ...
-}}
+}
+}
 \usage{
 maestro_flota_sireno
 }

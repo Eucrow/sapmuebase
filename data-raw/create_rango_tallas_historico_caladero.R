@@ -37,7 +37,13 @@ setwd("data-raw")
 rango_tallas_historico_caladero <- sapmuebase::importCsvSAPMUE("rango_tallas_historico_caladero.csv")
 
 rango_tallas_historico_caladero <- merge(rango_tallas_historico_caladero,
-                                             especies[,c("ESP", "COD_ESP")], by.x = "ESPECIE", by.y = "ESP", all.x = T)
+                                         sapmuebase::especies[,c("ESP", "COD_ESP")],
+                                         by.x = "ESPECIE",
+                                         by.y = "ESP",
+                                         all.x = T)
+
+# Add sireno code to Chelidonichthys lastoviza:
+rango_tallas_historico_caladero[rango_tallas_historico_caladero$ESPECIE=="Chelidonichthys lastoviza", "COD_ESP"] <- "10725"
 
 rango_tallas_historico_caladero <- rango_tallas_historico_caladero[, c("COD_ESP", "CALADERO", "t_min_final", "t_max_final")]
 
@@ -50,6 +56,4 @@ usethis::use_data(rango_tallas_historico_caladero, overwrite = TRUE)
 devtools::document()
 
 setwd(original_wd)
-rm(original_wd, rango_tallas_historico_caladero, file_data_2014_2017, file_data_2018,
-   lengths_data_2014_2017, lengths_data_2018, lengths_data, formato_variables,
-   relacion_variables)
+rm(original_wd, rango_tallas_historico_caladero)

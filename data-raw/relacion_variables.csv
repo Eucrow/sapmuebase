@@ -172,9 +172,9 @@ A3_ESP;A3_ESP
 ESP;ESP
 PESO;PESO
 N_EJEM;N_EJEM
-Peso Desemb.Oblig.(kg);P_DESEM_OBL
-Peso Minimis(kg);P_MINIMIS
-Peso Muestra Desemb.Oblig.(kg);P_MUE_DESEM_OBL
-Peso Muestra Minimis(kg);P_MUE_MINIMIS
-Ejem. Desemb.Oblig.;EJEM_DESEM_OBL
-Ejem. Minimis;EJEM_MINIMIS
+Peso.Desemb.Oblig..kg.;P_DESEM_OBL
+Peso.Minimis.kg.;P_MINIMIS
+Peso.Muestra.Desemb.Oblig..kg.;P_MUE_DESEM_OBL
+Peso.Muestra.Minimis.kg.;P_MUE_MINIMIS
+Ejem..Desemb.Oblig.;EJEM_DESEM_OBL
+Ejem..Minimis;EJEM_MINIMIS

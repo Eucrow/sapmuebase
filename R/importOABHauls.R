@@ -51,10 +51,6 @@ importOABHauls <- function(file, path = getwd()){
   # Fix statistical rectangle variable
   hauls <- fixCuadriculaICES(hauls)
 
-  # convert logical variables from spanish (S/N) to TRUE/FALSE
-  hauls[["VALIDO"]] <- convertSNtoLogical(hauls[["VALIDO"]])
-  hauls[["MUESTREADO"]] <- convertSNtoLogical(hauls[["MUESTREADO"]])
-
   hauls <- formatVariableTypes(hauls, file_type)
 
   # Change FECHA_LAR y FECHA_VIR format from 16-JUN-19 TO 16/06/2019

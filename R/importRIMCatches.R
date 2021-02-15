@@ -40,9 +40,6 @@ importRIMCatches <- function(file, path = getwd()){
 
   checkStructureFile(catches, file_type)
 
-  # convert logical variables from spanish (S/N) to TRUE/FALSE
-  catches[["CHEQUEADO"]] <- convertSNtoLogical(catches[["CHEQUEADO"]])
-
   # Change variable from 16-JUN-19 to 16/06/2019 format
   catches$FECHA_DESEM <- dbyToDmy(catches$FECHA_DESEM)
   catches$FECHA_MUE <- dbyToDmy(catches$FECHA_MUE)

@@ -79,6 +79,9 @@ getVariableTypes <- function(file_type, status_class){
 
 #' Format the variables of a dataframe obtained by the RIM and OAB import
 #' funcionts from this package.
+#' In case of logical variables with spanish
+#' format ('S'/'N'), convert it in TRUE/FALSE logical variables (empty
+#' data is assumed as FALSE)
 #' The variable types are stored in formato_variables dataset.
 #' @param df dataframe to format.
 #' @param file_type type of the file: "RIM_CATCHES",
@@ -95,6 +98,11 @@ formatVariableTypes <- function(df, file_type){
     var_name <- variables_name
 
     new_var_type <- type_variables[type_variables[["name_variable"]] == var_name[x], "class_variable_final"]
+
+    # convert logical variables from spanish (S/N) to TRUE/FALSE
+    if(new_var_type=="logical"){
+      df[[x]] <- convertSNtoLogical(df[[x]])
+    }
 
     # Attention: df[x] is a list... but I don't know why...
     df[[x]] <- get(paste0("as.",new_var_type))(df[[x]])
@@ -233,3 +241,4 @@ fixCuadriculaICES <- function(df){
   return(df)
 
 }
+

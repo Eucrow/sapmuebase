@@ -4,6 +4,9 @@
 \alias{formatVariableTypes}
 \title{Format the variables of a dataframe obtained by the RIM and OAB import
 funcionts from this package.
+In case of logical variables with spanish
+format ('S'/'N'), convert it in TRUE/FALSE logical variables (empty
+data is asummed as FALSE)
 The variable types are stored in formato_variables dataset.}
 \usage{
 formatVariableTypes(df, file_type)
@@ -18,5 +21,8 @@ formatVariableTypes(df, file_type)
 \description{
 Format the variables of a dataframe obtained by the RIM and OAB import
 funcionts from this package.
+In case of logical variables with spanish
+format ('S'/'N'), convert it in TRUE/FALSE logical variables (empty
+data is asummed as FALSE)
 The variable types are stored in formato_variables dataset.
 }

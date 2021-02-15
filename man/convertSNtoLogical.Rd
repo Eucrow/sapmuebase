@@ -11,8 +11,8 @@ convertSNtoLogical(x)
 are assumed as FALSE.}
 }
 \value{
-vector var converted as logical. In case a value is distinct of "S"
-or "N", an error is thrown.
+vector var converted as logical. In case a value is distinct of "S",
+"N" or empty value, an error is thrown.
 }
 \description{
 Convert logical varible in spanish (S/N) to logical TRUE/FALSE.

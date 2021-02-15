@@ -92,6 +92,9 @@ lengths by species and fishign ground.
 * caladero_origen: list of fishing ground with its origin used in SAP MUE team.
 
 ## Last changes:
+### 2.0.8
+Update some master datasets. Improve import of boolean variables with spanish
+format in import functions.
 ### 2.0.7
 Create rango_tallas_historico_caladero datasets. Remove rango_tallas_historico_RIM
 and rango_tallas_historico_OAB. Create caladero_origen dataset.

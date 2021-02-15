@@ -6,7 +6,7 @@
 funcionts from this package.
 In case of logical variables with spanish
 format ('S'/'N'), convert it in TRUE/FALSE logical variables (empty
-data is asummed as FALSE)
+data is assumed as FALSE)
 The variable types are stored in formato_variables dataset.}
 \usage{
 formatVariableTypes(df, file_type)
@@ -23,6 +23,6 @@ Format the variables of a dataframe obtained by the RIM and OAB import
 funcionts from this package.
 In case of logical variables with spanish
 format ('S'/'N'), convert it in TRUE/FALSE logical variables (empty
-data is asummed as FALSE)
+data is assumed as FALSE)
 The variable types are stored in formato_variables dataset.
 }

@@ -40,10 +40,6 @@ importRIMCatchesInLengths <- function(file, path = getwd()){
 
   checkStructureFile(catches_in_lengths, file_type)
 
-  # convert logical variables from spanish (S/N) to TRUE/FALSE
-  catches_in_lengths[["CHEQUEADO"]] <- convertSNtoLogical(catches_in_lengths[["CHEQUEADO"]])
-  catches_in_lengths[["VALIDADO"]] <- convertSNtoLogical(catches_in_lengths[["VALIDADO"]])
-
   # Change FECHA_DESEM from 16-JUN-19 to 16/06/2019 format
   # to avoid some problems with Spanish_Spain.1252 (or if you are using another
   # locale), change locale to Spanish_United States.1252:

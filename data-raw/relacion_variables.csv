@@ -137,8 +137,8 @@ Categoría;CATEGORIA
 Peso.Capturado..Kg.;P_CAP
 Peso.Retenido..Kg.;P_RET
 Peso.Descartado.Kg.;P_DESCAR
-Peso.Muestra.Retenida.gr.;P_MUE_RET
-Peso.Muestra.Descarte.gr.;P_MUE_DESCAR
+Peso.Muestra.Retenida.kg.;P_MUE_RET
+Peso.Muestra.Descarte.kg.;P_MUE_DESCAR
 Ejem.Retenidos;EJEM_RET
 Ejem..Descartados;EJEM_DESCAR
 Coddes;COD_DESCAR
@@ -172,3 +172,10 @@ A3_ESP;A3_ESP
 ESP;ESP
 PESO;PESO
 N_EJEM;N_EJEM
+Peso.Desemb.Oblig..kg.;P_DESEM_OBL
+Peso.Minimis.kg.;P_MINIMIS
+Peso.Muestra.Desemb.Oblig..kg.;P_MUE_DESEM_OBL
+Peso.Muestra.Minimis.kg.;P_MUE_MINIMIS
+Ejem..Desemb.Oblig.;EJEM_DESEM_OBL
+Ejem..Minimis;EJEM_MINIMIS
+Chequeado;CHEQUEADO

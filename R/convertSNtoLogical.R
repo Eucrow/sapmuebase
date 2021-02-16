@@ -10,7 +10,7 @@ convertSNtoLogical <- function(x){
   x <- as.character(x)
 
   # the regex expression "^\b|S|N$" means any empty value, or 'S' or 'N'.
-  if (!all(grepl("^\b|S|N$" , x))){
+  if (!all(grepl("^\\b|S|N$" , x))){
     stop("The variable only can contain 'S', 'N' or empty values.")
   }
 

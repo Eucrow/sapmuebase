@@ -5,7 +5,7 @@ are related to the import of reports from IEO's SIRENO database in R, with a
 common format.
 
 **Note**: Various functions of sapmuebase package require the 'tallas por UP' 
-reports or OAB reports from IEO's SIRENO database
+reports or OAB reports from IEO's SIRENO database.
 
 ## Install
 With `devtools` package installed:
@@ -16,6 +16,8 @@ install_github("Eucrow/sapmuebase")
 
 ## Functions available
 Use `?nameofthefunction` to details.
+#### speciesBelongToTaxon()
+Check in WORMS if species belongs to a taxon.
 #### importCsvSAPMUE()
 Import csv files with special format usually used in SAPMUE team.
 #### exportCsvSAPMUE()
@@ -64,7 +66,8 @@ READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO rep
 use `?fixReportSirenoFiles` for details in R.
 
 ## Datasets available
-(Datasests name and its variables are in spanish)
+(Datasests name and its variables are mostly in spanish due to the language used
+in SIRENO database.)
 
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
@@ -92,6 +95,8 @@ lengths by species and fishign ground.
 * caladero_origen: list of fishing ground with its origin used in SAP MUE team.
 
 ## Last changes:
+### 2.1
+Add speciesBelongToTaxon() function.
 ### 2.0.8
 Update some master datasets. Improve import of boolean variables with spanish
 format in import functions.

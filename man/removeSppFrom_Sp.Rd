@@ -7,10 +7,10 @@
 removeSppFrom_Sp(sp)
 }
 \arguments{
-\item{sp}{a character vector of species.}
+\item{sp}{A character vector of species.}
 }
 \value{
-a character vector of species without " spp".
+A character vector of species without " spp".
 }
 \description{
 Remove " spp" abbreviation in species.

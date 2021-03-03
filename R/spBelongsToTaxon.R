@@ -1,14 +1,15 @@
-#' Check if one species belongs to a taxon.
-#' Uses WORMS api to identify the species taxon.
-#' @param specie specie to check
-#' @param taxon_to_match taxon to match
+#' @title Check in WORMS if one species belongs to a taxon.
+#' @param specie Specie to check.
+#' @param taxon_to_match Taxon to match.
 #' @return TRUE if the species belong to taxon. False if doesn't. In case any species
 #' doesn't exists in WORMS a warning is thrown and the text "this species
 #' doesn't match in WORMS" is returned. In case multiple matchs, a warning is
 #' thrown and the text "multiple match in WORMS" is returned.
 #' @details Uses WORMS api to identify the species taxon.
+#'
 #' If the species contains the abbreviation spp, the " spp" is removed in
 #' order to find a match in WORMS.
+#'
 #' Require jsonlite library.
 #' @author Marco A. Ámez , \email{marco.amez@@ieo.es}
 spBelongsToTaxon <- function (species, taxon_to_match){

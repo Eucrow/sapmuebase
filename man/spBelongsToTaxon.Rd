@@ -2,15 +2,14 @@
 % Please edit documentation in R/spBelongsToTaxon.R
 \name{spBelongsToTaxon}
 \alias{spBelongsToTaxon}
-\title{Check if one species belongs to a taxon.
-Uses WORMS api to identify the species taxon.}
+\title{Check in WORMS if one species belongs to a taxon.}
 \usage{
 spBelongsToTaxon(species, taxon_to_match)
 }
 \arguments{
-\item{taxon_to_match}{taxon to match}
+\item{taxon_to_match}{Taxon to match.}
 
-\item{specie}{specie to check}
+\item{specie}{Specie to check.}
 }
 \value{
 TRUE if the species belong to taxon. False if doesn't. In case any species
@@ -19,13 +18,14 @@ doesn't match in WORMS" is returned. In case multiple matchs, a warning is
 thrown and the text "multiple match in WORMS" is returned.
 }
 \description{
-Check if one species belongs to a taxon.
-Uses WORMS api to identify the species taxon.
+Check in WORMS if one species belongs to a taxon.
 }
 \details{
 Uses WORMS api to identify the species taxon.
+
 If the species contains the abbreviation spp, the " spp" is removed in
 order to find a match in WORMS.
+
 Require jsonlite library.
 }
 \author{

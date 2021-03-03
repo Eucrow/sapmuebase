@@ -12,4 +12,6 @@ RoxygenNote: 7.1.1
 Imports: dplyr,
     plyr,
     googlesheets,
-    openxlsx
+    openxlsx,
+    jsonlite,
+    httr

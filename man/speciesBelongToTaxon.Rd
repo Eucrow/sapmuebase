@@ -2,30 +2,37 @@
 % Please edit documentation in R/speciesBelongToTaxon.R
 \name{speciesBelongToTaxon}
 \alias{speciesBelongToTaxon}
-\title{Return species belonging to certain taxon.}
+\title{Check in WORMS if species belongs to a taxon.}
 \usage{
 speciesBelongToTaxon(species, taxon)
 }
 \arguments{
-\item{species}{vector of species to check.}
+\item{species}{Vector of species to check.}
 
-\item{taxon}{taxon.}
+\item{taxon}{Taxon as character.}
 }
 \value{
-vector with the species belonging to taxon. For every species, TRUE
+Vector with the species belonging to taxon. For every species, TRUE
 if belongs to taxon. False if doesn't. In case the species
 doesn't exists in WORMS a warning is thrown and the text "this species
 doesn't match in WORMS" is returned. In case multiple matchs, a warning is
 thrown and the text "multiple match in WORMS" is returned.
 }
 \description{
-Return species belonging to certain taxon.
+Check in WORMS if species belongs to a taxon.
 }
 \details{
 Is the vectorized version of check_spe_belongs_to_taxon().
+
 Uses WORMS api to identify the species taxon.
-If the species contains the abbreviation spp, the " spp" is removed in
-order to find a match in WORMS.
+
+If the species contains the abbreviation spp, the " spp" is removed from
+the name in order to find a match in WORMS.
+}
+\examples{
+> species_to_check <- c("Loligo vulgaris", "Raja clavata", "Sardina pilchardus")
+> speciesBelongToTaxon(species_to_check, "Elasmobranchii")
+[1] FALSE  TRUE FALSE
 }
 \author{
 Marco A. Ámez , \email{marco.amez@ieo.es}

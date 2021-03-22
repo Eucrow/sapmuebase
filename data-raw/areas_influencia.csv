@@ -1,25 +1,28 @@
-PUERTO,LOCODE,COD_PUERTO,AREA_INF
-Avilés,ESAVS,1418,AC
-Gijón,ESGIJ,1417,AC
-Luarca,ESLUA,1420,AC
-San Vicente de la Barquera,ESSVB,0405,AC
-Santoña,ESSNN,0409,AC
-Santander,ESSDR,0402,AC
-Ayamonte,ESAYA,0109,GC
-Barbate,ESBDF,0103,GC
-Cádiz,ESCAD,0101,GC
-Huelva,ESHUV,0112,GC
-Isla Cristina,ESZGA,0110,GC
-Puerto de Santa María,ESPSM,0118,GC
-Punta Umbría,ESZJY,0114,GC
-Sanlúcar de Barrameda,ESSBA,0116,GC
-Tarifa,ESTRF,0105,GC
-A Coruña,ESLCG,0907,GN
-Burela,ESBRL,0925,GN
-Cedeira,ESCED,0904,GN
-Cillero,ESCIO,0926,GN
-Finisterre,ESFNE,0913,GS
-Marín,ESMPG,0921,GS
-Muros,ESMRS,0914,GS
-Santa Eugenia de Ribeira,ESSNI,0917,GS
-Vigo,ESVGO,0922,GS
+PUERTO,COD_PUERTO,AREA_INF
+Avilés,1418,AC
+Gijón,1417,AC
+Luarca,1420,AC
+San Vicente de la Barquera,0405,AC
+Santoña,0409,AC
+Santander,0402,AC
+Ayamonte,0109,GC
+Barbate,0103,GC
+Cádiz,0101,GC
+Huelva,0112,GC
+Isla Cristina,0110,GC
+Puerto de Santa María,0118,GC
+Punta Umbría,0114,GC
+Sanlúcar de Barrameda,0116,GC
+Tarifa,0105,GC
+A Coruña,0907,GN
+Burela,0925,GN
+Cedeira,0904,GN
+Cillero,0926,GN
+Finisterre,0913,GS
+Marín,0921,GS
+Muros,0914,GS
+Santa Eugenia de Ribeira,0917,GS
+Vigo,0922,GS
+Suances,0403,AC
+Rota,0117,GC
+Llanes,1423,AC

@@ -1,7 +1,7 @@
 #' Pescriptions coherence.
 #'
 #' A dataset containing the coherence between the variables of 2021 RIM
-#' prescriptions. Tho original prescriptions document contain grouped variables
+#' prescriptions. The original prescriptions document contain grouped variables
 #' like fisheries with multiple rim stratum o grouped ports like "Avilés/Gijón".
 #'
 #' In this dataframe, those groups has been disagregated.

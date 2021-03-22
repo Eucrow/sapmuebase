@@ -1,4 +1,4 @@
-#' Pescriptions coherence.
+#' Prescriptions coherence.
 #'
 #' A dataset containing the coherence between the variables of 2021 RIM
 #' prescriptions. Tho original prescriptions document contain grouped variables
@@ -7,8 +7,8 @@
 #' In this dataframe, those groups has been disagregated.
 #'
 #' And other variables has been added in order to get a complete dataset where
-#' find the coherence between them allowed in prescriptpions.
+#' find the coherence between them allowed in prescriptions.
 #'
 #' @format A data frame with 11 columns.
 
-"prescripciones_rim_2021_coherencia"
+"prescripciones_rim_mt2_2021_coherencia"

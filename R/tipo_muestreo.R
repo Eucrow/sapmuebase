@@ -9,4 +9,4 @@
 #'   \item{ESTRATEGIA}{sample strategy}
 #'   ...
 #' }
-"tipo_mue"
+"tipo_muestreo"

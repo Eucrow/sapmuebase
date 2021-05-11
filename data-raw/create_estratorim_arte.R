@@ -6,8 +6,7 @@ original_wd <- getwd()
 setwd("data-raw")
 
 estratorim_arte <- read.csv("estratorim_arte.csv",
-                              colClasses = c("factor", "factor", "factor",
-                                             "logical", "logical"),
+                              colClasses = c("factor", "factor", "factor"),
                               encoding = "UTF-8")
 
 # use_data() create the file in /data

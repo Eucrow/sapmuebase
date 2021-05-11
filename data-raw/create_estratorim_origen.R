@@ -7,8 +7,7 @@ usethis::use_data_raw()
 original_wd <- getwd()
 setwd("data-raw")
 estratorim_origen <- read.csv("estratorim_origen.csv",
-                              colClasses = c("factor", "factor",
-                                             "logical", "logical"),
+                              colClasses = c("factor", "factor"),
                               encoding = "UTF-8")
 
 # use_data() create the file in /data (before, we have to copy manually, but not

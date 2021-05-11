@@ -66,7 +66,7 @@ READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO rep
 use `?fixReportSirenoFiles` for details in R.
 
 ## Datasets available
-Datasests name and its variables are mostly in spanish due to the language used
+Datasest names and its variables are mostly in spanish due to the language used
 in SIRENO database.
 
 The datasets with SIRENO data are only related to ICES area.
@@ -74,7 +74,6 @@ The datasets with SIRENO data are only related to ICES area.
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
 * arte: gears
-* cfpo2018
 * especies
 * especies_mezcla: mixed species
 * especies_no_mezcla: non mixed species

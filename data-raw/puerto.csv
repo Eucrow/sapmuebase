@@ -1,32 +1,33 @@
-PUERTO,COD_PUERTO,LOCODE,RIM,OAB
-A Coruña,0907,ESLCG,T,T
-Avilés,1418,ESAVS,T,T
-Ayamonte,0109,ESAYA,F,T
-Barbate,0103,ESBDF,T,T
-Burela,0925,ESBRL,T,T
-Cádiz,0101,ESCAD,F,T
-Cambados,0919,ESCBD,F,T
-Castletown Bere,9998,IECTB,F,T
-Cedeira,0904,ESCED,T,T
-Cillero,0926,ESCIO,T,T
-Finisterre,0913,ESFNE,T,F
-Gijón,1417,ESGIJ,T,T
-Isla Cristina,0110,ESZGA,F,T
-Lage,0910,ESLAX,F,T
-Lepe,0111,ESLEP,F,T
-Luarca,1420,ESLUA,T,F
-Marín,0921,ESMPG,T,T
-Muros,0914,ESMRS,T,T
-Muxía,0912,ESMGA,F,T
-Puerto de Santa María,0118,ESPSM,F,T
-Punta del Moral,0142,,F,T
-Punta Umbría,0114,ESZJY,F,T
-San Vicente de la Barquera,0405,ESSVB,T,T
-Sanlúcar de Barrameda,0116,ESSBA,F,T
-Santander,0402,ESSDR ,F,T
-Santa Eugenia de Ribeira,0917,ESSNI,T,T
-Santoña,0409,ESSNN,T,T
-Suances,0403,ESSUN,F,T
-Tarifa,0105,ESTRF,T,F
-Vigo,0922,ESVGO,T,T
-Viveiro,0902,ESVIV,F,T
+PUERTO,COD_PUERTO,LOCODE
+A Coruña,0907,ESLCG
+Avilés,1418,ESAVS
+Ayamonte,0109,ESAYA
+Barbate,0103,ESBDF
+Burela,0925,ESBRL
+Cádiz,0101,ESCAD
+Cambados,0919,ESCBD
+Castletown Bere,9998,IECTB
+Cedeira,0904,ESCED
+Cillero,0926,ESCIO
+Finisterre,0913,ESFNE
+Gijón,1417,ESGIJ
+Isla Cristina,0110,ESZGA
+Lage,0910,ESLAX
+Lepe,0111,ESLEP
+Luarca,1420,ESLUA
+Marín,0921,ESMPG
+Muros,0914,ESMRS
+Muxía,0912,ESMGA
+Puerto de Santa María,0118,ESPSM
+Punta del Moral,0142,
+Punta Umbría,0114,ESZJY
+San Vicente de la Barquera,0405,ESSVB
+Sanlúcar de Barrameda,0116,ESSBA
+Santander,0402,ESSDR 
+Santa Eugenia de Ribeira,0917,ESSNI
+Santoña,0409,ESSNN
+Suances,0403,ESSUN
+Tarifa,0105,ESTRF
+Vigo,0922,ESVGO
+Viveiro,0902,ESVIV
+Rota,0117,ESROT

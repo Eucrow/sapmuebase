@@ -6,8 +6,8 @@
 #' \describe{
 #'   \item{ESTRATO_RIM}{}
 #'   \item{ARTE}{Gear of the ESTRATO_RIM}
-#'   \item{COD_ARTE}{Gear code}
+#'   \item{COD_ARTE}{Sireno gear code}
 #'   ...
 #' }
 
-"estratorim_arte"
+"estrato_rim_arte"

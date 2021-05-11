@@ -9,4 +9,4 @@
 #'   ...
 #' }
 
-"estratorim_origen"
+"estrato_rim_origen"

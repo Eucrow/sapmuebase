@@ -16,9 +16,9 @@ prescriptions. Tho original prescriptions document contain grouped variables
 like fisheries with multiple rim stratum o grouped ports like "Avilés/Gijón".
 }
 \details{
-In this dataframe, those groups has been disagregated.
+In this dataframe, those groups has been desegregated.
 
 And other variables has been added in order to get a complete dataset where
-find the coherence between them allowed in prescriptions.
+find the allowed coherence between them in prescriptions.
 }
 \keyword{datasets}

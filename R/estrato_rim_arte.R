@@ -10,4 +10,4 @@
 #'   ...
 #' }
 
-"estratorim_arte"
+"estrato_rim_arte"

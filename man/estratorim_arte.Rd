@@ -9,7 +9,7 @@ A data frame with 3 columns:
 \describe{
   \item{ESTRATO_RIM}{}
   \item{ARTE}{Gear of the ESTRATO_RIM}
-  \item{COD_ARTE}{Gear code}
+  \item{COD_ARTE}{Sireno gear code}
   ...
 }
 }

@@ -66,7 +66,7 @@ READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO rep
 use `?fixReportSirenoFiles` for details in R.
 
 ## Datasets available
-Datasests name and its variables are mostly in spanish due to the language used
+Datasest names and its variables are mostly in spanish due to the language used
 in SIRENO database.
 
 The datasets with SIRENO data are only related to ICES area.
@@ -74,19 +74,18 @@ The datasets with SIRENO data are only related to ICES area.
 Use `?nameofthedataset` to details.
 * areas_influecia: influence areas in which are divided the sample zone.
 * arte: gears
-* cfpo2018
 * especies
 * especies_mezcla: mixed species
 * especies_no_mezcla: non mixed species
 * estrato_rim: _estrato rim_
-* estratorim_arte: relation between _estrato rim_ and gear
-* estratorim_origen: relation between _estrato rim_ and origin
+* estrato_rim_arte: relation between _estrato rim_ and gear (previously called "estratorim_arte")
+* estrato_rim_origen: relation between _estrato rim_ and origin (previously called "estratorim_origen")
 * categorias: categories species in SIRENO 
 * maestro_flota_sireno
 * origen: sampled origin
 * procedencia: sampled source
 * puerto: ports
-* tipo_mue: type of sample
+* tipo_muestreo: type of sample (previously called "tipo_mue")
 * formato_variables
 * relacion_volcado
 * variables_to_humanize: used in humanize() and humanizeVariable() functions

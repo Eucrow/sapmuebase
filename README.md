@@ -94,6 +94,8 @@ lengths by species and fishign ground.
 * metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
 * p99_capturas_historico: list of species and its 99 percentile from 2014 to 2018 catches
 * caladero_origen: list of fishing ground with its origin used in SAP MUE team.
-* prescripciones_rim_2021_coherence: coherence between the variables of 2021 RIM
+* prescripciones_rim_mt2_2021_coherencia: coherence between the variables of
+MT2 samples 2021 RIM prescriptions.
+* prescripciones_oab_2021_coherencia: coherence between the variables of 2021 OAB
 prescriptions.
 

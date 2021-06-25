@@ -28,7 +28,7 @@ DIVISION;^.+$;factor;;factor;26;;26;26;;;;;;;;;;;;;;
 CALADERO_DCF;^.+$;factor;;factor;27;;27;27;;;;;;;;;;;;;;
 COD_ARTE;^\d{3}$;factor;;factor;28;T;28;28;T;;;13;T;13;T;16;T;;;;;
 ARTE;^.+$;factor;;factor;29;T;29;29;T;;;14;T;14;T;17;T;;;;;
-CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;28;T;61;T;;;;;;;;;
+CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;28;F;61;F;;;;;;;;;
 TALL.PESO;^[TtPp]$;character;;character;31;T;31;31;T;;;;;;;;;;;;;
 N_CATEGORIAS;^\d{1,2}$;integer;;integer;32;T;32;32;T;;;;;;;;;;;;;
 COD_ESP_MUE;^\d{5}$;factor;;factor;33;T;33;33;T;;;;;;;;;;;;;

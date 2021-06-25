@@ -1,4 +1,4 @@
-MARCO;;;;;;23/04/2021
+MARCO;;;;;;27/05/2021
 ;;LISTADO DE CATEGORÍAS 
 
 ;;PROYECTO :AREA ICES
@@ -3529,6 +3529,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0101;Breca;0114;Punta Umbría;10490;Pagellus bellottii;PAR;ENTERO
 0101;Breca;0114;Punta Umbría;10488;Pagellus erythrinus;PAC;ENTERO
 1401;Breca;1424;Ribadesella;10488;Pagellus erythrinus;PAC;ENTERO
+0101;Breca;0117;Rota;10490;Pagellus bellottii;PAR;ENTERO
 0101;Breca;0117;Rota;10488;Pagellus erythrinus;PAC;ENTERO
 0901;Breca;0928;San Ciprián;10488;Pagellus erythrinus;PAC;ENTERO
 0101;Breca;0102;San Fernando;10488;Pagellus erythrinus;PAC;ENTERO
@@ -3907,8 +3908,10 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0401;Burro;0409;Santoña;10279;Merlangius merlangus;WHG;ENTERO
 0901;Burro;0922;Vigo;10455;Plectorhinchus mediterraneus;GBR;ENTERO
 0101;Burro listado;0106;Algeciras;10454;Parapristipoma octolineatum;GRA;ENTERO
+0101;Burro listado;0104;Conil de la Frontera;10454;Parapristipoma octolineatum;GRA;ENTERO
 0101;Burro listado;0117;Rota;10454;Parapristipoma octolineatum;GRA;ENTERO
 0101;Burro listado;0116;Sanlúcar de Barrameda;10454;Parapristipoma octolineatum;GRA;ENTERO
+0101;Burro listado;0105;Tarifa;10454;Parapristipoma octolineatum;GRA;ENTERO
 1701;Busano;1420;Luarca;30825;Murex spp;MUE;ENTERO
 0101;Búsanos, cañaillas;0109;Ayamonte;30825;Murex spp;MUE;ENTERO
 0101;Búsanos, cañaillas;0114;Punta Umbría;30825;Murex spp;MUE;ENTERO
@@ -7320,6 +7323,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1313;Cola negra 03;1318;Ondarroa;10508;Oblada melanura;SBS;ENTERO
 1314;Cola negra 04;1318;Ondarroa;10508;Oblada melanura;SBS;ENTERO
 1424;Colas;1418;Avilés;10283;Merluccius merluccius;HKE;EVISCERADO
+0936;Colas;0925;Burela;10283;Merluccius merluccius;HKE;COLAS
 0905;Colas;0903;Cariño;10283;Merluccius merluccius;HKE;TROZOS
 0927;Colas;0921;Marín;10821;Lophius spp;MNZ;COLAS
 1368;Colas;1313;Pasajes;10283;Merluccius merluccius;HKE;EVISCERADO
@@ -7549,10 +7553,12 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1414;Congrio 04;1418;Avilés;10220;Conger conger;COE;ENTERO
 1414;Congrio 04;1417;Gijón;10220;Conger conger;COE;ENTERO
 0414;Congrio 04;0402;Santander;10220;Conger conger;COE;ENTERO
+0914;Congrio 04;0922;Vigo;10220;Conger conger;COE;EVISCERADO
 0909;Congrio 05;0907;A Coruña;10220;Conger conger;COE;ENTERO
 1415;Congrio 05;1418;Avilés;10220;Conger conger;COE;ENTERO
 1415;Congrio 05;1417;Gijón;10220;Conger conger;COE;ENTERO
 0415;Congrio 05;0402;Santander;10220;Conger conger;COE;ENTERO
+0915;Congrio 05;0922;Vigo;10220;Conger conger;COE;EVISCERADO
 0910;Congrio 06;0907;A Coruña;10220;Conger conger;COE;ENTERO
 1416;Congrio 06;1417;Gijón;10220;Conger conger;COE;ENTERO
 0416;Congrio 06;0402;Santander;10220;Conger conger;COE;ENTERO
@@ -9606,21 +9612,26 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1401;Gallineta Nordica;1418;Avilés;10711;Sebastes spp;RED;ENTERO
 1401;Gallineta nórdica;1417;Gijón;10711;Sebastes spp;RED;ENTERO
 1311;Gallineta 01;1322;Bermeo;10723;Helicolenus dactylopterus;BRF;ENTERO
+0911;Gallineta 01;0913;Finisterre;10723;Helicolenus dactylopterus;BRF;ENTERO
 1311;Gallineta 01;1313;Pasajes;10723;Helicolenus dactylopterus;BRF;ENTERO
 0111;Gallineta 01;0116;Sanlúcar de Barrameda;10705;Scorpaenidae;SCO;ENTERO
 0111;Gallineta 01;0116;Sanlúcar de Barrameda;10637;Scorpaeniformes;XSX;ENTERO
 1312;Gallineta 02;1322;Bermeo;10723;Helicolenus dactylopterus;BRF;ENTERO
 0902;Gallineta 02;0926;Cillero;10723;Helicolenus dactylopterus;BRF;ENTERO
+0912;Gallineta 02;0913;Finisterre;10723;Helicolenus dactylopterus;BRF;ENTERO
 1312;Gallineta 02;1313;Pasajes;10723;Helicolenus dactylopterus;BRF;ENTERO
 0112;Gallineta 02;0116;Sanlúcar de Barrameda;10705;Scorpaenidae;SCO;ENTERO
 0112;Gallineta 02;0116;Sanlúcar de Barrameda;10637;Scorpaeniformes;XSX;ENTERO
 1313;Gallineta 03;1322;Bermeo;10723;Helicolenus dactylopterus;BRF;ENTERO
 0903;Gallineta 03;0926;Cillero;10723;Helicolenus dactylopterus;BRF;ENTERO
+0913;Gallineta 03;0913;Finisterre;10723;Helicolenus dactylopterus;BRF;ENTERO
 1313;Gallineta 03;1313;Pasajes;10723;Helicolenus dactylopterus;BRF;ENTERO
 0113;Gallineta 03;0116;Sanlúcar de Barrameda;10705;Scorpaenidae;SCO;ENTERO
 0113;Gallineta 03;0116;Sanlúcar de Barrameda;10637;Scorpaeniformes;XSX;ENTERO
+0914;Gallineta 04;0913;Finisterre;10723;Helicolenus dactylopterus;BRF;ENTERO
 0114;Gallineta 04;0116;Sanlúcar de Barrameda;10705;Scorpaenidae;SCO;ENTERO
 0114;Gallineta 04;0116;Sanlúcar de Barrameda;10637;Scorpaeniformes;XSX;ENTERO
+0915;Gallineta 05;0913;Finisterre;10723;Helicolenus dactylopterus;BRF;ENTERO
 0101;Gallinetas nórdicas;0103;Barbate;10711;Sebastes spp;RED;ENTERO
 1306;Gallito;1318;Ondarroa;10800;Lepidorhombus boscii;LDB;ENTERO
 1303;Gallito;1318;Ondarroa;10798;Lepidorhombus spp;LEZ;ENTERO
@@ -10937,6 +10948,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0103;Jurel negro;0116;Sanlúcar de Barrameda;10413;Trachurus spp;JAX;ENTERO
 0901;Jurel negro;0917;Santa Eugenia de Ribeira;10416;Trachurus mediterraneus;HMM;ENTERO
 0403;Jurel negro;0409;Santoña;10414;Trachurus trachurus;HOM;ENTERO
+0101;Jurel negro;0105;Tarifa;10415;Trachurus picturatus;JAA;ENTERO
 1308;Jurel pequeño negro +10 en kg;1318;Ondarroa;10414;Trachurus trachurus;HOM;ENTERO
 0904;Jurel 01;0907;A Coruña;10413;Trachurus spp;JAX;ENTERO
 0904;Jurel 01;0907;A Coruña;10414;Trachurus trachurus;HOM;ENTERO
@@ -11188,6 +11200,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Langosta;0924;Foz;20145;Palinurus elephas;SLO;ENTERO
 1401;Langosta;1417;Gijón;20145;Palinurus elephas;SLO;ENTERO
 0101;Langosta;0112;Huelva;20145;Palinurus elephas;SLO;ENTERO
+0101;Langosta;0110;Isla Cristina;20145;Palinurus elephas;SLO;ENTERO
 0101;Langosta;0110;Isla Cristina;20144;Palinurus mauritanicus;PSL;ENTERO
 0901;Langosta;0910;Lage;20145;Palinurus elephas;SLO;ENTERO
 0401;Langosta;0407;Laredo;20145;Palinurus elephas;SLO;ENTERO
@@ -11215,6 +11228,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1401;Langosta;1408;San Esteban de Pravia;20145;Palinurus elephas;SLO;ENTERO
 1301;Langosta;1315;San Sebastián;20145;Palinurus elephas;SLO;ENTERO
 0401;Langosta;0405;San Vicente de la Barquera;20145;Palinurus elephas;SLO;ENTERO
+0101;Langosta;0116;Sanlúcar de Barrameda;20145;Palinurus elephas;SLO;ENTERO
 0901;Langosta;0917;Santa Eugenia de Ribeira;20145;Palinurus elephas;SLO;ENTERO
 0901;Langosta;0930;Santa Marta de Ortigueira;20145;Palinurus elephas;SLO;ENTERO
 0401;Langosta;0402;Santander;20145;Palinurus elephas;SLO;ENTERO
@@ -13440,6 +13454,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0105;Merluza 01;0116;Sanlúcar de Barrameda;10283;Merluccius merluccius;HKE;ENTERO
 0411;Merluza 01;0402;Santander;10283;Merluccius merluccius;HKE;EVISCERADO
 1311;Merluza 01;1326;Santurce;10283;Merluccius merluccius;HKE;EVISCERADO
+0411;Merluza 01;0403;Suances;10283;Merluccius merluccius;HKE;EVISCERADO
 0937;Merluza 01;0922;Vigo;10283;Merluccius merluccius;HKE;EVISCERADO
 0913;Merluza 01;0922;Vigo;10283;Merluccius merluccius;HKE;ENTERO
 0905;Merluza 02;0907;A Coruña;10283;Merluccius merluccius;HKE;EVISCERADO
@@ -13462,6 +13477,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0106;Merluza 02;0116;Sanlúcar de Barrameda;10283;Merluccius merluccius;HKE;ENTERO
 0412;Merluza 02;0402;Santander;10283;Merluccius merluccius;HKE;EVISCERADO
 1312;Merluza 02;1326;Santurce;10283;Merluccius merluccius;HKE;EVISCERADO
+0412;Merluza 02;0403;Suances;10283;Merluccius merluccius;HKE;EVISCERADO
 0938;Merluza 02;0922;Vigo;10283;Merluccius merluccius;HKE;EVISCERADO
 0914;Merluza 02;0922;Vigo;10283;Merluccius merluccius;HKE;ENTERO
 0906;Merluza 03;0907;A Coruña;10283;Merluccius merluccius;HKE;EVISCERADO
@@ -13484,6 +13500,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0107;Merluza 03;0116;Sanlúcar de Barrameda;10283;Merluccius merluccius;HKE;ENTERO
 0413;Merluza 03;0402;Santander;10283;Merluccius merluccius;HKE;EVISCERADO
 1313;Merluza 03;1326;Santurce;10283;Merluccius merluccius;HKE;EVISCERADO
+0413;Merluza 03;0403;Suances;10283;Merluccius merluccius;HKE;EVISCERADO
 0939;Merluza 03;0922;Vigo;10283;Merluccius merluccius;HKE;EVISCERADO
 0915;Merluza 03;0922;Vigo;10283;Merluccius merluccius;HKE;ENTERO
 0907;Merluza 04;0907;A Coruña;10283;Merluccius merluccius;HKE;EVISCERADO
@@ -14086,6 +14103,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Mugil;0923;Ribadeo;10335;Mugil cephalus;MUF;ENTERO
 0901;Mugil;0906;Sada;10335;Mugil cephalus;MUF;ENTERO
 1401;Mugil;1421;Tapia de Casariego;10335;Mugil cephalus;MUF;ENTERO
+0901;Mugil;0922;Vigo;10335;Mugil cephalus;MUF;ENTERO
 1401;Muil;1417;Gijón;10338;Liza aurata;MGA;ENTERO
 1401;Muil;1424;Ribadesella;10332;Mugilidae;MUL;ENTERO
 1411;Muil 01;1417;Gijón;10338;Liza aurata;MGA;ENTERO
@@ -14107,6 +14125,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0902;Mujel;0926;Cillero;10335;Mugil cephalus;MUF;ENTERO
 0902;Mujel;0941;Corme;10335;Mugil cephalus;MUF;ENTERO
 0901;Mujel;0905;Ferrol;10331;Chelon labrosus;MLR;ENTERO
+0901;Mujel;0913;Finisterre;10331;Chelon labrosus;MLR;ENTERO
 0902;Mujel;0913;Finisterre;10335;Mugil cephalus;MUF;ENTERO
 0902;Mujel;0924;Foz;10335;Mugil cephalus;MUF;ENTERO
 0902;Mujel;0910;Lage;10335;Mugil cephalus;MUF;ENTERO
@@ -16723,6 +16742,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Planos;0922;Vigo;10747;Pleuronectiformes;FLX;ENTERO
 0901;Platija;0918;A Coruña (Camiones);10769;Platichthys flesus;FLE;ENTERO
 1401;Platija;1418;Avilés;10769;Platichthys flesus;FLE;ENTERO
+0101;Platija;0103;Barbate;10769;Platichthys flesus;FLE;ENTERO
 1301;Platija;1322;Bermeo;10769;Platichthys flesus;FLE;ENTERO
 0901;Platija;0925;Burela;10769;Platichthys flesus;FLE;ENTERO
 1402;Platija;1406;Candás;10769;Platichthys flesus;FLE;ENTERO
@@ -17679,6 +17699,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Raias;0943;Corcubión;10864;Rajidae;RAJ;ENTERO
 0901;Raja brachyura;0925;Burela;10094;Raja brachyura;RJH;ENTERO
 0901;Raja brachyura;0926;Cillero;10094;Raja brachyura;RJH;ENTERO
+0101;Raja brachyura;0104;Conil de la Frontera;10094;Raja brachyura;RJH;ENTERO
 0901;Raja brachyura;0913;Finisterre;10094;Raja brachyura;RJH;ENTERO
 0101;Raja montagui;0116;Sanlúcar de Barrameda;10091;Raja montagui;RJM;ENTERO
 1401;Raja undulata;1417;Gijón;10095;Raja undulata;RJU;ENTERO
@@ -17889,6 +17910,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0909;Rape blanco 01;0926;Cillero;10821;Lophius spp;MNZ;EVISCERADO
 1411;Rape blanco 01;1417;Gijón;10822;Lophius piscatorius;MON;EVISCERADO
 1421;Rape blanco 01;1417;Gijón;10821;Lophius spp;MNZ;EVISCERADO
+1411;Rape blanco 01;1423;Llanes;10821;Lophius spp;MNZ;ENTERO
 1421;Rape blanco 01;1420;Luarca;10821;Lophius spp;MNZ;EVISCERADO
 1341;Rape blanco 01;1313;Pasajes;10821;Lophius spp;MNZ;EVISCERADO
 0421;Rape blanco 01;0402;Santander;10821;Lophius spp;MNZ;EVISCERADO
@@ -17898,6 +17920,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0910;Rape blanco 02;0926;Cillero;10821;Lophius spp;MNZ;EVISCERADO
 1412;Rape blanco 02;1417;Gijón;10822;Lophius piscatorius;MON;EVISCERADO
 1422;Rape blanco 02;1417;Gijón;10821;Lophius spp;MNZ;EVISCERADO
+1412;Rape blanco 02;1423;Llanes;10821;Lophius spp;MNZ;ENTERO
 1422;Rape blanco 02;1420;Luarca;10821;Lophius spp;MNZ;EVISCERADO
 1342;Rape blanco 02;1313;Pasajes;10821;Lophius spp;MNZ;EVISCERADO
 0422;Rape blanco 02;0402;Santander;10821;Lophius spp;MNZ;EVISCERADO
@@ -17906,6 +17929,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1423;Rape blanco 03;1418;Avilés;10821;Lophius spp;MNZ;EVISCERADO
 1413;Rape blanco 03;1417;Gijón;10822;Lophius piscatorius;MON;EVISCERADO
 1423;Rape blanco 03;1417;Gijón;10821;Lophius spp;MNZ;EVISCERADO
+1413;Rape blanco 03;1423;Llanes;10821;Lophius spp;MNZ;ENTERO
 1423;Rape blanco 03;1420;Luarca;10821;Lophius spp;MNZ;EVISCERADO
 1343;Rape blanco 03;1313;Pasajes;10821;Lophius spp;MNZ;EVISCERADO
 0423;Rape blanco 03;0402;Santander;10821;Lophius spp;MNZ;EVISCERADO
@@ -18688,6 +18712,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Raya boca de rosa;0904;Cedeira;10093;Raja microocellata;RJE;ENTERO
 0901;Raya boca de rosa;0926;Cillero;10093;Raja microocellata;RJE;ENTERO
 0901;Raya boca de rosa;0913;Finisterre;10093;Raja microocellata;RJE;ENTERO
+0905;Raya boca de rosa;0917;Santa Eugenia de Ribeira;10864;Rajidae;RAJ;ENTERO
 1401;Raya bramante;1423;Llanes;10079;Rostroraja alba;RJA;ENTERO
 1304;Raya buena;1313;Pasajes;10864;Rajidae;RAJ;ENTERO
 0904;Raya cajas;0925;Burela;10864;Rajidae;RAJ;ENTERO
@@ -18776,6 +18801,8 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1413;Raya de clavos 03;1418;Avilés;10090;Raja clavata;RJC;ENTERO
 1413;Raya de clavos 03;1417;Gijón;10090;Raja clavata;RJC;ENTERO
 1433;Raya de clavos 03;1417;Gijón;10864;Rajidae;RAJ;ENTERO
+1414;Raya de clavos 04;1417;Gijón;10090;Raja clavata;RJC;ENTERO
+1415;Raya de clavos 05;1417;Gijón;10090;Raja clavata;RJC;ENTERO
 0401;Raya de espejos;0409;Santoña;10092;Leucoraja naevus;RJN;ENTERO
 0101;Raya de pintilla;0106;Algeciras;10090;Raja clavata;RJC;ENTERO
 0101;Raya de san Pedro;0103;Barbate;10092;Leucoraja naevus;RJN;ENTERO
@@ -18796,6 +18823,9 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0101;Raya mariposa;0116;Sanlúcar de Barrameda;10109;Gymnura altavela;RGL;ENTERO
 1401;Raya microcelada;1423;Llanes;10093;Raja microocellata;RJE;ENTERO
 0101;Raya mosaica;0118;Puerto de Santa María;10095;Raja undulata;RJU;ENTERO
+0901;Raya mosaico;0925;Burela;10095;Raja undulata;RJU;ENTERO
+0901;Raya mosaico;0913;Finisterre;10095;Raja undulata;RJU;ENTERO
+0909;Raya mosaico (undulata);0925;Burela;10864;Rajidae;RAJ;ENTERO
 1301;Raya N;1318;Ondarroa;10090;Raja clavata;RJC;ENTERO
 1302;Raya N G;1318;Ondarroa;10090;Raja clavata;RJC;ENTERO
 1305;Raya N M;1318;Ondarroa;10090;Raja clavata;RJC;ENTERO
@@ -18840,6 +18870,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1452;Raya santiaguesa 02;1417;Gijón;10864;Rajidae;RAJ;ENTERO
 0906;Raya trozos;0907;A Coruña;10864;Rajidae;RAJ;TROZOS
 0906;Raya trozos;0918;A Coruña (Camiones);10864;Rajidae;RAJ;TROZOS
+0905;Raya undulata;0926;Cillero;10864;Rajidae;RAJ;ENTERO
 0908;Raya undulata;0921;Marín;10864;Rajidae;RAJ;ENTERO
 0101;Raya undulata;0117;Rota;10095;Raja undulata;RJU;ENTERO
 0905;Raya 01;0904;Cedeira;10864;Rajidae;RAJ;ENTERO
@@ -20849,6 +20880,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0101;Sargo;0116;Sanlúcar de Barrameda;10494;Diplodus sargus sargus;SWA;ENTERO
 1301;Sargo;1326;Santurce;10494;Diplodus sargus sargus;SWA;ENTERO
 1402;Sargo;1421;Tapia de Casariego;10494;Diplodus sargus sargus;SWA;ENTERO
+0101;Sargo;0105;Tarifa;10494;Diplodus sargus sargus;SWA;ENTERO
 1401;Sargo;1413;Viavélez;10494;Diplodus sargus sargus;SWA;ENTERO
 0102;Sargo blanco;0120;Chipiona;10494;Diplodus sargus sargus;SWA;ENTERO
 0102;Sargo blanco;0110;Isla Cristina;10494;Diplodus sargus sargus;SWA;ENTERO

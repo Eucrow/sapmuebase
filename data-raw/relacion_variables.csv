@@ -79,10 +79,12 @@ Barco;BARCO
 CV;CV
 TRB;TRB
 Eslora.T.;ESLORA
+Días.mar;DIAS_MAR
 Días.Pesca;DIAS_PESCA
 Tot.Lances;N_LANCES
 L.Muestreados;N_LANCES_MUE
 L..no.Muestreados;N_LANCES_NO_MUE
+Descartes.muestreados;N_DESCARTES_MUE
 L.con.incidencias;N_LANCES_INCIDENCIAS
 Observaciones;OBSERVACIONES
 Cod.Arte;COD_ARTE
@@ -97,6 +99,7 @@ Velocidad;VELOCIDAD
 Luz;LUZ
 Valido;VALIDO
 Muestreado;MUESTREADO
+Descarte.muestreado;DESCARTE_MUESTREADO
 Dia;DIA
 Mes;MES
 Observador;OBSERVADOR

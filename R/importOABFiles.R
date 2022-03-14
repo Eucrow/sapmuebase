@@ -50,9 +50,11 @@ importOABFiles <- function(trips, hauls, catches, lengths, litter,
       y[[x]](get(name_of_df), path),
       # get(y[x])(name_of_df, path),
       error = function(e){
-        return(e)
+        # return(e)
+        warning(e)
       }
     )
+
 
   }, df_functions)
 

@@ -27,8 +27,12 @@ checkStructureFileNameOfFields <- function (df, file_type)
     arrange_(file_type)
 
   if (!identical(df_colnames[["name_variable"]], correct_colnames[["name_variable"]])) {
-    stop("The dataframe doesn't have the appropriate column names. Check the
-         column names with 'formato_variables' dataset.")
+    err_names <- df_colnames[is.na(df_colnames$name_variable), "original_name_variable"]
+    err_names <- paste(err_names, collapse=', ')
+    err_comment <- paste0("The dataframe doesn't have the appropriate column
+    names. Check this column names: ", err_names, " with 'relacion_variables'
+                          and 'formato_variables' dataset.")
+    stop(err_comment)
   }
 }
 

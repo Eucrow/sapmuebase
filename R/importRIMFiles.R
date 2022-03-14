@@ -38,7 +38,8 @@ importRIMFiles <- function(catches, catches_in_lengths, lengths, by_month = FALS
       y[[x]](get(name_of_df), path),
       # get(y[x])(name_of_df, path),
       error = function(e){
-        return(e)
+        # return(e)
+        warning(e)
       }
     )
 

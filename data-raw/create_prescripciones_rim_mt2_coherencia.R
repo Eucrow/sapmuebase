@@ -1,4 +1,4 @@
-#' Pescriptions coherence.
+#' Prescriptions coherence.
 #'
 #' A dataset containing the coherence between the variables of 2021 RIM MT2
 #' prescriptions. The original prescriptions document contain grouped variables

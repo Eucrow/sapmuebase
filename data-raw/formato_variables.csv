@@ -47,10 +47,10 @@ LAT_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;45;T;;;;;;;;;
 LAT_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;46;T;;;;;;;;;
 LON_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;47;T;;;;;;;;;
 LON_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;48;T;;;;;;;;;
-LAT_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;49;T;;;;;;;;;
-LAT_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;50;T;;;;;;;;;
-LON_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;51;T;;;;;;;;;
-LON_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;52;T;;;;;;;;;
+LAT_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;49;T;;;;;;;;;The header of this variable in the original file is  'Lat Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_LAR_CGS
+LAT_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;50;T;;;;;;;;;The header of this variable in the original file is  'Lat Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_VIR_CGS
+LON_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;51;T;;;;;;;;;The header of this variable in the original file is  'Lon Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_LAR_CGS
+LON_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;52;T;;;;;;;;;The header of this variable in the original file is  'Lon Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_VIR_CGS
 PROF_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;53;T;;;;;;;;;
 PROF_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;54;T;;;;;;;;;
 COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;55;T;8;T;11;T;;;;;
@@ -80,7 +80,7 @@ P_MUE_RET;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;33;T;36;F;;;;;
 P_SUB_MUE_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;34;F;;;;;;;
 P_MUE_SOBRECOPO;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;36;F;;;;;;;
 P_MUE_DESEM_OBL;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;37;F;;;;;;;
-P_MUE_MINIMIS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;38;T;;;;;;;
+P_MUE_MINIMIS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;38;F;;;;;;;
 EJEM_RET;^\d+$;integer;;integer;;;;;;;;;;39;T;;;;;;;
 EJEM_DESCAR;^\d+$;integer;;integer;;;;;;;;;;40;F;;;;;;;
 EJEM_SOBRECOPO;^\d+$;integer;;integer;;;;;;;;;;41;F;;;;;;;

@@ -49,7 +49,8 @@ Import the file with data to dump in SIRENO to R.
 #### exportListToCsv()
 Create a csv file for each dataframe in a list of dataframes.
 #### humanize()
-Create new variables with description values from all the encoded variables in a dataframe.
+Create new variables with description values from all the encoded variables in
+a dataframe.
 #### humanizeVariable()
 Create new variable with description values from one encoded variable.
 #### checkAllFormatVariables()
@@ -61,9 +62,12 @@ Add an influence area variable.
 #### separateDataframeByInfluenceArea()
 Separate a dataframe by influence area (only RIM influence area).
 #### checkStructureFile()
-READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO reports. 
+READ HELP BEFORE USE. Check the correct structure file of tallas_x_up SIRENO
+reports. 
 #### fixReportSirenoFiles()
-use `?fixReportSirenoFiles` for details in R.
+Use `?fixReportSirenoFiles` for details in R.
+#### backupScripts()
+Backup scripts and related files.
 
 ## Datasets available
 Datasest names and its variables are mostly in spanish due to the language used

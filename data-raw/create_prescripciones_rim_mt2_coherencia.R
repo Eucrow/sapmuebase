@@ -9,21 +9,21 @@
 #' And other variables has been added in order to get a complete dataset where
 #' find the allowed coherence between them in prescriptions.
 #'
-#' The dataset is created from prescripciones_rim_mt2_2021_coherencia.csv file.
+#' The dataset is created from prescripciones_rim_mt2_coherencia.csv file.
 
 library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-prescripciones_rim_mt2_2021_coherencia <- read.csv("prescripciones_rim_mt2_2021_coherencia.csv",
+prescripciones_rim_mt2_coherencia <- read.csv("prescripciones_rim_mt2_coherencia.csv",
                      sep=";",
                      header = TRUE,
                      colClasses = c("factor"))
 
 # use_data() create the file in /data
-usethis::use_data(prescripciones_rim_mt2_2021_coherencia, overwrite = TRUE)
+usethis::use_data(prescripciones_rim_mt2_coherencia, overwrite = TRUE)
 
 devtools::document()
 
 setwd(original_wd)
-rm(original_wd, prescripciones_rim_mt2_2021_coherencia)
+rm(original_wd, prescripciones_rim_mt2_coherencia)

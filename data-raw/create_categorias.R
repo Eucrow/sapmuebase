@@ -1,17 +1,17 @@
 #' Categories in SIRENO
 #'
 #' A dataset containing the categories available in SIRENO. The original data
-#' is obtained from SIRENO (report by proyect --> categories). This report have
+#' is obtained from SIRENO (report by project --> categories). This report have
 #' this structure:
 #' - first 6 rows with useless information
-#' - the 8th row with this colnames:
+#' - the 8th row with this column names:
 #'   COD CAT, CATEGORIA, COD PUERTO, PUERTO, COD ESP, ESPECIE, ALFA3, PROCESO
 
 library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-categorias <- read.csv("categorias_2022_01.csv",
+categorias <- read.csv("categorias_2022_08.csv",
                      sep=";",
                      skip = 6,
                      header = TRUE,

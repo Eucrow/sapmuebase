@@ -11,4 +11,4 @@
 #'
 #' @format A data frame with 11 columns.
 
-"prescripciones_rim_mt2_2021_coherencia"
+"prescripciones_rim_mt2_coherencia"

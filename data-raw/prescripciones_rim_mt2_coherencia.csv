@@ -55,11 +55,8 @@ AC;Avilés;Avilés;1418;PALANGRE_CN;PALANGRE_CN;008;palangre de fondo;302;LLS_DEF_
 AC;Avilés;Avilés;1418;PALANGRE_CN;PALANGRE_CN;010;palangre de fondo;302;LLS_DEF_0_0_0;Iberian (VIIIc-IX)
 AC;Avilés / Gijón;Avilés;1418;LINEA_CABALLA;LIN_CABALLA;008;líneas fijas;311;LHM_SPF_0_0_0;Iberian (VIIIc-IX)
 AC;Avilés / Gijón;Avilés;1418;BACA_CN / JURELERA_CN;JURELERA_CN;008;baca;102;OTB_MPD_>=55_0_0;Iberian (VIIIc-IX)
-GC;Barbate;Barbate;0103;SABLE_GC;SABLE_GC;011;palangre de fondo;302;LLS_DWS_0_0_0;Iberian (VIIIc-IX)
-
 GC;Barbate;Barbate;0103;CERCO_GC;CERCO_GC;011;cerco;601;PS_SPF_0_0_0;Iberian (VIIIc-IX)
 GC;Barbate;Barbate;0103;PALANGRE_GC;PALANGRE_GC;011;palangre de fondo;302;LLS_DEF_0_0_0;Iberian (VIIIc-IX)
-
 GC;Barbate;Barbate;0103;ENMALLE_GC / TRASMALLO_GC;TRASMALL_GC;011;trasmallo;204;GTR_DEF_50-59_0_0;Iberian (VIIIc-IX)
 GC;Barbate;Barbate;0103;ENMALLE_GC / TRASMALLO_GC;ENMALLE_GC;011;enmalle;200;GNS_DEF_50-59_0_0;Iberian (VIIIc-IX)
 GN;Burela;Burela;0925;PALANGRE_AC;PALANGRE_AC;001;palangre de fondo;302;LLS_DEF_0_0_0;Western Scotland (VI)

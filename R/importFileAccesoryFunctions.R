@@ -13,7 +13,8 @@ importFileFromSireno <- function (x, file_type, path){
 
     type <- struct[["class_variable_import"]]
 
-    file_read <- read.table(fullpath, sep = ";", header = TRUE, quote = "", colClasses = type)
+    file_read <- read.table(fullpath, sep = ";", header = TRUE, quote = "",
+                            encoding = "Windows-1252", colClasses = type)
 
     if (nrow(file_read) == 0) {
       warning(paste("File", x, "doesn't contain data."), call. = FALSE)

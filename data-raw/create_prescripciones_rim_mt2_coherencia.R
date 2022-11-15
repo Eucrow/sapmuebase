@@ -18,7 +18,8 @@ setwd("data-raw")
 prescripciones_rim_mt2_coherencia <- read.csv("prescripciones_rim_mt2_coherencia.csv",
                      sep=";",
                      header = TRUE,
-                     colClasses = c("factor"))
+                     colClasses = c("factor"),
+                     fileEncoding = "windows-1252")
 
 # use_data() create the file in /data
 usethis::use_data(prescripciones_rim_mt2_coherencia, overwrite = TRUE)

@@ -5,7 +5,7 @@ usethis::use_data_raw()
 original_wd <- getwd()
 setwd("data-raw")
 
-origen <- read.csv("origen.csv", colClasses = c("factor", "factor"))
+origen <- read.csv("origen.csv", colClasses = c("factor", "factor"), fileEncoding = "UTF-8")
 
 # use_data() create the file in /data
 usethis::use_data(origen, overwrite = TRUE)

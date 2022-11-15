@@ -160,4 +160,3 @@ PORCENTAJE_OBSERVADO;^\d+$;integer;;integer;;;;;;;;;;;;;;10;F;;;
 SOLO_MUESTRA;^S|N$;factor;;logical;;;;;;;;;;;;;;9;F;;;
 TIPO_CAPTURA;^C|D$;factor;;factor;;;;;;;;;;;;30;T;;;;;
 VIRADO_VACIADO;^S|N$;factor;;logical;;;;;;;;;;;;;;8;F;;;
-YEAR', 'MES', 'DIA' and 'TRIMESTRE'  (RIM_CATCHES, RIM_LENGTHS, and RIM_CATCHES_IN_LENGTHS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;;

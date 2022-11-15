@@ -21,7 +21,8 @@ especies <- read.csv("maestro_especies.csv",
                      sep=";",
                      skip = 6,
                      header = TRUE,
-                     colClasses = c("factor"))
+                     colClasses = c("factor"),
+                     fileEncoding = "windows-1252")
 especies <- especies[, c("COD.IEO","NOMBRE.CIENTÍFICO","ALFA3")]
 colnames(especies) <- c("COD_ESP", "ESP", "A3")
 

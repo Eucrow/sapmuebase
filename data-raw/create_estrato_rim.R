@@ -5,7 +5,7 @@ usethis::use_data_raw()
 original_wd <- getwd()
 setwd("data-raw")
 
-estrato_rim <- read.csv("estrato_rim.csv")
+estrato_rim <- read.csv("estrato_rim.csv", fileEncoding = "UTF-8")
 
 usethis::use_data(estrato_rim, overwrite = TRUE)
 

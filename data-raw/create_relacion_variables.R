@@ -9,7 +9,8 @@ relacion_variables <- read.table(file = "relacion_variables.csv",
                                 header = TRUE,
                                 sep = ";",
                                 fill = TRUE,
-                                as.is = T)
+                                as.is = T,
+                                fileEncoding = "windows-1252")
 
 # use_data() create the file in /data (before, we have to copy manually, but not
 # rigth now). The file created has extension .rda, instead of .Rdata.

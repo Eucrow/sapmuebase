@@ -15,7 +15,7 @@ categorias <- read.csv("categorias_2022_10.csv",
                      sep=";",
                      skip = 6,
                      header = TRUE,
-                     colClasses = c("factor"))
+                     colClasses = c("factor"), fileEncoding = "windows-1252")
 colnames(categorias) <- c("COD_CATEGORIA", "CATEGORIA", "COD_PUERTO", "PUERTO", "COD_ESP", "ESP", "A3_ESP", "PROCESO")
 
 # Clean dataset

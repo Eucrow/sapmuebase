@@ -1,7 +1,7 @@
 library(devtools)
 original_wd <- getwd()
 setwd("data-raw")
-especies_mezcla <- read.csv("especies_mezcla.csv")
+especies_mezcla <- read.csv("especies_mezcla.csv", fileEncoding = "UTF-8")
 
 
 # use_data() create the file in /data

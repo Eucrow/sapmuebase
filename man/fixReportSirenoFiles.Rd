@@ -39,6 +39,6 @@ variable observation of the previous row and the ";" is changed to ".".
 }
 \note{
 Use this function carefully, if the format or the sireno reports
-changed can produce unexpected results. Furthermore, only is appropiate when
+changed can produce unexpected results. Furthermore, only is appropriate when
 the 'observations' field is the last one of the row.
 }

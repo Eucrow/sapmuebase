@@ -6,7 +6,8 @@ original_wd <- getwd()
 
 setwd("data-raw")
 
-variables_to_humanize <- read.csv("variables_to_humanize.csv")
+variables_to_humanize <- read.csv("variables_to_humanize.csv",
+                                  fileEncoding = "UTF-8")
 
 # use_data() create the file in /data
 usethis::use_data(variables_to_humanize, overwrite = TRUE)

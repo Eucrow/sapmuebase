@@ -11,7 +11,7 @@ library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-categorias <- read.csv("categorias_2022_08.csv",
+categorias <- read.csv("categorias_2022_10.csv",
                      sep=";",
                      skip = 6,
                      header = TRUE,

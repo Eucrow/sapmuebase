@@ -50,7 +50,7 @@ split_line <- function(line){
 #' false, the fixed report is exported in the path location
 #'
 #' @note Use this function carefully, if the format or the sireno reports
-#' changed can produce unexpected results. Furthermore, only is appropiate when
+#' changed can produce unexpected results. Furthermore, only is appropriate when
 #' the 'observations' field is the last one of the row.
 #'
 #' @export
@@ -60,7 +60,7 @@ fixReportSirenoFiles <- function(filename, filetype, path = getwd(), temporal = 
 
   path_complete <- paste(path, filename, sep="/")
 
-  con <- file(path_complete, "r")
+  con <- file(path_complete, "r", encoding = "Windows-1252")
 
   # theorical number of variables
   type_variables <- sapmuebase:::getVariableTypes(filetype, "class_variable_final")

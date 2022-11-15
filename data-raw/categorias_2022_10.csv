@@ -1,4 +1,4 @@
-MARCO;;;;;;25/08/2022
+MARCO;;;;;;28/10/2022
 ;;LISTADO DE CATEGORÍAS 
 
 ;;PROYECTO :AREA ICES
@@ -476,6 +476,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0903;Aguja cajas;0925;Burela;10225;Belone belone;GAR;ENTERO
 0411;Aguja 01;0402;Santander;10225;Belone belone;GAR;ENTERO
 0901;Agujas;0922;Vigo;11484;Makaira spp;BXQ;ENTERO
+9901;Agujas, Marlines;9901;Desconocido Español;10664;Istiophoridae;BIL;ENTERO
 0901;Agujas, Marlines;0922;Vigo;10664;Istiophoridae;BIL;ENTERO
 0101;Agujón;0101;Cádiz;10232;Scomberesox saurus saurus;SAU;ENTERO
 0101;Agujón;0110;Isla Cristina;10232;Scomberesox saurus saurus;SAU;ENTERO
@@ -622,6 +623,8 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0902;Alfonsino;0918;A Coruña (Camiones);10313;Beryx spp;ALF;ENTERO
 9901;Alfonsino;9901;Desconocido Español;10315;Beryx splendens;BYS;ENTERO
 0901;Alfonsino;0922;Vigo;10315;Beryx splendens;BYS;ENTERO
+1421;Alfonsino 01;1417;Gijón;10313;Beryx spp;ALF;ENTERO
+1422;Alfonsino 02;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0901;Alfonsinos;0925;Burela;10313;Beryx spp;ALF;ENTERO
 0901;Alfonsinos;0903;Cariño;10313;Beryx spp;ALF;ENTERO
 9901;Alfonsinos;9998;Castletown Bere;10313;Beryx spp;ALF;ENTERO
@@ -1933,7 +1936,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0902;Azules;0907;A Coruña;10025;Prionace glauca;BSH;ENTERO
 0902;Azules;0918;A Coruña (Camiones);10025;Prionace glauca;BSH;ENTERO
 0411;Babosa 01;0402;Santander;10599;Blennius ocellaris;NUO;ENTERO
-0101;Baboso;0114;Punta Umbría;10699;Awaous commersoni;GBN;ENTERO
+0101;Baboso;0114;Punta Umbría;10699;Gobius niger;GBN;ENTERO
 1403;Bacalada;1419;Cudillero;10277;Micromesistius poutassou;WHB;ENTERO
 1401;Bacalada;1421;Tapia de Casariego;10277;Micromesistius poutassou;WHB;ENTERO
 0902;Bacaladilla;0907;A Coruña;10277;Micromesistius poutassou;WHB;ENTERO
@@ -2678,24 +2681,29 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0902;Bertorella 01;0925;Burela;10262;Phycis blennoides;GFB;ENTERO
 0911;Bertorella 01;0904;Cedeira;10262;Phycis blennoides;GFB;ENTERO
 0911;Bertorella 01;0921;Marín;10262;Phycis blennoides;GFB;EVISCERADO
+0921;Bertorella 01;0921;Marín;10262;Phycis blennoides;GFB;ENTERO
 0921;Bertorella 01;0922;Vigo;10262;Phycis blennoides;GFB;ENTERO
 0903;Bertorella 02;0907;A Coruña;10262;Phycis blennoides;GFB;EVISCERADO
 0903;Bertorella 02;0918;A Coruña (Camiones);10262;Phycis blennoides;GFB;EVISCERADO
 0903;Bertorella 02;0925;Burela;10262;Phycis blennoides;GFB;ENTERO
 0912;Bertorella 02;0904;Cedeira;10262;Phycis blennoides;GFB;ENTERO
 0912;Bertorella 02;0921;Marín;10262;Phycis blennoides;GFB;EVISCERADO
+0922;Bertorella 02;0921;Marín;10262;Phycis blennoides;GFB;ENTERO
 0922;Bertorella 02;0922;Vigo;10262;Phycis blennoides;GFB;ENTERO
 0904;Bertorella 03;0907;A Coruña;10262;Phycis blennoides;GFB;EVISCERADO
 0904;Bertorella 03;0918;A Coruña (Camiones);10262;Phycis blennoides;GFB;EVISCERADO
 0904;Bertorella 03;0925;Burela;10262;Phycis blennoides;GFB;ENTERO
 0913;Bertorella 03;0904;Cedeira;10262;Phycis blennoides;GFB;ENTERO
 0913;Bertorella 03;0921;Marín;10262;Phycis blennoides;GFB;EVISCERADO
+0923;Bertorella 03;0921;Marín;10262;Phycis blennoides;GFB;ENTERO
 0923;Bertorella 03;0922;Vigo;10262;Phycis blennoides;GFB;ENTERO
 0905;Bertorella 04;0907;A Coruña;10262;Phycis blennoides;GFB;EVISCERADO
 0905;Bertorella 04;0918;A Coruña (Camiones);10262;Phycis blennoides;GFB;EVISCERADO
 0914;Bertorella 04;0904;Cedeira;10262;Phycis blennoides;GFB;ENTERO
+0924;Bertorella 04;0921;Marín;10262;Phycis blennoides;GFB;ENTERO
 0924;Bertorella 04;0922;Vigo;10262;Phycis blennoides;GFB;ENTERO
 0906;Bertorella 05;0907;A Coruña;10262;Phycis blennoides;GFB;EVISCERADO
+0925;Bertorella 05;0921;Marín;10262;Phycis blennoides;GFB;ENTERO
 0925;Bertorella 05;0922;Vigo;10262;Phycis blennoides;GFB;ENTERO
 0910;Bertorella 06;0907;A Coruña;10262;Phycis blennoides;GFB;EVISCERADO
 0901;Bertorellas;0919;Cambados;10261;Phycis spp;FOX;ENTERO
@@ -5844,9 +5852,9 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0913;Categoría 3;0904;Cedeira;10413;Trachurus spp;JAX;ENTERO
 0901;Cazapa;0921;Marín;10022;Scyliorhinus canicula;SYC;ENTERO
 0901;Cazapa;0922;Vigo;10022;Scyliorhinus canicula;SYC;ENTERO
-0901;Cazapo;0919;Cambados;10699;Awaous commersoni;GBN;ENTERO
-0901;Cazapo;0955;Rianxo;10699;Awaous commersoni;GBN;ENTERO
-0901;Cazapo;0956;Vilaxoan;10699;Awaous commersoni;GBN;ENTERO
+0901;Cazapo;0919;Cambados;10699;Gobius niger;GBN;ENTERO
+0901;Cazapo;0955;Rianxo;10699;Gobius niger;GBN;ENTERO
+0901;Cazapo;0956;Vilaxoan;10699;Gobius niger;GBN;ENTERO
 0901;Cazón;0907;A Coruña;10047;Galeorhinus galeus;GAG;ENTERO
 0901;Cazón;0918;A Coruña (Camiones);10047;Galeorhinus galeus;GAG;ENTERO
 0901;Cazón;0976;A Garda;10047;Galeorhinus galeus;GAG;ENTERO
@@ -12408,18 +12416,18 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0101;Longuerón;0110;Isla Cristina;30137;Solen capensis;RAE;ENTERO
 0101;Longuerones;0110;Isla Cristina;30136;Solen spp;RAZ;ENTERO
 0901;Longuirón;0924;Foz;30058;Ensis magnus;EQK;ENTERO
-0902;Lorcha;0919;Cambados;10699;Awaous commersoni;GBN;ENTERO
-0902;Lorcha;0955;Rianxo;10699;Awaous commersoni;GBN;ENTERO
-0901;Lorcha;0922;Vigo;10699;Awaous commersoni;GBN;ENTERO
-0902;Lorcha;0956;Vilaxoan;10699;Awaous commersoni;GBN;ENTERO
-0901;Lorche;0976;A Garda;10699;Awaous commersoni;GBN;ENTERO
-0903;Lorche;0919;Cambados;10699;Awaous commersoni;GBN;ENTERO
-0903;Lorche;0955;Rianxo;10699;Awaous commersoni;GBN;ENTERO
-0903;Lorche;0956;Vilaxoan;10699;Awaous commersoni;GBN;ENTERO
-0904;Lorcho;0919;Cambados;10699;Awaous commersoni;GBN;ENTERO
-0904;Lorcho;0955;Rianxo;10699;Awaous commersoni;GBN;ENTERO
-0901;Lorcho;0917;Santa Eugenia de Ribeira;10699;Awaous commersoni;GBN;ENTERO
-0904;Lorcho;0956;Vilaxoan;10699;Awaous commersoni;GBN;ENTERO
+0902;Lorcha;0919;Cambados;10699;Gobius niger;GBN;ENTERO
+0902;Lorcha;0955;Rianxo;10699;Gobius niger;GBN;ENTERO
+0901;Lorcha;0922;Vigo;10699;Gobius niger;GBN;ENTERO
+0902;Lorcha;0956;Vilaxoan;10699;Gobius niger;GBN;ENTERO
+0901;Lorche;0976;A Garda;10699;Gobius niger;GBN;ENTERO
+0903;Lorche;0919;Cambados;10699;Gobius niger;GBN;ENTERO
+0903;Lorche;0955;Rianxo;10699;Gobius niger;GBN;ENTERO
+0903;Lorche;0956;Vilaxoan;10699;Gobius niger;GBN;ENTERO
+0904;Lorcho;0919;Cambados;10699;Gobius niger;GBN;ENTERO
+0904;Lorcho;0955;Rianxo;10699;Gobius niger;GBN;ENTERO
+0901;Lorcho;0917;Santa Eugenia de Ribeira;10699;Gobius niger;GBN;ENTERO
+0904;Lorcho;0956;Vilaxoan;10699;Gobius niger;GBN;ENTERO
 0901;Lorchos;0907;A Coruña;10603;Blenniidae;BLE;ENTERO
 0901;Lorchos;0918;A Coruña (Camiones);10603;Blenniidae;BLE;ENTERO
 0401;Lorchos;0403;Suances;10691;Gobiidae;GPA;ENTERO
@@ -13382,6 +13390,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0401;Mendo;0402;Santander;10764;Glyptocephalus cynoglossus;WIT;ENTERO
 0901;Mendo;0929;Vicedo;10764;Glyptocephalus cynoglossus;WIT;ENTERO
 0901;Mendo;0922;Vigo;10764;Glyptocephalus cynoglossus;WIT;ENTERO
+0905;Mendo evis grande;0922;Vigo;10764;Glyptocephalus cynoglossus;WIT;EVISCERADO
 0911;Mendo evis 01;0922;Vigo;10764;Glyptocephalus cynoglossus;WIT;EVISCERADO
 0912;Mendo evis 02;0922;Vigo;10764;Glyptocephalus cynoglossus;WIT;EVISCERADO
 0902;Mendo grande;0922;Vigo;10764;Glyptocephalus cynoglossus;WIT;ENTERO
@@ -14811,6 +14820,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0901;Ostra rizada;0929;Vicedo;30095;Magallana gigas;OYG;ENTERO
 0901;Otras Castañetas;0907;A Coruña;11383;Brama spp;BRA;ENTERO
 0901;Otras Castañetas;0918;A Coruña (Camiones);11383;Brama spp;BRA;ENTERO
+9901;Otras Castañetas;9901;Desconocido Español;11383;Brama spp;BRA;ENTERO
 0902;Otros;0914;Muros;11000;Actinopterigios;;ENTERO
 1401;Otros;1424;Ribadesella;50001;Animalia;;ENTERO
 0101;Otros crustáceos;0120;Chipiona;20000;Crustacea;CRU;ENTERO
@@ -14974,6 +14984,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1425;Palo eviscerado 05;1417;Gijón;10260;Molva macrophthalma;SLI;EVISCERADO
 1426;Palo eviscerado 06;1417;Gijón;10260;Molva macrophthalma;SLI;EVISCERADO
 1302;Palo G;1318;Ondarroa;10259;Molva dypterygia;BLI;ENTERO
+0902;Palo grande;0921;Marín;10260;Molva macrophthalma;SLI;ENTERO
 1303;Palo M;1318;Ondarroa;10259;Molva dypterygia;BLI;ENTERO
 1304;Palo T;1318;Ondarroa;10259;Molva dypterygia;BLI;ENTERO
 0906;Palo 01;0907;A Coruña;10259;Molva dypterygia;BLI;ENTERO
@@ -15179,11 +15190,16 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 1411;Palometas rojas 01;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0411;Palometas rojas 01;0402;Santander;10313;Beryx spp;ALF;ENTERO
 1412;Palometas rojas 02;1418;Avilés;10313;Beryx spp;ALF;ENTERO
+1412;Palometas rojas 02;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0412;Palometas rojas 02;0402;Santander;10313;Beryx spp;ALF;ENTERO
 1413;Palometas rojas 03;1418;Avilés;10313;Beryx spp;ALF;ENTERO
+1413;Palometas rojas 03;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0413;Palometas rojas 03;0402;Santander;10313;Beryx spp;ALF;ENTERO
+1414;Palometas rojas 04;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0414;Palometas rojas 04;0402;Santander;10313;Beryx spp;ALF;ENTERO
+1415;Palometas rojas 05;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0415;Palometas rojas 05;0402;Santander;10313;Beryx spp;ALF;ENTERO
+1416;Palometas rojas 06;1417;Gijón;10313;Beryx spp;ALF;ENTERO
 0901;Palometón;0907;A Coruña;10433;Lichia amia;LEE;ENTERO
 0901;Palometón;0918;A Coruña (Camiones);10433;Lichia amia;LEE;ENTERO
 0101;Palometón;0109;Ayamonte;10433;Lichia amia;LEE;ENTERO
@@ -19058,8 +19074,11 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0902;Raya cardadora grande;0922;Vigo;10088;Leucoraja fullonica;RJF;ENTERO
 0903;Raya cardadora pequeña;0922;Vigo;10088;Leucoraja fullonica;RJF;ENTERO
 0101;Raya Clavata;0109;Ayamonte;10090;Raja clavata;RJC;ENTERO
+0911;Raya clavata 01;0921;Marín;10090;Raja clavata;RJC;ENTERO
 1311;Raya clavata 01;1318;Ondarroa;10864;Rajidae;RAJ;ENTERO
+0912;Raya clavata 02;0921;Marín;10090;Raja clavata;RJC;ENTERO
 1312;Raya clavata 02;1318;Ondarroa;10864;Rajidae;RAJ;ENTERO
+0913;Raya clavata 03;0921;Marín;10090;Raja clavata;RJC;ENTERO
 1313;Raya clavata 03;1318;Ondarroa;10864;Rajidae;RAJ;ENTERO
 1314;Raya clavata 04;1318;Ondarroa;10864;Rajidae;RAJ;ENTERO
 0902;Raya clavata 1;0922;Vigo;10090;Raja clavata;RJC;ENTERO
@@ -19136,6 +19155,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0401;Raya de espejos;0409;Santoña;10092;Leucoraja naevus;RJN;ENTERO
 0101;Raya de pintilla;0106;Algeciras;10090;Raja clavata;RJC;ENTERO
 0101;Raya de san Pedro;0103;Barbate;10092;Leucoraja naevus;RJN;ENTERO
+1401;Raya estrellada;1418;Avilés;10096;Raja asterias;JRS;ENTERO
 0906;Raya estrellada (asterias);0926;Cillero;10864;Rajidae;RAJ;ENTERO
 0901;Raya falsavela;0907;A Coruña;10097;Leucoraja circularis;RJI;ENTERO
 0901;Raya falsavela;0921;Marín;10097;Leucoraja circularis;RJI;ENTERO
@@ -23911,7 +23931,6 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0499;Sin Categoría;0407;Laredo;40010;Astropecten irregularis;AVC;ENTERO
 0499;Sin Categoría;0407;Laredo;20148;Atelecyclus rotundatus;;ENTERO
 0499;Sin Categoría;0407;Laredo;20149;Atelecyclus undecimdentatus;;ENTERO
-0499;Sin Categoría;0407;Laredo;10699;Awaous commersoni;GBN;ENTERO
 0499;Sin Categoría;0407;Laredo;10806;Balistes capriscus;TRG;ENTERO
 0499;Sin Categoría;0407;Laredo;20155;Bathynectes maravigna;;ENTERO
 0499;Sin Categoría;0407;Laredo;30196;Bathypolypus sponsalis;YYS;ENTERO
@@ -23965,6 +23984,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0499;Sin Categoría;0407;Laredo;10019;Galeus melastomus;SHO;ENTERO
 0499;Sin Categoría;0407;Laredo;30066;Gastropoda;GAS;ENTERO
 0499;Sin Categoría;0407;Laredo;20198;Geryon longipes;GRQ;ENTERO
+0499;Sin Categoría;0407;Laredo;10699;Gobius niger;GBN;ENTERO
 0499;Sin Categoría;0407;Laredo;20146;Goneplax rhomboides;;ENTERO
 0499;Sin Categoría;0407;Laredo;40321;Gracilechinus acutus;USD;ENTERO
 0499;Sin Categoría;0407;Laredo;10723;Helicolenus dactylopterus;BRF;ENTERO
@@ -25396,7 +25416,6 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0499;Sin Categoría;0402;Santander;40041;Asteroidea;STF;ENTERO
 0499;Sin Categoría;0402;Santander;40010;Astropecten irregularis;AVC;ENTERO
 0499;Sin Categoría;0402;Santander;20148;Atelecyclus rotundatus;;ENTERO
-0499;Sin Categoría;0402;Santander;10699;Awaous commersoni;GBN;ENTERO
 0499;Sin Categoría;0402;Santander;10806;Balistes capriscus;TRG;ENTERO
 0499;Sin Categoría;0402;Santander;20155;Bathynectes maravigna;;ENTERO
 0499;Sin Categoría;0402;Santander;30037;Bathypolypus arcticus;YYA;ENTERO
@@ -25456,6 +25475,7 @@ COD CAT;CATEGORIA;COD PUERTO;PUERTO;COD ESP;ESPECIE;ALFA3;PROCESO
 0499;Sin Categoría;0402;Santander;10019;Galeus melastomus;SHO;ENTERO
 0499;Sin Categoría;0402;Santander;30066;Gastropoda;GAS;ENTERO
 0499;Sin Categoría;0402;Santander;20198;Geryon longipes;GRQ;ENTERO
+0499;Sin Categoría;0402;Santander;10699;Gobius niger;GBN;ENTERO
 0499;Sin Categoría;0402;Santander;60603;Gorgoniidae;GGW;ENTERO
 0499;Sin Categoría;0402;Santander;40321;Gracilechinus acutus;USD;ENTERO
 0499;Sin Categoría;0402;Santander;10247;Halargyreus johnsonii;MHJ;ENTERO

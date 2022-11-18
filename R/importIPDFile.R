@@ -1,7 +1,7 @@
-#' Import IPD file
+#' Import RIM IPD file
 #'
-#' This function import the data of biological samples saved by IPD. Only import
-#' record of the samples of ICES proyect.
+#' Import RIM file with samples saved by IPD. Only import records of ICES
+#' project.
 #' @param filename name of the IPD file
 #' @param by_month to filter only by one month. If false nothing is filtered. False by default.
 #' @param path = destiny path. By default is the actual working directory.
@@ -34,6 +34,7 @@ importIPDFile <- function(filename, by_month = FALSE, path = getwd()){
                            "factor",       NA, "factor", "factor",
                            NA,       NA, "factor", NA,
                            "character", "factor")
+    , fileEncoding = "UTF-8"
   )
 
   colnames(records) <- c("FECHA",       "COD_PUERTO",   "COD_BARCO",          "COD_ARTE",

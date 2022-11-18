@@ -68,13 +68,6 @@ importOABFiles <- function(trips, hauls, catches, lengths, litter,
     }
   })
 
-  # filter by month, only in case by_month == TRUE
-  # by_month <- check_by_month_argument(by_month)
-  #
-  # if (by_month != FALSE){
-  #   muestreos_up <- lapply(muestreos_up, function(x){x <- filter_by_month(x, by_month); x})
-  # }
-
   if (isTRUE(export)){
     exportListToCsv(samples_oab)
   }

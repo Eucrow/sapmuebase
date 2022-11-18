@@ -61,6 +61,7 @@ fixReportSirenoFiles <- function(filename, filetype, path = getwd(), temporal = 
   path_complete <- paste(path, filename, sep="/")
 
   con <- file(path_complete, "r", encoding = "Windows-1252")
+  # con <- file(path_complete, "r")
 
   # theorical number of variables
   type_variables <- sapmuebase:::getVariableTypes(filetype, "class_variable_final")

@@ -13,8 +13,29 @@ importFileFromSireno <- function (x, file_type, path){
 
     type <- struct[["class_variable_import"]]
 
-    file_read <- read.table(fullpath, sep = ";", header = TRUE, quote = "",
-                            encoding = "Windows-1252", colClasses = type)
+
+    # For any reason, the some files from SIRENO database need to be encoded
+    # explicitly with Windows-1252 or ISO8859-1, but others doesn't. However,
+    # the rest of files cant't be encoded in this way because return erroneous
+    # characters.
+    if ( file_type == "RIM_LENGTHS" ||
+         file_type =="OAB_CATCHES" ||
+         file_type =="OAB_LENGTHS" ) {
+      file_read <- read.table(fullpath, sep = ";",
+                              header = TRUE,
+                              quote = "",
+                              colClasses = type,
+                              fileEncoding =  "Windows-1252"
+                              # fileEncoding =  "ISO8859-1"
+      )
+    } else {
+      file_read <- read.table(fullpath, sep = ";",
+                              header = TRUE,
+                              quote = "",
+                              colClasses = type
+      )
+    }
+
 
     if (nrow(file_read) == 0) {
       warning(paste("File", x, "doesn't contain data."), call. = FALSE)
@@ -34,7 +55,12 @@ importFileFromSireno <- function (x, file_type, path){
 # ---- Function to get the first line with variable names of a file
 readHeaderFiles <- function(file){
 
-  header <- read.table(file, sep=";", header = TRUE, quote = "", dec = ",", nrows = 1)
+  header <- read.table(file, sep=";",
+                       header = TRUE,
+                       quote = "",
+                       dec = ",",
+                       nrows = 1,
+                       fileEncoding = "windows-1252")
   header <- colnames(header)
   header_df <- data.frame("original_name_variable" = header)
   #header <- readLines(fullpath, n = 1)
@@ -131,14 +157,14 @@ renameFileVariables <- function(df, file_type) {
 
 }
 
-# function to remove coma in the category "Chicharros, jureles"
+# function to remove comma in the category "Chicharros, jureles"
 # return the dataframe corrected
 remove_coma_in_category <- function(dataframe){
   dataframe[["CATEGORIA"]]<- gsub(",", "", dataframe[["CATEGORIA"]])
   return(dataframe)
 }
 
-# function to change coma with a dot in a variable of a dataframe
+# function to change comma with a dot in a variable of a dataframe
 # return the dataframe corrected
 replace_coma_with_dot <- function(dataframe, variable){
   dataframe[[variable]]<- gsub(",", ".", dataframe[[variable]])
@@ -146,7 +172,7 @@ replace_coma_with_dot <- function(dataframe, variable){
 }
 
 # function to add 'AÑO', 'MES', 'DIA' and 'TRIMESTRE'
-# only usefull in RIM files (because contain the column FECHA_MUE)
+# only useful in RIM files (because contain the column FECHA_MUE)
 add_dates_variables <- function (dataframe){
   dataframe[["FECHA_MUE"]] <- as.POSIXlt(dataframe$FECHA_MUE, format="%d/%m/%Y")
   dataframe[["DIA"]] <- dataframe[["FECHA_MUE"]]$mday

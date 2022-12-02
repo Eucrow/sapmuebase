@@ -3,12 +3,12 @@
 \name{importRIMLengths}
 \alias{importRIMLengths}
 \alias{importLengths}
-\title{Import the Lenghts file from 'tallas por up' report}
+\title{Import the Lengths file from 'tallas por up' report}
 \usage{
 importRIMLengths(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the total landings filenames}
+\item{file}{vector with the total landings file names}
 
 \item{path}{path of the files. The working directory by default.}
 }

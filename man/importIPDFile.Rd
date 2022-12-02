@@ -2,7 +2,7 @@
 % Please edit documentation in R/importIPDFile.R
 \name{importIPDFile}
 \alias{importIPDFile}
-\title{Import IPD file}
+\title{Import RIM IPD file}
 \usage{
 importIPDFile(filename, by_month = FALSE, path = getwd())
 }
@@ -17,6 +17,6 @@ importIPDFile(filename, by_month = FALSE, path = getwd())
 Return data frame.
 }
 \description{
-This function import the data of biological samples saved by IPD. Only import
-record of the samples of ICES proyect.
+Import RIM file with samples saved by IPD. Only import records of ICES
+project.
 }

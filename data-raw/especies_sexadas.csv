@@ -6,6 +6,7 @@ COD_ESP,ESP_MUE,COD_PUERTO,PUERTO,LOCODE
 10087,Dipturus batis,ALL,ALL,ALL
 10094,Raja brachyura,ALL,ALL,ALL
 10022,Scyliorhinus canicula,ALL,ALL,ALL
+10021,Scyliorhinus stellaris,ALL,ALL,ALL
 10091,Raja montagui,ALL,ALL,ALL
 10019,Galeus melastomus,ALL,ALL,ALL
 10080,Dipturus oxyrinchus,ALL,ALL,ALL
@@ -31,3 +32,5 @@ COD_ESP,ESP_MUE,COD_PUERTO,PUERTO,LOCODE
 20066,Parapenaeus longirostris,0110,Isla Cristina,ESZGA
 20066,Parapenaeus longirostris,0114,Punta Umbría,ESZJY
 20066,Parapenaeus longirostris,0116,Sanlúcar de Barrameda,ESSBA
+10044,Mustelus mustelus,ALL,ALL,ALL
+10107,Aetomylaeus bovinus,ALL,ALL,ALL

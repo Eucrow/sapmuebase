@@ -180,5 +180,13 @@ Peso.Minimis.kg.;P_MINIMIS
 Peso.Muestra.Desemb.Oblig..kg.;P_MUE_DESEM_OBL
 Peso.Muestra.Minimis.kg.;P_MUE_MINIMIS
 Ejem..Desemb.Oblig.;EJEM_DESEM_OBL
-Ejem..Minimis;EJEM_MINIMIS
+Ejem.Minimis;EJEM_MINIMIS
 Chequeado;CHEQUEADO
+Pinger;PINGER
+Peso.Sobrecopo.Kg.;P_SOBRECOPO
+Peso.Muestra.Sobrecopo.kg.;P_MUE_SOBRECOPO
+Ejem..Sobrecopo;EJEM_SOBRECOPO
+Hora.inicio;HORA_INI
+Hora.fin;HORA_FIN
+Fecha.embarque;FECHA_EMB
+Fecha.desembarque;FECHA_DESEM

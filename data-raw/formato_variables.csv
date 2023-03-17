@@ -52,7 +52,7 @@ DESCARTE_MUESTREADO;^S|N$;factor;;logical;;;;;;;;29;T;;;;;;;;;
 DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;integer;;;;;;;;30;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 MES;^([1-9]|1[0-2])$;integer;;integer;;;;;;;;31;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 OBSERVADOR;^.+$;factor;;factor;;;;;;;;32;T;;;;;;;;;
-RUMBO;^.+$;character;;character;;;;;;;;33;F;;;;;;;;;This variable can contain number, digits, dots?
+RUMBO;^.+$;character;;character;;;;;;;;33;F;;;;;;;;;This variable can contain number, digits, dots…
 CABLE;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;34;F;;;;;;;;;
 VEL_VIENTO;^([0-9]|1[0-2])$;integer;;integer;;;;;;;;35;F;;;;;;;;;
 ESTADO_MAR;^\d$;integer;;integer;;;;;;;;36;F;;;;;;;;;

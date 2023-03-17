@@ -1,16 +1,42 @@
 name_variable;regex_variable_import;class_variable_import;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_MANDATORY;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;RIM_LENGTHS_MANDATORY;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTALS;OAB_ACCIDENTALS_MANDATORY;COMMENTS
 YEAR;^\d{4}$;integer;;integer;;;;;;1;T;1;T;1;T;1;T;;;;;"In OAB_HAULS, this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
-TRIMESTRE;^(1|2|3|4)$;integer;;integer;;;;;;;;2;T;2;T;2;T;;;;;
 COD_MAREA;^.+$;factor;;factor;;;;;;2;T;3;T;3;T;4;T;1;T;1;T;
-COD_LANCE;^\d{1,4}$;integer;;integer;;;;;;;;4;T;4;T;5;T;2;T;2;T;
+FECHA_INI_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;;;;;;;;;;;
+FECHA_FIN_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;;;;;;;;;;;
 COD_PUERTO_BASE;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;5;T;5;T;5;T;6;T;;;;;
 PUERTO_BASE;^.+$;factor;;factor;;;;;;6;T;6;T;6;T;7;T;;;;;
+COD_PUERTO_LLEGADA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;7;T;;;;;;;;;;;
+PUERTO_LLEGADA;^.+$;factor;;factor;;;;;;8;T;;;;;;;;;;;
 COD_PUERTO_DESCARGA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;9;T;7;T;;;8;T;;;;;
 PUERTO_DESCARGA;^.+$;factor;;factor;;;;;;10;T;8;T;;;9;T;;;;;
-CUADRICULA_ICES;^('\d{2}[A-Z]\d)$|^'$;factor;;factor;;;;;;;;9;T;7;T;10;T;;;;;
+COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;55;T;8;T;11;T;;;;;
+ORIGEN;^.+$;factor;;factor;24;T;24;24;T;12;T;56;T;9;T;12;T;;;;;
 ESTRATO_RIM;^.+$;factor;;factor;9;T;9;9;T;13;T;10;T;10;T;13;T;;;;;
 DES_ESTRATO_RIM;^.+$;factor;;factor;;;;;;14;T;11;T;11;T;14;T;;;;;
 METIER_IEO;^.+$;factor;;factor;10;;10;10;;15;F;12;T;12;F;15;F;;;;;In OAB, this field is only mandatory in Hauls table, because the data of the rest of the tables come from this.
+NOMBRE_OBS;^.+$;factor;;factor;;;;;;16;T;;;;;;;;;;;
+APELLIDOS_OBS;^.+$;factor;;factor;;;;;;17;T;;;;;;;;;;;
+COD_BARCO;^\d{1,6}$;factor;^\d{6}$;factor;18;T;18;18;T;18;T;20;T;16;T;19;T;;;;;
+BARCO;^.+$;factor;;factor;20;T;20;20;T;19;T;21;T;17;T;20;T;;;;;
+CV;^\d+(\,\d+)$;numeric;;numeric;;;;;;20;T;22;F;18;F;21;T;;;;;
+TRB;^\d+(\,\d+)$;character;;numeric;;;;;;21;T;23;F;19;F;22;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
+ESLORA;^\d+(\,\d+)$;character;;numeric;;;;;;22;T;24;F;20;F;23;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
+DIAS_MAR;^\d+$;integer;;integer;;;;;;23;T;;;;;;;;;;;
+DIAS_PESCA;^\d+$;integer;;integer;;;;;;24;T;;;;;;;;;;;
+N_LANCES;^\d+$;integer;;integer;;;;;;25;T;;;;;;;;;;;
+N_LANCES_MUE;^\d+$;integer;;integer;;;;;;26;T;;;;;;;;;;;
+N_DESCARTES_MUE;^\d+$;integer;;integer;;;;;;27;T;;;;;;;;;;;
+N_LANCES_NO_MUE;^\d+$;integer;;integer;;;;;;28;T;;;;;;;;;;;
+N_LANCES_INCIDENCIAS;^\d+$;integer;;integer;;;;;;29;T;;;;;;;;;;;
+CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;30;F;63;F;;;;;;;;;
+HORA_INI_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;31;F;;;;;;;;;;;
+HORA_FIN_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;32;F;;;;;;;;;;;
+FECHA_EMB;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;33;F;;;;;;;;;;;
+FECHA_DESEM;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;34;F;;;;;;;;;;;
+OBSERVACIONES;^.+$;character;;character;42;;54;;;35;F;64;F;;;;;11;F;;;
+TRIMESTRE;^(1|2|3|4)$;integer;;integer;;;;;;;;2;T;2;T;2;T;;;;;
+COD_LANCE;^\d{1,4}$;integer;;integer;;;;;;;;4;T;4;T;5;T;2;T;2;T;
+CUADRICULA_ICES;^('\d{2}[A-Z]\d)$|^'$;factor;;factor;;;;;;;;9;T;7;T;10;T;;;;;
 COD_ARTE;^\d{3}$;factor;;factor;28;T;28;28;T;;;13;T;13;T;16;T;;;;;
 ARTE;^.+$;factor;;factor;29;T;29;29;T;;;14;T;14;T;17;T;;;;;
 TAMANO_MALLA;^\d+(\,\d+)$;character;;numeric;;;;;;;;15;F;15;F;18;F;;;;;
@@ -18,11 +44,6 @@ SOBRECOPO;^S|N$;factor;;factor;;;;;;;;16;F;;;;;;;;;
 ABERTURA_VER;^\d+(\,\d+)$;character;;numeric;;;;;;;;17;T;;;;;;;;;
 ABERTURA_HOR;^\d+(\,\d+)$;character;;numeric;;;;;;;;18;T;;;;;;;;;
 CARAS;^\d+$;integer;;integer;;;;;;;;19;F;;;;;;;;;
-COD_BARCO;^\d{1,6}$;factor;^\d{6}$;factor;18;T;18;18;T;18;T;20;T;16;T;19;T;;;;;
-BARCO;^.+$;factor;;factor;20;T;20;20;T;19;T;21;T;17;T;20;T;;;;;
-CV;^\d+(\,\d+)$;numeric;;numeric;;;;;;20;T;22;F;18;F;21;T;;;;;
-TRB;^\d+(\,\d+)$;character;;numeric;;;;;;21;T;23;F;19;F;22;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
-ESLORA;^\d+(\,\d+)$;character;;numeric;;;;;;22;T;24;F;20;F;23;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
 VELOCIDAD;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;25;F;;;;;;;;;
 LUZ;^D|N$;factor;;factor;;;;;;;;26;T;;;;;;;;;
 VALIDO;^S|N$;factor;;logical;;;;;;;;27;T;;;;;;;;;
@@ -53,16 +74,12 @@ LON_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;51;T;;;;;;;;;The header of this
 LON_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;52;T;;;;;;;;;The header of this variable in the original file is  'Lon Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_VIR_CGS
 PROF_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;53;T;;;;;;;;;
 PROF_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;54;T;;;;;;;;;
-COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;55;T;8;T;11;T;;;;;
-ORIGEN;^.+$;factor;;factor;24;T;24;24;T;12;T;56;T;9;T;12;T;;;;;
 DURACION_LANCE;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;57;T;;;;;;;;;"The format of this variable makes it useless. In the importation process a new variable with the correct format is created: ""DURACION"""
 PROF_MEDIA;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;58;F;;;;;;;;;
 P_TOT_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;59;F;;;;;;;;;
 P_SUB_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;60;F;;;;;;;;;
 P_MUE_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;61;F;;;;;;;;;
 PINGER;^S|N$;factor;;logical;;;;;;;;62;F;;;;;;;;;
-CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;30;F;63;F;;;;;;;;;
-OBSERVACIONES;^.+$;character;;character;42;;54;;;32;F;64;F;;;;;11;F;;;
 P_MUE_TOT_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;35;F;;;;;;;
 COD_ESP;^\d{5}$;factor;;factor;;;;;;;;;;21;T;24;T;;;3;F;
 ESP;^.+$;factor;;factor;;;;;;;;;;22;T;25;T;;;5;F;
@@ -88,19 +105,6 @@ EJEM_DESEM_OBL;^\d+$;integer;;integer;;;;;;;;;;42;F;;;;;;;
 EJEM_MINIMIS;^\d+$;integer;;integer;;;;;;;;;;43;F;;;;;;;
 COD_DESCAR;^.+$;factor;;factor;;;;;;;;;;44;F;;;;;;;
 RAZON_DESCAR;^.+$;factor;;factor;;;;;;;;;;45;F;;;;;;;
-FECHA_INI;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;;;;;;;;;;;
-FECHA_FIN;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;;;;;;;;;;;
-COD_PUERTO_LLEGADA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;7;T;;;;;;;;;;;
-PUERTO_LLEGADA;^.+$;factor;;factor;;;;;;8;T;;;;;;;;;;;
-NOMBRE_OBS;^.+$;factor;;factor;;;;;;16;T;;;;;;;;;;;
-APELLIDOS_OBS;^.+$;factor;;factor;;;;;;17;T;;;;;;;;;;;
-DIAS_MAR;^\d+$;integer;;integer;;;;;;23;T;;;;;;;;;;;
-DIAS_PESCA;^\d+$;integer;;integer;;;;;;24;T;;;;;;;;;;;
-N_LANCES;^\d+$;integer;;integer;;;;;;25;T;;;;;;;;;;;
-N_LANCES_MUE;^\d+$;integer;;integer;;;;;;26;T;;;;;;;;;;;
-N_DESCARTES_MUE;^\d+$;integer;;integer;;;;;;27;T;;;;;;;;;;;
-N_LANCES_NO_MUE;^\d+$;integer;;integer;;;;;;28;T;;;;;;;;;;;
-N_LANCES_INCIDENCIAS;^\d+$;integer;;integer;;;;;;29;T;;;;;;;;;;;
 RESPONSABLE_MUESTREO;^.+$;character;;character;1;T;1;1;T;;;;;;;;;;;;;
 COD_ID;^\d{4}[A-Z]{3}\d{1}[A-Z]{1}\d{4}$;factor;;factor;2;T;2;2;T;;;;;;;;;;;;;
 FECHA_MUE;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;3;T;3;3;T;;;;;;;3;T;;;;;
@@ -160,3 +164,4 @@ PORCENTAJE_OBSERVADO;^\d+$;integer;;integer;;;;;;;;;;;;;;10;F;;;
 SOLO_MUESTRA;^S|N$;factor;;logical;;;;;;;;;;;;;;9;F;;;
 TIPO_CAPTURA;^C|D$;factor;;factor;;;;;;;;;;;;30;T;;;;;
 VIRADO_VACIADO;^S|N$;factor;;logical;;;;;;;;;;;;;;8;F;;;
+YEAR', 'MES', 'DIA' and 'TRIMESTRE'  (RIM_CATCHES, RIM_LENGTHS, and RIM_CATCHES_IN_LENGTHS, automaticaly generated);;;;;;;;;;;;;;;;;;;;;;

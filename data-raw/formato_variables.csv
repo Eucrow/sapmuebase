@@ -1,8 +1,8 @@
 name_variable;regex_variable_import;class_variable_import;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_MANDATORY;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;RIM_LENGTHS_MANDATORY;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTALS;OAB_ACCIDENTALS_MANDATORY;COMMENTS
 YEAR;^\d{4}$;integer;;integer;;;;;;1;T;1;T;1;T;1;T;;;;;"In OAB_HAULS, this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 COD_MAREA;^.+$;factor;;factor;;;;;;2;T;3;T;3;T;4;T;1;T;1;T;
-FECHA_INI;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;;;;;;;;;;;
-FECHA_FIN;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;;;;;;;;;;;
+FECHA_INI_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;;;;;;;;;;;
+FECHA_FIN_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;;;;;;;;;;;
 COD_PUERTO_BASE;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;5;T;5;T;5;T;6;T;;;;;
 PUERTO_BASE;^.+$;factor;;factor;;;;;;6;T;6;T;6;T;7;T;;;;;
 COD_PUERTO_LLEGADA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;7;T;;;;;;;;;;;
@@ -29,8 +29,8 @@ N_DESCARTES_MUE;^\d+$;integer;;integer;;;;;;27;T;;;;;;;;;;;
 N_LANCES_NO_MUE;^\d+$;integer;;integer;;;;;;28;T;;;;;;;;;;;
 N_LANCES_INCIDENCIAS;^\d+$;integer;;integer;;;;;;29;T;;;;;;;;;;;
 CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;30;F;63;F;;;;;;;;;
-HORA_INI;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;31;F;;;;;;;;;;;
-HORA_FIN;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;32;F;;;;;;;;;;;
+HORA_INI_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;31;F;;;;;;;;;;;
+HORA_FIN_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;32;F;;;;;;;;;;;
 FECHA_EMB;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;33;F;;;;;;;;;;;
 FECHA_DESEM;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;34;F;;;;;;;;;;;
 OBSERVACIONES;^.+$;character;;character;42;;54;;;35;F;64;F;;;;;11;F;;;
@@ -52,7 +52,7 @@ DESCARTE_MUESTREADO;^S|N$;factor;;logical;;;;;;;;29;T;;;;;;;;;
 DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;integer;;;;;;;;30;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 MES;^([1-9]|1[0-2])$;integer;;integer;;;;;;;;31;T;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
 OBSERVADOR;^.+$;factor;;factor;;;;;;;;32;T;;;;;;;;;
-RUMBO;^.+$;character;;character;;;;;;;;33;F;;;;;;;;;This variable can contain number, digits, dots…
+RUMBO;^.+$;character;;character;;;;;;;;33;F;;;;;;;;;This variable can contain number, digits, dots?
 CABLE;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;34;F;;;;;;;;;
 VEL_VIENTO;^([0-9]|1[0-2])$;integer;;integer;;;;;;;;35;F;;;;;;;;;
 ESTADO_MAR;^\d$;integer;;integer;;;;;;;;36;F;;;;;;;;;

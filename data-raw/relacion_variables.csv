@@ -58,8 +58,8 @@ Año;YEAR
 T;TRIMESTRE
 Marea;COD_MAREA
 Lance;COD_LANCE
-Fecha.Ini;FECHA_INI
-Fecha.Fin;FECHA_FIN
+Fecha.Ini;FECHA_INI_MAREA
+Fecha.Fin;FECHA_FIN_MAREA
 Cod.Puerto.Base;COD_PUERTO_BASE
 Puerto.Base;PUERTO_BASE
 cod.Puerto.Llegada;COD_PUERTO_LLEGADA
@@ -186,7 +186,7 @@ Pinger;PINGER
 Peso.Sobrecopo.Kg.;P_SOBRECOPO
 Peso.Muestra.Sobrecopo.kg.;P_MUE_SOBRECOPO
 Ejem..Sobrecopo;EJEM_SOBRECOPO
-Hora.inicio;HORA_INI
-Hora.fin;HORA_FIN
+Hora.inicio;HORA_INI_MAREA
+Hora.fin;HORA_FIN_MAREA
 Fecha.embarque;FECHA_EMB
 Fecha.desembarque;FECHA_DESEM

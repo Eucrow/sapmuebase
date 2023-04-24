@@ -14,7 +14,7 @@ checkStructureFile(df, file_type)
 }
 \value{
 Two possible errors: 'The dataframe doesn't have the appropriate column names'
-or 'The dataframe doesn't have the appropriate number of columns'. In case the
+or 'The data frame doesn't have the appropriate number of columns'. In case the
 structure is correct, doesn't return anything.
 }
 \description{

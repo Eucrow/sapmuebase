@@ -14,13 +14,13 @@ importFileFromSireno <- function (x, file_type, path){
     type <- struct[["class_variable_import"]]
 
 
-    # For any reason, the some files from SIRENO database need to be encoded
+    # For any reason, some files from SIRENO database need to be encoded
     # explicitly with Windows-1252 or ISO8859-1, but others doesn't. However,
     # the rest of files cant't be encoded in this way because return erroneous
     # characters.
     if ( file_type == "RIM_LENGTHS" ||
          file_type =="OAB_CATCHES" ||
-         file_type =="OAB_LENGTHS" ) {
+         file_type =="OAB_LENGTHS") {
       file_read <- read.table(fullpath, sep = ";",
                               header = TRUE,
                               quote = "",
@@ -53,6 +53,7 @@ importFileFromSireno <- function (x, file_type, path){
 }
 
 # ---- Function to get the first line with variable names of a file
+# TODO: I think this function is doesn't used anymore
 readHeaderFiles <- function(file){
 
   header <- read.table(file, sep=";",

@@ -1,22 +1,19 @@
-# ##############################################################################
-# ---- function to import the Hauls file from OAB report ---------
-# ##############################################################################
-#' Import the Hauls file from OAB report
+#' Import the CECAF Hauls file from OAB report
 #'
 #' This function import the hauls file obtained from OAB
-#' reports in SIRENO. The SIRENO hauls report must be generated with the option
-#' 'only hauls'.
+#' reports in SIRENO from CECAF project. The SIRENO hauls report must be
+#' generated with the option 'only hauls'.
 #'
 #' Multiple files can be imported at the same time.
 #'
 #' @note The SIRENO hauls report must be generated with the option 'only hauls'.
-#' @param file vector with the hauls filenames.
+#' @param file vector with the hauls file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
+#' @return Return data frame.
 #' @export
-importOABHauls <- function(file, path = getwd()){
+importOABHaulsCECAF <- function(file, path = getwd()){
 
-  file_type <- "OAB_HAULS"
+  file_type <- "OAB_HAULS_CECAF"
 
   # fix files (view fixImportFiles help) and save the fixed temporal files in
   # a temporal directory with the original name of the file

@@ -1,13 +1,13 @@
-#' Import the CECAF Hauls file from OAB report
+#' Import SIRENO haul report from on-board sampling in the CECAF project.
 #'
 #' This function import the hauls file obtained from OAB
-#' reports in SIRENO from CECAF project. The SIRENO hauls report must be
-#' generated with the option 'only hauls'.
+#' reports in SIRENO of CECAF project. The SIRENO hauls report must be generated
+#' with the option 'only hauls'.
 #'
 #' Multiple files can be imported at the same time.
 #'
 #' @note The SIRENO hauls report must be generated with the option 'only hauls'.
-#' @param file vector with the hauls file names.
+#' @param file vector with the file names.
 #' @param path path of the files. The working directory by default.
 #' @return Return data frame.
 #' @export

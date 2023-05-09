@@ -1,11 +1,11 @@
-#' Import the CECAF Trips file from OAB report
+#' Import SIRENO trips report from on-board sampling in the CECAF project.
 #'
-#' This function import the trips file obtained from OAB
-#' reports in SIRENO from CECAF project.
+#' This function import the trips file obtained from OAB reports in SIRENO of
+#' CECAF project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' @param file vector with the trips file names
+#' @param file vector with the file names.
 #' @param path path of the files. The working directory by default.
 #' @return Return data frame.
 #' @export

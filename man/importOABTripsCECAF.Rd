@@ -2,21 +2,21 @@
 % Please edit documentation in R/importOABTripsCECAF.R
 \name{importOABTripsCECAF}
 \alias{importOABTripsCECAF}
-\title{Import the CECAF Trips file from OAB report}
+\title{Import SIRENO trips report from on-board sampling in the CECAF project.}
 \usage{
 importOABTripsCECAF(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the trips filenames}
+\item{file}{vector with the file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the trips file obtained from OAB
-reports in SIRENO from CECAF project.
+This function import the trips file obtained from OAB reports in SIRENO of
+CECAF project.
 }
 \details{
 Multiple files can be imported at the same time.

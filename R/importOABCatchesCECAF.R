@@ -1,7 +1,7 @@
-#' Import SIRENO catches report from on-board sampling in the ICES project.
+#' Import SIRENO catches report from on-board sampling in the CECAF project.
 #'
 #' This function import the catches file obtained from on-board
-#' reports in SIRENO of ICES project. The SIRENO catches report must be
+#' reports in SIRENO of CECAF project. The SIRENO catches report must be
 #' generated with the option 'by category'.
 #'
 #' Multiple files can be imported at the same time.
@@ -12,9 +12,9 @@
 #' @param path path of the files. The working directory by default.
 #' @return Return data frame.
 #' @export
-importOABCatches <- function(file, path = getwd()){
+importOABCatchesCECAF <- function(file, path = getwd()){
 
-  file_type <- "OAB_CATCHES"
+  file_type <- "OAB_CATCHES_CECAF"
 
   catches <- lapply(
     file,

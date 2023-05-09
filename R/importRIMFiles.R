@@ -1,19 +1,17 @@
-# ---- function to import the 'tallas por up' files ----------------------------
-#' Import 'muestreos tallas por up'
+#' Import the SIRENO at-market reports from ICES project.
 #'
 #' This function import the three files obtained from 'muestreos tallas por up'
-#' reports in SIRENO: total catches file, catches of length samples file and lengths
-#' file.
+#' reports in SIRENO: catches file, catches in lengths file and lengths file.
 #'
-#' @param catches vector with the total landings filenames
-#' @param catches_in_lengths vector with the landings of the lengths samples filenames
-#' @param lengths vector with the lengths samples filenames
+#' @param catches vector with the catches file names.
+#' @param catches_in_lengths vector with the catches in length file names.
+#' @param lengths vector with the lengths file names.
 #' @param by_month to filter only by one month. Numeric between 1 to 12 to select
 #' one month or FALSE for all the year. FALSE by default.
 #' @param path path of the files. The working directory by default.
-#' @param export to export muestreos_up dataframe in csv file. False by default.
-#' @aliases importMuestreosUP
-#' @return Return a list with 3 data frames
+#' @param export to export reports in csv file. False by default.
+#' @aliases importMuestreosUP.
+#' @return Return a list with 3 data frames.
 #' @export
 
 importRIMFiles <- function(catches, catches_in_lengths, lengths, by_month = FALSE, export = FALSE, path = getwd()){

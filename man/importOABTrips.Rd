@@ -2,21 +2,21 @@
 % Please edit documentation in R/importOABTrips.R
 \name{importOABTrips}
 \alias{importOABTrips}
-\title{Import the Trips file from OAB report}
+\title{Import SIRENO trips report from on-board sampling in the ICES project.}
 \usage{
 importOABTrips(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the trips filenames}
+\item{file}{vector with the file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the trips file obtained from OAB
-reports in SIRENO.
+This function import the trips file obtained from OAB reports in SIRENO of
+ICES project.
 }
 \details{
 Multiple files can be imported at the same time.

@@ -2,22 +2,22 @@
 % Please edit documentation in R/importOABHauls.R
 \name{importOABHauls}
 \alias{importOABHauls}
-\title{Import the Hauls file from OAB report}
+\title{Import SIRENO haul report from on-board sampling in the ICES project.}
 \usage{
 importOABHauls(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the hauls filenames.}
+\item{file}{vector with the file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
 This function import the hauls file obtained from OAB
-reports in SIRENO. The SIRENO hauls report must be generated with the option
-'only hauls'.
+reports in SIRENO of ICES project. The SIRENO hauls report must be generated
+with the option 'only hauls'.
 }
 \details{
 Multiple files can be imported at the same time.

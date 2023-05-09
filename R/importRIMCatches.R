@@ -1,18 +1,17 @@
-# ---- function to import the 'Catches' file from 'tallas por up' report ---------
-#' Import the 'Catches' file from 'tallas por up' report
+#' Import SIRENO catches report from at-market sampling in the ICES project.
 #'
-#' This function import the 'Catches' files obtained from 'muestreos tallas por up'
-#' reports in SIRENO.
+#' This function import the catches files obtained from 'muestreos tallas por up'
+#' reports in SIRENO of ICES project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-#' are created in the returned dataframe.
+#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and
+#' 'TRIMESTRE' are created in the returned dataframe.
 #'
-#' @param file vector with the catches report filenames
+#' @param file vector with the catches report file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
-#' @aliases importCatches
+#' @return Return data frame.
+#' @aliases importCatches.
 #' @export
 importRIMCatches <- function(file, path = getwd()){
 

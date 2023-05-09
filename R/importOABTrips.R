@@ -1,16 +1,13 @@
-# ##############################################################################
-# ---- function to import the Trips file from OAB report ---------
-# ##############################################################################
-#' Import the Trips file from OAB report
+#' Import SIRENO trips report from on-board sampling in the ICES project.
 #'
-#' This function import the trips file obtained from OAB
-#' reports in SIRENO.
+#' This function import the trips file obtained from OAB reports in SIRENO of
+#' ICES project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' @param file vector with the trips filenames
+#' @param file vector with the file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
+#' @return Return data frame.
 #' @export
 importOABTrips <- function(file, path = getwd()){
 

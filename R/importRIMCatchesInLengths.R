@@ -1,18 +1,18 @@
-# ---- function to import the 'Catches in Lengths' file from 'tallas por up' report ---------
-#' Import the 'Catches in Lengths' file from 'tallas por up' report
+#' Import SIRENO catches in lengths report from at-market sampling in the ICES
+#' project.
 #'
-#' This function import the 'Catches in Lengths' files obtained from 'muestreos tallas por up'
-#' reports in SIRENO.
+#' This function import the catches in lengths files obtained from 'muestreos
+#' tallas por up' reports in SIRENO of ICES project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-#' are created in the returned dataframe.
+#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and
+#' 'TRIMESTRE' are created in the returned data frame.
 #'
-#' @param file vector with the total landings filenames
+#' @param file vector with file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
-#' @aliases importCatchesInLengths
+#' @return Return data frame.
+#' @aliases importCatchesInLengths.
 #' @export
 importRIMCatchesInLengths <- function(file, path = getwd()){
 

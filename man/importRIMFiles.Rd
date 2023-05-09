@@ -2,8 +2,8 @@
 % Please edit documentation in R/importRIMFiles.R
 \name{importRIMFiles}
 \alias{importRIMFiles}
-\alias{importMuestreosUP}
-\title{Import 'muestreos tallas por up'}
+\alias{importMuestreosUP.}
+\title{Import the SIRENO at-market reports from ICES project.}
 \usage{
 importRIMFiles(
   catches,
@@ -15,24 +15,23 @@ importRIMFiles(
 )
 }
 \arguments{
-\item{catches}{vector with the total landings filenames}
+\item{catches}{vector with the catches file names.}
 
-\item{catches_in_lengths}{vector with the landings of the lengths samples filenames}
+\item{catches_in_lengths}{vector with the catches in length file names.}
 
-\item{lengths}{vector with the lengths samples filenames}
+\item{lengths}{vector with the lengths file names.}
 
 \item{by_month}{to filter only by one month. Numeric between 1 to 12 to select
 one month or FALSE for all the year. FALSE by default.}
 
-\item{export}{to export muestreos_up dataframe in csv file. False by default.}
+\item{export}{to export reports in csv file. False by default.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return a list with 3 data frames
+Return a list with 3 data frames.
 }
 \description{
 This function import the three files obtained from 'muestreos tallas por up'
-reports in SIRENO: total catches file, catches of length samples file and lengths
-file.
+reports in SIRENO: catches file, catches in lengths file and lengths file.
 }

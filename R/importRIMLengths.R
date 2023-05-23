@@ -1,17 +1,16 @@
-# ---- function to import the Lengths file from 'tallas por up' report ---------
-#' Import the Lengths file from 'tallas por up' report
+#' Import SIRENO lengths report from at-market sampling in the ICES project.
 #'
-#' This function import the lengths files obtained from 'muestreos tallas por up'
-#' reports in SIRENO.
+#' This function import the catches files obtained from 'muestreos tallas por up'
+#' reports in SIRENO of ICES project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-#' are created in the returned dataframe.
+#' To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and
+#' 'TRIMESTRE' are created in the returned data frame.
 #'
-#' @param file vector with the total landings file names
+#' @param file vector with the file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
+#' @return Return data frame.
 #' @aliases importLengths
 #' @export
 importRIMLengths <- function(file, path = getwd()){

@@ -1,12 +1,13 @@
-#' Import the Litter file from OAB report
+#' Import SIRENO litter report from on-board sampling in the ICES project.
 #'
-#' This function import the Litter file obtained from SIRENO OAB reports.
+#' This function import the litter file obtained from SIRENO OAB reports of ICES
+#' project.
 #'
 #' Multiple files can be imported at the same time.
 #'
-#' @param file vector with the Litter filenames
+#' @param file vector with the file names.
 #' @param path path of the files. The working directory by default.
-#' @return Return dataframe.
+#' @return Return data frame.
 #' @export
 importOABLitter <- function(file, path = getwd()){
 

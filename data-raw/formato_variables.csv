@@ -13,7 +13,6 @@ COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;11;T;55;T;54;T;8;T;
 ORIGEN;^.+$;factor;;factor;24;T;24;24;T;12;T;12;T;56;T;55;T;9;T;9;T;12;T;12;T;;;;;
 ESTRATO_RIM;^.+$;factor;;factor;9;T;9;9;T;13;T;13;T;10;T;10;T;10;T;10;T;13;T;13;T;;;;;
 DES_ESTRATO_RIM;^.+$;factor;;factor;;;;;;14;T;14;T;11;T;11;T;11;T;11;T;14;T;14;T;;;;;
-METIER_IEO;^.+$;factor;;factor;10;;10;10;;15;F;;;12;T;;;12;F;;;15;F;;;;;;;In OAB, this field is only mandatory in Hauls table, because the data of the rest of the tables come from this.
 COD_ARTE;^\d{3}$;factor;;factor;28;T;28;28;T;;;;;13;T;12;T;13;T;12;T;16;T;15;T;;;;;
 ARTE;^.+$;factor;;factor;29;T;29;29;T;;;;;14;T;13;T;14;T;13;T;17;T;16;T;;;;;
 TAMANO_MALLA;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;15;F;14;F;15;F;14;F;18;F;17;F;;;;;
@@ -36,6 +35,8 @@ EJEM_MUESTREADOS;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;;;;;;;;;;;34;F;33;F;;;;;
 EJEM_PONDERADOS;^\d+(\.\d+)?$|^\d+(\,\d+)?$;numeric;;numeric;;;51;52;;;;;;;;;;;;;;35;F;34;F;;;;;
 P_MUE_RET;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;;;;;33;T;32;T;36;F;35;F;;;;;
 ERROR;^.+$;character;;character;;;;;;;;;;;;;;;;;;;;36;F;;;;;
+METIER_IEO;^.+$;factor;;factor;10;;10;10;;15;F;;;12;T;;;12;F;;;15;F;;;;;;;In OAB, this field is only mandatory in Hauls table, because the data of the rest of the tables come from this.
+SOP;^\d+(\.\d+)?$;numeric;;numeric;;;52;53;;;;;;;;;;;;;;37;F;37;F;;;;;
 P_CAP;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;;;;;27;T;26;T;;;;;;;;;
 P_RET;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;;;;;28;T;27;T;;;;;;;;;
 P_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;;;;;29;T;28;T;;;;;;;;;
@@ -150,7 +151,6 @@ P_MUE_DESEM;^\d+(\.\d+)?$;numeric;;numeric;;;46;46;T;;;;;;;;;;;;;;;;;;;;;
 P_MUE_VIVO;^\d+(\.\d+)?$;numeric;;numeric;;;47;47;T;;;;;;;;;;;;;;;;;;;;;
 INICIAL;^\d+(\.\d)?$;numeric;;numeric;;;48;48;T;;;;;;;;;;;;;;;;;;;;;
 FINAL;^\d+(\.\d)?$;numeric;;numeric;;;49;49;T;;;;;;;;;;;;;;;;;;;;;
-SOP;^\d+(\.\d+)?$;numeric;;numeric;;;52;53;;;;;;;;;;;;;;;;;;;;;;
 VALIDADO;^S|N$;factor;;logical;;;53;54;T;;;;;;;;;;;;;;;;;;;;;
 BASURA;^.+$;factor;;factor;;;;;;;;;;;;;;;;;;;;;;4;F;;;
 CANTIDAD;^\d+$;integer;;integer;;;;;;;;;;;;;;;;;;;;;;5;F;;;

@@ -21,7 +21,8 @@ importFileFromSireno <- function (x, file_type, path){
     if ( file_type == "RIM_LENGTHS" ||
          file_type =="OAB_CATCHES" ||
          file_type =="OAB_CATCHES_CECAF" ||
-         file_type =="OAB_LENGTHS") {
+         file_type =="OAB_LENGTHS" ||
+         file_type =="OAB_LENGTHS_CECAF") {
 
       file_read <- read.table(fullpath, sep = ";",
                               header = TRUE,

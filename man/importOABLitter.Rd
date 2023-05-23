@@ -2,20 +2,21 @@
 % Please edit documentation in R/importOABLitter.R
 \name{importOABLitter}
 \alias{importOABLitter}
-\title{Import the Litter file from OAB report}
+\title{Import SIRENO litter report from on-board sampling in the ICES project.}
 \usage{
 importOABLitter(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the Litter filenames}
+\item{file}{vector with the file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the Litter file obtained from SIRENO OAB reports.
+This function import the litter file obtained from SIRENO OAB reports of ICES
+project.
 }
 \details{
 Multiple files can be imported at the same time.

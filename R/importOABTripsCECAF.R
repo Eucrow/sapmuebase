@@ -1,7 +1,7 @@
-#' Import SIRENO trips report from on-board sampling in the ICES project.
+#' Import SIRENO trips report from on-board sampling in the CECAF project.
 #'
 #' This function import the trips file obtained from OAB reports in SIRENO of
-#' ICES project.
+#' CECAF project.
 #'
 #' Multiple files can be imported at the same time.
 #'
@@ -9,9 +9,9 @@
 #' @param path path of the files. The working directory by default.
 #' @return Return data frame.
 #' @export
-importOABTrips <- function(file, path = getwd()){
+importOABTripsCECAF <- function(file, path = getwd()){
 
-  file_type <- "OAB_TRIPS"
+  file_type <- "OAB_TRIPS_CECAF"
 
   # fix files (view fixImportFiles help) and save the fixed temporal files in
   # a temporal directory with the original name of the file

@@ -2,26 +2,26 @@
 % Please edit documentation in R/importRIMCatches.R
 \name{importRIMCatches}
 \alias{importRIMCatches}
-\alias{importCatches}
-\title{Import the 'Catches' file from 'tallas por up' report}
+\alias{importCatches.}
+\title{Import SIRENO catches report from at-market sampling in the ICES project.}
 \usage{
 importRIMCatches(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the catches report filenames}
+\item{file}{vector with the catches report file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the 'Catches' files obtained from 'muestreos tallas por up'
-reports in SIRENO.
+This function import the catches files obtained from 'muestreos tallas por up'
+reports in SIRENO of ICES project.
 }
 \details{
 Multiple files can be imported at the same time.
 
-To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-are created in the returned dataframe.
+To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and
+'TRIMESTRE' are created in the returned dataframe.
 }

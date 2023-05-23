@@ -60,8 +60,12 @@ fixReportSirenoFiles <- function(filename, filetype, path = getwd(), temporal = 
 
   path_complete <- paste(path, filename, sep="/")
 
-  con <- file(path_complete, "r", encoding = "Windows-1252")
-  # con <- file(path_complete, "r")
+  if(filetype == "OAB_HAULS_CECAF"){
+    con <- file(path_complete, "r", encoding = "UTF-8")
+  } else {
+    con <- file(path_complete, "r", encoding = "Windows-1252")
+  }
+
 
   # theorical number of variables
   type_variables <- sapmuebase:::getVariableTypes(filetype, "class_variable_final")

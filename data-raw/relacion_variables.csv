@@ -55,6 +55,7 @@ VALIDADO;VALIDADO
 OBSERVACIONES;OBSERVACIONES
 METIER_IEO;METIER_IEO
 Año;YEAR
+Ano;YEAR
 T;TRIMESTRE
 Marea;COD_MAREA
 Lance;COD_LANCE
@@ -184,6 +185,7 @@ Peso.Desemb.Oblig..kg.;P_DESEM_OBL
 Peso.Desemb.Oblig..Kg.;P_DESEM_OBL
 Peso.Minimis.kg.;P_MINIMIS
 Peso.Minimis.Kg.;P_MINIMIS
+Peso.Muestra.Desemb.Oblig..Kg.;P_MUE_DESEM_OBL
 Peso.Muestra.Desemb.Oblig..kg.;P_MUE_DESEM_OBL
 Peso.Muestra.Desemb..Oblig..Kg.;P_MUE_DESEM_OBL
 Peso.Muestra.Minimis.kg.;P_MUE_MINIMIS
@@ -201,3 +203,5 @@ Hora.inicio;HORA_INI_MAREA
 Hora.fin;HORA_FIN_MAREA
 Fecha.embarque;FECHA_EMB
 Fecha.desembarque;FECHA_DESEM
+Ejemplares muestra.Descarte.;EJEM_MUESTREADOS
+Error;ERROR

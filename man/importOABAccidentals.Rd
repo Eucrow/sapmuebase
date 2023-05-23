@@ -2,20 +2,22 @@
 % Please edit documentation in R/importOABAccidentals.R
 \name{importOABAccidentals}
 \alias{importOABAccidentals}
-\title{Import the Litter file from OAB report}
+\title{Import SIRENO accidentals catches report from on-board sampling in the ICES
+project.}
 \usage{
 importOABAccidentals(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the Accidentals filenames}
+\item{file}{vector with the file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the Accidentals file obtained from SIRENO OAB reports.
+This function import the accidentals catches file obtained from SIRENO
+on-board reports.
 }
 \details{
 Multiple files can be imported at the same time.

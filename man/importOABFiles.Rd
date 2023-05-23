@@ -2,7 +2,7 @@
 % Please edit documentation in R/importOABFiles.R
 \name{importOABFiles}
 \alias{importOABFiles}
-\title{Import OAB reports from SIRENO.}
+\title{Import the SIRENO on board reports from ICES project.}
 \usage{
 importOABFiles(
   trips,
@@ -16,28 +16,28 @@ importOABFiles(
 )
 }
 \arguments{
-\item{trips}{vector with the names of the haul files}
+\item{trips}{vector with the names of the haul files.}
 
-\item{hauls}{vector with the names of the trip files}
+\item{hauls}{vector with the names of the trip files.}
 
-\item{catches}{vector with the names of the catch filenames}
+\item{catches}{vector with the names of the catch file names.}
 
-\item{lengths}{vector with the names of the length filenames}
+\item{lengths}{vector with the names of the length file names.}
 
-\item{litter}{vector with the names of the litter filenames}
+\item{litter}{vector with the names of the litter file names.}
 
-\item{accidentals}{vector the names of the accidental filenames}
+\item{accidentals}{vector the names of the accidental file names.}
 
-\item{export}{to export muestreos_up dataframe in csv file. False by default.}
+\item{export}{to export reports data frame in csv file. False by default.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return a list with 6 data frames
+Return a list with 6 data frames.
 }
 \description{
-This function import the OAB report files from SIRENO: hauls, trips, catches,
-lengths, litter and accidental files.
+This function import the on board report files of ICES project from SIRENO:
+hauls, trips, catches, lengths, litter and accidental files.
 }
 \note{
 The SIRENO catches report must be generated with the option 'by

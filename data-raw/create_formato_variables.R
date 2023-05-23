@@ -12,8 +12,7 @@ formato_variables <- read.table(file = "formato_variables.csv",
                                 as.is = T,
                                 fileEncoding = "windows-1252")
 
-# use_data() create the file in /data. The file created has extension .rda,
-# instead of .Rdata.
+# use_data() create the file in /data. The file created has extension .rda
 usethis::use_data(formato_variables, overwrite = TRUE)
 
 devtools::document()

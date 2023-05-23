@@ -2,26 +2,27 @@
 % Please edit documentation in R/importRIMCatchesInLengths.R
 \name{importRIMCatchesInLengths}
 \alias{importRIMCatchesInLengths}
-\alias{importCatchesInLengths}
-\title{Import the 'Catches in Lengths' file from 'tallas por up' report}
+\alias{importCatchesInLengths.}
+\title{Import SIRENO catches in lengths report from at-market sampling in the ICES
+project.}
 \usage{
 importRIMCatchesInLengths(file, path = getwd())
 }
 \arguments{
-\item{file}{vector with the total landings filenames}
+\item{file}{vector with file names.}
 
 \item{path}{path of the files. The working directory by default.}
 }
 \value{
-Return dataframe.
+Return data frame.
 }
 \description{
-This function import the 'Catches in Lengths' files obtained from 'muestreos tallas por up'
-reports in SIRENO.
+This function import the catches in lengths files obtained from 'muestreos
+tallas por up' reports in SIRENO of ICES project.
 }
 \details{
 Multiple files can be imported at the same time.
 
-To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and 'TRIMESTRE'
-are created in the returned dataframe.
+To allow a better use of this data in R, fields 'DIA', 'MES', 'YEAR' and
+'TRIMESTRE' are created in the returned data frame.
 }

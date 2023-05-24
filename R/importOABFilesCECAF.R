@@ -1,7 +1,7 @@
-#' Import the SIRENO on board reports from ICES project.
+#' Import the SIRENO on board reports from CECAF project.
 #'
 #' This function import the on board report files of ICES project from SIRENO:
-#' hauls, trips, catches, lengths, litter and accidental files.
+#' hauls, trips, catches and lengths files.
 #'
 #' @note The SIRENO catches report must be generated with the option 'by
 #' category'. The SIRENO hauls report must be generated with the
@@ -10,19 +10,17 @@
 #' @param hauls vector with the names of the trip files.
 #' @param catches vector with the names of the catch file names.
 #' @param lengths vector with the names of the length file names.
-#' @param litter vector with the names of the litter file names.
-#' @param accidentals vector the names of the accidental file names.
 #' @param path path of the files. The working directory by default.
 #' @param export to export reports data frame in csv file. False by default.
 #' @return Return a list with 6 data frames.
 #' @export
 
-importOABFiles <- function(trips, hauls, catches, lengths, litter,
-                           accidentals, export = FALSE, path = getwd()){
+importOABFilesCECAF <- function(trips, hauls, catches, lengths, export = FALSE,
+                                path = getwd()){
 
 
   # check vector of mareas, lances, capturas and tallas has the same number of rows
-  elements <- list(trips, hauls, catches, lengths, litter, accidentals)
+  elements <- list(trips, hauls, catches, lengths)
 
   number_of_elements <- lapply(elements, nrow)
   if(length(unique(number_of_elements)) != 1){
@@ -32,12 +30,10 @@ importOABFiles <- function(trips, hauls, catches, lengths, litter,
   }
 
   # create a list of functions
-  df_functions <- list(   "trips" = importOABTrips,
-                          "hauls" = importOABHauls,
-                          "catches" = importOABCatches,
-                          "lengths" = importOABLengths,
-                          "litter" = importOABLitter,
-                          "accidentals" = importOABAccidentals)
+  df_functions <- list(   "trips" = importOABTripsCECAF,
+                          "hauls" = importOABHaulsCECAF,
+                          "catches" = importOABCatchesCECAF,
+                          "lengths" = importOABLengthsCECAF)
 
   # whit this apply, for every function of df_functions, execute it inside a
   # tryCatch returning the result of the function or the error thrown.

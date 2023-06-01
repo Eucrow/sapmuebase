@@ -20,7 +20,7 @@ importFileFromSireno <- function (x, file_type, path){
     # characters.
     if ( file_type == "RIM_LENGTHS" ||
          file_type == "OAB_TRIPS_CECAF" ||
-         file_type == "OAB_HAULS_CECAF" ||
+         # file_type == "OAB_HAULS_CECAF" ||
          file_type == "OAB_CATCHES" ||
          file_type == "OAB_CATCHES_CECAF" ||
          file_type == "OAB_LENGTHS" ||

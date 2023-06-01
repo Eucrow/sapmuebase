@@ -19,10 +19,12 @@ importFileFromSireno <- function (x, file_type, path){
     # the rest of files cant't be encoded in this way because return erroneous
     # characters.
     if ( file_type == "RIM_LENGTHS" ||
-         file_type =="OAB_CATCHES" ||
-         file_type =="OAB_CATCHES_CECAF" ||
-         file_type =="OAB_LENGTHS" ||
-         file_type =="OAB_LENGTHS_CECAF") {
+         file_type == "OAB_TRIPS_CECAF" ||
+         file_type == "OAB_HAULS_CECAF" ||
+         file_type == "OAB_CATCHES" ||
+         file_type == "OAB_CATCHES_CECAF" ||
+         file_type == "OAB_LENGTHS" ||
+         file_type == "OAB_LENGTHS_CECAF") {
 
       file_read <- read.table(fullpath, sep = ";",
                               header = TRUE,

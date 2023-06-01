@@ -30,23 +30,23 @@ split_line <- function(line){
 #' (when a enter character is in the observations variable of the previous row).
 #'
 #' This function check the number of variables and works as follow:
-#' - If the number of variables is the same of the theorical, there aren't any
+#' - If the number of variables is the same of the theoretical, there aren't any
 #' changes.
-#' - When there are more variables than theorical, the last variables are
+#' - When there are more variables than theoretical, the last variables are
 #' collapsed in the last one and changed the ";" to "." inside the observations
 #' variable
-#' - When there are less variable than the theorical, we asume an enter has
+#' - When there are less variable than the theoretical, we assume an enter has
 #' been saved in the observations variable of the previous row and after
 #' the enter there are more semicolons. The content of this row is added to the
 #' variable observation of the previous row and the ";" is changed to ".".
 #'
-#' @param filename Filename of the file to check.
-#' @param filetype Tipe of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
+#' @param filename File name of the file to check.
+#' @param filetype Type of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
 #' RIM_LENGTHS, OAB_TRIPS, OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
 #' OAB_ACCIDENTAL
 #' @param path Path of the file.
 #' @param temporal If is True, the file is exported in a temporal directory. This is
-#' usefull when this function is used with sapmbuenase import functions. When is
+#' useful when this function is used with sapmuebase import functions. When is
 #' false, the fixed report is exported in the path location
 #'
 #' @note Use this function carefully, if the format or the sireno reports
@@ -56,18 +56,11 @@ split_line <- function(line){
 #' @export
 fixReportSirenoFiles <- function(filename, filetype, path = getwd(), temporal = F) {
 
-  # require(sapmuebase)
-
   path_complete <- paste(path, filename, sep="/")
 
-  if(filetype == "OAB_HAULS_CECAF"){
-    con <- file(path_complete, "r", encoding = "UTF-8")
-  } else {
-    con <- file(path_complete, "r", encoding = "Windows-1252")
-  }
+  con <- file(path_complete, "r", encoding = "Windows-1252")
 
-
-  # theorical number of variables
+  # theoretical number of variables
   type_variables <- sapmuebase:::getVariableTypes(filetype, "class_variable_final")
   novt <- nrow(type_variables)
 

@@ -4,7 +4,7 @@
 \alias{split_line}
 \title{Split a line read by the function fix_import_files.
 Used in fix_import_files() function.
-If the last character of the line is a separator carchacter, the last
+If the last character of the line is a separator character, the last
 column is lost. So, if the last character is a ";", add a white space to
 the last line to avoid it.}
 \usage{
@@ -13,7 +13,7 @@ split_line(line)
 \description{
 Split a line read by the function fix_import_files.
 Used in fix_import_files() function.
-If the last character of the line is a separator carchacter, the last
+If the last character of the line is a separator character, the last
 column is lost. So, if the last character is a ";", add a white space to
 the last line to avoid it.
 }

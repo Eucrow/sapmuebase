@@ -1,6 +1,6 @@
 #' Split a line read by the function fix_import_files.
 #' Used in fix_import_files() function.
-#' If the last character of the line is a separator carchacter, the last
+#' If the last character of the line is a separator character, the last
 #' column is lost. So, if the last character is a ";", add a white space to
 #' the last line to avoid it.
 split_line <- function(line){
@@ -21,12 +21,12 @@ split_line <- function(line){
 }
 
 
-#' Fix erroneus format of the reports from SIRENO in the 'observations' variable.
+#' Fix erroneous format of the reports from SIRENO in the 'observations' variable.
 #' Sometimes in SIRENO, in 'observations' variable, a semicolon or a enter is
 #' saved. When SIRENO generate the report files, the 'observations' variable is
-#' exported as it is, with the semicolon and enter characteres. This means that
-#' some lines of the file have more than the theorical number of variables (when
-#' observations variable have a semicolon inside) or less than the theorical
+#' exported as it is, with the semicolon and enter characters. This means that
+#' some lines of the file have more than the theoretical number of variables (when
+#' observations variable have a semicolon inside) or less than the theoretical
 #' (when a enter character is in the observations variable of the previous row).
 #'
 #' This function check the number of variables and works as follow:

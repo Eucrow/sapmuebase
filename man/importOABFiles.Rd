@@ -26,7 +26,7 @@ importOABFiles(
 
 \item{litter}{vector with the names of the litter file names.}
 
-\item{accidentals}{vector the names of the accidental file names.}
+\item{accidentals}{vector with the names of the accidental file names.}
 
 \item{export}{to export reports data frame in csv file. False by default.}
 

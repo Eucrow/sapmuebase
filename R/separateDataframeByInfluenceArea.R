@@ -5,30 +5,28 @@
 #'
 #'
 #'
-#' @param df is the dataframe to split. It's imperative that contain a variable
+#' @param df is the data frame to split. It's imperative that contain a variable
 #' with a sireno port code or with a locode port code.
 #' @param cod_port_column is the variable with the port code. It can be a SIRENO
 #' port code (4 digits) or a LOCODE (5 uppercase character) code.
-#' @return a list of dataframes for each influence area in the dataframe to
+#' @return a list of data frames for each influence area in the dataframe to
 #' separate.
 #' @import dplyr
 #' @export
-#'
-#'
 separateDataframeByInfluenceArea <- function (df, cod_port_column){
 
-  #check if package dplyr is instaled:
+  #check if package dplyr is installed:
   if (!requireNamespace("dplyr", quietly = TRUE)) {
     stop("dplyr package needed for this function to work. Please install it.",
          call = FALSE)
   }
 
-  #check the correction of the dataframe
+  #check the correction of the data frame
   if (!is.data.frame(df)){
     stop ("This doesn't like a dataframe")
   }
 
-  #check if the variable exists in datafram
+  #check if the variable exists in data frame
   if(!cod_port_column %in% colnames(df)){
     stop( paste0(deparse(substitute(cod_port_column))), " does not exists.")
   }

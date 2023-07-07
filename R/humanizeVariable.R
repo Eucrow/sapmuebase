@@ -7,17 +7,17 @@
 #' COD_ARTE, COD_ORIGEN, COD_TIPO_MUE, COD_ESP_MUE, COD_ESP_CAT.
 #' Before the humanization, checks the correct format of the variable.
 #'
-#' @param df df wich contains the variable to humanize
+#' @param df df which contains the variable to humanize
 #' @param variable one of this values: COD_PUERTO, COD_BARCO,
 #' COD_ARTE, COD_ORIGEN, COD_TIPO_MUE, COD_ESP_MUE, COD_ESP_CAT
-#' @return Return the df dataframe with the new variable added.
+#' @return Return the df data frame with the new variable added.
 #' @export
 
 # TO DO: Add CODSGPM. In maestro_flota_sireno dataset, one CODSGPM can be in various
 # rows.
 humanizeVariable <- function(df, variable){
 
-  #check if variable exists in the dataframe
+  #check if variable exists in the data frame
   if(variable %in% colnames(df)){
 
     variable_data <- variables_to_humanize[variables_to_humanize[["ORIGINAL_VAR"]] %in% variable,]

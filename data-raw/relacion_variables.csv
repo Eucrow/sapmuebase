@@ -205,3 +205,8 @@ Fecha.embarque;FECHA_EMB
 Fecha.desembarque;FECHA_DESEM
 Ejemplares muestra.Descarte.;EJEM_MUESTREADOS
 Error;ERROR
+Cod.Rechazo;COD_RECHAZO
+Rechazo;RECHAZO
+Fecha.rechazo;FECHA_RECHAZO
+Cod.Puerto.Salida;COD_PUERTO_SALIDA
+Puerto.Salida;PUERTO_SALIDA

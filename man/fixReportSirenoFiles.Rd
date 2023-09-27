@@ -13,26 +13,26 @@ observations variable have a semicolon inside) or less than the theorical
 fixReportSirenoFiles(filename, filetype, path = getwd(), temporal = F)
 }
 \arguments{
-\item{filename}{Filename of the file to check.}
+\item{filename}{File name of the file to check.}
 
-\item{filetype}{Tipe of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
+\item{filetype}{Type of file: RIM_CATCHES, RIM_CATCHES_IN_LENGTHS,
 RIM_LENGTHS, OAB_TRIPS, OAB_HAULS, OAB_CATCHES, OAB_LENGTHS, OAB_LITTER,
 OAB_ACCIDENTAL}
 
 \item{path}{Path of the file.}
 
 \item{temporal}{If is True, the file is exported in a temporal directory. This is
-usefull when this function is used with sapmbuenase import functions. When is
+useful when this function is used with sapmuebase import functions. When is
 false, the fixed report is exported in the path location}
 }
 \description{
 This function check the number of variables and works as follow:
-- If the number of variables is the same of the theorical, there aren't any
+- If the number of variables is the same of the theoretical, there aren't any
 changes.
-- When there are more variables than theorical, the last variables are
+- When there are more variables than theoretical, the last variables are
 collapsed in the last one and changed the ";" to "." inside the observations
 variable
-- When there are less variable than the theorical, we asume an enter has
+- When there are less variable than the theoretical, we assume an enter has
 been saved in the observations variable of the previous row and after
 the enter there are more semicolons. The content of this row is added to the
 variable observation of the previous row and the ";" is changed to ".".

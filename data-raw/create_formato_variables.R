@@ -19,3 +19,4 @@ devtools::document()
 
 setwd(original_wd)
 rm(original_wd, formato_variables)
+

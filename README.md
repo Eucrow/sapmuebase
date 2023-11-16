@@ -152,11 +152,10 @@ Use `?nameofthedataset` to details.
 -   especies
 -   especies_mezcla: mixed species
 -   especies_no_mezcla: non mixed species
--   estrato*rim: \_estrato rim*
--   estrato*rim_arte: relation between \_estrato rim* and gear (previously called "estratorim_arte")
--   estrato*rim_origen: relation between \_estrato rim* and origin (previously called "estratorim_origen")
+-   estrato rim: estrato rim
+-   estrato rim_arte: relation between estrato rim and gear
+-   estrato rrim_origen: relation between estrato rim and origin
 -   categorias: categories species in SIRENO
--   maestro_flota_sireno
 -   origen: sampled origin
 -   procedencia: sampled source
 -   puerto: ports

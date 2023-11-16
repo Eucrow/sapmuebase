@@ -1,5 +1,7 @@
 # sapmuebase
 
+v. 3.1.1
+
 sapmuebase is a package with functions useful in the SAP MUE team. Most of them
 are related to the import of reports from IEO's SIRENO database in R, with a
 common format.
@@ -152,11 +154,10 @@ Use `?nameofthedataset` to details.
 -   especies
 -   especies_mezcla: mixed species
 -   especies_no_mezcla: non mixed species
--   estrato*rim: \_estrato rim*
--   estrato*rim_arte: relation between \_estrato rim* and gear (previously called "estratorim_arte")
--   estrato*rim_origen: relation between \_estrato rim* and origin (previously called "estratorim_origen")
+-   *estrato\_rim*: \_*estrato rim*
+-   *estrato\_rim_arte*: relation between \_*estrato rim* and gear
+-   *estrato\_rim_origen*: relation between \_*estrato rim* and origin
 -   categorias: categories species in SIRENO
--   maestro_flota_sireno
 -   origen: sampled origin
 -   procedencia: sampled source
 -   puerto: ports

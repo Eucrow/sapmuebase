@@ -1,6 +1,6 @@
 Package: sapmuebase
 Title: Base utils to use in SAP MUE
-Version: 3.2.1
+Version: 3.1.1
 Authors@R: person("Marco A.", "Ámez", email = "marco.a.amez@gmail.com", role = c("aut", "cre"))
 Description: Base functions utils in SAP MUE.
 Depends:
@@ -13,4 +13,4 @@ Imports: dplyr,
     plyr,
     openxlsx,
     jsonlite,
-    httr2
+    httr

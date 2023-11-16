@@ -10,7 +10,7 @@ checkStructureFileNameOfFields <- function (df, file_type){
       correct_colnames <- formato_variables %>%
         select(one_of(c("name_variable", file_type))) %>%
         na.omit() %>%
-        arrange_(file_type)
+        arrange(., pick(file_type))
 
       if (!identical(df_colnames[["name_variable"]], correct_colnames[["name_variable"]])) {
         err_names <- df_colnames[is.na(df_colnames$name_variable), "original_name_variable"]

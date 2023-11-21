@@ -154,9 +154,9 @@ Use `?nameofthedataset` to details.
 -   especies
 -   especies_mezcla: mixed species
 -   especies_no_mezcla: non mixed species
--   *estrato\_rim*: \_*estrato rim*
--   *estrato\_rim_arte*: relation between \_*estrato rim* and gear
--   *estrato\_rim_origen*: relation between \_*estrato rim* and origin
+-   estrato rim: estrato rim
+-   estrato rim_arte: relation between estrato rim and gear
+-   estrato rrim_origen: relation between estrato rim and origin
 -   categorias: categories species in SIRENO
 -   origen: sampled origin
 -   procedencia: sampled source

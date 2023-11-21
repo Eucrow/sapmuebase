@@ -2,12 +2,12 @@
 % Please edit documentation in R/fixReportSirenoFiles.R
 \name{fixReportSirenoFiles}
 \alias{fixReportSirenoFiles}
-\title{Fix erroneus format of the reports from SIRENO in the 'observations' variable.
+\title{Fix erroneous format of the reports from SIRENO in the 'observations' variable.
 Sometimes in SIRENO, in 'observations' variable, a semicolon or a enter is
 saved. When SIRENO generate the report files, the 'observations' variable is
-exported as it is, with the semicolon and enter characteres. This means that
-some lines of the file have more than the theorical number of variables (when
-observations variable have a semicolon inside) or less than the theorical
+exported as it is, with the semicolon and enter characters. This means that
+some lines of the file have more than the theoretical number of variables (when
+observations variable have a semicolon inside) or less than the theoretical
 (when a enter character is in the observations variable of the previous row).}
 \usage{
 fixReportSirenoFiles(filename, filetype, path = getwd(), temporal = F)

@@ -7,14 +7,14 @@
 separateDataframeByInfluenceArea(df, cod_port_column)
 }
 \arguments{
-\item{df}{is the dataframe to split. It's imperative that contain a variable
+\item{df}{is the data frame to split. It's imperative that contain a variable
 with a sireno port code or with a locode port code.}
 
 \item{cod_port_column}{is the variable with the port code. It can be a SIRENO
 port code (4 digits) or a LOCODE (5 uppercase character) code.}
 }
 \value{
-a list of dataframes for each influence area in the dataframe to
+a list of data frames for each influence area in the dataframe to
 separate.
 }
 \description{

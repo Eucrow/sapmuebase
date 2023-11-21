@@ -14,7 +14,7 @@ spBelongsToTaxon(species, taxon_to_match)
 \value{
 TRUE if the species belong to taxon. False if doesn't. In case any species
 doesn't exists in WORMS a warning is thrown and the text "this species
-doesn't match in WORMS" is returned. In case multiple matchs, a warning is
+doesn't match in WORMS" is returned. In case multiple matches, a warning is
 thrown and the text "multiple match in WORMS" is returned.
 }
 \description{
@@ -23,7 +23,7 @@ Check in WORMS if one species belongs to a taxon.
 \details{
 Uses WORMS api to identify the species taxon.
 
-If the species contains the abbreviation spp, the " spp" is removed in
+If the species is a generic spp, the " spp" is removed in
 order to find a match in WORMS.
 
 Require jsonlite library.

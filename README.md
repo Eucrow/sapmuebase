@@ -1,5 +1,7 @@
 # sapmuebase
 
+v. 3.1.1
+
 sapmuebase is a package with functions useful in the SAP MUE team. Most of them
 are related to the import of reports from IEO's SIRENO database in R, with a
 common format.

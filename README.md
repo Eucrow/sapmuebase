@@ -1,6 +1,6 @@
 # sapmuebase
 
-v. 3.1.1
+v. 3.1.2
 
 sapmuebase is a package with functions useful in the SAP MUE team. Most of them
 are related to the import of reports from IEO's SIRENO database in R, with a
@@ -154,9 +154,9 @@ Use `?nameofthedataset` to details.
 -   especies
 -   especies_mezcla: mixed species
 -   especies_no_mezcla: non mixed species
--   estrato rim: estrato rim
--   estrato rim_arte: relation between estrato rim and gear
--   estrato rrim_origen: relation between estrato rim and origin
+-   estrato rim: rim stratum
+-   estrato rim_arte: relation between rim stratum and gear
+-   estrato rim_origen: relation between rim stratum and origin
 -   categorias: categories species in SIRENO
 -   origen: sampled origin
 -   procedencia: sampled source
@@ -167,7 +167,8 @@ Use `?nameofthedataset` to details.
 -   variables_to_humanize: used in humanize() and humanizeVariable() functions
 -   rango_tallas_historico_caladero: dataset with minimun and maximun historical
     lengths by species and fishign ground.
--   metier_caladero_dcf: relation between metier, caladero_dcf, area and estrato_rim
+-   metier_caladero_dcf: relation between metier, caladero_dcf, rim stratum and gear
+-   metier_coherence: relation between metier, caladero_dcf, rim_stratum, origin and gear
 -   p99_capturas_historico: list of species and its 99 percentile from 2014 to 2018 catches
 -   caladero_origen: list of fishing ground with its origin used in SAP MUE team.
 -   prescripciones_rim_mt2_2021_coherencia: coherence between the variables of

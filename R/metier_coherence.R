@@ -1,4 +1,4 @@
-#' Relation between METIER_DCF, CALADERO_DCF, ORIGEN and ARTE
+#' Relation between METIER_DCF, CALADERO_DCF, ESTRATO_RIM, ORIGEN and ARTE
 #'
 #' A data set containing the relation between METIER_DCF, CALADERO_DCF, ORIGEN
 #' and ARTE.

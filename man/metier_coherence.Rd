@@ -3,7 +3,7 @@
 \docType{data}
 \name{metier_coherence}
 \alias{metier_coherence}
-\title{Relation between METIER_DCF, CALADERO_DCF, ORIGEN and ARTE}
+\title{Relation between METIER_DCF, CALADERO_DCF, ESTRATO_RIM, ORIGEN and ARTE}
 \format{
 A data frame with 7 columns:
 \describe{

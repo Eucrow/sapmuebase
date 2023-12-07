@@ -8,8 +8,6 @@
 #'   \item{CALADERO_DCF}{}
 #'   \item{ESTRATO_RIM}{}
 #'   \item{COD_ORIGEN}{}
-#'   \item{RIM}{TRUE if is used in RIM samples}
-#'   \item{OAB}{TRUE if is used in OAB samples}
 #'   ...
 #' }
 "metier_caladero_dcf"

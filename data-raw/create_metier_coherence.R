@@ -17,8 +17,7 @@ setwd("data-raw")
 
 metier_coherence <- read.csv("metier_coherence.csv",
                                 header = T,
-                                # colClasses = c("factor", "factor", "factor",
-                                #                "factor"),
+                                colClasses ="factor",
                                 sep = ";", fileEncoding = "UTF-8")
 
 usethis::use_data(metier_coherence, overwrite = TRUE)

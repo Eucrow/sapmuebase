@@ -1,6 +1,6 @@
 # sapmuebase
 
-v. 3.1.7
+v. 3.2.1
 
 sapmuebase is a package with functions useful in the SAP MUE team. Most of them
 are related to the import of reports from IEO's SIRENO database in R, with a
@@ -151,21 +151,22 @@ Use `?nameofthedataset` to details.
 
 -   areas_influecia: influence areas in which are divided the sample zone.
 -   arte: gears
--   especies
--   especies_mezcla: mixed species
--   especies_no_mezcla: non mixed species
+-   especies: species dataset with different codes.
+-   especies_mezcla: mixed species.
+-   especies_prioritarias: priority of species in sampling.
+-   especies_no_mezcla: non mixed species.
 -   especies_prioritarias: priority species in sampling.
--   estrato rim: rim stratum
--   estrato rim_arte: relation between rim stratum and gear
--   estrato rim_origen: relation between rim stratum and origin
--   categorias: categories species in SIRENO
--   origen: sampled origin
--   procedencia: sampled source
--   puerto: ports
--   tipo_muestreo: type of sample (previously called "tipo_mue")
--   formato_variables
--   relacion_volcado
--   variables_to_humanize: used in humanize() and humanizeVariable() functions
+-   estrato rim: rim stratum.
+-   estrato rim_arte: relation between rim stratum and gear.
+-   estrato rim_origen: relation between rim stratum and origin.
+-   categorias: categories species in SIRENO.
+-   origen: sampled origin.
+-   procedencia: sampled source.
+-   puerto: ports.
+-   tipo_muestreo: type of sample (previously called "tipo_mue").
+-   formato_variables.
+-   relacion_volcado.
+-   variables_to_humanize: used in humanize() and humanizeVariable() functions.
 -   rango_tallas_historico_caladero: dataset with minimun and maximun historical
     lengths by species and fishign ground.
 -   metier_caladero_dcf: relation between metier, caladero_dcf, rim stratum and gear

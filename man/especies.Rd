@@ -19,6 +19,6 @@ A data frame with 4 columns:
 especies
 }
 \description{
-A dataset with the species in project AREA ICES.
+A data set with the species in project AREA ICES.
 }
 \keyword{datasets}

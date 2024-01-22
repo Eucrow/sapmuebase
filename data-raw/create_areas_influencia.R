@@ -16,3 +16,4 @@ devtools::document()
 
 setwd(original_wd)
 rm(original_wd, areas_influencia)
+

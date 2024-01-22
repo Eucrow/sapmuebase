@@ -1,0 +1,108 @@
+PRIORIDAD;ESP_MUE;COD_ESP_MUE;A3_ESP_MUE;ESP_CAT;COD_ESP_CAT;A3_ESP_CAT;ORIGEN
+G3;Alloteuthis media;30162;OUM;Alloteuthis media;30162;OUM;
+G3;Alloteuthis subulata;30163;OUL;Alloteuthis subulata;30163;OUL;
+G3;Aphanopus carbo;10635;BSF;Aphanopus carbo;10635;BSF;
+G2;Argentina silus;10172;ARU;Argentina silus;10172;ARU;
+G2;Argentina sphyraena;10173;ARY;Argentina sphyraena;10173;ARY;
+G2;Triglidae;10726;GUX;Aspitrigla cuculus;11173;;
+G2;Beryx spp;10313;ALF;Beryx decadactylus;10314;BXD;
+G2;Beryx spp;10313;ALF;Beryx splendens;10315;BYS;
+G3;Boops boops;10522;BOG;Boops boops;10522;BOG;
+G2;Brosme brosme;10253;USK;Brosme brosme;10253;USK;6,7
+G3;Capros aper;10323;BOC;Capros aper;10323;BOC;6,7,8
+G3;Cepola macrophthalma;10826;CBC;Cepola macrophthalma;10826;CBC;8c,9a
+G3;Triglidae;10726;GUX;Chelidonichthys lastoviza;10725;CTZ;8,9a
+G3;Triglidae;10726;GUX;Chelidonichthys lucerna;10731;GUU;
+G3;Triglidae;10726;GUX;Chelidonichthys obscurus;10739;GUM;8,9a
+G3;Citharus linguatula;10804;CIL;Citharus linguatula;10804;CIL;9a
+G2;Conger conger;10220;COE;Conger conger;10220;COE;
+G3;Coryphaenoides rupestris;10305;RNG;Coryphaenoides rupestris;10305;RNG;
+G3;Dentex spp;10498;DEX;Dentex dentex;10502;DEC;
+G2;Dicentrarchus labrax;10398;BSS;Dicentrarchus labrax;10398;BSS;
+G2;Dicologlossa cuneata;10783;CET;Dicologlossa cuneata;10783;CET;8c,9
+G3;Diplodus spp;10492;SRG;Diplodus cervinus;10496;SBZ;
+G3;Diplodus spp;10492;SRG;Diplodus puntazzo;10497;SHR;
+G3;Diplodus spp;10492;SRG;Diplodus sargus;10494;SWA;
+G3;Diplodus spp;10492;SRG;Diplodus vulgaris;10495;CTB;
+G2;Dipturus batis;10087;DRJ;Dipturus batis;10087;DRJ;
+G2;Dipturus intermedius;;;Dipturus intermedius;;;
+G3;Eledone spp;30191;OCM;Eledone cirrhosa;30189;EOI;
+G3;Eledone spp;30191;OCM;Eledone moschata;30190;EDT;9aS
+G1;Engraulis encrasicolus;10156;ANE;Engraulis encrasicolus;10156;ANE;8,9
+G2;Triglidae;10726;GUX;Eutrigla gurnardus;10737;GUG;
+G2;Gadus morhua;10255;COD;Gadus morhua;10255;COD;6a
+G2;Galeorhinus galeus;10047;GAG;Galeorhinus galeus;10047;GAG;9aS
+G2;Galeus melastomus;10019;SHO;Galeus melastomus;10019;SHO;
+G2;Glyptocephalus cynoglossus;10764;WIT;Glyptocephalus cynoglossus;10764;WIT;6,7,8abd
+G2;Helicolenus dactylopterus;10723;BRF;Helicolenus dactylopterus;10723;BRF;
+G3;Hoplostethus atlanticus;10317;ORY;Hoplostethus atlanticus;10317;ORY;
+G3;Ommastrephidae;30171;OMZ;Illex coindetii;30177;SQM;
+G2;Lepidopus caudatus;10634;SFS;Lepidopus caudatus;10634;SFS;9a
+G1;Lepidorhombus spp;10798;LEZ;Lepidorhombus boscii;10800;LDB;
+G1;Lepidorhombus spp;10798;LEZ;Lepidorhombus whiffiagonis;10799;MEG;
+G2;Leucoraja circularis;10097;RJI;Leucoraja circularis;10097;RJI;
+G2;Leucoraja naevus;10092;RJN;Leucoraja naevus;10092;RJN;
+G3;Lithognathus mormyrus;10526;SSB;Lithognathus mormyrus;10526;SSB;
+G3;Loligo spp;30166;SQC;Loligo forbesii;30169;SQF;
+G2;Loligo spp;30166;SQC;Loligo vulgaris;30167;SQR;
+G1;Lophius spp;10821;MNZ;Lophius budegassa;10823;ANK;
+G1;Lophius spp;10821;MNZ;Lophius piscatorious;10822;;
+G3;Macrourus berglax;;;Macrourus berglax;;;
+G2;Melanogrammus aeglefinus;10265;HAD;Melanogrammus aeglefinus;10265;HAD;
+G2;Merlangius merlangus;10279;WHG;Merlangius merlangus;10279;WHG;7
+G1;Merluccius merluccius;10283;HKE;Merluccius merluccius;10283;HKE;
+G3;Microchirus spp;10788;THS;Microchirus azevia;13390;MIA;9a
+G2;Microchirus spp;10788;THS;Microchirus variegatus;10792;MKG;
+G1;Micromesistius poutassou;10277;WHB;Micromesistius poutassou;10277;WHB;
+G2;Microstomus kitt;10768;LEM;Microstomus kitt;10768;LEM;
+G2;Molva dypterygia;10259;BLI;Molva dypterygia;10259;BLI;
+G3;Molva macrophthalma;10260;SLI;Molva macrophthalma;10260;SLI;7,8,9aCN
+G2;Molva molva;10258;LIN;Molva molva;10258;LIN;
+G3;Mullus spp;10540;MUX;Mullus barbatus;10542;MUT;9aS
+G2;Mullus spp;10540;MUX;Mullus surmuletus;10541;MUR;
+G1;Nephrops norvegicus;20194;NEP;Nephrops norvegicus;20194;NEP;
+G3;Oblada melanura;10508;SBS;Oblada melanura;10508;SBS;
+G2;Octopus vulgaris;30188;OCC;Octopus vulgaris;30188;OCC;
+G3;Pagellus acarne;10489;SBA;Pagellus acarne;10489;SBA;
+G2;Pagellus bogaraveo;10487;SBR;Pagellus bogaraveo;10487;SBR;
+G3;Pagellus erythrinus;10488;PAC;Pagellus erythrinus;10488;PAC;
+G3;Pagrus pagrus;10512;RPG;Pagrus pagrus;10512;RPG;
+G2;Parapenaeus longirostris;20066;DPS;Parapenaeus longirostris;20066;DPS;9a
+G3;Penaeus kerathurus;20059;TGS;Penaeus kerathurus;20059;TGS;9aS
+G2;Phycis blennoides;10262;GFB;Phycis blennoides;10262;GFB;
+G3;Phycis phycis;10263;FOR;Phycis phycis;10263;FOR;
+G3;Pleuronectes platessa;10762;PLE;Pleuronectes platessa;10762;PLE;7
+G2;Pollachius pollachius;10270;POL;Pollachius pollachius;10270;POL;
+G2;Pollachius virens;10269;POK;Pollachius virens;10269;POK;
+G3;Raja brachyura;10094;RJH;Raja brachyura;10094;RJH;
+G2;Raja clavata;10090;RJC;Raja clavata;10090;RJC;
+G2;Raja montagui;10091;RJM;Raja montagui;10091;RJM;
+G2;Raja undulata;10095;RJU;Raja undulata;10095;RJU;
+G6;Resto de especies de moluscos y crustáceos;;;Resto de especies de moluscos y crustáceos;;;
+G5;Resto de especies de peces;;;Resto de especies de peces;;;
+G4;Resto de tiburones/rayas;;;Resto de tiburones/rayas;;;
+G3;Rossia macrosoma;30143;ROA;Rossia macrosoma;30143;ROA;
+G3;Sarda sarda;10639;BON;Sarda sarda;10639;BON;8c,9a
+G1;Sardina pilchardus;10152;PIL;Sardina pilchardus;10152;PIL;
+G3;Sarpa salpa;10532;SLM;Sarpa salpa;10532;SLM;
+G2;Scomber colias;10641;VMA;Scomber colias;10641;VMA;8,9
+G1;Scomber scombrus;10642;MAC;Scomber scombrus;10642;MAC;
+G3;Scophthalmus maximus;10802;TUR;Scophthalmus maximus;10802;TUR;
+G3;Scophthalmus rhombus;10801;BLL;Scophthalmus rhombus;10801;BLL;
+G2;Scyliorhinus canicula;10022;SYC;Scyliorhinus canicula;10022;SYC;
+G3;Sepia spp;30156;IAX;Sepia elegans;30160;EJE;8,9a
+G2;Sepia spp;30156;IAX;Sepia officinalis;30159;CTC;
+G3;Sepia spp;30156;IAX;Sepia orbignyana;30161;;8,9a
+G2;Solea solea;11168;SOL;Solea solea;11168;SOL;8,9
+G3;Sparus aurata;10519;SBG;Sparus aurata;10519;SBG;
+G3;Spondyliosoma cantharus;10507;BRB;Spondyliosoma cantharus;10507;BRB;
+G3;Squilla mantis;20013;MTS;Squilla mantis;20013;MTS;9aS
+G3;Ommastrephidae;30171;OMZ;Todarodes sagittatus;30181;SQE;8c,9a
+G3;Ommastrephidae;30171;OMZ;Todaropsis eblanae;30170;TDQ;8c,9a
+G1;Trachurus spp;10413;JAX;Trachurus mediterraneus;10416;HMM;8,9
+G1;Trachurus spp;10413;JAX;Trachurus picturatus;10415;JAA;8,9a
+G1;Trachurus spp;10413;JAX;Trachurus trachurus;10414;HOM;
+G2;Triglidae;10726;GUX;Trigla lyra;10729;GUN;8,9a
+G2;Trisopterus spp;10273;XOD;Trisopterus luscus;10276;BIB;
+G2;Trisopterus spp;10273;XOD;Trisopterus minutus;10275;POD;
+G2;Zeus faber;10320;JOD;Zeus faber;10320;JOD;

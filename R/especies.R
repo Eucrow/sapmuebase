@@ -1,6 +1,6 @@
 #' Species
 #'
-#' A dataset with the species in project AREA ICES.
+#' A data set with the species in project AREA ICES.
 #'
 #' @format A data frame with 4 columns:
 #' \describe{

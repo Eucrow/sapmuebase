@@ -154,6 +154,7 @@ Use `?nameofthedataset` to details.
 -   especies
 -   especies_mezcla: mixed species
 -   especies_no_mezcla: non mixed species
+-   especies_prioritarias: priority species in sampling.
 -   estrato rim: rim stratum
 -   estrato rim_arte: relation between rim stratum and gear
 -   estrato rim_origen: relation between rim stratum and origin

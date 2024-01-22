@@ -17,6 +17,6 @@ A data frame with 4 columns:
 areas_influencia
 }
 \description{
-A dataset containing the list of influece areas.
+A data set containing the list of influence areas.
 }
 \keyword{datasets}

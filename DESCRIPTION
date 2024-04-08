@@ -1,6 +1,6 @@
 Package: sapmuebase
 Title: Base utils to use in SAP MUE
-Version: 3.1.7
+Version: 3.2.2
 Authors@R: person("Marco A.", "Ámez", email = "marco.a.amez@gmail.com", role = c("aut", "cre"))
 Description: Base functions utils in SAP MUE.
 Depends:

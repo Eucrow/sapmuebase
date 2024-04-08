@@ -36,4 +36,6 @@ importOABCatches <- function(file, path = getwd()){
 
   catches <- formatVariableTypes(catches, file_type)
 
+  return(catches)
+
 }

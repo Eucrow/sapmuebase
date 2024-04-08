@@ -36,4 +36,6 @@ importOABCatchesCECAF <- function(file, path = getwd()){
 
   catches <- formatVariableTypes(catches, file_type)
 
+  report(catches)
+
 }

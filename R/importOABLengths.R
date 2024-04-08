@@ -35,4 +35,6 @@ importOABLengths <- function(file, path = getwd()){
 
   lengths <- formatVariableTypes(lengths, file_type)
 
+  return(lengths)
+
 }

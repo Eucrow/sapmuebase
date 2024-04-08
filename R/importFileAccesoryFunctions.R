@@ -122,6 +122,7 @@ getVariableTypes <- function(file_type, status_class){
 #' "OAB_CATCHES" or "OAB_LENGTHS"
 formatVariableTypes <- function(df, file_type){
 
+  df <- renameFileVariables(df, file_type)
   name_of_columns <- names(df)
 
   struct <- getVariableTypes(file_type, "class_variable_final")

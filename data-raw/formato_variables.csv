@@ -19,7 +19,7 @@ ABERTURA_VER;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;17;T;16;T;;;;;;;;;;;;;
 ABERTURA_HOR;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;18;T;17;T;;;;;;;;;;;;;
 CARAS;^\d+$;integer;;integer;;;;;;;;;;19;F;18;F;;;;;;;;;;;;;
 COD_BARCO;^\d{1,6}$;factor;^\d{6}$;factor;18;T;18;18;T;18;T;17;T;20;T;19;T;16;T;15;T;19;T;18;T;;;;;
-COD_SGPM;^.+$;factor;;factor;;;;;;;;;;21;F;;;;;;;;;;;;;;;
+COD_SGPM;^.+$;factor;;factor;19;;19;19;;;;;;21;F;;;;;;;;;;;;;;;Not all ships in sireno has SGPM code.
 BARCO;^.+$;factor;;factor;20;T;20;20;T;19;T;18;T;22;T;20;T;17;T;16;T;20;T;19;T;;;;;
 CV;^\d+(\,\d+)$;numeric;;numeric;;;;;;20;T;19;T;23;F;21;F;18;F;17;F;21;T;20;T;;;;;
 TRB;^\d+(\,\d+)$;character;;numeric;;;;;;21;T;20;T;24;F;22;F;19;F;18;F;22;T;21;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
@@ -101,7 +101,6 @@ LOCODE;^[A-Z]{5}$;factor;;factor;14;T;14;14;T;;;;;;;;;;;;;;;;;;;;;
 PUERTO;^.+$;factor;;factor;15;T;15;15;T;;;;;;;;;;;;;;;;;;;;;
 COD_TIPO_MUE;^(1|2|3|4)$;factor;;factor;16;T;16;16;T;;;;;;;;;;;;;;;;;;;;;
 TIPO_MUE;^.+$;factor;;factor;17;T;17;17;T;;;;;;;;;;;;;;;;;;;;;
-COD_SGPM;^\d{1,6}$;factor;^\d{6}$;factor;19;;19;19;;;;;;;;;;;;;;;;;;;;;;Not all ships in sireno has SGPM code.
 N_BARCOS;^\d{1}$;integer;;integer;21;T;21;21;T;;;;;;;;;;;;;;;;;;;;;
 N_RECHAZOS;^\d{1,2}$;integer;;integer;22;T;22;22;T;;;;;;;;;;;;;;;;;;;;;
 COD_DIVISION;^\d{1,2}$;factor;^\d{3}$;factor;25;;25;25;;;;;;;;;;;;;;;;;;;;;;

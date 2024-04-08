@@ -1,6 +1,6 @@
 #' Categories in SIRENO
 #'
-#' A dataset containing the categories available in SIRENO. The original data
+#' A data set containing the categories available in SIRENO. The original data
 #' is obtained from SIRENO (report by project --> categories). This report have
 #' this structure:
 #' - first 6 rows with useless information
@@ -11,7 +11,7 @@ library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-categorias <- read.csv("categorias_2023_11.csv",
+categorias <- read.csv("IEOCATPUE3MARCO_2024_03.TXT",
                      sep=";",
                      skip = 6,
                      header = TRUE,

@@ -31,4 +31,6 @@ importOABAccidentals <- function(file, path = getwd()){
 
   accidentals <- formatVariableTypes(accidentals, file_type)
 
+  return(accidentals)
+
 }

@@ -40,4 +40,6 @@ importOABLitter <- function(file, path = getwd()){
   # format variables
   litter <- formatVariableTypes(litter, file_type)
 
+  return(litter)
+
 }

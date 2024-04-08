@@ -1,26 +1,75 @@
 name_variable;regex_variable_import;class_variable_import;regex_variable_final;class_variable_final;RIM_CATCHES;RIM_CATCHES_MANDATORY;RIM_CATCHES_IN_LENGTHS;RIM_LENGTHS;RIM_LENGTHS_MANDATORY;OAB_TRIPS;OAB_TRIPS_MANDATORY;OAB_TRIPS_CECAF;OAB_TRIPS_CEFAF_MANDATORY;OAB_HAULS;OAB_HAULS_MANDATORY;OAB_HAULS_CECAF;OAB_HAULS_MANDATORY;OAB_CATCHES;OAB_CATCHES_MANDATORY;OAB_CATCHES_CECAF;OAB_CATCHES_MANDATORY;OAB_LENGTHS;OAB_LENGTHS_MANDATORY;OAB_LENGTHS_CECAF;OAB_LENGTHS_MANDATORY;OAB_LITTER;OAB_LITTER_MANDATORY;OAB_ACCIDENTALS;OAB_ACCIDENTALS_MANDATORY;COMMENTS
 YEAR;^\d{4}$;integer;;integer;;;;;;1;T;1;T;1;T;1;T;1;T;1;T;1;T;1;T;;;;;"In OAB_HAULS, this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
+TRIMESTRE;^(1|2|3|4)$;integer;;integer;;;;;;;;;;2;T;2;T;2;T;2;T;2;T;2;T;;;;;
 COD_MAREA;^.+$;factor;;factor;;;;;;2;T;2;T;3;T;3;T;3;T;3;T;4;T;4;T;1;T;1;T;
-FECHA_INI_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;3;T;;;;;;;;;;;;;;;;;
-FECHA_FIN_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;4;T;;;;;;;;;;;;;;;;;
+COD_LANCE;^\d{1,4}$;integer;;integer;;;;;;;;;;4;T;4;T;4;T;4;T;5;T;5;T;2;T;2;T;
 COD_PUERTO_BASE;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;5;T;5;T;5;T;5;T;5;T;5;T;6;T;6;T;;;;;
 PUERTO_BASE;^.+$;factor;;factor;;;;;;6;T;6;T;6;T;6;T;6;T;6;T;7;T;7;T;;;;;
-COD_PUERTO_LLEGADA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;7;T;7;T;;;;;;;;;;;;;;;;;
-PUERTO_LLEGADA;^.+$;factor;;factor;;;;;;8;T;8;T;;;;;;;;;;;;;;;;;
 COD_PUERTO_DESCARGA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;9;T;9;T;7;T;7;T;;;;;8;T;8;T;;;;;
 PUERTO_DESCARGA;^.+$;factor;;factor;;;;;;10;T;10;T;8;T;8;T;;;;;9;T;9;T;;;;;
-COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;11;T;55;T;54;T;8;T;8;T;11;T;11;T;;;;;
-ORIGEN;^.+$;factor;;factor;24;T;24;24;T;12;T;12;T;56;T;55;T;9;T;9;T;12;T;12;T;;;;;
+CUADRICULA_ICES;^('\d{2}[A-Z]\d)$|^'$;factor;;factor;;;;;;;;;;9;T;9;T;7;T;7;T;10;T;10;T;;;;;
 ESTRATO_RIM;^.+$;factor;;factor;9;T;9;9;T;13;T;13;T;10;T;10;T;10;T;10;T;13;T;13;T;;;;;
 DES_ESTRATO_RIM;^.+$;factor;;factor;;;;;;14;T;14;T;11;T;11;T;11;T;11;T;14;T;14;T;;;;;
 METIER_IEO;^.+$;factor;;factor;10;;10;10;;15;F;;;12;T;;;12;F;;;15;F;;;;;;;In OAB, this field is only mandatory in Hauls table, because the data of the rest of the tables come from this.
+COD_ARTE;^\d{3}$;factor;;factor;28;T;28;28;T;;;;;13;T;12;T;13;T;12;T;16;T;15;T;;;;;
+ARTE;^.+$;factor;;factor;29;T;29;29;T;;;;;14;T;13;T;14;T;13;T;17;T;16;T;;;;;
+TAMANO_MALLA;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;15;F;14;F;15;F;14;F;18;F;17;F;;;;;
+SOBRECOPO;^S|N$;factor;;factor;;;;;;;;;;16;F;15;F;;;;;;;;;;;;;
+ABERTURA_VER;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;17;T;16;T;;;;;;;;;;;;;
+ABERTURA_HOR;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;18;T;17;T;;;;;;;;;;;;;
+CARAS;^\d+$;integer;;integer;;;;;;;;;;19;F;18;F;;;;;;;;;;;;;
+COD_BARCO;^\d{1,6}$;factor;^\d{6}$;factor;18;T;18;18;T;18;T;17;T;20;T;19;T;16;T;15;T;19;T;18;T;;;;;
+COD_SGPM;^.+$;factor;;factor;;;;;;;;;;21;F;;;;;;;;;;;;;;;
+BARCO;^.+$;factor;;factor;20;T;20;20;T;19;T;18;T;22;T;20;T;17;T;16;T;20;T;19;T;;;;;
+CV;^\d+(\,\d+)$;numeric;;numeric;;;;;;20;T;19;T;23;F;21;F;18;F;17;F;21;T;20;T;;;;;
+TRB;^\d+(\,\d+)$;character;;numeric;;;;;;21;T;20;T;24;F;22;F;19;F;18;F;22;T;21;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
+ESLORA;^\d+(\,\d+)$;character;;numeric;;;;;;22;T;21;T;25;F;23;F;20;F;19;F;23;T;22;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
+VELOCIDAD;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;;;26;F;24;F;;;;;;;;;;;;;
+LUZ;^D|N$;factor;;factor;;;;;;;;;;27;T;25;T;;;;;;;;;;;;;
+VALIDO;^S|N$;factor;;logical;;;;;;;;;;28;T;26;T;;;;;;;;;;;;;
+MUESTREADO;^S|N$;factor;;logical;;;;;;;;;;29;T;27;T;;;;;;;;;;;;;
+DESCARTE_MUESTREADO;^S|N$;factor;;logical;;;;;;;;;;30;T;28;T;;;;;;;;;;;;;
+DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;integer;;;;;;;;;;31;T;29;T;;;;;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
+MES;^([1-9]|1[0-2])$;integer;;integer;;;;;;;;;;32;T;30;T;;;;;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
+OBSERVADOR;^.+$;factor;;factor;;;;;;;;;;33;T;31;T;;;;;;;;;;;;;
+RUMBO;^.+$;character;;character;;;;;;;;;;34;F;32;F;;;;;;;;;;;;;This variable can contain number, digits, dots…
+CABLE;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;;;35;F;33;F;;;;;;;;;;;;;
+VEL_VIENTO;^([0-9]|1[0-2])$;integer;;integer;;;;;;;;;;36;F;34;F;;;;;;;;;;;;;
+ESTADO_MAR;^\d$;integer;;integer;;;;;;;;;;37;F;35;F;;;;;;;;;;;;;
+TEMP_SUPERFICIE;^.+$;numeric;;numeric;;;;;;;;;;38;F;36;F;;;;;;;;;;;;;
+COD_ESP_OBJ;^[A-Z]{3}$;factor;;factor;;;;;;;;;;39;T;37;T;;;;;;;;;;;;;
+ESP_OBJ;^.+$;factor;;factor;;;;;;;;;;40;T;38;T;;;;;;;;;;;;;
+LUNA;^(1|2|3|4)$;integer;;integer;;;;;;;;;;41;F;39;F;;;;;;;;;;;;;
+FECHA_LAR;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;;;;;42;T;40;T;;;;;;;;;;;;;
+HORA_LAR;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;;;;;43;T;41;T;;;;;;;;;;;;;
+FECHA_VIR;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;;;;;44;T;42;T;;;;;;;;;;;;;
+HORA_VIR;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;;;;;45;T;43;T;;;;;;;;;;;;;
+LAT_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;46;T;44;T;;;;;;;;;;;;;
+LAT_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;47;T;45;T;;;;;;;;;;;;;
+LON_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;48;T;46;T;;;;;;;;;;;;;
+LON_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;49;T;47;T;;;;;;;;;;;;;
+LAT_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;50;T;48;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lat Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_LAR_CGS
+LAT_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;51;T;49;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lat Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_VIR_CGS
+LON_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;52;T;50;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lon Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_LAR_CGS
+LON_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;53;T;51;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lon Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_VIR_CGS
+PROF_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;54;T;52;T;;;;;;;;;;;;;
+PROF_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;55;T;53;T;;;;;;;;;;;;;
+COD_ORIGEN;^\d{1,3}$;factor;^\d{3}$;factor;23;T;23;23;T;11;T;11;T;56;T;54;T;8;T;8;T;11;T;11;T;;;;;
+ORIGEN;^.+$;factor;;factor;24;T;24;24;T;12;T;12;T;57;T;55;T;9;T;9;T;12;T;12;T;;;;;
+DURACION_LANCE;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;58;T;56;T;;;;;;;;;;;;;"The format of this variable makes it useless. In the importation process a new variable with the correct format is created: ""DURACION"""
+PROF_MEDIA;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;59;F;57;F;;;;;;;;;;;;;
+P_TOT_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;60;F;58;F;;;;;;;;;;;;;
+P_SUB_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;61;F;59;F;;;;;;;;;;;;;
+P_MUE_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;62;F;60;F;;;;;;;;;;;;;
+PINGER;^S|N$;factor;;logical;;;;;;;;;;63;F;61;F;;;;;;;;;;;;;
+CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;30;F;29;F;64;F;62;F;;;;;;;;;;;;;
+OBSERVACIONES;^.+$;character;;character;42;;54;;;40;F;37;F;65;F;63;F;;;;;;;;;11;F;;;
+FECHA_INI_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;3;T;3;T;;;;;;;;;;;;;;;;;
+FECHA_FIN_MAREA;^\d{2}-[A-Z]{3}-\d{2}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;4;T;4;T;;;;;;;;;;;;;;;;;
+COD_PUERTO_LLEGADA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;7;T;7;T;;;;;;;;;;;;;;;;;
+PUERTO_LLEGADA;^.+$;factor;;factor;;;;;;8;T;8;T;;;;;;;;;;;;;;;;;
 NOMBRE_OBS;^.+$;factor;;factor;;;;;;16;T;15;T;;;;;;;;;;;;;;;;;
 APELLIDOS_OBS;^.+$;factor;;factor;;;;;;17;T;16;T;;;;;;;;;;;;;;;;;
-COD_BARCO;^\d{1,6}$;factor;^\d{6}$;factor;18;T;18;18;T;18;T;17;T;20;T;19;T;16;T;15;T;19;T;18;T;;;;;
-BARCO;^.+$;factor;;factor;20;T;20;20;T;19;T;18;T;21;T;20;T;17;T;16;T;20;T;19;T;;;;;
-CV;^\d+(\,\d+)$;numeric;;numeric;;;;;;20;T;19;T;22;F;21;F;18;F;17;F;21;T;20;T;;;;;
-TRB;^\d+(\,\d+)$;character;;numeric;;;;;;21;T;20;T;23;F;22;F;19;F;18;F;22;T;21;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
-ESLORA;^\d+(\,\d+)$;character;;numeric;;;;;;22;T;21;T;24;F;23;F;20;F;19;F;23;T;22;T;;;;;This variable is imported as a character because in trips file use comma as decimal and the rest of the OAB files use dot as decimal.
 DIAS_MAR;^\d+$;integer;;integer;;;;;;23;T;22;T;;;;;;;;;;;;;;;;;
 DIAS_PESCA;^\d+$;integer;;integer;;;;;;24;T;23;T;;;;;;;;;;;;;;;;;
 N_LANCES;^\d+$;integer;;integer;;;;;;25;T;24;T;;;;;;;;;;;;;;;;;
@@ -28,7 +77,6 @@ N_LANCES_MUE;^\d+$;integer;;integer;;;;;;26;T;25;T;;;;;;;;;;;;;;;;;
 N_DESCARTES_MUE;^\d+$;integer;;integer;;;;;;27;T;26;T;;;;;;;;;;;;;;;;;
 N_LANCES_NO_MUE;^\d+$;integer;;integer;;;;;;28;T;27;T;;;;;;;;;;;;;;;;;
 N_LANCES_INCIDENCIAS;^\d+$;integer;;integer;;;;;;29;T;28;T;;;;;;;;;;;;;;;;;
-CHEQUEADO;^S|N$;factor;;logical;30;T;30;30;T;30;F;29;F;63;F;62;F;;;;;;;;;;;;;
 HORA_INI_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;31;F;30;F;;;;;;;;;;;;;;;;;
 HORA_FIN_MAREA;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;32;F;31;F;;;;;;;;;;;;;;;;;
 FECHA_EMB;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;33;F;32;F;;;;;;;;;;;;;;;;;
@@ -38,53 +86,6 @@ RECHAZO;^.+$;factor;;factor;;;;;;36;F;35;F;;;;;;;;;;;;;;;;;
 FECHA_RECHAZO;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;37;F;36;F;;;;;;;;;;;;;;;;;
 COD_PUERTO_SALIDA;^\d{3,4}$;factor;^\d{4}$;factor;;;;;;38;F;;;;;;;;;;;;;;;;;;;
 PUERTO_SALIDA;^.+$;factor;;factor;;;;;;39;F;;;;;;;;;;;;;;;;;;;
-OBSERVACIONES;^.+$;character;;character;42;;54;;;40;F;37;F;64;F;63;F;;;;;;;;;11;F;;;
-TRIMESTRE;^(1|2|3|4)$;integer;;integer;;;;;;;;;;2;T;2;T;2;T;2;T;2;T;2;T;;;;;
-COD_LANCE;^\d{1,4}$;integer;;integer;;;;;;;;;;4;T;4;T;4;T;4;T;5;T;5;T;2;T;2;T;
-CUADRICULA_ICES;^('\d{2}[A-Z]\d)$|^'$;factor;;factor;;;;;;;;;;9;T;9;T;7;T;7;T;10;T;10;T;;;;;
-COD_ARTE;^\d{3}$;factor;;factor;28;T;28;28;T;;;;;13;T;12;T;13;T;12;T;16;T;15;T;;;;;
-ARTE;^.+$;factor;;factor;29;T;29;29;T;;;;;14;T;13;T;14;T;13;T;17;T;16;T;;;;;
-TAMANO_MALLA;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;15;F;14;F;15;F;14;F;18;F;17;F;;;;;
-SOBRECOPO;^S|N$;factor;;factor;;;;;;;;;;16;F;15;F;;;;;;;;;;;;;
-ABERTURA_VER;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;17;T;16;T;;;;;;;;;;;;;
-ABERTURA_HOR;^\d+(\,\d+)$;character;;numeric;;;;;;;;;;18;T;17;T;;;;;;;;;;;;;
-CARAS;^\d+$;integer;;integer;;;;;;;;;;19;F;18;F;;;;;;;;;;;;;
-VELOCIDAD;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;;;25;F;24;F;;;;;;;;;;;;;
-LUZ;^D|N$;factor;;factor;;;;;;;;;;26;T;25;T;;;;;;;;;;;;;
-VALIDO;^S|N$;factor;;logical;;;;;;;;;;27;T;26;T;;;;;;;;;;;;;
-MUESTREADO;^S|N$;factor;;logical;;;;;;;;;;28;T;27;T;;;;;;;;;;;;;
-DESCARTE_MUESTREADO;^S|N$;factor;;logical;;;;;;;;;;29;T;28;T;;;;;;;;;;;;;
-DIA;^([1-9]|1[0-9]|2[0-9]|3[0-1])$;integer;;integer;;;;;;;;;;30;T;29;T;;;;;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
-MES;^([1-9]|1[0-2])$;integer;;integer;;;;;;;;;;31;T;30;T;;;;;;;;;;;;;"this variable come from field ""FECHA"" of the header of Lances screen in SIRENO"
-OBSERVADOR;^.+$;factor;;factor;;;;;;;;;;32;T;31;T;;;;;;;;;;;;;
-RUMBO;^.+$;character;;character;;;;;;;;;;33;F;32;F;;;;;;;;;;;;;This variable can contain number, digits, dots…
-CABLE;^\d+(\,\d+)$;numeric;;numeric;;;;;;;;;;34;F;33;F;;;;;;;;;;;;;
-VEL_VIENTO;^([0-9]|1[0-2])$;integer;;integer;;;;;;;;;;35;F;34;F;;;;;;;;;;;;;
-ESTADO_MAR;^\d$;integer;;integer;;;;;;;;;;36;F;35;F;;;;;;;;;;;;;
-TEMP_SUPERFICIE;^.+$;numeric;;numeric;;;;;;;;;;37;F;36;F;;;;;;;;;;;;;
-COD_ESP_OBJ;^[A-Z]{3}$;factor;;factor;;;;;;;;;;38;T;37;T;;;;;;;;;;;;;
-ESP_OBJ;^.+$;factor;;factor;;;;;;;;;;39;T;38;T;;;;;;;;;;;;;
-LUNA;^(1|2|3|4)$;integer;;integer;;;;;;;;;;40;F;39;F;;;;;;;;;;;;;
-FECHA_LAR;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;;;;;41;T;40;T;;;;;;;;;;;;;
-HORA_LAR;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;;;;;42;T;41;T;;;;;;;;;;;;;
-FECHA_VIR;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;;;;;;;;;;43;T;42;T;;;;;;;;;;;;;
-HORA_VIR;^([0-2]|)[0-9]:[0-5][0-9]$;character;;character;;;;;;;;;;44;T;43;T;;;;;;;;;;;;;
-LAT_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;45;T;44;T;;;;;;;;;;;;;
-LAT_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;46;T;45;T;;;;;;;;;;;;;
-LON_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;47;T;46;T;;;;;;;;;;;;;
-LON_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;48;T;47;T;;;;;;;;;;;;;
-LAT_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;49;T;48;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lat Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_LAR_CGS
-LAT_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;50;T;49;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lat Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LAT_VIR_CGS
-LON_LAR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;51;T;50;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lon Lar', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_LAR_CGS
-LON_VIR_CGS;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;52;T;51;T;;;;;;;;;;;;;The header of this variable in the original file is  'Lon Vir', exactly the same to a previous variable. When R imported it, add a '.1' to the name. And in 'relacion_variables.csv' is traslated to LON_VIR_CGS
-PROF_LAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;53;T;52;T;;;;;;;;;;;;;
-PROF_VIR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;54;T;53;T;;;;;;;;;;;;;
-DURACION_LANCE;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;57;T;56;T;;;;;;;;;;;;;"The format of this variable makes it useless. In the importation process a new variable with the correct format is created: ""DURACION"""
-PROF_MEDIA;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;58;F;57;F;;;;;;;;;;;;;
-P_TOT_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;59;F;58;F;;;;;;;;;;;;;
-P_SUB_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;60;F;59;F;;;;;;;;;;;;;
-P_MUE_DESCAR;^\d+(\.\d+)$;numeric;;numeric;;;;;;;;;;61;F;60;F;;;;;;;;;;;;;
-PINGER;^S|N$;factor;;logical;;;;;;;;;;62;F;61;F;;;;;;;;;;;;;
 RESPONSABLE_MUESTREO;^.+$;character;;character;1;T;1;1;T;;;;;;;;;;;;;;;;;;;;;
 COD_ID;^\d{4}[A-Z]{3}\d{1}[A-Z]{1}\d{4}$;factor;;factor;2;T;2;2;T;;;;;;;;;;;;;;;;;;;;;
 FECHA_MUE;^\d{2}-[A-Z]{3}-\d{2}$|^\d{2}\/\d{2}\/\d{4}$;character;^\d{2}-\d{2}-\d{4}$;character;3;T;3;3;T;;;;;;;;;;;;;3;T;3;T;;;;;
@@ -100,7 +101,7 @@ LOCODE;^[A-Z]{5}$;factor;;factor;14;T;14;14;T;;;;;;;;;;;;;;;;;;;;;
 PUERTO;^.+$;factor;;factor;15;T;15;15;T;;;;;;;;;;;;;;;;;;;;;
 COD_TIPO_MUE;^(1|2|3|4)$;factor;;factor;16;T;16;16;T;;;;;;;;;;;;;;;;;;;;;
 TIPO_MUE;^.+$;factor;;factor;17;T;17;17;T;;;;;;;;;;;;;;;;;;;;;
-CODSGPM;^\d{1,6}$;factor;^\d{6}$;factor;19;;19;19;;;;;;;;;;;;;;;;;;;;;;Not all ships in sireno has SGPM code.
+COD_SGPM;^\d{1,6}$;factor;^\d{6}$;factor;19;;19;19;;;;;;;;;;;;;;;;;;;;;;Not all ships in sireno has SGPM code.
 N_BARCOS;^\d{1}$;integer;;integer;21;T;21;21;T;;;;;;;;;;;;;;;;;;;;;
 N_RECHAZOS;^\d{1,2}$;integer;;integer;22;T;22;22;T;;;;;;;;;;;;;;;;;;;;;
 COD_DIVISION;^\d{1,2}$;factor;^\d{3}$;factor;25;;25;25;;;;;;;;;;;;;;;;;;;;;;

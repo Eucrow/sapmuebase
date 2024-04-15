@@ -11,7 +11,7 @@ library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-categorias <- read.csv("IEOCATPUE3MARCO_2024_03.TXT",
+categorias <- read.csv("IEOCATPUE3MARCO_2024_04.TXT",
                      sep=";",
                      skip = 6,
                      header = TRUE,

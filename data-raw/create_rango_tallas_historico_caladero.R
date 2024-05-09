@@ -7,30 +7,31 @@ setwd("data-raw")
 # /test_check_lengths/test_check_lengths.R Then, has been revised with Cooks
 # distance graphs and corrected.
 # 1. Create rango_tallas_historico_caladero ----
-
 # fishing_ground <- read.table(file = "caladero.csv", head = TRUE, sep = ";",
-#                              fill = TRUE, colClasses = c("character", "factor", "character"))
-# rim_lengths_2014_2018 <- readRDS(file = "rim_lengths_2014_2018.rds")
+#                             fill = TRUE, colClasses = c("character", "factor", "character"))
+# rim_lengths_2019_2023 <- readRDS(file = "rim_lengths_2019_2023.rds")
 # create_historical_range_fishing_ground <- function() {
-#
-#   fishing_ground <- fishing_ground[, c("CALADERO", "COD_ORIGEN")]
-#   rim_lengths_2014_2018 <- merge(rim_lengths_2014_2018, fishing_ground, by = c("COD_ORIGEN"), all.x=T)
-#
-#   rango_tallas_historico_caladero <- rim_lengths_2014_2018 %>%
-#     filter(PROCEDENCIA == "IEO") %>%
-#     select(COD_ESP_CAT, CALADERO, SEXO, TALLA) %>%
-#     group_by(COD_ESP_CAT, CALADERO, SEXO) %>%
-#     summarise(min_length = min(TALLA, na.rm = T), max_length = max(TALLA, na.rm = T)) %>%
-#     mutate(min_length = ifelse(is.infinite(min_length), NA, min_length)) %>%
-#     mutate(max_length = ifelse(is.infinite(max_length), NA, max_length))
-#
-#   colnames(rango_tallas_historico_caladero) <- c("COD_ESP", "CALADERO", "SEXO", "TALLA_MIN", "TALLA_MAX")
-#
-#   return(rango_tallas_historico_caladero)
-#
-# }
-
+  
+#  fishing_ground <- fishing_ground[, c("CALADERO", "COD_ORIGEN")]
+#  rim_lengths_2019_2023 <- merge(rim_lengths_2019_2023, fishing_ground, by = c("COD_ORIGEN"), all.x=T)
+  
+#  rango_tallas_historico_caladero <- rim_lengths_2019_2023 %>%
+#    filter(PROCEDENCIA == "IEO") %>%
+#    select(COD_ESP_CAT, CALADERO, SEXO, TALLA) %>%
+#    group_by(COD_ESP_CAT, CALADERO, SEXO) %>%
+#    summarise(min_length = min(TALLA, na.rm = T), max_length = max(TALLA, na.rm = T)) %>%
+#    mutate(min_length = ifelse(is.infinite(min_length), NA, min_length)) %>%
+#    mutate(max_length = ifelse(is.infinite(max_length), NA, max_length)) %>%
+#    filter(!is.na(CALADERO), !is.na(min_length), !is.na(max_length))
+  
+#  colnames(rango_tallas_historico_caladero) <- c("COD_ESP", "CALADERO", "SEXO", "TALLA_MIN", "TALLA_MAX")
+  
+#  return(rango_tallas_historico_caladero)
+#  
+#}
 # rango_tallas_historico_caladero <- create_historical_range_fishing_ground()
+
+#exportar_tallas_historico <- write.csv(rango_tallas_historico_caladero, "rango_tallas_historico_caladero.csv")
 
 # The rango_tallas_historico_caladero must be revised with Cooks distance graphs
 # and corrected. Then:

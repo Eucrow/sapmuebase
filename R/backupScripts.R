@@ -20,7 +20,7 @@ backupScripts <- function(files_to_backup, path_files=getwd(), path_backup) {
   ifelse(!dir.exists(path_backup), dir.create(path_backup), FALSE)
 
   # make backup
-  files_to_backup_from <- file.path(getwd(), files_to_backup)
+  files_to_backup_from <- file.path(path_files, files_to_backup)
   files_to_backup_to <-  file.path(path_backup, files_to_backup)
 
   if (any(file.exists(files_to_backup_to))) {

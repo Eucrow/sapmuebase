@@ -2,7 +2,7 @@
 % Please edit documentation in R/backupScripts.R
 \name{backupScripts}
 \alias{backupScripts}
-\title{Backup scripts and related files.}
+\title{Function make a backup of multiple files to a folder.}
 \usage{
 backupScripts(files_to_backup, path_files = getwd(), path_backup)
 }
@@ -15,13 +15,16 @@ working directory.}
 \item{path_backup}{path where save the backup files.}
 }
 \value{
-A logical vector of the lenght of the files_to_backup with TRUE when
+A logical vector of the length of the files_to_backup with TRUE when
 the file is properly saved and false if doesn't.
 }
 \description{
-Backup scripts and related files.
+Function make a backup of multiple files to a folder.
 }
 \details{
 If any files of the files_to_backup already exists in path_backup,
 the function ask for overwrite all the files.
+
+If the name of the files to backup include a directory, like "data/df1.csv",
+the function create the directory first.
 }

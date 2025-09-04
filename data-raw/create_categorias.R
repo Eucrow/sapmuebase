@@ -11,11 +11,12 @@ library(devtools)
 
 original_wd <- getwd()
 setwd("data-raw")
-categorias <- read.csv("IEOCATPUE3MARCO_2025_02.TXT",
-                     sep=";",
-                     skip = 6,
-                     header = TRUE,
-                     colClasses = c("factor"), fileEncoding = "windows-1252")
+categorias <- read.csv("IEOCATPUE3MARCO_2025_06.TXT",
+  sep = ";",
+  skip = 6,
+  header = TRUE,
+  colClasses = c("factor"), fileEncoding = "windows-1252"
+)
 colnames(categorias) <- c("COD_CATEGORIA", "CATEGORIA", "COD_PUERTO", "PUERTO", "COD_ESP", "ESP", "A3_ESP", "PROCESO")
 
 # Clean dataset

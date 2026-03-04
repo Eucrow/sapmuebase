@@ -1,6 +1,6 @@
 #' Mixed species
 #'
-#' A dataset containing the mixed species to be saved in 'Category Species' and
+#' A data set containing the mixed species to be saved in 'Category Species' and
 #' it's corresponding specie in 'Sampled Species'.
 #'
 #' @format A data frame with 4 columns:

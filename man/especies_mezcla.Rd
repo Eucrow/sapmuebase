@@ -18,7 +18,7 @@ A data frame with 4 columns:
 especies_mezcla
 }
 \description{
-A dataset containing the mixed species to be saved in 'Category Species' and
+A data set containing the mixed species to be saved in 'Category Species' and
 it's corresponding specie in 'Sampled Species'.
 }
 \keyword{datasets}
